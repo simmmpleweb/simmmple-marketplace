@@ -41,7 +41,7 @@ const Footer = () => {
                   _placeholder={{ color: "#878CBD" }}
                 />
                 <Button bg="brand.300" minW="150px" h="56px" _hover={{bg: "#1A05B7"}}>
-                  <Text fontSize="sm" color="#fff">
+                  <Text fontSize="sm" color="#fff" fontWeight="normal">
                     Submit
                   </Text>
                 </Button>

@@ -2,10 +2,7 @@ export const buttonStyles = {
     components: {
       
       Button: {
-        _hover: {
-          boxShadow: "none",
-          bg: "#1A05B7"
-        },
+        
         baseStyle: {
           borderRadius: "30px",
           boxShadow: "none",
@@ -13,10 +10,9 @@ export const buttonStyles = {
           _focus: {
             boxShadow: "none",
           },
-          _hover: {
-            boxShadow: "none",
-            bg: "#1A05B7"
-          },
+          // _hover: {
+          //   boxShadow: "none",
+          // },
         },
       },
     },
