@@ -1,9 +1,19 @@
-import Card from "./components/Card/Card";
+import { Route, Switch } from "react-router-dom";
+import { Box } from "@chakra-ui/react"
+import Home from "../src/pages/Home";
+import "./App.css";
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <Navbar />
+    <Box overflowX="hidden">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home}/>
+        </Switch>
+        <Footer />
+    </Box>
   );
 }
 
