@@ -1,14 +1,17 @@
 export const globalStyles = {
   colors: {
-    brand: "422AFB"
+    brand: {
+      300: "#422AFB",
+      700: "#02044A"
+    }
   },
   styles: {
     global: () => ({
       body: {
-        fontFamily: "Plus Jakarta Display",
+        fontFamily: "Plus Jakarta Display"
       },
       html: {
-        fontFamily: "Plus Jakarta Display",
+        
       },
     }),
   },
