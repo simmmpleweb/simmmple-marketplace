@@ -202,7 +202,7 @@ function Navbar() {
           </Flex>
         </Stack>
         <Button w="160px" h="56px" bg="transparent" zIndex="1" border="1px solid #fff" _hover={{bg: "#4B63CD", color: "#fff"}}>
-          <Text fontSize="sm" fontWeight="normal" color="#fff">
+          <Text fontSize="sm" fontWeight="500" color="#fff">
             Get Started
           </Text>
         </Button>
