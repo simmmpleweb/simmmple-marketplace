@@ -366,13 +366,15 @@ const Home = () => {
           </Flex>
       </Flex>
           <Flex direction="column" bg="#fff">
-            <Flex direction="column" w="1170px" mx="auto" py="100px">
+            <Flex direction="column" w="1170px" mx="auto" pt="100px" pb="225px">
                 <Flex direction="column" align="center" justify="center" textAlign="center" mb="72px">
                     <Text fontSize="xs" color="brand.300" fontWeight="bold" mb="16px">TUTORIALS, ARTICLES & RESOURCES</Text>
                     <Text fontSize="34px" color="brand.700" fontWeight="bold" mb="20px">Discover resources & guides</Text>
                     <Text fontSize="md" color="#878CBD" fontWeight="normal" maxW="500px">Discover resources, guides and articles that can help you build unique solutions. Visit our learning centre for heaps of content.</Text>
                 </Flex>
                 <Grid templateColumns="repeat(3, 1fr)" gap="22px">
+                    <NavLink to="/">
+
                     <Card boxShadow="45px 76px 113px 7px rgba(112, 144, 176, 0.08)" pb="35px">
                         <CardBody>
                             <Flex direction="column">
@@ -385,6 +387,9 @@ const Home = () => {
                             </Flex>
                         </CardBody>
                     </Card>
+                    </NavLink>
+                    <NavLink to="/">
+
                     <Card boxShadow="45px 76px 113px 7px rgba(112, 144, 176, 0.08)" pb="35px">
                         <CardBody>
                             <Flex direction="column">
@@ -398,6 +403,9 @@ const Home = () => {
                             </Flex>
                         </CardBody>
                     </Card>
+                    </NavLink>
+                    <NavLink to="/">
+
                     <Card boxShadow="45px 76px 113px 7px rgba(112, 144, 176, 0.08)" pb="35px">
                         <CardBody>
                             <Flex direction="column">
@@ -410,6 +418,7 @@ const Home = () => {
                             </Flex>
                         </CardBody>
                     </Card>
+                    </NavLink>
                 </Grid>
                 <Button bg="#ECE9FF" w="152px" h="56px" alignSelf="center" mt="52px">
                     <Text color="brand.300" fontSize="sm">

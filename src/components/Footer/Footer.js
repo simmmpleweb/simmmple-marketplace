@@ -26,7 +26,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Flex w="100vw" bg="gray.100" py="125px">
+    <Flex w="100vw" bg="gray.100" pb="125px">
       <Flex direction="column" w="1170px" mx="auto">
         <Flex
           w="100%"
@@ -37,8 +37,9 @@ const Footer = () => {
           px="58px"
           align="center"
           overflowX="hidden"
+          transform="translateY(-50%)"
         >
-          <Flex direction="column" me="100px">
+          <Flex direction="column" me="100px" >
             <Text color="#fff" mb="8px" fontSize="3xl">
               Join over 10,000 digital creators today!
             </Text>
@@ -71,7 +72,7 @@ const Footer = () => {
             </FormControl>
           </Flex>
         </Flex>
-        <Flex align="center" mt="125px">
+        <Flex align="center">
           <SimmmpleLogoColored w="170px" h="40px" me="40px" />
           <Text color="#878CBD">Premium UI Kits, Templates & Themes</Text>
         </Flex>

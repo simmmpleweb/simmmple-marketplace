@@ -3,9 +3,12 @@ import Card from "../Card/Card";
 import CardHeader from "../Card/CardHeader";
 import CardBody from "../Card/CardBody";
 import { Tag, Flex, Box, Image, Text } from '@chakra-ui/react';
+import { NavLink } from "react-router-dom";
 
-const ProductItem = ({image, tag, price, title, category}) => {
+const ProductItem = ({image, tag, price, title, category, path}) => {
     return (
+        <NavLink to={path}>
+
         <Card>
             <CardBody>
                 <Flex direction="column" w="100%">
@@ -25,6 +28,7 @@ const ProductItem = ({image, tag, price, title, category}) => {
             </CardBody>
             
         </Card>
+        </NavLink>
     )
 }
 
