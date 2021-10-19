@@ -14,5 +14,5 @@ export default extendTheme(
   linkStyles, // Link styles
   CardComponent, // Card component
   CardBodyComponent, // Card Body component
-  CardHeaderComponent, // Card Header component
+  CardHeaderComponent // Card Header component
 );
