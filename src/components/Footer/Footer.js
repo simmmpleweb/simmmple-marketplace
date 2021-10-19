@@ -26,7 +26,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Flex w="100vw" bg="gray.100" pb="125px">
+    <Flex w="100vw" bg="#F4F7FE" pb="125px">
       <Flex direction="column" w="1170px" mx="auto">
         <Flex
           w="100%"
