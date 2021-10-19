@@ -36,6 +36,7 @@ const Footer = () => {
           bgPosition="center center"
           px="58px"
           align="center"
+          overflowX="hidden"
         >
           <Flex direction="column" me="100px">
             <Text color="#fff" mb="8px" fontSize="3xl">

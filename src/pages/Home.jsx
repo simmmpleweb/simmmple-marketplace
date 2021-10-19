@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Flex,
   Box,
@@ -9,6 +9,7 @@ import {
   Icon,
   Grid,
   Button,
+  Tag,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import Card from "../components/Card/Card";
@@ -27,7 +28,7 @@ import figmaLogo from "../assets/img/figma2.png";
 import vscodeLogo from "../assets/img/vscode2.png";
 import mailLogo from "../assets/img/mail2.png";
 import simmmpleButtonLogo from "../assets/img/simmmple-button.png";
-import { SimmmpleLogoBundle } from "../components/Icons/Icons";
+import { LeftButtonEffect, RightButtonEffect, SimmmpleLogoBundle, ArticleIcon1, ArticleIcon2, ArticleIcon3 } from "../components/Icons/Icons";
 
 import { BsSearch } from "react-icons/bs";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -37,8 +38,12 @@ import { featuredProducts } from "../variables/products";
 import Countdown from "../components/Countdown/Countdown";
 
 const Home = () => {
+
+  const leftEffect = useRef();
+  const rightEffect = useRef();
+
   return (
-    <Flex direction="column" bg="#fff">
+    <Flex direction="column" bg="#fff" overflowX="hidden">
       <Flex
         minH="930px"
         bg="#333"
@@ -277,7 +282,7 @@ const Home = () => {
           </Grid>
         </Flex>
         </Flex>
-        <Flex bg="#F4F7FE" py="100px">
+        <Flex bg="#F4F7FE" py="100px" overflowX="hidden">
           <Flex direction="column" w="1170px" mx="auto">
             <Flex justify="space-between" align="center" w="100%" mb="72px">
               <Flex direction="column">
@@ -314,6 +319,15 @@ const Home = () => {
                     <Box >
                         <Countdown date='17 December 2021'/>
                     </Box>
+                    <Flex align="center" mt="54px">
+                        <LeftButtonEffect ref={leftEffect}color="#fff" w="35px" h="115px" transition="all .5s ease"/>
+                        <Button variant="solid" w="190px" h="56px" onMouseEnter={() => {leftEffect.current.style.transform = "translateX(-5px)"; rightEffect.current.style.transform = "translateX(5px)"}} onMouseLeave={() => {leftEffect.current.style.transform = "translateX(5px)"; rightEffect.current.style.transform = "translateX(-5px)"}}>
+                            <Text color="brand.700" fontSize="sm" >
+                                Save up to 80% now
+                            </Text>
+                            </Button>
+                        <RightButtonEffect ref={rightEffect} color="#fff" w="35px" h="115px" transition="all .5s ease"/>
+                    </Flex>
                 </Flex>
           </Flex>
           <Flex bg="#F4F7FE" py="100px">
@@ -345,6 +359,59 @@ const Home = () => {
             <ProductList products={featuredProducts}/>
           </Flex>
       </Flex>
+          <Flex direction="column" bg="#fff">
+            <Flex direction="column" w="1170px" mx="auto" py="100px">
+                <Flex direction="column" align="center" justify="center" textAlign="center" mb="72px">
+                    <Text fontSize="xs" color="brand.300" fontWeight="bold" mb="16px">TUTORIALS, ARTICLES & RESOURCES</Text>
+                    <Text fontSize="34px" color="brand.700" fontWeight="bold" mb="20px">Discover resources & guides</Text>
+                    <Text fontSize="md" color="#878CBD" fontWeight="normal" maxW="500px">Discover resources, guides and articles that can help you build unique solutions. Visit our learning centre for heaps of content.</Text>
+                </Flex>
+                <Grid templateColumns="repeat(3, 1fr)" gap="22px">
+                    <Card boxShadow="45px 76px 113px 7px rgba(112, 144, 176, 0.08)" pb="35px">
+                        <CardBody>
+                            <Flex direction="column">
+                                <Flex align="center" mb="30px" justify="center" bg="linear-gradient(135deg, #868CFF 0%, #4318FF 100%)" borderRadius="24px" w="100%" h="230px">
+                                    <ArticleIcon1 w="87" h="105" color="#fff"/>
+                                </Flex>
+                                <Tag color="brand.300" bg="#ECE9FF" borderRadius="30px" p="7px 14px" maxW="80px" mb="10px">Articles</Tag>
+                                <Text color="brand.700" fontSize="lg" fontWeight="500" mb="14px" >How to build a design system if you're the only designer in a startup</Text>
+                                <Text fontSize="sm" color="#878CBD" fontWeight="normal">It's always hard to be the only person in a company who is responsible for product design. Your day...</Text>
+                            </Flex>
+                        </CardBody>
+                    </Card>
+                    <Card boxShadow="45px 76px 113px 7px rgba(112, 144, 176, 0.08)" pb="35px">
+                        <CardBody>
+                            <Flex direction="column">
+                                <Flex align="center" direction="column" mb="30px" justify="center" bg="linear-gradient(109.6deg, #FF9966 17.44%, #FF5E62 78.63%)" borderRadius="24px" w="100%" h="230px">
+                                    <ArticleIcon2 w="72px" h="72px" color="#fff" mb="20px"/>
+                                    <Text color="#fff" fontSize="xl" fontWeight="bold">SEO Strategy</Text>
+                                </Flex>
+                                <Tag color="brand.300" bg="#ECE9FF" borderRadius="30px" p="7px 14px" maxW="80px" mb="10px">Articles</Tag>
+                                <Text color="brand.700" fontSize="lg" fontWeight="500" mb="14px" >How to build a design system if you're the only designer in a startup</Text>
+                                <Text fontSize="sm" color="#878CBD" fontWeight="normal">It's always hard to be the only person in a company who is responsible for product design. Your day...</Text>
+                            </Flex>
+                        </CardBody>
+                    </Card>
+                    <Card boxShadow="45px 76px 113px 7px rgba(112, 144, 176, 0.08)" pb="35px">
+                        <CardBody>
+                            <Flex direction="column">
+                                <Flex align="center" mb="30px" justify="center" bg="linear-gradient(90deg, #4481EB 0%, #04BEFE 100%)" borderRadius="24px" w="100%" h="230px">
+                                    <ArticleIcon3 w="87" h="105" color="#fff"/>
+                                </Flex>
+                                <Tag color="brand.300" bg="#ECE9FF" borderRadius="30px" p="7px 14px" maxW="80px" mb="10px">Articles</Tag>
+                                <Text color="brand.700" fontSize="lg" fontWeight="500" mb="14px" >How to build a design system if you're the only designer in a startup</Text>
+                                <Text fontSize="sm" color="#878CBD" fontWeight="normal">It's always hard to be the only person in a company who is responsible for product design. Your day...</Text>
+                            </Flex>
+                        </CardBody>
+                    </Card>
+                </Grid>
+                <Button bg="#ECE9FF" w="152px" h="56px" alignSelf="center" mt="52px">
+                    <Text color="brand.300" fontSize="sm">
+                    Learn more
+                    </Text>
+                </Button>
+            </Flex>
+          </Flex>
     </Flex>
   );
 };
