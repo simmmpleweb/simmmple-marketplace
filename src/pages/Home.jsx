@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <Flex direction="column" bg="#fff">
       <Flex
-        minH="930px"
+        minH="870px"
         bg="#333"
         bgImage={homeBg}
         bgSize="cover"
@@ -328,19 +328,22 @@ const Home = () => {
                   color="brand.300"
                   fontWeight="bold"
                   mb="16px"
+                  letterSpacing="2px"
                 >
                   OUR DIGITAL PRODUCTS
                 </Text>
                 <Text
-                  fontSize="3xl"
+                  fontSize="34px"
+                  lineHeight="44px"
+                  letterSpacing="-1px"
                   color="brand.700"
-                  fontWeight="normal"
+                  fontWeight="500"
                 >
                   Latest products
                 </Text>
               </Flex>
               <Button bg="#fff" w="190px" h="56px">
-                <Text color="brand.300" fontSize="sm">
+                <Text color="brand.300" fontWeight="500" fontSize="sm">
                   Explore all Products
                 </Text>
               </Button>

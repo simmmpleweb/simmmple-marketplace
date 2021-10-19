@@ -31,7 +31,7 @@ function Navbar() {
   } = useDisclosure();
 
   return (
-    <Flex w="100vw" bg="transparent" position="absolute">
+    <Flex w="100%" bg="transparent" position="absolute">
       <Flex w="1170px" mx="auto" align="center" py="40px">
         <NavLink to="/">
           <Box>
