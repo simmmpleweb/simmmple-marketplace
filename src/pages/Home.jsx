@@ -52,14 +52,14 @@ const Home = () => {
         </Box>
         <Flex direction="column" w="1170px" mx="auto" mt="210px">
           <Flex direction="column" maxW="528px" mb="54px">
-            <Text fontSize="xs" color="#fff" fontWeight="bold" mb="16px">
+            <Text fontSize="xs" color="#fff" fontWeight="bold" mb="16px" letterSpacing="2px">
               BUILD BETTER, BUILD FASTER
             </Text>
-            <Text fontSize="4xl" color="#fff" fontWeight="bold" mb="36px">
+            <Text fontSize="44px" color="#fff" fontWeight="500" letterSpacing="-1px" lineHeight="56px" mb="36px">
               Premium Digital Solutions for developers, designers, agencies &
               startups
             </Text>
-            <Text fontWeight="normal" color="#fff" maxW="438px">
+            <Text fontWeight="normal" fontSize="16px" lineHeight="28px"  color="#fff" maxW="438px">
               Join over{" "}
               <Text as="span" fontWeight="bold">
                 10,000+ developers, designers & startups
@@ -124,10 +124,10 @@ const Home = () => {
           </Flex>
         </Grid>
         <Flex direction="column" pb="100px">
-          <Text fontSize="xs" color="brand.300" fontWeight="bold" mb="16px">
+          <Text fontSize="xs" color="brand.300" fontWeight="bold" mb="16px" letterSpacing="2px">
             BUILD BETTER, BUILD FASTER
           </Text>
-          <Text fontSize="3xl" color="brand.700" fontWeight="normal" mb="58px">
+          <Text fontSize="34px" lineHeight="44px" letterSpacing="-1px" color="brand.700" fontWeight="500" mb="58px">
             Browse popular categories
           </Text>
           <Grid templateColumns="repeat(4, 1fr)" gap="20px" h="340px" w="100%">
@@ -145,15 +145,15 @@ const Home = () => {
                   </Box>
                   <Text
                     color="brand.700"
-                    fontWeight="normal"
-                    fontSize="2xl"
+                    fontWeight="500"
+                    fontSize="22px"
                     mb="12px"
                   >
                     Figma Products
                   </Text>
                   <NavLink to="/">
                     <Flex align="center" color="brand.300">
-                      <Text fontSize="sm" color="brand.300" me="4px">
+                      <Text fontSize="16px" fontWeight="400" color="brand.300" me="4px">
                         See all products
                       </Text>
                       <Icon
@@ -181,15 +181,15 @@ const Home = () => {
                   </Box>
                   <Text
                     color="brand.700"
-                    fontWeight="normal"
-                    fontSize="2xl"
+                    fontWeight="500"
+                    fontSize="22px"
                     mb="12px"
                   >
                     Coded Products
                   </Text>
                   <NavLink to="/">
                     <Flex align="center" color="brand.300">
-                      <Text fontSize="sm" color="brand.300" me="4px">
+                      <Text fontSize="16px" fontWeight="400" color="brand.300" me="4px">
                         See all products
                       </Text>
                       <Icon
@@ -216,17 +216,17 @@ const Home = () => {
                     <Image src={mailLogo} w="100%" h="100%" />
                   </Box>
                   <Text
-                    color="brand.700"
-                    fontWeight="normal"
-                    fontSize="2xl"
-                    mb="12px"
+                   color="brand.700"
+                   fontWeight="500"
+                   fontSize="22px"
+                   mb="12px"
                   >
-                    Figma Products
+                    Articles & Guides
                   </Text>
                   <NavLink to="/">
                     <Flex align="center" color="brand.300">
-                      <Text fontSize="sm" color="brand.300" me="4px">
-                        See all products
+                      <Text fontSize="16px" fontWeight="400" color="brand.300" me="4px">
+                        Learn more
                       </Text>
                       <Icon
                         as={MdKeyboardArrowRight}
@@ -253,16 +253,16 @@ const Home = () => {
                   </Box>
                   <Text
                     color="brand.700"
-                    fontWeight="normal"
-                    fontSize="2xl"
+                    fontWeight="500"
+                    fontSize="22px"
                     mb="12px"
                   >
-                    Figma Products
+                    Apps & Plugins
                   </Text>
                   <NavLink to="/">
                     <Flex align="center" color="brand.300">
-                      <Text fontSize="sm" color="brand.300" me="4px">
-                        See all products
+                      <Text fontSize="16px" fontWeight="400" color="brand.300" me="4px">
+                        Learn more
                       </Text>
                       <Icon
                         as={MdKeyboardArrowRight}
@@ -287,19 +287,22 @@ const Home = () => {
                   color="brand.300"
                   fontWeight="bold"
                   mb="16px"
+                  letterSpacing="2px"
                 >
                   OUR DIGITAL PRODUCTS
                 </Text>
                 <Text
-                  fontSize="3xl"
+                  fontSize="34px"
+                  lineHeight="44px"
+                  letterSpacing="-1px"
                   color="brand.700"
-                  fontWeight="normal"
+                  fontWeight="500"
                 >
                   Featured products
                 </Text>
               </Flex>
               <Button bg="#fff" w="190px" h="56px">
-                <Text color="brand.300" fontSize="sm">
+                <Text color="brand.300" fontWeight="500" fontSize="sm">
                   Explore all Products
                 </Text>
               </Button>
