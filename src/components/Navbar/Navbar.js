@@ -211,7 +211,7 @@ function Navbar() {
             <Icon as={GoChevronDown} w="12px" h="12px" color="#fff" mt="4px" />
           </Flex>
         </Stack>
-        <Button w="160px" h="56px" bg="transparent" border="1px solid #fff" _hover={{bg: "#4B63CD", color: "#fff"}}>
+        <Button w="160px" h="56px" bg="transparent" zIndex="1" border="1px solid #fff" _hover={{bg: "#4B63CD", color: "#fff"}}>
           <Text fontSize="sm" fontWeight="normal" color="#fff">
             Get Started
           </Text>

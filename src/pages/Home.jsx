@@ -8,6 +8,7 @@ import {
   Input,
   Icon,
   Grid,
+  Button,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import Card from "../components/Card/Card";
@@ -16,19 +17,25 @@ import CardBody from "../components/Card/CardBody";
 
 import homeBg from "../assets/img/home-background.png";
 import onHomeBg from "../assets/img/on-home-background.png";
+import bundleBg from "../assets/img/bundle-background.png";
 import googleLogo from "../assets/img/google.png";
 import msnLogo from "../assets/img/msn.png";
 import microsoftLogo from "../assets/img/microsoft.png";
 import zohoLogo from "../assets/img/zoho.png";
 import georgiatechLogo from "../assets/img/georgiatech.png";
 import deloitteLogo from "../assets/img/deloitte.png";
-import figmaLogo from "../assets/img/figma2.png"
-import vscodeLogo from "../assets/img/vscode2.png"
-import mailLogo from "../assets/img/mail2.png"
-import simmmpleButtonLogo from "../assets/img/simmmple-button.png"
+import figmaLogo from "../assets/img/figma2.png";
+import vscodeLogo from "../assets/img/vscode2.png";
+import mailLogo from "../assets/img/mail2.png";
+import simmmpleButtonLogo from "../assets/img/simmmple-button.png";
+import { SimmmpleLogoBundle } from "../components/Icons/Icons";
 
 import { BsSearch } from "react-icons/bs";
 import { MdKeyboardArrowRight } from "react-icons/md";
+
+import ProductList from "../components/Products/ProductList";
+import { featuredProducts } from "../variables/products";
+import Countdown from "../components/Countdown/Countdown";
 
 const Home = () => {
   return (
@@ -43,7 +50,7 @@ const Home = () => {
         <Box position="absolute" right="0" mt="70px">
           <Image src={onHomeBg} w="100%" h="100%" />
         </Box>
-        <Flex direction="column" w="1150px" mx="auto" mt="210px">
+        <Flex direction="column" w="1170px" mx="auto" mt="210px">
           <Flex direction="column" maxW="528px" mb="54px">
             <Text fontSize="xs" color="#fff" fontWeight="bold" mb="16px">
               BUILD BETTER, BUILD FASTER
@@ -83,7 +90,7 @@ const Home = () => {
           </FormControl>
         </Flex>
       </Flex>
-      <Flex direction="column" maxW="1150px" mx="auto">
+      <Flex direction="column" maxW="1170px" mx="auto">
         <Grid
           templateColumns="repeat(6, 1fr)"
           gap="70px"
@@ -126,9 +133,15 @@ const Home = () => {
           <Grid templateColumns="repeat(4, 1fr)" gap="20px" h="340px" w="100%">
             <Card>
               <CardBody h="100%">
-                <Flex direction="column" align="center" w="100%" h="100%" justify="center">
+                <Flex
+                  direction="column"
+                  align="center"
+                  w="100%"
+                  h="100%"
+                  justify="center"
+                >
                   <Box w="75px" h="110px" mb="50px">
-                    <Image src={figmaLogo} w="100%" h="100%"/>
+                    <Image src={figmaLogo} w="100%" h="100%" />
                   </Box>
                   <Text
                     color="brand.700"
@@ -156,9 +169,15 @@ const Home = () => {
             </Card>
             <Card>
               <CardBody h="100%">
-                <Flex direction="column" align="center" w="100%" h="100%" justify="center">
+                <Flex
+                  direction="column"
+                  align="center"
+                  w="100%"
+                  h="100%"
+                  justify="center"
+                >
                   <Box w="116px" h="110px" mb="50px">
-                    <Image src={vscodeLogo} w="100%" h="100%"/>
+                    <Image src={vscodeLogo} w="100%" h="100%" />
                   </Box>
                   <Text
                     color="brand.700"
@@ -186,9 +205,15 @@ const Home = () => {
             </Card>
             <Card>
               <CardBody h="100%">
-                <Flex direction="column" align="center" w="100%" h="100%" justify="center">
+                <Flex
+                  direction="column"
+                  align="center"
+                  w="100%"
+                  h="100%"
+                  justify="center"
+                >
                   <Box w="150px" w="140px" mb="32px">
-                    <Image src={mailLogo} w="100%" h="100%"/>
+                    <Image src={mailLogo} w="100%" h="100%" />
                   </Box>
                   <Text
                     color="brand.700"
@@ -216,9 +241,15 @@ const Home = () => {
             </Card>
             <Card>
               <CardBody h="100%">
-                <Flex direction="column" align="center" w="100%" h="100%" justify="center">
+                <Flex
+                  direction="column"
+                  align="center"
+                  w="100%"
+                  h="100%"
+                  justify="center"
+                >
                   <Box w="160px" w="165px" transform="rotate(-5deg)">
-                    <Image src={simmmpleButtonLogo} w="100%" h="100%"/>
+                    <Image src={simmmpleButtonLogo} w="100%" h="100%" />
                   </Box>
                   <Text
                     color="brand.700"
@@ -244,9 +275,76 @@ const Home = () => {
                 </Flex>
               </CardBody>
             </Card>
-            
           </Grid>
         </Flex>
+        </Flex>
+        <Flex bg="#F4F7FE" py="100px">
+          <Flex direction="column" w="1170px" mx="auto">
+            <Flex justify="space-between" align="center" w="100%" mb="72px">
+              <Flex direction="column">
+                <Text
+                  fontSize="xs"
+                  color="brand.300"
+                  fontWeight="bold"
+                  mb="16px"
+                >
+                  OUR DIGITAL PRODUCTS
+                </Text>
+                <Text
+                  fontSize="3xl"
+                  color="brand.700"
+                  fontWeight="normal"
+                >
+                  Featured products
+                </Text>
+              </Flex>
+              <Button bg="#fff" w="190px" h="56px">
+                <Text color="brand.300" fontSize="sm">
+                  Explore all Products
+                </Text>
+              </Button>
+            </Flex>
+            <ProductList products={featuredProducts}/>
+          </Flex>
+      </Flex>
+          <Flex justify="center" align="center" bgImage={bundleBg} h="760px" bgSize="cover" bgPosition="center center">
+                <Flex direction="column" justify="center" align="center" textAlign="center">
+                    <SimmmpleLogoBundle w="182px" h="50px" mb="48px"/>
+                    <Text fontSize="64px" color="#fff" fontWeight="bold" mb="25px">Exclusive Digital Bundle</Text>
+                    <Text color="#fff" fontSize="2xl"  maxW="70%" mb="50px"><Text as="span" fontWeight="bold">Save up to 80% OFF </Text>to all Premium Coded & Design Products & Tools with our Exclusive Digital Bundle!</Text>
+                    <Box>
+                        <Countdown />
+                    </Box>
+                </Flex>
+          </Flex>
+          <Flex bg="#F4F7FE" py="100px">
+          <Flex direction="column" w="1170px" mx="auto">
+            <Flex justify="space-between" align="center" w="100%" mb="72px">
+              <Flex direction="column">
+                <Text
+                  fontSize="xs"
+                  color="brand.300"
+                  fontWeight="bold"
+                  mb="16px"
+                >
+                  OUR DIGITAL PRODUCTS
+                </Text>
+                <Text
+                  fontSize="3xl"
+                  color="brand.700"
+                  fontWeight="normal"
+                >
+                  Latest products
+                </Text>
+              </Flex>
+              <Button bg="#fff" w="190px" h="56px">
+                <Text color="brand.300" fontSize="sm">
+                  Explore all Products
+                </Text>
+              </Button>
+            </Flex>
+            <ProductList products={featuredProducts}/>
+          </Flex>
       </Flex>
     </Flex>
   );
