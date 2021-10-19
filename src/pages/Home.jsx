@@ -318,7 +318,7 @@ const Home = () => {
                 <Flex direction="column" justify="center" align="center" textAlign="center">
                     <SimmmpleLogoBundle w="182px" h="50px" mb="48px"/>
                     <Text fontSize="64px" color="#fff" fontWeight="bold" mb="25px">Exclusive Digital Bundle</Text>
-                    <Text color="#fff" fontSize="2xl"  maxW="70%" mb="50px"><Text as="span" fontWeight="bold">Save up to 80% OFF </Text>to all Premium Coded & Design Products & Tools with our Exclusive Digital Bundle!</Text>
+                    <Text color="#fff" fontSize="20px" lineHeight="40px"  maxW="70%" mb="50px"><Text as="span" fontWeight="bold">Save up to 80% OFF </Text>to all Premium Coded & Design Products & Tools with our Exclusive Digital Bundle!</Text>
                     <Box >
                         <Countdown date='17 December 2021'/>
                     </Box>
