@@ -1,29 +1,27 @@
-import React from "react";
 import {
-  Flex,
-  Stack,
-  Icon,
-  Text,
   Box,
   Button,
-  Menu,
-  Image,
-  Tooltip,
-  MenuList,
+  Flex,
   Grid,
+  Icon,
+  Image,
+  Menu,
+  MenuList,
+  Stack,
+  Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import { SimmmpleLogoWhite } from "../Icons/Icons";
-import IconBox from "../Icons/IconBox";
+import React from "react";
 import { GoChevronDown } from "react-icons/go";
-import { FcGoogle } from "react-icons/fc";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import exploreBackground from "../../assets/img/explore-background.png";
-import { SimmmpleLogoBundle } from "../../components/Icons/Icons";
-import figmaLogo from "../../assets/img/figma.png";
-import vscodeLogo from "../../assets/img/vscode.png";
-import mailLogo from "../../assets/img/mail.png";
 import { NavLink } from "react-router-dom";
+import exploreBackground from "assets/img/explore-background.png";
+import figmaLogo from "assets/img/figma.png";
+import mailLogo from "assets/img/mail.png";
+import vscodeLogo from "assets/img/vscode.png";
+import { SimmmpleLogoBundle } from "components/Icons/Icons";
+import IconBox from "components/Icons/IconBox";
+import { SimmmpleLogoWhite } from "components/Icons/Icons";
 
 function Navbar() {
   const {
@@ -73,12 +71,11 @@ function Navbar() {
                   <Stack direction="column" spacing="12px" p="12px">
                     <Flex align="center">
                       <IconBox w="68px" h="68px" bg="#F4F7FE" me="20px">
-                        <Image src={figmaLogo} w="26px" h="38px"/>
+                        <Image src={figmaLogo} w="26px" h="38px" />
                       </IconBox>
                       <Flex direction="column">
                         <Text
                           fontSize="md"
-                          fontWeight="normal"
                           color="brand.700"
                           fontWeight="bold"
                           mb="2px"
@@ -101,13 +98,12 @@ function Navbar() {
                       </Flex>
                     </Flex>
                     <Flex align="center">
-                    <IconBox w="68px" h="68px" bg="#F4F7FE" me="20px">
-                        <Image src={vscodeLogo} w="38px" h="38px"/>
+                      <IconBox w="68px" h="68px" bg="#F4F7FE" me="20px">
+                        <Image src={vscodeLogo} w="38px" h="38px" />
                       </IconBox>
                       <Flex direction="column">
                         <Text
                           fontSize="md"
-                          fontWeight="normal"
                           color="brand.700"
                           fontWeight="bold"
                           mb="2px"
@@ -130,13 +126,12 @@ function Navbar() {
                       </Flex>
                     </Flex>
                     <Flex align="center">
-                    <IconBox w="68px" h="68px" bg="#F4F7FE" me="20px">
-                        <Image src={mailLogo} w="46px" h="43px"/>
+                      <IconBox w="68px" h="68px" bg="#F4F7FE" me="20px">
+                        <Image src={mailLogo} w="46px" h="43px" />
                       </IconBox>
                       <Flex direction="column">
                         <Text
                           fontSize="md"
-                          fontWeight="normal"
                           color="brand.700"
                           fontWeight="bold"
                           mb="2px"
@@ -177,12 +172,7 @@ function Navbar() {
                       Save money to all products with our digital categories
                       bundles!
                     </Text>
-                    <Button
-                      variant="solid"
-                      
-                      w="150px"
-                      h="42px"
-                    >
+                    <Button variant="solid" w="150px" h="42px">
                       <Text color="#4F61FF" fontSize="sm">
                         Explore all
                       </Text>

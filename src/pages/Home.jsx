@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import Card from "../components/Card/Card";
-import CardHeader from "../components/Card/CardHeader";
 import CardBody from "../components/Card/CardBody";
 
 import homeBg from "../assets/img/home-background.png";
@@ -315,8 +314,8 @@ const Home = () => {
                     <SimmmpleLogoBundle w="182px" h="50px" mb="48px"/>
                     <Text fontSize="64px" color="#fff" fontWeight="bold" mb="25px">Exclusive Digital Bundle</Text>
                     <Text color="#fff" fontSize="2xl"  maxW="70%" mb="50px"><Text as="span" fontWeight="bold">Save up to 80% OFF </Text>to all Premium Coded & Design Products & Tools with our Exclusive Digital Bundle!</Text>
-                    <Box>
-                        <Countdown />
+                    <Box >
+                        <Countdown date='17 December 2021'/>
                     </Box>
                 </Flex>
           </Flex>
