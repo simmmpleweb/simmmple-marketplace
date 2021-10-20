@@ -7,10 +7,10 @@ import Navbar from "components/Navbar/Navbar";
 
 function App() {
   return (
-    <Box overflowX="hidden">
+    <Box>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Home} />
+        {/* <Route exact path="/" component={Home} /> */}
       </Switch>
       <Footer />
     </Box>
