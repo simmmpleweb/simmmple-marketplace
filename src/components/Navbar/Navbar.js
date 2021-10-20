@@ -23,7 +23,7 @@ import React from "react";
 import IconBox from "components/icons/IconBox";
 
 // Icons
-import { SimmmpleLogoBundle } from "components/icons/Icons";
+import { SimmmpleLogoBundle, SimmmpleLogoWhiteMobile } from "components/icons/Icons";
 import { SimmmpleLogoWhite } from "components/icons/Icons";
 import { GoChevronDown } from "react-icons/go";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -35,12 +35,6 @@ import exploreBackground from "assets/img/explore-background.png";
 import figmaLogo from "assets/img/figma.png";
 import mailLogo from "assets/img/mail.png";
 import vscodeLogo from "assets/img/vscode.png";
-import { SimmmpleLogoBundle } from "components/Icons/Icons";
-import IconBox from "components/Icons/IconBox";
-import {
-  SimmmpleLogoWhite,
-  SimmmpleLogoWhiteMobile,
-} from "components/Icons/Icons";
 
 function Navbar() {
   const {
@@ -81,6 +75,7 @@ function Navbar() {
           align="center"
           ms={{lg: "auto", xl: "160px"}}
           me={{lg: "auto", xl: "210px"}}
+          h="50px"
         >
           <Flex
             align="center"
@@ -88,6 +83,7 @@ function Navbar() {
             onMouseLeave={onCloseExplore}
             position="relative"
             cursor="pointer"
+            h="100%"
           >
             <Text color="#fff" fontWeight="normal" fontSize="sm" me="4px">
               Explore
@@ -100,7 +96,7 @@ function Navbar() {
                 cursor="default"
                 borderRadius="30px"
                 position="absolute"
-                top="40px"
+                top="50px"
                 left="-10px"
                 border="none"
               >
@@ -273,6 +269,7 @@ function Navbar() {
               position="absolute"
               right="0px"
               top="100px"
+              borderRadius="16px"
             >
               <Accordion allowToggle boxShadow="none" color="#4e547e">
                 <AccordionItem border="none">

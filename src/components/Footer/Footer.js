@@ -32,28 +32,34 @@ import footerBg from "assets/img/footer-background.png";
 
 const Footer = () => {
   return (
-    <Flex w="100vw" bg="#F4F7FE" pb="125px">
-      <Flex direction="column" w="1170px" mx="auto">
+    <Flex w="100%" bg="#F4F7FE" pb="125px" pt="500px">
+      <Flex
+        direction="column"
+        w={{ sm: "350px", md: "740px", lg: "970px", xl: "1170px" }}
+        mx="auto"
+      >
         <Flex
+          direction={{sm: "column", lg: "row"}}
           w="100%"
-          h="250px"
+          h={{sm: "auto", lg: "200px"}}
           borderRadius="30px"
           bgImage={footerBg}
           bgPosition="center center"
-          px="58px"
+          px={{sm: "20px",lg: "58px"}}
+          py={{sm: "20px", lg: "0px"}}
           align="center"
           overflowX="hidden"
           transform="translateY(-50%)"
         >
-          <Flex direction="column" me="100px">
-            <Text color="#fff" mb="8px" fontSize="30px" fontWeight="500">
+          <Flex direction="column" me={{xl: "100px"}} textAlign={{sm: "center", lg: "start"}} w="100%" mb={{sm: "26px", lg: "0px"}}>
+            <Text color="#fff" mb="8px" fontSize={{sm: "26px", lg: "24px"}} fontWeight="500" mb={{sm: "8px", lg: "6px"}} maxW={{sm: "90%", lg: "100%"}} mx={{sm: "auto",lg:"0px"}}>
               Join over 10,000 digital creators today!
             </Text>
-            <Text color="#fff" fontSize="20px">
+            <Text color="#fff" fontSize={{sm: "16px", lg: "14px"}} >
               No Spam. Only sweet content and updates of our products.
             </Text>
           </Flex>
-          <Flex borderRadius="70px" bg="#fff" w="400px" h="70px" p="8px">
+          <Flex borderRadius="70px" bg="#fff" minW={{sm: "100%", md: "380px"}} h="70px" p="8px">
             <FormControl>
               <Flex align="center">
                 <Input
@@ -78,13 +84,13 @@ const Footer = () => {
             </FormControl>
           </Flex>
         </Flex>
-        <Flex align="center">
-          <SimmmpleLogoColored w="170px" h="40px" me="40px" />
-          <Text color="#878CBD">Premium UI Kits, Templates & Themes</Text>
+        <Flex align="center" direction={{sm: "column", lg: "row"}}>
+          <SimmmpleLogoColored w="170px" h="40px" me={{lg: "40px"}} />
+          <Text color="#878CBD" mt={{sm: "24px", lg: "0px"}}>Premium UI Kits, Templates & Themes</Text>
         </Flex>
         <Divider mt="60px" mb="42px" h="1px" bg="rgba(135, 140, 189, 0.2)" />
-        <Grid templateColumns="repeat(4, 1fr) 1.2fr" gap="72px">
-          <Flex direction="column">
+        <Grid templateColumns={{ sm: "45% 55%", lg: "repeat(4, 1fr) 1.2fr"}}  columnGap={{sm: "0px", lg: "72px"}} rowGap="50px">
+          <Flex direction="column" justifySelf="center">
             <Text fontSize="lg" color="brand.700" fontWeight="500" mb="26px">
               Explore
             </Text>
@@ -106,7 +112,7 @@ const Footer = () => {
               </NavLink>
             </Stack>
           </Flex>
-          <Flex direction="column">
+          <Flex direction="column" justifySelf="center">
             <Text fontSize="lg" color="brand.700" fontWeight="500" mb="26px">
               Company
             </Text>
@@ -138,7 +144,7 @@ const Footer = () => {
               </NavLink>
             </Stack>
           </Flex>
-          <Flex direction="column">
+          <Flex direction="column" justifySelf="center">
             <Text fontSize="lg" color="brand.700" fontWeight="500" mb="26px">
               Technologies
             </Text>
@@ -170,7 +176,7 @@ const Footer = () => {
               </NavLink>
             </Stack>
           </Flex>
-          <Flex direction="column">
+          <Flex direction="column" justifySelf="center">
             <Text fontSize="lg" color="brand.700" fontWeight="500" mb="26px">
               Resources
             </Text>
@@ -202,17 +208,17 @@ const Footer = () => {
               </NavLink>
             </Stack>
           </Flex>
-          <Flex direction="column">
+          <Flex direction="column" align="center" justifySelf="center" gridColumn={{sm: "1 / 3", lg: "auto"}}>
             <Text
               fontSize="lg"
               color="brand.700"
               fontWeight="500"
               mb="26px"
-              alignSelf="flex-end"
+              alignSelf={{sm: "center", md: "center", lg: "flex-end"}}
             >
               Follow our Socials
             </Text>
-            <Stack direction="row" spacing="20px" mb="20px">
+            <Stack direction="row" spacing="20px" mb="20px" justifyContent={{sm: "center",md: "center" ,lg: "flex-end"}}>
               <Link href="https://github.com/simmmpleweb" target="_blank">
                 <IconBox w="48px" h="48px" borderRadius="30px" bg="#fff">
                   <Icon as={AiFillGithub} w="26px" h="26px" color="brand.300" />
@@ -253,7 +259,8 @@ const Footer = () => {
             <Stack
               direction="row"
               spacing="20px"
-              alignSelf="flex-end"
+              alignSelf={{sm: "center", md: "center", lg: "flex-end"}}
+              justifyContent={{sm: "center",md: "flex-start" ,lg: "flex-end"}}
               mb="50px"
             >
               <Link
@@ -280,14 +287,14 @@ const Footer = () => {
                 </IconBox>
               </Link>
             </Stack>
-            <Flex direction="column" alignSelf="flex-end">
+            <Flex direction={{sm: "column", md: "row", lg: "column"}} alignSelf={{sm: "center", lg: "flex-end"}}>
               <Text fontSize="sm" color="#878CBD">
                 <Text as="span" color="brand.700" fontWeight="normal">
                   &copy; {1900 + new Date().getYear()} Simmmple
                 </Text>
-                , all rights reserved
+                , all rights reserved. 
               </Text>
-              <Text fontSize="sm" color="#878CBD" alignSelf="flex-end">
+              <Text fontSize="sm" color="#878CBD" alignSelf="flex-end" ms={{md: "2px", lg: "0px"}}>
                 Made with ❤️ for a better UI process.
               </Text>
             </Flex>
