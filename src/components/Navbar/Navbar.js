@@ -31,7 +31,7 @@ function Navbar() {
   } = useDisclosure();
 
   return (
-    <Flex w="100vw" bg="transparent" position="absolute">
+    <Flex w="100%" bg="transparent" position="absolute" zIndex="1">
       <Flex w="1170px" mx="auto" align="center" py="40px">
         <NavLink to="/">
           <Box>
@@ -201,14 +201,8 @@ function Navbar() {
             <Icon as={GoChevronDown} w="12px" h="12px" color="#fff" mt="4px" />
           </Flex>
         </Stack>
-        <Button
-          w="160px"
-          h="56px"
-          bg="transparent"
-          border="1px solid #fff"
-          _hover={{ bg: "#4B63CD", color: "#fff" }}
-        >
-          <Text fontSize="sm" fontWeight="normal" color="#fff">
+        <Button w="160px" h="56px" bg="transparent" zIndex="1" border="1px solid #fff" _hover={{bg: "#4B63CD", color: "#fff"}}>
+          <Text fontSize="sm" fontWeight="500" color="#fff">
             Get Started
           </Text>
         </Button>

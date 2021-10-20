@@ -57,3 +57,55 @@ export const SimmmpleLogoBundle = createIcon({
       </svg>
     ),
   });
+
+export const LeftButtonEffect = createIcon({
+  displayName: "LeftButtonEffect",
+  viewBox: "0 0 35 123",
+  path: (
+    <svg width="35" height="123" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M16.545 120.515l16.614-24.329M2 92.903l17.709-8.644m-3.251 13.335l5.422-4.584M16.545 2l16.614 24.329M2 29.612l17.709 8.645M16.458 24.92l5.422 4.585" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  )
+});  
+
+export const RightButtonEffect = createIcon({
+  displayName: "RightButtonEffect",
+  viewBox: "0 0 35 123",
+  path: (
+    <svg width="35" height="123" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18.614 120.515L2 96.186m31.159-3.283L15.45 84.259m3.25 13.335l-5.42-4.584M18.614 2L2 26.329m31.159 3.283L15.45 38.257M18.7 24.92l-5.421 4.585" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  )
+}); 
+
+export const ArticleIcon1 = createIcon({
+  displayName: "ArticleIcon1",
+  viewBox: "0 0 87 105",
+  path: (
+    <svg width="87" height="105" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M70.04 6.702l4.72-4.72a4.896 4.896 0 016.933 0l3.491 3.491a4.896 4.896 0 010 6.933l-4.72 4.72L70.041 6.702zm-4.916 4.917l10.424 10.423-29.353 29.353a2.508 2.508 0 01-1.72.737h-6.933a2.434 2.434 0 01-2.459-2.458v-6.932c0-.64.246-1.279.738-1.721l29.303-29.402zm-9.735-.64L29.134 37.236c-.885.934-1.426 2.163-1.426 3.49V54.64a4.931 4.931 0 004.917 4.916h13.914c1.328 0 2.557-.54 3.491-1.425l26.206-26.206c1.966 4.818 3.097 10.276 3.097 16.274 0 15.635-12.046 34.023-36.088 55.214a5 5 0 01-6.54 0C12.714 82.223.668 63.834.668 48.199.667 23.714 19.35 7.882 40 7.882c5.36 0 10.62 1.082 15.39 3.098z" fill="#fff"/>
+</svg>
+  )
+}); 
+
+export const ArticleIcon2 = createIcon({
+  displayName: "ArticleIcon2",
+  viewBox: "0 0 72 72",
+  path: (
+    <svg width="72" height="72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64 8h-8V4c0-2.2-1.8-4-4-4H20c-2.2 0-4 1.8-4 4v4H8c-4.4 0-8 3.6-8 8v4c0 10.2 7.68 18.52 17.56 19.76 2.52 6 7.92 10.52 14.44 11.84V64H20c-2.2 0-4 1.8-4 4s1.8 4 4 4h32c2.2 0 4-1.8 4-4s-1.8-4-4-4H40V51.6c6.52-1.32 11.92-5.84 14.44-11.84C64.32 38.52 72 30.2 72 20v-4c0-4.4-3.6-8-8-8zM8 20v-4h8v15.28C11.36 29.6 8 25.2 8 20zm56 0c0 5.2-3.36 9.6-8 11.28V16h8v4z" fill="#fff"/>
+</svg>
+  )
+}); 
+
+export const ArticleIcon3 = createIcon({
+  displayName: "ArticleIcon3",
+  viewBox: "0 0 80 95",
+  path: (
+    <svg width="80" height="95" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M74.417 35.25H49.833l-3.54-7.129c-.835-1.672-2.556-2.704-4.425-2.704H15.417v-6.294a9.675 9.675 0 004.916-8.456c0-5.409-4.425-9.834-9.833-9.834S.667 5.258.667 10.667a9.675 9.675 0 004.916 8.457v70.21A4.931 4.931 0 0010.5 94.25a4.931 4.931 0 004.917-4.916v-14.75H40l3.54 7.129a4.912 4.912 0 004.376 2.704h26.5a4.931 4.931 0 004.917-4.917V40.167a4.931 4.931 0 00-4.916-4.917zM69.5 74.584H49.833l-4.916-9.834h-29.5v-29.5H40l4.917 9.834H69.5v29.5z" fill="#fff"/>
+</svg>
+  )
+}); 
+
+

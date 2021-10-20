@@ -26,7 +26,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Flex w="100vw" bg="gray.100" py="125px">
+    <Flex w="100vw" bg="#F4F7FE" pb="125px">
       <Flex direction="column" w="1170px" mx="auto">
         <Flex
           w="100%"
@@ -36,12 +36,14 @@ const Footer = () => {
           bgPosition="center center"
           px="58px"
           align="center"
+          overflowX="hidden"
+          transform="translateY(-50%)"
         >
           <Flex direction="column" me="100px">
-            <Text color="#fff" mb="8px" fontSize="3xl">
+            <Text color="#fff" mb="8px" fontSize="30px" fontWeight="500">
               Join over 10,000 digital creators today!
             </Text>
-            <Text color="#fff" fontSize="xl">
+            <Text color="#fff" fontSize="20px">
               No Spam. Only sweet content and updates of our products.
             </Text>
           </Flex>
@@ -70,14 +72,14 @@ const Footer = () => {
             </FormControl>
           </Flex>
         </Flex>
-        <Flex align="center" mt="125px">
+        <Flex align="center">
           <SimmmpleLogoColored w="170px" h="40px" me="40px" />
           <Text color="#878CBD">Premium UI Kits, Templates & Themes</Text>
         </Flex>
         <Divider mt="60px" mb="42px" h="1px" bg="rgba(135, 140, 189, 0.2)" />
         <Grid templateColumns="repeat(4, 1fr) 1.2fr" gap="72px">
           <Flex direction="column">
-            <Text fontSize="lg" color="brand.700" fontWeight="bold" mb="26px">
+            <Text fontSize="lg" color="brand.700" fontWeight="500" mb="26px">
               Explore
             </Text>
             <Stack direction="column" spacing="22px">
@@ -99,7 +101,7 @@ const Footer = () => {
             </Stack>
           </Flex>
           <Flex direction="column">
-            <Text fontSize="lg" color="brand.700" fontWeight="bold" mb="26px">
+            <Text fontSize="lg" color="brand.700" fontWeight="500" mb="26px">
               Company
             </Text>
             <Stack direction="column" spacing="22px">
@@ -131,7 +133,7 @@ const Footer = () => {
             </Stack>
           </Flex>
           <Flex direction="column">
-            <Text fontSize="lg" color="brand.700" fontWeight="bold" mb="26px">
+            <Text fontSize="lg" color="brand.700" fontWeight="500" mb="26px">
               Technologies
             </Text>
             <Stack direction="column" spacing="22px">
@@ -163,7 +165,7 @@ const Footer = () => {
             </Stack>
           </Flex>
           <Flex direction="column">
-            <Text fontSize="lg" color="brand.700" fontWeight="bold" mb="26px">
+            <Text fontSize="lg" color="brand.700" fontWeight="500" mb="26px">
               Resources
             </Text>
             <Stack direction="column" spacing="22px" w="100%">
@@ -198,7 +200,7 @@ const Footer = () => {
             <Text
               fontSize="lg"
               color="brand.700"
-              fontWeight="bold"
+              fontWeight="500"
               mb="26px"
               alignSelf="flex-end"
             >
@@ -274,7 +276,7 @@ const Footer = () => {
             </Stack>
             <Flex direction="column" alignSelf="flex-end">
               <Text fontSize="sm" color="#878CBD">
-                <Text as="span" color="brand.700" fontWeight="bold">
+                <Text as="span" color="brand.700" fontWeight="normal">
                   &copy; {1900 + new Date().getYear()} Simmmple
                 </Text>
                 , all rights reserved
