@@ -11,9 +11,13 @@ import {
   Link,
   Icon,
 } from "@chakra-ui/react";
-import footerBg from "assets/img/footer-background.png";
-import IconBox from "components/Icons/IconBox";
-import { SimmmpleLogoColored } from "components/Icons/Icons";
+import { NavLink } from "react-router-dom";
+
+// Custom Components
+import IconBox from "components/icons/IconBox";
+
+// Icons
+import { SimmmpleLogoColored } from "components/icons/Icons";
 import {
   AiFillGithub,
   AiOutlineInstagram,
@@ -22,7 +26,9 @@ import {
 } from "react-icons/ai";
 import { FaFacebook, FaTiktok } from "react-icons/fa";
 import { BsPinterest } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+
+// Images
+import footerBg from "assets/img/footer-background.png";
 
 const Footer = () => {
   return (

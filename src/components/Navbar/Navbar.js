@@ -18,10 +18,19 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
+
+// Custom Components
+import IconBox from "components/icons/IconBox";
+
+// Icons
+import { SimmmpleLogoBundle } from "components/icons/Icons";
+import { SimmmpleLogoWhite } from "components/icons/Icons";
 import { GoChevronDown } from "react-icons/go";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
+
+// Images
 import exploreBackground from "assets/img/explore-background.png";
 import figmaLogo from "assets/img/figma.png";
 import mailLogo from "assets/img/mail.png";

@@ -1,17 +1,15 @@
-import { Route, Switch } from "react-router-dom";
 import { Box } from "@chakra-ui/react";
-import Home from "pages/Home";
 import "assets/css/App.css";
-import Footer from "components/Footer/Footer";
-import Navbar from "components/Navbar/Navbar";
+// Custom Components
+import Navbar from "components/navbar/Navbar";
+import MainLayout from "layouts/Main.js";
+import Footer from "components/footer/Footer";
 
 function App() {
   return (
     <Box>
       <Navbar />
-      <Switch>
-        {/* <Route exact path="/" component={Home} /> */}
-      </Switch>
+      <MainLayout />
       <Footer />
     </Box>
   );
