@@ -402,6 +402,136 @@ const Bundles = () => {
             </Flex>
           </Flex>
         </Flex>
+        <Flex flexWrap={{ base: "wrap", md: "nowrap" }}>
+          <Flex
+            w='100%'
+            h='550px'
+            position='relative'
+            mb='90px'
+            borderRadius='30px'>
+            <Image
+              src={vdb}
+              w='575px'
+              h='586px'
+              borderRadius='18px'
+              position='absolute'
+              right='0'
+              top='50%'
+              transform='translate(5%, -50%);'
+              zIndex='2'
+            />
+            <Flex
+              w='100%'
+              h='100%'
+              position='relative'
+              justifyContent='flex-start'
+              overflow='hidden'
+              ps='70px'
+              pt='45px'
+              borderRadius='30px'
+              bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'>
+              <Flex w='456px' maxW='100%' flexDirection='column' zIndex='2'>
+                <Text fontWeight='bold' fontSize='50px' mb='20px' color='white'>
+                  Venus Dashboard Builder PRO
+                </Text>
+                <Text
+                  fontSize='md'
+                  lineHeight='28px'
+                  color='white'
+                  w='450px'
+                  maxW='100%'
+                  mb='40px'>
+                  Create awesome dashboards with less effort directly in Figma!
+                  The first Dashboard Builder for Figma with more than 400+
+                  widgets/cards that allows you to design dashboards quickly.
+                </Text>
+                <Flex
+                  w='100%'
+                  justifyContent={{ base: "center", lg: "space-between" }}
+                  align='center'
+                  mb='54px'>
+                  <Flex flexDirection='column'>
+                    <Text
+                      textAlign='center'
+                      fontSize='26px'
+                      lineHeight='33px'
+                      color='white'
+                      fontWeight='700'>
+                      90+
+                    </Text>
+                    <Text
+                      textAlign='center'
+                      fontSize='sm'
+                      lineHeight='14px'
+                      color='white'>
+                      Global Styles
+                    </Text>
+                  </Flex>
+                  <Flex flexDirection='column'>
+                    <Text
+                      textAlign='center'
+                      fontSize='26px'
+                      lineHeight='33px'
+                      color='white'
+                      fontWeight='700'>
+                      400+
+                    </Text>
+                    <Text
+                      textAlign='center'
+                      fontSize='sm'
+                      lineHeight='14px'
+                      color='white'>
+                      Widgets/Cards
+                    </Text>
+                  </Flex>
+                  <Flex flexDirection='column'>
+                    <Text
+                      textAlign='center'
+                      fontSize='26px'
+                      lineHeight='33px'
+                      color='white'
+                      fontWeight='700'>
+                      30+
+                    </Text>
+                    <Text
+                      textAlign='center'
+                      fontSize='sm'
+                      lineHeight='14px'
+                      color='white'>
+                      Screen Examples
+                    </Text>
+                  </Flex>
+                </Flex>
+                <Flex w='100%' justifyContent='space-between' align='center'>
+                  <Button
+                    color='#FF4555'
+                    fontWeight='400'
+                    fontSize='sm'
+                    lineHeight='14px'
+                    h='56px'
+                    w='190px'>
+                    Live Preview
+                  </Button>
+                  <Button
+                    color='white'
+                    bg='none'
+                    border='1px solid white'
+                    _hover={{
+                      bg: "none",
+                      opacity: "0.8",
+                    }}
+                    fontWeight='400'
+                    fontSize='sm'
+                    lineHeight='14px'
+                    h='56px'
+                    w='190px'>
+                    More Details
+                  </Button>
+                </Flex>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Flex>
       </Flex>
     </Flex>
   );
