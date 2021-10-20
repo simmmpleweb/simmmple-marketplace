@@ -1,13 +1,22 @@
-import Apps from "/pages/Apps.jsx";
-import Blog from "/pages/Blog.jsx";
-import Bundles from "/pages/Bundles.jsx";
-import Home from "/pages/Home.jsx";
-import Contact from "/pages/Support/Contact.jsx";
-import Others from "/pages/Support/Others.jsx";
-import Partnerships from "/pages/Support/Partnerships.jsx";
-import SubmissionReceived from "/pages/Support/SubmissionReceived.jsx";
-import SupportPage from "/pages/Support/SupportPage.jsx";
+// import Apps from "../src/pages/Apps.jsx";
+// import Blog from "../src/pages/Blog.jsx";
+// import Bundles from "../src/pages/Bundles";
+// import Home from "../src/pages/Home.jsx";
+// import Contact from "../src/pages/Support/Contact.jsx";
+// import Others from "../src/pages/Support/Others.jsx";
+// import Partnerships from "../src/pages/Support/Partnerships.jsx";
+// import SubmissionReceived from "../src/pages/Support/SubmissionReceived.jsx";
+// import SupportPage from "../src/pages/Support/SupportPage.jsx";
 
+import Apps from "../src/pages/Apps.jsx";
+import Blog from "../src/pages/Blog.jsx";
+import Bundles from "../src/pages/Bundles";
+import Home from "../src/pages/Home.jsx";
+import Contact from "../src/pages/Support/Contact.jsx";
+import Others from "../src/pages/Support/Others.jsx";
+import Partnerships from "../src/pages/Support/Partnerships.jsx";
+import SubmissionReceived from "../src/pages/Support/SubmissionReceived.jsx";
+import SupportPage from "../src/pages/Support/SupportPage.jsx";
 const routes = [
   {
     name: "Homepage",
@@ -65,4 +74,4 @@ const routes = [
   },
 ];
 
-export default dashRoutes;
+export default routes;
