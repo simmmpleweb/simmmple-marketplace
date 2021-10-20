@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { NavLink } from "react-router-dom";
 import {
   Flex,
   Box,
@@ -11,31 +12,33 @@ import {
   Button,
   Tag,
 } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
-import Card from "../components/Card/Card";
-import CardBody from "../components/Card/CardBody";
 
-import homeBg from "../assets/img/home-background.png";
-import onHomeBg from "../assets/img/on-home-background.png";
-import bundleBg from "../assets/img/bundle-background.png";
-import googleLogo from "../assets/img/google.png";
-import msnLogo from "../assets/img/msn.png";
-import microsoftLogo from "../assets/img/microsoft.png";
-import zohoLogo from "../assets/img/zoho.png";
-import georgiatechLogo from "../assets/img/georgiatech.png";
-import deloitteLogo from "../assets/img/deloitte.png";
-import figmaLogo from "../assets/img/figma2.png";
-import vscodeLogo from "../assets/img/vscode2.png";
-import mailLogo from "../assets/img/mail2.png";
-import simmmpleButtonLogo from "../assets/img/simmmple-button.png";
-import { LeftButtonEffect, RightButtonEffect, SimmmpleLogoBundle, ArticleIcon1, ArticleIcon2, ArticleIcon3 } from "../components/Icons/Icons";
+// Custom Components
+import Card from "components/card/Card";
+import CardBody from "components/card/CardBody";
+import ProductList from "components/products/ProductList";
+import Countdown from "components/countdown/Countdown";
+import { featuredProducts } from "variables/products";
 
+// Icons
+import { LeftButtonEffect, RightButtonEffect, SimmmpleLogoBundle, ArticleIcon1, ArticleIcon2, ArticleIcon3 } from "components/icons/Icons";
 import { BsSearch } from "react-icons/bs";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-import ProductList from "../components/Products/ProductList";
-import { featuredProducts } from "../variables/products";
-import Countdown from "../components/Countdown/Countdown";
+// Images
+import homeBg from "assets/img/home-background.png";
+import onHomeBg from "assets/img/on-home-background.png";
+import bundleBg from "assets/img/bundle-background.png";
+import googleLogo from "assets/img/google.png";
+import msnLogo from "assets/img/msn.png";
+import microsoftLogo from "assets/img/microsoft.png";
+import zohoLogo from "assets/img/zoho.png";
+import georgiatechLogo from "assets/img/georgiatech.png";
+import deloitteLogo from "assets/img/deloitte.png";
+import figmaLogo from "assets/img/figma2.png";
+import vscodeLogo from "assets/img/vscode2.png";
+import mailLogo from "assets/img/mail2.png";
+import simmmpleButtonLogo from "assets/img/simmmple-button.png";
 
 const Home = () => {
 

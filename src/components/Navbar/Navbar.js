@@ -12,16 +12,22 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
+
+// Custom Components
+import IconBox from "components/icons/IconBox";
+
+// Icons
+import { SimmmpleLogoBundle } from "components/icons/Icons";
+import { SimmmpleLogoWhite } from "components/icons/Icons";
 import { GoChevronDown } from "react-icons/go";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+
+// Images
 import exploreBackground from "assets/img/explore-background.png";
 import figmaLogo from "assets/img/figma.png";
 import mailLogo from "assets/img/mail.png";
 import vscodeLogo from "assets/img/vscode.png";
-import { SimmmpleLogoBundle } from "components/Icons/Icons";
-import IconBox from "components/Icons/IconBox";
-import { SimmmpleLogoWhite } from "components/Icons/Icons";
 
 function Navbar() {
   const {
@@ -201,7 +207,14 @@ function Navbar() {
             <Icon as={GoChevronDown} w="12px" h="12px" color="#fff" mt="4px" />
           </Flex>
         </Stack>
-        <Button w="160px" h="56px" bg="transparent" zIndex="1" border="1px solid #fff" _hover={{bg: "#4B63CD", color: "#fff"}}>
+        <Button
+          w="160px"
+          h="56px"
+          bg="transparent"
+          zIndex="1"
+          border="1px solid #fff"
+          _hover={{ bg: "#4B63CD", color: "#fff" }}
+        >
           <Text fontSize="sm" fontWeight="500" color="#fff">
             Get Started
           </Text>

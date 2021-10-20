@@ -1,10 +1,11 @@
 import { Route, Switch } from "react-router-dom";
 import { Box } from "@chakra-ui/react";
-import Home from "pages/Home";
 import "assets/css/App.css";
-import Footer from "components/Footer/Footer";
-import MainLayout from "layouts/main";
-import Navbar from "components/Navbar/Navbar";
+
+// Custom Components
+import Navbar from "components/navbar/Navbar";
+import MainLayout from "layouts/Main";
+import Footer from "components/footer/Footer";
 
 function App() {
   return (

@@ -1,22 +1,17 @@
-import React from 'react';
-import { Grid, } from "@chakra-ui/react";
-import ProductItem from "./ProductItem";
+import React from "react";
+import { Grid } from "@chakra-ui/react";
 
-const ProductList = ({products}) => {
-    return (
-        <Grid templateColumns="repeat(3, 1fr)" gap="22px">
-            {
-                products.map(({...otherProductProps}, index) => {
-                    return (
-                        <ProductItem 
-                            key={index}
-                            {...otherProductProps}
-                        />
-                    )
-                })
-            }
-        </Grid>
-    )
-}
+// Custom Components
+import ProductItem from "components/products/ProductItem";
 
-export default ProductList
+const ProductList = ({ products }) => {
+  return (
+    <Grid templateColumns="repeat(3, 1fr)" gap="22px">
+      {products.map(({ ...otherProductProps }, index) => {
+        return <ProductItem key={index} {...otherProductProps} />;
+      })}
+    </Grid>
+  );
+};
+
+export default ProductList;
