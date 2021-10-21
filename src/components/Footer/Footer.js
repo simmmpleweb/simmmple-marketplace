@@ -28,7 +28,7 @@ import { FaFacebook, FaTiktok } from "react-icons/fa";
 import { BsPinterest } from "react-icons/bs";
 
 // Images
-import footerBg from "assets/img/footer-background.png";
+import footerBg from "assets/img/footer/footer-background.png";
 
 const Footer = () => {
   return (
