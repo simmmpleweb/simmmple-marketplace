@@ -1,28 +1,25 @@
 import React, { useRef } from "react";
-import { NavLink } from "react-router-dom";
-import { Flex, Box, Image, Text, Grid, Button, Tag } from "@chakra-ui/react";
+import { Flex, Box, Image, Text, Grid, Button } from "@chakra-ui/react";
 
 // Custom Components
 import Card from "components/card/Card";
 import CardBody from "components/card/CardBody";
-import ProductList from "components/products/ProductList";
 import Countdown from "components/countdown/Countdown";
-import { featuredProducts } from "variables/products";
+import { HSeparator } from "components/separator/Separator";
 
 // Icons
 import {
   LeftButtonEffect,
   RightButtonEffect,
   SimmmpleLogoBundle,
-  ArticleIcon1,
-  ArticleIcon2,
-  ArticleIcon3,
+  GradientIcon,
 } from "components/icons/Icons";
 
 // Images
 import bundlesBg from "assets/img/bundles/bundles-background.png";
 import medal from "assets/img/bundles/medal.png";
 import trophy from "assets/img/bundles/trophy.png";
+import stars from "assets/img/bundles/bundles-stars.png";
 import simmmpleFolder from "assets/img/bundles/simmmple-folder.png";
 import developers from "assets/img/bundles/developers.png";
 import sensualBg from "assets/img/bundles/sensual-background.png";
@@ -31,6 +28,12 @@ import vdb from "assets/img/bundles/vdb.png";
 import sensual from "assets/img/bundles/sensual.png";
 import venus from "assets/img/bundles/venus.png";
 import uranus from "assets/img/bundles/uranus.png";
+import googleLogo from "assets/img/homepage/google.png";
+import msnLogo from "assets/img/homepage/msn.png";
+import microsoftLogo from "assets/img/homepage/microsoft.png";
+import zohoLogo from "assets/img/homepage/zoho.png";
+import georgiatechLogo from "assets/img/homepage/georgiatech.png";
+import deloitteLogo from "assets/img/homepage/deloitte.png";
 
 const Bundles = () => {
   const leftEffect = useRef();
@@ -103,6 +106,40 @@ const Bundles = () => {
           </Flex>
         </Flex>
       </Flex>
+      <Grid
+        mx='auto'
+        maxW='1170px'
+        templateColumns='repeat(6, 1fr)'
+        gap='70px'
+        align='center'
+        justify='center'
+        bg='#fff'
+        borderRadius='30px'
+        p='45px 100px'
+        boxShadow='0px 18px 40px rgba(112, 144, 176, 0.12)'
+        w='100%'
+        transform='translateY(-50%)'
+        mb='50px'>
+        <Flex align='center' justify='center'>
+          <Image src={googleLogo} />
+        </Flex>
+        <Flex align='center' justify='center'>
+          <Image src={msnLogo} />
+        </Flex>
+        <Flex align='center' justify='center'>
+          <Image src={microsoftLogo} />
+        </Flex>
+        <Flex align='center' justify='center'>
+          <Image src={zohoLogo} />
+        </Flex>
+        <Flex align='center' justify='center'>
+          <Image src={georgiatechLogo} />
+        </Flex>
+        <Flex align='center' justify='center'>
+          <Image src={deloitteLogo} />
+        </Flex>
+      </Grid>
+
       <Flex py='100px' direction='column' w='1170px' mx='auto'>
         <Flex direction='column' align='center' w='100%' mb='72px' mx='auto'>
           <Text
@@ -163,6 +200,14 @@ const Bundles = () => {
               <Flex flexDirection='column' align='center'>
                 <Flex mb='auto' flexDirection='column'>
                   <Image src={trophy} w='100px' h='100px' />
+                  <Image
+                    src={stars}
+                    w='96px'
+                    h='21.6px'
+                    boxShadow='0px 15px 41px -4px #7090B099'
+                    borderRadius='30px'
+                    transform='translate(0px, -10px)'
+                  />
                 </Flex>
                 <Text
                   textAlign='center'
