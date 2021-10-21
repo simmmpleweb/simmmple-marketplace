@@ -9,7 +9,7 @@ function App() {
   return (
     <Box>
       <Navbar />
-      {/* <MainLayout /> */}
+      <MainLayout />
       <Footer />
     </Box>
   );

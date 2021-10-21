@@ -32,7 +32,7 @@ import footerBg from "assets/img/footer-background.png";
 
 const Footer = () => {
   return (
-    <Flex w="100%" bg="#F4F7FE" pb="125px" pt="500px">
+    <Flex w="100%" bg="#F4F7FE" pb="125px">
       <Flex
         direction="column"
         w={{ sm: "350px", md: "740px", lg: "970px", xl: "1170px" }}
