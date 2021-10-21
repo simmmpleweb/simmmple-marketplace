@@ -7,9 +7,9 @@ import Footer from "components/footer/Footer";
 
 function App() {
   return (
-    <Box overflowX="hidden">
+    <Box>
       <Navbar />
-      <MainLayout />
+      {/* <MainLayout /> */}
       <Footer />
     </Box>
   );
