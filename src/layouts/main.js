@@ -35,7 +35,7 @@ export default function MainLayout() {
   return (
     <Switch>
       {getRoutes(routes)}
-      <Redirect from="/" to="/homepage" />
+      <Redirect from='/' to='/homepage' />
     </Switch>
   );
 }
