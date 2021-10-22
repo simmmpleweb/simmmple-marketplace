@@ -36,11 +36,11 @@ const ProductItem = ({ image, tag, price, title, category, path }) => {
                 {price}
               </Tag>
             </Flex>
-            <Flex direction='column' p='0px 12px 0px 12px'>
+            <Flex direction='column' p='0px 12px 0px 12px' alignSelf="flex-start">
               <Text color='brand.700' fontSize='22px' fontWeight='500' mb='5px'>
                 {title}
               </Text>
-              <Text color='#878CBD' fontWeight='400' fontSize='sm'>
+              <Text color='#878CBD' fontWeight='400' fontSize='sm' alignSelf="flex-start">
                 Category: {category}
               </Text>
             </Flex>
