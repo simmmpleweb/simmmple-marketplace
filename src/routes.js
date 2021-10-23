@@ -62,6 +62,24 @@ const routes = [
     secondary: true,
     component: SubmissionReceived,
   },
+  {
+    name: "Licenses",
+    path: "/licenses",
+    secondary: true,
+    component: Licenses,
+  },
+  {
+    name: "Terms & Conditions",
+    path: "/terms-of-service",
+    secondary: true,
+    component: TermsConditions,
+  },
+  {
+    name: "Privacy Policy",
+    path: "/privacy-policy",
+    secondary: true,
+    component: PrivacyPolicy,
+  },
 ];
 
 export default routes;
