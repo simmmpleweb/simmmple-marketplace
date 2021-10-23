@@ -2,6 +2,7 @@ import Apps from "pages/Apps.jsx";
 import Blog from "pages/Blog.jsx";
 import Bundles from "pages/Bundles";
 import Home from "pages/Home.jsx";
+import Product from "pages/Product";
 import Contact from "pages/support/Contact.jsx";
 import Others from "pages/support/Others.jsx";
 import Partnerships from "pages/support/Partnerships.jsx";
@@ -13,6 +14,12 @@ const routes = [
     path: "/homepage",
     secondary: false,
     component: Home,
+  },
+  {
+    name: "Product Page",
+    path: "/product/:productName",
+    secondary: true,
+    component: Product,
   },
   {
     name: "Apps and Plugins",
