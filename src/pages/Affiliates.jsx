@@ -11,9 +11,13 @@ import { HSeparator } from "components/separator/Separator";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const PrivacyPolicy = () => {
+const Affiliates = () => {
   return (
-    <Flex direction='column' bg='white' overflowX='hidden'>
+    <Flex
+      direction='column'
+      bg='white'
+      boxShadow='75px 85px 113px 0px #7090B014'
+      overflowX='hidden'>
       <Flex pb='100px' direction='column' w='775px' mx='auto' mt='136px'>
         {/* Mini Navbar */}
         <Flex
@@ -40,19 +44,19 @@ const PrivacyPolicy = () => {
               </Text>
             </NavLink>
           </Flex>
-          <Flex
-            justify='center'
-            align='center'
-            w='130px'
-            borderRadius='30px'
-            bg='white'>
+          <Flex justify='center' align='center' w='130px' borderRadius='30px'>
             <NavLink to='/privacy-policy' color='brand.300'>
               <Text fontWeight='500' color='brand.300'>
                 Privacy Policy
               </Text>
             </NavLink>
           </Flex>
-          <Flex justify='center' align='center' w='130px' borderRadius='30px'>
+          <Flex
+            justify='center'
+            align='center'
+            w='130px'
+            borderRadius='30px'
+            bg='white'>
             <NavLink to='/affiliates' color='brand.300'>
               <Text fontWeight='500' color='brand.300'>
                 Affiliates
@@ -62,8 +66,8 @@ const PrivacyPolicy = () => {
         </Flex>
         {/* Main Section */}
         <Flex
-          boxShadow='75px 85px 113px 0px #7090B014'
           bg='white'
+          boxShadow='75px 85px 113px 0px #7090B014'
           border='1px solid'
           borderColor='#E9EDF7'
           borderRadius='30px'
@@ -94,4 +98,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default Affiliates;

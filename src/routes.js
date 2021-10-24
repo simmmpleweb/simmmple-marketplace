@@ -8,6 +8,7 @@ import TermsConditions from "pages/TermsConditions";
 import Product from "pages/Product";
 import Contact from "pages/support/Contact.jsx";
 import Others from "pages/support/Others.jsx";
+import Affiliates from "pages/Affiliates";
 import Partnerships from "pages/support/Partnerships.jsx";
 import SubmissionReceived from "pages/support/SubmissionReceived.jsx";
 import SupportPage from "pages/support/SupportPage.jsx";
@@ -89,6 +90,12 @@ const routes = [
     path: "/privacy-policy",
     secondary: true,
     component: PrivacyPolicy,
+  },
+  {
+    name: "Affiliates",
+    path: "/affiliates",
+    secondary: true,
+    component: Affiliates,
   },
 ];
 
