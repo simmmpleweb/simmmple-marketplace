@@ -8,9 +8,10 @@ import Others from "pages/support/Others.jsx";
 import Partnerships from "pages/support/Partnerships.jsx";
 import SubmissionReceived from "pages/support/SubmissionReceived.jsx";
 import SupportPage from "pages/support/SupportPage.jsx";
+import Templates from "pages/Templates";
 const routes = [
   {
-    name: "Homepage",
+    name: "Home page",
     path: "/homepage",
     secondary: false,
     component: Home,
@@ -20,6 +21,12 @@ const routes = [
     path: "/product/:productName",
     secondary: true,
     component: Product,
+  },
+  {
+    name: "Templates Page",
+    path: "/templates/:templateName",
+    secondary: false,
+    component: Templates,
   },
   {
     name: "Apps and Plugins",
