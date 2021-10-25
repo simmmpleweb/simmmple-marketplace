@@ -14,7 +14,7 @@ import { NavLink } from "react-router-dom";
 
 const Licenses = () => {
   return (
-    <Flex direction='column' overflowX='hidden'>
+    <Flex direction='column' overflowX='hidden' mb='100px'>
       <Flex pb='100px' direction='column' w='775px' mx='auto' mt='136px'>
         {/* Mini Navbar */}
         <Flex
@@ -959,7 +959,7 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='40px'>
                 This license allows you access to the product's designer files.
               </Text>
             </ListItem>
@@ -983,6 +983,3 @@ const Licenses = () => {
 };
 
 export default Licenses;
-/*
-
-*/

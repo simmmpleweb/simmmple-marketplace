@@ -5,6 +5,7 @@ import {
   ListItem,
   Text,
   UnorderedList,
+  OrderedList,
 } from "@chakra-ui/react";
 // Custom Components
 import { HSeparator } from "components/separator/Separator";
@@ -82,7 +83,91 @@ const PrivacyPolicy = () => {
             End User License Agreement
           </Text>
           <HSeparator w='100%' mb='40px' mx='auto' />
+          <OrderedList>
+            <ListItem color='#878CBD'>
+              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+                The Enterprise License grants you, the purchaser, an ongoing,
+                non-exclusive, worldwide license to make use of the digital work
+                (
+                <Text fontWeight='500' mx='3px' as='span'>
+                  Item
+                </Text>
+                ) you have selected. Read the rest of this license for the
+                details that apply to your use of the Item.
+              </Text>
+            </ListItem>
+            <ListItem color='#878CBD'>
+              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+                You are licensed to use the Item to create multiple End Products
+                for yourself or for clients, and the End Product may be Sold.
+              </Text>
+            </ListItem>
+            <ListItem color='#878CBD'>
+              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+                An End Product is one of the following things, both requiring an
+                application of skill and effort.
+              </Text>
+            </ListItem>
+            <Text
+              ps='75px'
+              color='#878CBD'
+              fontSize='md'
+              lineHeight='28px'
+              fontWeight='400'
+              mb='25px'>
+              a. For an Item that is a template, the End Product is a customised
+              implementation of the Item. For example: the item is a website
+              template and the end product is the final website customised with
+              your content.
+            </Text>
+            <Text
+              ps='75px'
+              color='#878CBD'
+              fontSize='md'
+              lineHeight='28px'
+              fontWeight='400'
+              mb='25px'>
+              b. For other types of Item, an End Product is something that
+              incorporates the Item as well as other things, so that it is
+              larger in scope and different in nature than the Item. For
+              example: the item is an UI Kit and the end product is a website.
+            </Text>
+          </OrderedList>
+          <HSeparator w='100%' mb='40px' mx='auto' />
+          <Text
+            fontSize='md'
+            lineHeight='28px'
+            fontWeight='400'
+            textAlign='center'
+            mx='auto'>
+            Got a question?{" "}
+            <Link to='#' textDecoration='underline' color='brand.300' mx='3px'>
+              Contact us.
+            </Link>
+          </Text>
         </Flex>
+        {/* x. */}
+        <Text
+          color='brand.700'
+          fontSize='30px'
+          lineHeight='40px'
+          fontWeight='500'
+          mb='16px'
+          display='flex'>
+          General
+        </Text>
+        <Text
+          color='#878CBD'
+          fontSize='md'
+          lineHeight='28px'
+          fontWeight='400'
+          mb='45px'>
+          Supplemental terms and conditions or documents that may be posted on
+          the Site from time to time are hereby expressly incorporated herein by
+          reference. We reserve the right, in our sole discretion, to make
+          changes or modifications to these Terms of Use at any time and for any
+          reason
+        </Text>
         <Link to='#' textDecoration='underline' color='brand.300' mx='3px'>
           contact page
         </Link>
@@ -95,3 +180,6 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
+
+/*
+ */

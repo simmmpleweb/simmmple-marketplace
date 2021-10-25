@@ -86,7 +86,40 @@ const Affiliates = () => {
             End User License Agreement
           </Text>
           <HSeparator w='100%' mb='40px' mx='auto' />
+          <Text
+            fontSize='md'
+            lineHeight='28px'
+            fontWeight='400'
+            textAlign='center'
+            mx='auto'>
+            Got a question?{" "}
+            <Link to='#' textDecoration='underline' color='brand.300' mx='3px'>
+              Contact us.
+            </Link>
+          </Text>
         </Flex>
+        {/* x. */}
+        <Text
+          color='brand.700'
+          fontSize='30px'
+          lineHeight='40px'
+          fontWeight='500'
+          mb='16px'
+          display='flex'>
+          General
+        </Text>
+        <Text
+          color='#878CBD'
+          fontSize='md'
+          lineHeight='28px'
+          fontWeight='400'
+          mb='45px'>
+          Supplemental terms and conditions or documents that may be posted on
+          the Site from time to time are hereby expressly incorporated herein by
+          reference. We reserve the right, in our sole discretion, to make
+          changes or modifications to these Terms of Use at any time and for any
+          reason
+        </Text>
         <Link to='#' textDecoration='underline' color='brand.300' mx='3px'>
           contact page
         </Link>
