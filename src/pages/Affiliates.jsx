@@ -83,7 +83,64 @@ const Affiliates = () => {
             textAlign='center'
             mx='auto'
             mb='50px'>
-            End User License Agreement
+            Affiliate Notice
+          </Text>
+          <HSeparator w='100%' mb='40px' mx='auto' />
+          {/* 1. */}
+          <Text
+            color='#878CBD'
+            fontSize='md'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            Please note, some of the links used on our website (
+            <Text fontWeight='500' mx='3px' as='span'>
+              https://simmmple.com
+            </Text>
+            ) are affiliate links, meaning, at no additional cost to you, we can
+            earn a commission if you click through and make a purchase.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='md'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            Affiliates help us keep the lights on, without impacting our users
+            experience in anyway!
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='md'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            If you have any questions at all please feel free to contact us,
+            we're here to help!
+          </Text>
+          {/* 2. */}
+          <Text
+            color='brand.700'
+            fontSize='30px'
+            lineHeight='40px'
+            fontWeight='500'
+            mb='16px'
+            display='flex'>
+            Contact
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='md'
+            lineHeight='38px'
+            fontWeight='400'
+            mb='45px'>
+            You may contact us at any time via:
+            <br />
+            Simmmple
+            <br />
+            email: hello@simmmple.com
+            <br />
+            Version 1.0.0 (15/11/2021)
           </Text>
           <HSeparator w='100%' mb='40px' mx='auto' />
           <Text
@@ -132,3 +189,8 @@ const Affiliates = () => {
 };
 
 export default Affiliates;
+
+/*
+
+
+*/
