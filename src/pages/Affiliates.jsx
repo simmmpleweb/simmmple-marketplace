@@ -89,7 +89,7 @@ const Affiliates = () => {
           {/* 1. */}
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -102,7 +102,7 @@ const Affiliates = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -111,7 +111,7 @@ const Affiliates = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -130,7 +130,7 @@ const Affiliates = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='38px'
             fontWeight='400'
             mb='45px'>
@@ -144,7 +144,7 @@ const Affiliates = () => {
           </Text>
           <HSeparator w='100%' mb='40px' mx='auto' />
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             textAlign='center'
@@ -167,7 +167,7 @@ const Affiliates = () => {
         </Text>
         <Text
           color='#878CBD'
-          fontSize='md'
+          fontSize='lg'
           lineHeight='28px'
           fontWeight='400'
           mb='45px'>
@@ -189,8 +189,3 @@ const Affiliates = () => {
 };
 
 export default Affiliates;
-
-/*
-
-
-*/

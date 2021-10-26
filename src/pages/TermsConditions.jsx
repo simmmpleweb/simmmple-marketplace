@@ -95,7 +95,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -126,7 +126,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -145,7 +145,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -170,7 +170,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -194,7 +194,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -217,7 +217,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -236,7 +236,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -247,7 +247,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -263,7 +263,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -290,7 +290,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -312,7 +312,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'
@@ -339,7 +339,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -347,7 +347,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -363,7 +363,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -376,7 +376,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -401,7 +401,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='500'
             mb='45px'>
@@ -412,7 +412,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -430,7 +430,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='500'
             mb='45px'>
@@ -448,7 +448,7 @@ const TermsConditions = () => {
           </Text>
           <OrderedList>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 The creation, distribution, transmission, public display, or
                 performance, and the accessing, downloading, or copying of your
                 Contributions do not and will not infringe the proprietary
@@ -457,7 +457,7 @@ const TermsConditions = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You are the creator and owner of or have the necessary licenses,
                 rights, consents, releases, and permissions to use and to
                 authorize us, the Site, and other users of the Site to use your
@@ -466,7 +466,7 @@ const TermsConditions = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You have the written consent, release, and/or permission of each
                 and every identifiable individual person in your Contributions
                 to use the name or likeness of each and every such identifiable
@@ -476,72 +476,72 @@ const TermsConditions = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions are not false, inaccurate, or misleading.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions are not unsolicited or unauthorized
                 advertising, promotional materials, pyramid schemes, chain
                 letters, spam, mass mailings, or other forms of solicitation.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions are not obscene, lewd, lascivious, filthy,
                 violent, harassing, libelous, slanderous, or otherwise
                 objectionable (as determined by us).
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions do not ridicule, mock, disparage, intimidate,
                 or abuse anyone.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions are not used to harass or threaten (in the
                 legal sense of those terms) any other person and to promote
                 violence against a specific person or class of people.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions do not violate any applicable law,
                 regulation, or rule.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions do not violate the privacy or publicity
                 rights of any third party.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions do not contain any material that solicits
                 personal information from anyone under the age of 18 or exploits
                 people under the age of 18 in a sexual or violent manner.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions do not violate any applicable law concerning
                 child pornography, or otherwise intended to protect the health
                 or well-being of minors.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions do not include any offensive comments that
                 are connected to race, national origin, gender, sexual
                 preference, or physical handicap.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Your Contributions do not otherwise violate, or link to material
                 that violates, any provision of these Terms of Use, or any
                 applicable law or regulation.
@@ -550,7 +550,7 @@ const TermsConditions = () => {
           </OrderedList>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -571,7 +571,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -581,7 +581,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -591,7 +591,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -617,7 +617,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -647,7 +647,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -678,7 +678,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -697,7 +697,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -721,7 +721,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -736,7 +736,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -767,7 +767,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -815,7 +815,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -846,7 +846,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -881,7 +881,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -908,7 +908,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -939,7 +939,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -977,7 +977,7 @@ const TermsConditions = () => {
           </Text>
           <Text
             color='#878CBD'
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
@@ -996,7 +996,7 @@ const TermsConditions = () => {
           </Text>
           <HSeparator w='100%' mb='40px' mx='auto' />
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             textAlign='center'

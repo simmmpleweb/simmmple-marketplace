@@ -92,7 +92,7 @@ const Licenses = () => {
             General
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -111,7 +111,7 @@ const Licenses = () => {
             terms and conditions of this Agreement.
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -135,7 +135,7 @@ const Licenses = () => {
             License Period
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -161,7 +161,7 @@ const Licenses = () => {
             About the Source Code
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -182,7 +182,7 @@ const Licenses = () => {
             Use of the License
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -202,7 +202,7 @@ const Licenses = () => {
             Freebies License
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -210,7 +210,7 @@ const Licenses = () => {
             All our free items are Open Source and licensed under MIT.
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -218,7 +218,7 @@ const Licenses = () => {
             MIT License
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -226,7 +226,7 @@ const Licenses = () => {
             Copyright (c) 2021 Simmmple Web LLC
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -240,7 +240,7 @@ const Licenses = () => {
             subject to the following conditions:
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -249,7 +249,7 @@ const Licenses = () => {
             included in all copies or substantial portions of the Software.
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -274,7 +274,7 @@ const Licenses = () => {
             Freebies License
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -282,7 +282,7 @@ const Licenses = () => {
             All our free items are Open Source and licensed under MIT.
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -290,7 +290,7 @@ const Licenses = () => {
             MIT License
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -298,7 +298,7 @@ const Licenses = () => {
             Copyright (c) 2021 Simmmple Web LLC
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -312,7 +312,7 @@ const Licenses = () => {
             subject to the following conditions:
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -321,7 +321,7 @@ const Licenses = () => {
             included in all copies or substantial portions of the Software.
           </Text>
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             color='#878CBD'
             fontWeight='400'
@@ -350,7 +350,7 @@ const Licenses = () => {
           </Text>
           <OrderedList>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 The Freelancer License grants you, the purchaser, an ongoing,
                 non-exclusive, worldwide license to make use of the digital work
                 (
@@ -362,14 +362,14 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You are licensed to use the Item to create one single End
                 Product for yourself or for one client (a “single application”),
                 and the End Product can be distributed for Free.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 An End Product is one of the following things, both requiring an
                 application of skill and effort.
               </Text>
@@ -378,7 +378,7 @@ const Licenses = () => {
             <Text
               ps='75px'
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -390,7 +390,7 @@ const Licenses = () => {
             <Text
               ps='75px'
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -401,20 +401,20 @@ const Licenses = () => {
             </Text>
 
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can create one End Product for a client, and you can
                 transfer that single End Product to your client for any fee.
                 This license is then transferred to your client.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can make any number of copies of the single End Product, as
                 long as the End Product is distributed for Free.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can modify or manipulate the Item. You can combine the Item
                 with other works and make a derivative work from it. The
                 resulting works are subject to the terms of this license. You
@@ -423,14 +423,14 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t Sell the End Product, except to one client. (If you or
                 your client want to Sell the End Product, you will need the
                 Extended License.)
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t re-distribute the Item as stock, in a tool or
                 template, or with source files. You can’t do this with an Item
                 either on its own or bundled with other items, and even if you
@@ -440,7 +440,7 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -450,7 +450,7 @@ const Licenses = () => {
               website for your users to download.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t use the Item in any application allowing an end user
                 to customise a digital or physical product to their specific
                 needs, such as an “on demand”, “made to order” or “build it
@@ -461,7 +461,7 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -471,18 +471,18 @@ const Licenses = () => {
               website for your users to download.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You must not permit an end user of the End Product to extract
                 the Item and use it separately from the End Product.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t use an Item in a logo, trademark, or service mark.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 For some Items, a component of the Item will be sourced from
                 elsewhere and different license terms may apply to the
                 component, such as someone else’s license or an open source or
@@ -495,7 +495,7 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -504,7 +504,7 @@ const Licenses = () => {
               specific images. This license applies to the rest of the theme.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can only use the Item for lawful purposes. Also, if an Item
                 contains an image of a person, even if the Item is
                 model-released you can’t use it in a way that creates a fake
@@ -514,7 +514,7 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license applies in conjunction with the
                 <Link
                   to='#'
@@ -529,14 +529,14 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license can be terminated if you breach it. If that
                 happens, you must stop making copies of or distributing the End
                 Product until you remove the Item from it.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Simmmple retains ownership of the Item but grants you the
                 license on these terms. This license is between Simmmple and
                 you.
@@ -558,7 +558,7 @@ const Licenses = () => {
           </Text>
           <OrderedList>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 The Company License grants you, the purchaser, an ongoing,
                 non-exclusive, worldwide license to make use of the digital work
                 (
@@ -570,13 +570,13 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You are licensed to use the Item to create multiple End Products
                 for yourself or for clients, and the End Product may be Sold.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 An End Product is one of the following things, both requiring an
                 application of skill and effort.
               </Text>
@@ -585,7 +585,7 @@ const Licenses = () => {
             <Text
               ps='75px'
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -597,7 +597,7 @@ const Licenses = () => {
             <Text
               ps='75px'
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -607,18 +607,18 @@ const Licenses = () => {
               example: the item is an UI Kit and the end product is a website.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can create the End Product for a client, and this license is
                 then transferred from you to your client.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can Sell and make any number of copies of the End Product.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can modify or manipulate the Item. You can combine the Item
                 with other works and make a derivative work from it. The
                 resulting works are subject to the terms of this license. You
@@ -627,14 +627,14 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license is a “multi-use” license and not a “single
                 application” license, which means that you can use the Item to
                 create more than one unique End Product.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t re-distribute the Item as stock, in a tool or
                 template, or with source files. You can’t do this with an Item
                 either on its own or bundled with other items. You can’t
@@ -644,7 +644,7 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -652,7 +652,7 @@ const Licenses = () => {
               as-is on your website for your users to download.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t use the Item in any application allowing an end user
                 to customise a digital or physical product to their specific
                 needs, such as an “on demand”, “made to order” or “build it
@@ -663,25 +663,25 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
               For example: you can't create a website builder.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You must not permit an end user of the End Product to extract
                 the Item and use it separately from the End Product.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t use an Item in a logo, trademark, or service mark.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 For some Items, a component of the Item will be sourced from
                 elsewhere and different license terms may apply to the
                 component, such as someone else’s license or an open source or
@@ -694,7 +694,7 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -703,7 +703,7 @@ const Licenses = () => {
               specific images. This license applies to the rest of the theme.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can only use the Item for lawful purposes. Also, if an Item
                 contains an image of a person, even if the Item is
                 model-released you can’t use it in a way that creates a fake
@@ -713,7 +713,7 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license applies in conjunction with the
                 <Link
                   to='#'
@@ -728,28 +728,28 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license can be terminated if you breach it. If that
                 happens, you must stop making copies of or distributing the End
                 Product until you remove the Item from it.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Simmmple retains ownership of the Item but grants you the
                 license on these terms. This license is between Simmmple and
                 you.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 The Company License allows you to create unlimited End Products
                 you want and deploy them on how many domains like
                 endproduct1.com, endproduct2.com, endproductx.com.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license allows you access to the product's designer files.
               </Text>
             </ListItem>
@@ -769,7 +769,7 @@ const Licenses = () => {
           </Text>
           <OrderedList>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 The Enterprise License grants you, the purchaser, an ongoing,
                 non-exclusive, worldwide license to make use of the digital work
                 (
@@ -781,13 +781,13 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You are licensed to use the Item to create multiple End Products
                 for yourself or for clients, and the End Product may be Sold.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 An End Product is one of the following things, both requiring an
                 application of skill and effort.
               </Text>
@@ -795,7 +795,7 @@ const Licenses = () => {
             <Text
               ps='75px'
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -807,7 +807,7 @@ const Licenses = () => {
             <Text
               ps='75px'
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -817,18 +817,18 @@ const Licenses = () => {
               example: the item is an UI Kit and the end product is a website.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can create the End Product for a client, and this license is
                 then transferred from you to your client.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can Sell and make any number of copies of the End Product.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can modify or manipulate the Item. You can combine the Item
                 with other works and make a derivative work from it. The
                 resulting works are subject to the terms of this license. You
@@ -837,14 +837,14 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license is a “multi-use” license and not a “single
                 application” license, which means that you can use the Item to
                 create more than one unique End Product.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t re-distribute the Item as stock, in a tool or
                 template, or with source files. You can’t do this with an Item
                 either on its own or bundled with other items. You can’t
@@ -854,7 +854,7 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -862,7 +862,7 @@ const Licenses = () => {
               as-is on your website for your users to download.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t use the Item in any application allowing an end user
                 to customise a digital or physical product to their specific
                 needs, such as an “on demand”, “made to order” or “build it
@@ -873,25 +873,25 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
               For example: you can't create a website builder.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You must not permit an end user of the End Product to extract
                 the Item and use it separately from the End Product.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can’t use an Item in a logo, trademark, or service mark.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 For some Items, a component of the Item will be sourced from
                 elsewhere and different license terms may apply to the
                 component, such as someone else’s license or an open source or
@@ -904,7 +904,7 @@ const Licenses = () => {
             </ListItem>
             <Text
               color='#878CBD'
-              fontSize='md'
+              fontSize='lg'
               lineHeight='28px'
               fontWeight='400'
               mb='25px'>
@@ -913,7 +913,7 @@ const Licenses = () => {
               specific images. This license applies to the rest of the theme.
             </Text>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 You can only use the Item for lawful purposes. Also, if an Item
                 contains an image of a person, even if the Item is
                 model-released you can’t use it in a way that creates a fake
@@ -923,7 +923,7 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license applies in conjunction with the{" "}
                 <Link
                   to='#'
@@ -938,35 +938,35 @@ const Licenses = () => {
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 This license can be terminated if you breach it. If that
                 happens, you must stop making copies of or distributing the End
                 Product until you remove the Item from it.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 Simmmple retains ownership of the Item but grants you the
                 license on these terms. This license is between Simmmple and
                 you.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='25px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
                 The Company License allows you to create unlimited End Products
                 you want and deploy them on how many domains like
                 endproduct1.com, endproduct2.com, endproductx.com.
               </Text>
             </ListItem>
             <ListItem color='#878CBD'>
-              <Text fontSize='md' lineHeight='28px' fontWeight='400' mb='40px'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='40px'>
                 This license allows you access to the product's designer files.
               </Text>
             </ListItem>
           </OrderedList>
           <HSeparator w='100%' mb='40px' mx='auto' />
           <Text
-            fontSize='md'
+            fontSize='lg'
             lineHeight='28px'
             fontWeight='400'
             textAlign='center'
