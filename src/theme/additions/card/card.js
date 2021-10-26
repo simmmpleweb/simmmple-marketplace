@@ -5,6 +5,7 @@ const Card = {
       flexDirection: "column",
       width: "100%",
       position: "relative",
+      boxShadow: "45px 76px 113px 7px rgba(112, 144, 176, 0.08)",
       borderRadius: "30px",
       minWidth: "0px",
       wordWrap: "break-word",
