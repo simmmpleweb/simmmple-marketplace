@@ -14,7 +14,7 @@ import { NavLink } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
-    <Flex direction='column' bg='white' overflowX='hidden'>
+    <Flex direction='column' bg='white' overflowX='hidden' mb='100px'>
       <Flex pb='100px' direction='column' w='775px' mx='auto' mt='136px'>
         {/* Mini Navbar */}
         <Flex
@@ -1130,7 +1130,7 @@ const PrivacyPolicy = () => {
             color='brand.700'
             fontSize='30px'
             lineHeight='40px'
-            fontWeight='500'
+            fontWeight='700'
             mb='16px'
             display='flex'>
             9. Do Califorina residents have specific privacy rights?
@@ -1247,37 +1247,384 @@ const PrivacyPolicy = () => {
             in the past twelve (12) months:
           </Text>
           <HSeparator w='100%' mx='auto' />
-          <Flex flexDirection='column' width='674px'>
-            <Flex mt='20px'>
+          <Flex flexDirection='column' width='674px' mb='56px'>
+            <Flex mt='20px' px='20px'>
               <Text
                 color='#878CBD'
-                fontSize='lg'
+                fontSize='md'
                 lineHeight='28px'
                 fontWeight='400'
                 mb='56px'
-                minW='165px'
-                w='165px'>
+                minW='155px'
+                me='10px'
+                w='155px'>
                 Category
               </Text>
               <Text
                 color='#878CBD'
-                fontSize='lg'
+                fontSize='md'
                 lineHeight='28px'
                 fontWeight='400'
                 mb='56px'
                 minW='335px'
-                w='335px'>
+                w='335px'
+                me='45px'>
                 Examples
               </Text>
               <Text
                 color='#878CBD'
-                fontSize='lg'
+                fontSize='md'
                 lineHeight='28px'
                 fontWeight='400'
                 mb='56px'
                 w='100%'
                 textAlign='center'>
                 Collected
+              </Text>
+            </Flex>
+            <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                A. Identifiers
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Contact details, such as real name, alias, postal address,
+                telephone or mobile contact number, unique personal identifier,
+                online identifier, Internet Protocol address, email address and
+                account name
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                YES
+              </Text>
+            </Flex>
+            <Flex p='20px' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                B. Personal information categories listed in the California
+                Customer Records statute
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Name, contact information, education, employment, employment
+                history and financial information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                YES
+              </Text>
+            </Flex>
+            <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                C. Protected classification characteristics under California or
+                federal law
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Gender and date of birth
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                NO
+              </Text>
+            </Flex>
+            <Flex p='20px' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                D. Commercial information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Transaction information, purchase history, financial details and
+                payment information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                YES
+              </Text>
+            </Flex>
+            <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                E. Biometric information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Fingerprints and voiceprints
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                NO
+              </Text>
+            </Flex>
+            <Flex p='20px' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                F. Internet or other similar network activity
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Browsing history, search history, online behavior, interest
+                data, and interactions with our and other websites,
+                applications, systems and advertisements
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                YES
+              </Text>
+            </Flex>
+            <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                G. Geolocation data
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Device location
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                YES
+              </Text>
+            </Flex>
+            <Flex p='20px' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                H. Audio, electronic, visual, thermal, olfactory, or similar
+                information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Images and audio, video or call recordings created in connection
+                with our business activities
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                NO
+              </Text>
+            </Flex>
+            <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                I. Professional or employment-related information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Business contact details in order to provide you our services at
+                a business level, job title as well as work history and
+                professional qualifications if you apply for a job with us
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                NO
+              </Text>
+            </Flex>
+            <Flex p='20px' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                J. Education Information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Student records and directory information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                NO
+              </Text>
+            </Flex>
+            <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='155px'
+                me='10px'
+                w='155px'>
+                K. Inferences drawn from other personal information
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                minW='335px'
+                w='335px'
+                me='45px'>
+                Inferences drawn from any of the collected personal information
+                listed above to create a profile or summary about, for example,
+                an individual’s preferences and characteristics
+              </Text>
+              <Text
+                color='#878CBD'
+                fontSize='sm'
+                lineHeight='28px'
+                fontWeight='400'
+                w='100%'>
+                NO
               </Text>
             </Flex>
           </Flex>
@@ -1287,8 +1634,36 @@ const PrivacyPolicy = () => {
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
-            In Short: Yes, if you are a resident of California, you are granted
-            specific rights regarding access to your personal information.
+            We may also collect other personal information outside of these
+            categories instances where you interact with us in-person, online,
+            or by phone or mail in the context of:
+          </Text>
+          <UnorderedList>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400'>
+                Receiving help through our customer support channels;
+              </Text>
+            </ListItem>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400'>
+                Participation in customer surveys or contests; and
+              </Text>
+            </ListItem>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='40px'>
+                Facilitation in the delivery of our Services and to respond to
+                your inquiries.
+              </Text>
+            </ListItem>
+          </UnorderedList>
+
+          <Text
+            color='brand.700'
+            fontSize='xl'
+            lineHeight='28px'
+            fontWeight='500'
+            mb='45px'>
+            How do we use and share your personal information?
           </Text>
           <Text
             color='#878CBD'
@@ -1296,59 +1671,404 @@ const PrivacyPolicy = () => {
             lineHeight='28px'
             fontWeight='400'
             mb='45px'>
-            In Short: Yes, if you are a resident of California, you are granted
-            specific rights regarding access to your personal information.
+            More information about our data collection and sharing practices can
+            be found in this privacy notice.
           </Text>
-          <OrderedList>
-            <ListItem color='#878CBD'>
-              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
-                The Enterprise License grants you, the purchaser, an ongoing,
-                non-exclusive, worldwide license to make use of the digital work
-                (
-                <Text fontWeight='500' mx='3px' as='span'>
-                  Item
-                </Text>
-                ) you have selected. Read the rest of this license for the
-                details that apply to your use of the Item.
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            You may contact us by visiting{" "}
+            <Link
+              to='https://simmmple.com/contact'
+              fontWeight='500'
+              textDecoration='underline'
+              color='brand.300'
+              mx='3px'>
+              https://simmmple.com/contact
+            </Link>
+            , or by referring to the contact details at the bottom of this
+            document.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            If you are using an authorized agent to exercise your right to
+            opt-out we may deny a request if the authorized agent does not
+            submit proof that they have been validly authorized to act on your
+            behalf.
+          </Text>
+          <Text
+            color='brand.700'
+            fontSize='xl'
+            lineHeight='28px'
+            fontWeight='700'
+            mb='45px'>
+            Will your information be shared with anyone else?
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            We may disclose your personal information with our service providers
+            pursuant to a written contract between us and each service provider.
+            Each service provider is a for-profit entity that processes the
+            information on our behalf.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            We may use your personal information for our own business purposes,
+            such as for undertaking internal research for technological
+            development and demonstration. This is not considered to be
+            "selling" of your personal data.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            Simmmple Web LLC has not disclosed or sold any personal information
+            to third parties for a business or commercial purpose in the
+            preceding 12 months. Simmmple Web LLC will not sell personal
+            information in the future belonging to website visitors, users and
+            other consumers.
+          </Text>
+          <Text
+            color='brand.700'
+            fontSize='xl'
+            lineHeight='28px'
+            fontWeight='500'
+            mb='45px'>
+            Your rights with respect to your personal data
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'
+            textDecoration='underline'>
+            Right to request deletion of the data - Request to delete
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            You can ask for the deletion of your personal information. If you
+            ask us to delete your personal information, we will respect your
+            request and delete your personal information, subject to certain
+            exceptions provided by law, such as (but not limited to) the
+            exercise by another consumer of his or her right to free speech, our
+            compliance requirements resulting from a legal obligation or any
+            processing that may be required to protect against illegal
+            activities.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'
+            textDecoration='underline'>
+            Right to be informed - Request to know
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            Depending on the circumstances, you have a right to know:
+          </Text>
+
+          <UnorderedList>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                whether we collect and use your personal information;
               </Text>
             </ListItem>
-            <ListItem color='#878CBD'>
-              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
-                You are licensed to use the Item to create multiple End Products
-                for yourself or for clients, and the End Product may be Sold.
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                the categories of personal information that we collect;
               </Text>
             </ListItem>
-            <ListItem color='#878CBD'>
-              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='25px'>
-                An End Product is one of the following things, both requiring an
-                application of skill and effort.
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                the purposes for which the collected personal information is
+                used;
               </Text>
             </ListItem>
-            <Text
-              ps='75px'
-              color='#878CBD'
-              fontSize='lg'
-              lineHeight='28px'
-              fontWeight='400'
-              mb='25px'>
-              a. For an Item that is a template, the End Product is a customised
-              implementation of the Item. For example: the item is a website
-              template and the end product is the final website customised with
-              your content.
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                whether we sell your personal information to third parties;
+              </Text>
+            </ListItem>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                the categories of personal information that we sold or disclosed
+                for a business purpose;
+              </Text>
+            </ListItem>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                the categories of third parties to whom the personal information
+                was sold or disclosed for a business purpose; and
+              </Text>
+            </ListItem>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='28px' fontWeight='400' mb='40px'>
+                the business or commercial purpose for collecting or selling
+                personal information.
+              </Text>
+            </ListItem>
+          </UnorderedList>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            In accordance with applicable law, we are not obligated to provide
+            or delete consumer information that is de-identified in response to
+            a consumer request or to re-identify individual data to verify a
+            consumer request.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'
+            textDecoration='underline'>
+            Right to Non-Discrimination for the Exercise of a Consumer’s Privacy
+            Rights
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            We will not discriminate against you if you exercise your privacy
+            rights.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'
+            textDecoration='underline'>
+            Verification process
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            Upon receiving your request, we will need to verify your identity to
+            determine you are the same person about whom we have the information
+            in our system. These verification efforts require us to ask you to
+            provide information so that we can match it with information you
+            have previously provided us. For instance, depending on the type of
+            request you submit, we may ask you to provide certain information so
+            that we can match the information you provide with the information
+            we already have on file, or we may contact you through a
+            communication method (e.g. phone or email) that you have previously
+            provided to us. We may also use other verification methods as the
+            circumstances dictate.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            We will only use personal information provided in your request to
+            verify your identity or authority to make the request. To the extent
+            possible, we will avoid requesting additional information from you
+            for the purposes of verification. If, however, we cannot verify your
+            identity from the information already maintained by us, we may
+            request that you provide additional information for the purposes of
+            verifying your identity, and for security or fraud-prevention
+            purposes. We will delete such additionally provided information as
+            soon as we finish verifying you.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'
+            textDecoration='underline'>
+            Other privacy rights
+          </Text>
+          <UnorderedList>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                you may object to the processing of your personal data
+              </Text>
+            </ListItem>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                you may request correction of your personal data if it is
+                incorrect or no longer relevant, or ask to restrict the
+                processing of the data
+              </Text>
+            </ListItem>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400'>
+                you can designate an authorized agent to make a request under
+                the CCPA on your behalf. We may deny a request from an
+                authorized agent that does not submit proof that they have been
+                validly authorized to act on your behalf in accordance with the
+                CCPA.
+              </Text>
+            </ListItem>
+            <ListItem lineHeight='38px' color='#878CBD'>
+              <Text fontSize='lg' lineHeight='38px' fontWeight='400' mb='40px'>
+                you may request to opt-out from future selling of your personal
+                information to third parties. Upon receiving a request to
+                opt-out, we will act upon the request as soon as feasibly
+                possible, but no later than 15 days from the date of the request
+                submission.
+              </Text>
+            </ListItem>
+          </UnorderedList>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            To exercise these rights, you can contact us by visiting
+            <Link
+              to='https://simmmple.com/contact'
+              textDecoration='underline'
+              color='brand.300'
+              mx='2px'
+              fontWeight='500'
+              as='span'>
+              https://simmmple.com
+              <br />
+              /contact
+            </Link>
+            , or by referring to the contact details at the bottom of this
+            document. If you have a complaint about how we handle your data, we
+            would like to hear from you.
+          </Text>
+          {/* 12. */}
+          <Text
+            id='10'
+            color='brand.700'
+            fontSize='30px'
+            lineHeight='40px'
+            fontWeight='700'
+            mb='16px'
+            display='flex'>
+            10. Do we make updates to this notice?
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            <Text fontWeight='500' mx='3px' ms='0px' as='span'>
+              In Short
             </Text>
-            <Text
-              ps='75px'
-              color='#878CBD'
-              fontSize='lg'
-              lineHeight='28px'
-              fontWeight='400'
-              mb='25px'>
-              b. For other types of Item, an End Product is something that
-              incorporates the Item as well as other things, so that it is
-              larger in scope and different in nature than the Item. For
-              example: the item is an UI Kit and the end product is a website.
-            </Text>
-          </OrderedList>
+            : Yes, we will update this notice as necessary to stay compliant
+            with relevant laws.
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            We may update this privacy notice from time to time. The updated
+            version will be indicated by an updated "Revised" date and the
+            updated version will be effective as soon as it is accessible. If we
+            make material changes to this privacy notice, we may notify you
+            either by prominently posting a notice of such changes or by
+            directly sending you a notification. We encourage you to review this
+            privacy notice frequently to be informed of how we are protecting
+            your information.
+          </Text>
+          {/* 13. */}
+          <Text
+            id='11'
+            color='brand.700'
+            fontSize='30px'
+            lineHeight='40px'
+            fontWeight='700'
+            mb='16px'
+            display='flex'>
+            11. How can you contact us about this notice?
+          </Text>
+          <Text color='#878CBD' fontSize='lg' lineHeight='28px' mb='45px'>
+            If you have questions or comments about this notice, you may{" "}
+            <Link
+              to='#'
+              textDecoration='underline'
+              color='brand.300'
+              mx='3px'
+              fontWeight='500'>
+              contact us here
+            </Link>
+            and this is our mailing address:
+          </Text>
+          <Text
+            color='#878CBD'
+            fontSize='lg'
+            lineHeight='28px'
+            fontWeight='400'
+            mb='45px'>
+            Simmmple Web LLC, Str. Matei Voievod 103-113, Bloc O3, Scara 3,
+            Ap.123, Bucharest,021453 Romania
+          </Text>
+          {/* x. */}
+          <Text
+            color='brand.700'
+            fontSize='30px'
+            lineHeight='40px'
+            fontWeight='500'
+            mb='16px'
+            display='flex'>
+            12. How can you review, update, or delete the data we collect from
+            you?
+          </Text>
+          <Text color='#878CBD' fontSize='lg' lineHeight='28px' mb='45px'>
+            Based on the applicable laws of your country, you may have the right
+            to request access to the personal information we collect from you,
+            change that information, or delete it in some circumstances. To
+            request to review, update, or delete your personal information,
+            please visit:
+            <Link
+              to='https://simmmple.com/contact'
+              textDecoration='underline'
+              color='brand.300'
+              mx='3px'
+              fontWeight='500'>
+              https://simmmple.com/contact
+            </Link>
+            . We will respond to your request within 30 days.
+          </Text>
           <HSeparator w='100%' mb='40px' mx='auto' />
           <Text
             fontSize='lg'
@@ -1362,43 +2082,9 @@ const PrivacyPolicy = () => {
             </Link>
           </Text>
         </Flex>
-        {/* x. */}
-        <Text
-          color='brand.700'
-          fontSize='30px'
-          lineHeight='40px'
-          fontWeight='500'
-          mb='16px'
-          display='flex'>
-          General
-        </Text>
-        <Text
-          color='#878CBD'
-          fontSize='lg'
-          lineHeight='28px'
-          fontWeight='400'
-          mb='45px'>
-          Supplemental terms and conditions or documents that may be posted on
-          the Site from time to time are hereby expressly incorporated herein by
-          reference. We reserve the right, in our sole discretion, to make
-          changes or modifications to these Terms of Use at any time and for any
-          reason
-        </Text>
-        <Link to='#' textDecoration='underline' color='brand.300' mx='3px'>
-          contact page
-        </Link>
-        <Text fontWeight='500' mx='3px' as='span'>
-          X product from Simmmple
-        </Text>{" "}
       </Flex>
     </Flex>
   );
 };
 
 export default PrivacyPolicy;
-
-/*
-
-
-
-*/
