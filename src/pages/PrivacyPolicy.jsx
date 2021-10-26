@@ -1184,7 +1184,7 @@ const PrivacyPolicy = () => {
             color='brand.700'
             fontSize='xl'
             lineHeight='28px'
-            fontWeight='400'
+            fontWeight='500'
             mb='45px'>
             CCPA Privacy Notice
           </Text>
@@ -1233,7 +1233,7 @@ const PrivacyPolicy = () => {
             color='brand.700'
             fontSize='xl'
             lineHeight='28px'
-            fontWeight='400'
+            fontWeight='500'
             mb='45px'>
             What categories of personal information do we collect?
           </Text>
@@ -2042,8 +2042,9 @@ const PrivacyPolicy = () => {
             Simmmple Web LLC, Str. Matei Voievod 103-113, Bloc O3, Scara 3,
             Ap.123, Bucharest,021453 Romania
           </Text>
-          {/* x. */}
+          {/* 14. */}
           <Text
+            id='12'
             color='brand.700'
             fontSize='30px'
             lineHeight='40px'
