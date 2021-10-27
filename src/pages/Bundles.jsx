@@ -50,12 +50,15 @@ import microsoftLogo from "assets/img/homepage/microsoft.png";
 import zohoLogo from "assets/img/homepage/zoho.png";
 import georgiatechLogo from "assets/img/homepage/georgiatech.png";
 import deloitteLogo from "assets/img/homepage/deloitte.png";
+import Layout from "components/layout/Layout";
 
 const Bundles = () => {
   const leftEffect = useRef();
   const rightEffect = useRef();
 
   return (
+    <Layout>
+
     <Flex direction='column' bg='#fff' overflowX='hidden'>
       <Flex
         justify='center'
@@ -1883,6 +1886,7 @@ const Bundles = () => {
         </Flex>
       </Flex>
     </Flex>
+    </Layout>
   );
 };
 

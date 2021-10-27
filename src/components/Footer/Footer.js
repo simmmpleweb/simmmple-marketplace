@@ -136,7 +136,7 @@ const Footer = () => {
               Company
             </Text>
             <Stack direction='column' spacing='22px'>
-              <NavLink to='/'>
+              <NavLink to='/contact'>
                 <Text color='#878CBD' fontSize='md'>
                   Support & Contact
                 </Text>

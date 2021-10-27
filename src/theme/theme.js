@@ -3,6 +3,7 @@ import { CardComponent } from "./additions/card/Card";
 import { CardBodyComponent } from "./additions/card/CardBody";
 import { CardHeaderComponent } from "./additions/card/CardHeader";
 import { buttonStyles } from "./components/button";
+import { inputStyles } from "./components/input";
 import { linkStyles } from "./components/link";
 import { breakpoints } from "./foundations/breakpoints";
 import { globalStyles } from "./styles";
@@ -12,6 +13,7 @@ export default extendTheme(
   globalStyles,
   buttonStyles, // Button styles
   linkStyles, // Link styles
+  inputStyles, // Input styles
   CardComponent, // Card component
   CardBodyComponent, // Card Body component
   CardHeaderComponent // Card Header component
