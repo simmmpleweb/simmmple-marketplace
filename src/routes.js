@@ -13,6 +13,7 @@ import Partnerships from "pages/support/Partnerships.jsx";
 import SubmissionReceived from "pages/support/SubmissionReceived.jsx";
 import SupportPage from "pages/support/SupportPage.jsx";
 import Templates from "pages/Templates";
+import AboutUs from "pages/AboutUs";
 const routes = [
   {
     name: "Home page",
@@ -103,6 +104,12 @@ const routes = [
     path: "/affiliates",
     secondary: true,
     component: Affiliates,
+  },
+  {
+    name: "AboutUs",
+    path: "/about",
+    secondary: true,
+    component: AboutUs,
   },
 ];
 
