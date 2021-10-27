@@ -27,7 +27,7 @@ const routes = [
   {
     name: "Apps and Plugins",
     path: "/apps",
-    secondary: false,
+    secondary: true,
     component: Apps,
   },
   {
