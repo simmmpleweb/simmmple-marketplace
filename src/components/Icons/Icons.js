@@ -349,8 +349,8 @@ export const contactSupport = createIcon({
   ),
 });
 
-export const contactPartherships = createIcon({
-  displayName: "contactPartherships",
+export const contactPartnerships = createIcon({
+  displayName: "contactPartnerships",
   viewBox: "0 0 38 33",
   path: (
     <svg width="38" height="33" viewBox="0 0 38 33" fill="none" xmlns="http://www.w3.org/2000/svg">
