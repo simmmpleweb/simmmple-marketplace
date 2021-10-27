@@ -9,7 +9,7 @@ export const featuredProducts = [
   {
     image: venusSystem,
     tag: "Design Tool",
-    price: "from $99",
+    price: 99,
     title: "Venus Design System",
     category: "Figma Products",
     path: "/",
@@ -17,7 +17,7 @@ export const featuredProducts = [
   {
     image: venusPro,
     tag: "Design Tool",
-    price: "from $59",
+    price: 59,
     title: "Venus DB PRO",
     category: "Figma Products",
     path: "/",
@@ -25,7 +25,7 @@ export const featuredProducts = [
   {
     image: uranusWireframe,
     tag: "Web Tool",
-    price: "from $48",
+    price: 48,
     title: "Uranus Wireframe Kit",
     category: "UI Kits, Figma Products",
     path: "/",
@@ -33,7 +33,7 @@ export const featuredProducts = [
   {
     image: purityDashboard,
     tag: "Dashboard",
-    price: "from $79",
+    price: 79,
     title: "Purity UI Dashboard",
     category: "Coded, Figma, Dashboards",
     path: "/",
@@ -49,7 +49,7 @@ export const featuredProducts = [
   {
     image: puritySensual,
     tag: "Design Tool",
-    price: "from $79",
+    price: 79,
     title: "Purity UI - Sensual Kit",
     category: "UI Kits, Figma Products",
     path: "/",

@@ -49,7 +49,7 @@ function Navbar() {
   const { isOpen: isOpenFade, onToggle } = useDisclosure();
 
   return (
-    <Flex w='100%' bg='brand.300' position='absolute' zIndex='1'>
+    <Flex w='100%' position='absolute' zIndex='1'>
       <Flex
         w={{ sm: "350px", md: "740px", lg: "970px", xl: "1170px" }}
         mx={{ sm: "20px", md: "24px", lg: "auto" }}

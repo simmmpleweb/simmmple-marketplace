@@ -52,10 +52,9 @@ const Home = () => {
   const rightEffect = useRef();
 
   return (
-    <Flex direction='column' bg='#fff' overflowX='hidden'>
+    <Flex direction='column' bg='#fff'>
       <Flex
         minH='870px'
-        bg='#333'
         bgImage={homeBg}
         bgSize='cover'
         bgPosition='center'>
