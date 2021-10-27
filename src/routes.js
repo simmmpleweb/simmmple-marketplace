@@ -2,9 +2,13 @@ import Apps from "pages/Apps.jsx";
 import Blog from "pages/Blog.jsx";
 import Bundles from "pages/Bundles";
 import Home from "pages/Home.jsx";
+import PrivacyPolicy from "pages/PrivacyPolicy";
+import Licenses from "pages/Licenses";
+import TermsConditions from "pages/TermsConditions";
 import Product from "pages/Product";
 import Contact from "pages/support/Contact.jsx";
 import Others from "pages/support/Others.jsx";
+import Affiliates from "pages/Affiliates";
 import Partnerships from "pages/support/Partnerships.jsx";
 import SubmissionReceived from "pages/support/SubmissionReceived.jsx";
 import SupportPage from "pages/support/SupportPage.jsx";
@@ -68,6 +72,30 @@ const routes = [
     path: "/support/received",
     secondary: true,
     component: SubmissionReceived,
+  },
+  {
+    name: "Licenses",
+    path: "/licenses",
+    secondary: true,
+    component: Licenses,
+  },
+  {
+    name: "Terms & Conditions",
+    path: "/terms-of-service",
+    secondary: true,
+    component: TermsConditions,
+  },
+  {
+    name: "Privacy Policy",
+    path: "/privacy-policy",
+    secondary: true,
+    component: PrivacyPolicy,
+  },
+  {
+    name: "Affiliates",
+    path: "/affiliates",
+    secondary: true,
+    component: Affiliates,
   },
 ];
 
