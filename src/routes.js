@@ -38,7 +38,7 @@ const routes = [
   {
     name: "Bundles Page",
     path: "/bundles",
-    secondary: true,
+    secondary: false,
     component: Bundles,
   },
   {

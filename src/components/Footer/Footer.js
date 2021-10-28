@@ -111,17 +111,17 @@ const Footer = () => {
               Explore
             </Text>
             <Stack direction='column' spacing='22px'>
-              <NavLink to='/'>
+              <NavLink to='/templates/figma'>
                 <Text color='#878CBD' fontSize='md'>
                   Figma Products
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/templates/all-templates'>
                 <Text color='#878CBD' fontSize='md'>
                   Coded Products
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/apps'>
                 <Text color='#878CBD' fontSize='md'>
                   Apps & Plugins
                 </Text>
@@ -138,22 +138,22 @@ const Footer = () => {
                   Support & Contact
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/terms-of-service'>
                 <Text color='#878CBD' fontSize='md'>
                   Terms of Use
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/privacy-policy'>
                 <Text color='#878CBD' fontSize='md'>
                   Privacy Policy
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/licenses'>
                 <Text color='#878CBD' fontSize='md'>
                   License
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/about'>
                 <Text color='#878CBD' fontSize='md'>
                   About us
                 </Text>
@@ -165,17 +165,17 @@ const Footer = () => {
               Technologies
             </Text>
             <Stack direction='column' spacing='22px'>
-              <NavLink to='/'>
+              <NavLink to='/templates/figma'>
                 <Text color='#878CBD' fontSize='md'>
                   Figma
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/templates/react'>
                 <Text color='#878CBD' fontSize='md'>
                   ReactJS
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/templates/bootstrap'>
                 <Text color='#878CBD' fontSize='md'>
                   Bootstrap
                 </Text>

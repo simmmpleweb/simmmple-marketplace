@@ -89,7 +89,7 @@ function Navbar() {
       w='100%'
       position={secondary ? "sticky" : scrolled ? "fixed" : "absolute"}
       top={secondary ? "0px" : scrolled ? "0px" : "80px"}
-      zIndex='1'
+      zIndex='100'
       bg={secondary || scrolled ? "#fff" : "transparent"}
       boxShadow={
         secondary || scrolled
@@ -188,7 +188,7 @@ function Navbar() {
                           mb='2px'>
                           Figma Products
                         </Text>
-                        <NavLink to='/'>
+                        <NavLink to='/templates/all-templates'>
                           <Flex align='center' color='brand.300'>
                             <Text fontSize='sm' color='brand.300'>
                               See all products
@@ -215,7 +215,7 @@ function Navbar() {
                           mb='2px'>
                           Coded Products
                         </Text>
-                        <NavLink to='/'>
+                        <NavLink to='/templates/all-templates'>
                           <Flex align='center' color='brand.300'>
                             <Text fontSize='sm' color='brand.300'>
                               See all products
@@ -242,7 +242,7 @@ function Navbar() {
                           mb='2px'>
                           Apps & Plugins
                         </Text>
-                        <NavLink to='/'>
+                        <NavLink to='/apps'>
                           <Flex align='center' color='brand.300'>
                             <Text fontSize='sm' color='brand.300'>
                               Learn more
@@ -280,16 +280,20 @@ function Navbar() {
                       Save money to all products with our digital categories
                       bundles!
                     </Text>
+                    <NavLink to="/bundles">
+
                     <Button variant='solid' w='150px' h='42px'>
                       <Text color='#4F61FF' fontSize='sm'>
                         Explore all
                       </Text>
                     </Button>
+                    </NavLink>
                   </Flex>
                 </Grid>
               </MenuList>
             </Menu>
           </Flex>
+          <NavLink to="/templates/all-templates">
           <Flex align='center' cursor='pointer'>
             <Text
               transition='color 0.3s linear'
@@ -299,15 +303,9 @@ function Navbar() {
               me='4px'>
               Products
             </Text>
-            <Icon
-              transition='color 0.3s linear'
-              as={GoChevronDown}
-              w='12px'
-              h='12px'
-              color={secondary || scrolled ? "#878CBD" : "#fff"}
-              mt='4px'
-            />
           </Flex>
+
+          </NavLink>
           <Flex align='center' cursor='pointer'>
             <Text
               transition='color 0.3s linear'
@@ -346,6 +344,8 @@ function Navbar() {
           </Flex>
         </Stack>
         <Flex align='center' justify='flex-end'>
+        <NavLink to="/templates/all-templates">
+
           <Button
             w={{ sm: "114px", lg: "160px" }}
             h={{ sm: "48px", lg: "56px" }}
@@ -366,6 +366,7 @@ function Navbar() {
               Get Started
             </Text>
           </Button>
+        </NavLink>
           <IconBox
             bg='#f7f5ff'
             w='52px'
