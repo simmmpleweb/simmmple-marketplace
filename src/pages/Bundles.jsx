@@ -99,6 +99,7 @@ const Bundles = () => {
                 transition='all .5s ease'
               />
               <Button
+                bg='white'
                 variant='solid'
                 w='190px'
                 h='56px'

@@ -21,7 +21,7 @@ const ProductItem = ({
       <Card>
         <CardBody>
           <Flex direction='column' w='100%'>
-            <Box w='100%' h='230px' mb='30px'>
+            <Box w='100%' mb='30px'>
               <Image src={image} w='100%' h='100%' borderRadius='24px' />
             </Box>
             <Flex

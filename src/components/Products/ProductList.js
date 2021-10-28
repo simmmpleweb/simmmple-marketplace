@@ -6,7 +6,13 @@ import React from "react";
 
 const ProductList = ({ products, comingSoon }) => {
   return (
-    <Grid templateColumns='repeat(3, 1fr)' gap='22px'>
+    <Grid
+      templateColumns={{
+        base: "repeat(1, 1fr)",
+        md: "repeat(2, 1fr)",
+        lg: "repeat(3, 1fr)",
+      }}
+      gap='22px'>
       {products.map(({ ...otherProductProps }, index) => {
         return <ProductItem key={index} {...otherProductProps} />;
       })}
