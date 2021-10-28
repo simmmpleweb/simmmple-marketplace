@@ -1,38 +1,35 @@
-import React from "react";
 import {
-  Flex,
-  Text,
-  FormControl,
-  Input,
   Button,
   Divider,
+  Flex,
+  FormControl,
   Grid,
-  Stack,
-  Link,
   Icon,
+  Input,
+  Link,
+  Stack,
+  Text,
 } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
-
-// Custom Components
-import IconBox from "components/icons/IconBox";
-
-// Icons
-import { SimmmpleLogoColored } from "components/icons/Icons";
-import {
-  AiFillGithub,
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { FaFacebook, FaTiktok } from "react-icons/fa";
-import { BsPinterest } from "react-icons/bs";
-
 // Images
 import footerBg from "assets/img/footer/footer-background.png";
+// Custom Components
+import IconBox from "components/icons/IconBox";
+// Icons
+import { SimmmpleLogoColored } from "components/icons/Icons";
+import React from "react";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import { BsPinterest } from "react-icons/bs";
+import { FaFacebook, FaTiktok } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Flex w="100%" bg="#F4F7FE" pb="125px">
+    <Flex w='100%' bg='#F4F7FE' pb='125px'>
       <Flex
         direction='column'
         w={{ sm: "350px", md: "740px", lg: "970px", xl: "1170px" }}

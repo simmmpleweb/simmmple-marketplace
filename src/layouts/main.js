@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import routes from "routes";
 export default function MainLayout() {
   const getRoutes = (routes) => {

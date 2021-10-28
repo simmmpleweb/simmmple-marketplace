@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Grid, Text, Flex } from "@chakra-ui/react";
+import { Flex, Grid, Text } from "@chakra-ui/react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Countdown = ({ date }) => {
   const [timerDays, setTimerDays] = useState("00");
@@ -55,68 +55,64 @@ const Countdown = ({ date }) => {
   });
 
   return (
-    <Grid templateColumns="repeat(4, 120px)" gap="10px" w="510px" h="130px">
+    <Grid templateColumns='repeat(4, 120px)' gap='10px' w='510px' h='130px'>
       <Flex
-        direction="column"
-        p="26px 24px"
-        textAlign="center"
-        bg="linear-gradient(115.49deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.04) 105.19%)"
-        boxShadow="inset 10px -12px 47px rgba(0, 9, 92, 0.68), inset -6px 11px 21px -1px rgba(255, 255, 255, 0.28)"
-        backdropFilter="blur(42px)"
-        borderRadius="20px"
-      >
-        <Text fontSize="52px" color="#fff" fontWeight="bold">
+        direction='column'
+        p='26px 24px'
+        textAlign='center'
+        bg='linear-gradient(115.49deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.04) 105.19%)'
+        boxShadow='inset 10px -12px 47px rgba(0, 9, 92, 0.68), inset -6px 11px 21px -1px rgba(255, 255, 255, 0.28)'
+        backdropFilter='blur(42px)'
+        borderRadius='20px'>
+        <Text fontSize='52px' color='#fff' fontWeight='bold'>
           {timerDays}
         </Text>
-        <Text fontWeight="normal" color="#fff">
+        <Text fontWeight='normal' color='#fff'>
           Days
         </Text>
       </Flex>
       <Flex
-        direction="column"
-        p="26px 24px"
-        textAlign="center"
-        bg="linear-gradient(115.49deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.04) 105.19%)"
-        boxShadow="inset 10px -12px 47px rgba(0, 9, 92, 0.68), inset -6px 11px 21px -1px rgba(255, 255, 255, 0.28)"
-        backdropFilter="blur(42px)"
-        borderRadius="20px"
-      >
-        <Text fontSize="52px" color="#fff" fontWeight="bold">
+        direction='column'
+        p='26px 24px'
+        textAlign='center'
+        bg='linear-gradient(115.49deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.04) 105.19%)'
+        boxShadow='inset 10px -12px 47px rgba(0, 9, 92, 0.68), inset -6px 11px 21px -1px rgba(255, 255, 255, 0.28)'
+        backdropFilter='blur(42px)'
+        borderRadius='20px'>
+        <Text fontSize='52px' color='#fff' fontWeight='bold'>
           {timerHours}
         </Text>
-        <Text fontWeight="normal" color="#fff">
+        <Text fontWeight='normal' color='#fff'>
           Hours
         </Text>
       </Flex>
       <Flex
-        direction="column"
-        p="26px 24px"
-        textAlign="center"
-        bg="linear-gradient(115.49deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.04) 105.19%)"
-        boxShadow="inset 10px -12px 47px rgba(0, 9, 92, 0.68), inset -6px 11px 21px -1px rgba(255, 255, 255, 0.28)"
-        backdropFilter="blur(42px)"
-        borderRadius="20px"
-      >
-        <Text fontSize="52px" color="#fff" fontWeight="bold">
+        direction='column'
+        p='26px 24px'
+        textAlign='center'
+        bg='linear-gradient(115.49deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.04) 105.19%)'
+        boxShadow='inset 10px -12px 47px rgba(0, 9, 92, 0.68), inset -6px 11px 21px -1px rgba(255, 255, 255, 0.28)'
+        backdropFilter='blur(42px)'
+        borderRadius='20px'>
+        <Text fontSize='52px' color='#fff' fontWeight='bold'>
           {timerMinutes}
         </Text>
-        <Text fontWeight="normal" color="#fff">
+        <Text fontWeight='normal' color='#fff'>
           Minutes
         </Text>
       </Flex>
       <Flex
-        direction="column"
-        p="26px 24px"
-        textAlign="center"
-        bg="linear-gradient(115.49deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.04) 105.19%)"
-        boxShadow="inset 10px -12px 47px rgba(0, 9, 92, 0.68), inset -6px 11px 21px -1px rgba(255, 255, 255, 0.28)"
-        backdropFilter="blur(42px)"
-        borderRadius="20px"
-      >
-        <Text fontSize="52px" color="#fff" fontWeight="bold">
+        direction='column'
+        p='26px 24px'
+        textAlign='center'
+        bg='linear-gradient(115.49deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.04) 105.19%)'
+        boxShadow='inset 10px -12px 47px rgba(0, 9, 92, 0.68), inset -6px 11px 21px -1px rgba(255, 255, 255, 0.28)'
+        backdropFilter='blur(42px)'
+        borderRadius='20px'>
+        <Text fontSize='52px' color='#fff' fontWeight='bold'>
           {timerSeconds}
         </Text>
-        <Text fontWeight="normal" color="#fff">
+        <Text fontWeight='normal' color='#fff'>
           Seconds
         </Text>
       </Flex>
