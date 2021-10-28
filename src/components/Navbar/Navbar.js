@@ -88,7 +88,7 @@ function Navbar() {
     <Flex
       w='100%'
       position={secondary ? "sticky" : scrolled ? "fixed" : "absolute"}
-      top={secondary ? "80px" : scrolled ? "0px" : "80px"}
+      top={secondary ? "0px" : scrolled ? "0px" : "80px"}
       zIndex='1'
       bg={secondary || scrolled ? "#fff" : "transparent"}
       boxShadow={
