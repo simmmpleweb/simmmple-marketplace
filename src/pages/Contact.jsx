@@ -289,7 +289,7 @@ const handleOthers = (e) => {
         </Box>
         <Flex direction="column" w="1170px" mx="auto" align="center">
           <Flex direction="column" textAlign="center" align="center" mb="100px">
-            <Text color="brand.300" fontSize="sm" fontWeight="500" mb="20px">
+            <Text color="brand.300" fontSize="sm" fontWeight="bold" mb="20px">
               GET IN TOUCH
             </Text>
             <Text color="brand.700" fontSize="56px" fontWeight="bold" mb="20px">

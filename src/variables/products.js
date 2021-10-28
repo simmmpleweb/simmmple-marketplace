@@ -41,7 +41,7 @@ export const featuredProducts = [
   {
     image: venusFree,
     tag: "Design Tool",
-    price: "FREE",
+    price: 0,
     title: "Venus DB Free",
     category: "Freebies, Figma Products",
     path: "/",

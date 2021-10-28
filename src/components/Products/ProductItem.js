@@ -74,7 +74,6 @@ const ProductItem = ({
                 alignSelf='flex-start'>
                 Category: {category}
               </Text>
-              {date}
             </Flex>
           </Flex>
         </CardBody>

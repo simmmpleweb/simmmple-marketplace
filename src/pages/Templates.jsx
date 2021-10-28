@@ -16,6 +16,7 @@ import "assets/css/App.css";
 import { templatesProducts } from "variables/templates";
 import ProductList from "components/products/ProductList";
 import Layout from "components/layout/Layout";
+import "assets/css/Templates.css";
 
 const Templates = (props) => {
   const [activeTab, setActiveTab] = useState({
@@ -29,27 +30,28 @@ const Templates = (props) => {
     bootstrap: false,
   });
   const [activeSort, setActiveSort] = useState("Most Recent");
-  const [template, setTemplate] = useState([]);
   const [activeTitle, setActiveTitle] = useState("All Templates & Themes");
 
-  useEffect(() => {
+  const sort = (type) => {
+
     const templateName = props.match.params.templateName;
     const templateProductsData = templateName.split("-").join("");
+
     let sortedProducts = [];
 
-    if (activeSort === "Price: low to high") {
+    if (type === "Price: low to high") {
       sortedProducts = templatesProducts[templateProductsData].sort(
         (product1, product2) => product1.price - product2.price
       );
-    } else if (activeSort === "Price: high to low") {
+    } else if (type === "Price: high to low") {
       sortedProducts = templatesProducts[templateProductsData].sort(
         (product1, product2) => product2.price - product1.price
       );
-    } else if (activeSort === "Most Downloads") {
+    } else if (type === "Most Downloads") {
       sortedProducts = templatesProducts[templateProductsData].sort(
         (product1, product2) => product2.downloads - product1.downloads
       );
-    } else if (activeSort === "Most Recent") {
+    } else if (type === "Most Recent") {
       sortedProducts = templatesProducts[templateProductsData].sort(
         (product1, product2) =>
           new Date(product2.date) - new Date(product1.date)
@@ -57,8 +59,10 @@ const Templates = (props) => {
     } else {
       sortedProducts = [];
     }
-    setTemplate(sortedProducts);
-  });
+
+    return sortedProducts;
+  }
+
 
   return (
     <Layout>
@@ -397,7 +401,7 @@ const Templates = (props) => {
               <option value="Most Downloads">Most Downloads</option>
             </Select>
           </Flex>
-          <ProductList products={template} comingSoon={true} />
+          <ProductList products={sort(activeSort)} comingSoon={true} />
         </Flex>
       </Flex>
     </Layout>

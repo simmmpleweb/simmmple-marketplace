@@ -32,13 +32,13 @@ const routes = [
   {
     name: "Apps and Plugins",
     path: "/apps",
-    secondary: false,
+    secondary: true,
     component: Apps,
   },
   {
     name: "Bundles Page",
     path: "/bundles",
-    secondary: true,
+    secondary: false,
     component: Bundles,
   },
   {
