@@ -50,6 +50,8 @@ function Navbar() {
 
   const [secondary, setSecondary] = useState(false);
 
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     let secondaryX = false;
 
@@ -74,17 +76,27 @@ function Navbar() {
     setSecondary(secondaryX);
   });
 
+  const changeNavbar = () => {
+    if (window.scrollY > 80) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbar);
   return (
     <Flex
       w='100%'
-      // position={secondary ? "sticky" : "absolute"}
-      position='sticky'
-      top='0px'
+      position={secondary ? "sticky" : scrolled ? "fixed" : "absolute"}
+      top={secondary ? "80px" : scrolled ? "0px" : "80px"}
       zIndex='1'
-      bg={secondary ? "#fff" : "transparent"}
+      bg={secondary || scrolled ? "#fff" : "transparent"}
       boxShadow={
-        secondary ? "0px 43px 113px -9px rgba(112, 144, 176, 0.12)" : null
-      }>
+        secondary || scrolled
+          ? "0px 43px 113px -9px rgba(112, 144, 176, 0.12)"
+          : null
+      }
+      transition='background-color 0.3s linear'>
       <Flex
         w={{ sm: "350px", md: "740px", lg: "970px", xl: "1170px" }}
         mx={{ sm: "20px", md: "24px", lg: "auto" }}
@@ -99,12 +111,12 @@ function Navbar() {
           me={{ sm: "auto", md: "auto", lg: "0px" }}>
           <NavLink to='/'>
             {window.innerWidth < 768 ? (
-              secondary ? (
+              secondary || scrolled ? (
                 <SimmmpleLogoColoredMobile w='100%' h='48px' cursor='pointer' />
               ) : (
                 <SimmmpleLogoWhiteMobile w='100%' h='48px' cursor='pointer' />
               )
-            ) : secondary ? (
+            ) : secondary || scrolled ? (
               <SimmmpleLogoColored
                 w='100%'
                 h='42px'
@@ -137,17 +149,19 @@ function Navbar() {
             cursor='pointer'
             h='100%'>
             <Text
-              color={secondary ? "#878CBD" : "#fff"}
+              transition='color 0.3s linear'
+              color={secondary || scrolled ? "#878CBD" : "#fff"}
               fontWeight='normal'
               fontSize='sm'
               me='4px'>
               Explore
             </Text>
             <Icon
+              transition='color 0.3s linear'
               as={GoChevronDown}
               w='12px'
               h='12px'
-              color={secondary ? "#878CBD" : "#fff"}
+              color={secondary || scrolled ? "#878CBD" : "#fff"}
               mt='4px'
             />
             <Menu isOpen={isOpenExplore}>
@@ -258,7 +272,8 @@ function Navbar() {
                     px='22px'>
                     <SimmmpleLogoBundle w='100%' h='31px' />
                     <Text
-                      color={secondary ? "#878CBD" : "#fff"}
+                      transition='color 0.3s linear'
+                      color={secondary || scrolled ? "#878CBD" : "#fff"}
                       fontSize='sm'
                       mt='20px'
                       mb='26px'>
@@ -277,49 +292,55 @@ function Navbar() {
           </Flex>
           <Flex align='center' cursor='pointer'>
             <Text
-              color={secondary ? "#878CBD" : "#fff"}
+              transition='color 0.3s linear'
+              color={secondary || scrolled ? "#878CBD" : "#fff"}
               fontWeight='normal'
               fontSize='sm'
               me='4px'>
               Products
             </Text>
             <Icon
+              transition='color 0.3s linear'
               as={GoChevronDown}
               w='12px'
               h='12px'
-              color={secondary ? "#878CBD" : "#fff"}
+              color={secondary || scrolled ? "#878CBD" : "#fff"}
               mt='4px'
             />
           </Flex>
           <Flex align='center' cursor='pointer'>
             <Text
-              color={secondary ? "#878CBD" : "#fff"}
+              transition='color 0.3s linear'
+              color={secondary || scrolled ? "#878CBD" : "#fff"}
               fontWeight='normal'
               fontSize='sm'
               me='4px'>
               Technologies
             </Text>
             <Icon
+              transition='color 0.3s linear'
               as={GoChevronDown}
               w='12px'
               h='12px'
-              color={secondary ? "#878CBD" : "#fff"}
+              color={secondary || scrolled ? "#878CBD" : "#fff"}
               mt='4px'
             />
           </Flex>
           <Flex align='center' cursor='pointer'>
             <Text
-              color={secondary ? "#878CBD" : "#fff"}
+              transition='color 0.3s linear'
+              color={secondary || scrolled ? "#878CBD" : "#fff"}
               fontWeight='normal'
               fontSize='sm'
               me='4px'>
               Resources
             </Text>
             <Icon
+              transition='color 0.3s linear'
               as={GoChevronDown}
               w='12px'
               h='12px'
-              color={secondary ? "#878CBD" : "#fff"}
+              color={secondary || scrolled ? "#878CBD" : "#fff"}
               mt='4px'
             />
           </Flex>
@@ -328,15 +349,19 @@ function Navbar() {
           <Button
             w={{ sm: "114px", lg: "160px" }}
             h={{ sm: "48px", lg: "56px" }}
-            bg={secondary ? "#ECE9FF" : "transparent"}
+            bg={secondary || scrolled ? "#ECE9FF" : "transparent"}
             zIndex='1'
-            border={secondary ? "none" : "1px solid #fff"}
-            _hover={{ bg: secondary ? null : "#4B63CD", color: "#fff" }}
+            border={secondary || scrolled ? "none" : "1px solid #fff"}
+            _hover={{
+              bg: secondary || scrolled ? null : "#4B63CD",
+              color: "#fff",
+            }}
             me={{ sm: "14px", lg: "0px" }}>
             <Text
+              transition='color 0.3s linear'
               fontSize='sm'
               fontWeight='500'
-              color={secondary ? "brand.300" : "#fff"}
+              color={secondary || scrolled ? "brand.300" : "#fff"}
               lineHeight='13px'>
               Get Started
             </Text>
