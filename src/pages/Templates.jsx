@@ -128,17 +128,18 @@ const Templates = (props) => {
           <Flex
             align="center"
             bg="#fff"
+            justify="center"
             w="100%"
             boxShadow="0px 18px 40px rgba(112, 144, 176, 0.12)"
             letterSpacing="-.5px"
-            borderRadius="30px"
+            borderRadius={{sm: "70px", lg : "30px"}}
             maxH={{xl: "130px"}}
-            maxW={{lg: "980px", xl: "100%"}}
+            maxW={{sm: "350px", md: "97%", lg: "70%", xl: "100%"}}
             mx="auto"
             p={{sm: "16px", xl: "36px"}}
             transform="translateY(-50%)"
           >
-            <Stack direction="row" spacing="10px" overflowX={{sm: "scroll", lg: "hidden"}} mx="auto" flexWrap={{lg: "wrap"}}>
+            <Stack direction="row" justify="center" align="center" spacing="10px" overflowX={{sm: "scroll", lg: "hidden"}} mx="auto" flexWrap={{lg: "wrap"}}>
               <NavLink to="/templates/all-templates">
                 <Flex
                 minW={{sm: "135px", md: "150px", lg: "auto"}}
@@ -173,7 +174,7 @@ const Templates = (props) => {
               <NavLink to="/templates/admin-dashboards">
                 <Flex
                 minW={{sm: "135px", md: "150px", lg: "auto"}}
-                
+                mb={{lg: "10px", xl: "0px"}}
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -204,7 +205,7 @@ const Templates = (props) => {
               <NavLink to="/templates/ui-kits">
                 <Flex
                 minW={{sm: "135px", md: "150px", lg: "auto"}}
-                
+                mb={{lg: "10px", xl: "0px"}}
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -236,7 +237,7 @@ const Templates = (props) => {
               <NavLink to="/templates/free-templates">
                 <Flex
                 minW={{sm: "135px", md: "150px", lg: "auto"}}
-                
+                mb={{lg: "10px", xl: "0px"}}
                   align="center"
                   justify="center"
                   borderRadius="30px"
