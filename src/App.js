@@ -7,7 +7,7 @@ import Footer from "components/footer/Footer";
 
 function App() {
   return (
-    <Box>
+    <Box overflowX='hidden' maxW='100%'>
       <MainLayout />
     </Box>
   );

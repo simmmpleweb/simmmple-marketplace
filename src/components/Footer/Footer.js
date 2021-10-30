@@ -1,38 +1,35 @@
-import React from "react";
 import {
-  Flex,
-  Text,
-  FormControl,
-  Input,
   Button,
   Divider,
+  Flex,
+  FormControl,
   Grid,
-  Stack,
-  Link,
   Icon,
+  Input,
+  Link,
+  Stack,
+  Text,
 } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
-
-// Custom Components
-import IconBox from "components/icons/IconBox";
-
-// Icons
-import { SimmmpleLogoColored } from "components/icons/Icons";
-import {
-  AiFillGithub,
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { FaFacebook, FaTiktok } from "react-icons/fa";
-import { BsPinterest } from "react-icons/bs";
-
 // Images
 import footerBg from "assets/img/footer/footer-background.png";
+// Custom Components
+import IconBox from "components/icons/IconBox";
+// Icons
+import { SimmmpleLogoColored } from "components/icons/Icons";
+import React from "react";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import { BsPinterest } from "react-icons/bs";
+import { FaFacebook, FaTiktok } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Flex w="100%" bg="#F4F7FE" pb="125px">
+    <Flex w='100%' bg='#F4F7FE' pb='125px'>
       <Flex
         direction='column'
         w={{ sm: "350px", md: "740px", lg: "970px", xl: "1170px" }}
@@ -114,17 +111,17 @@ const Footer = () => {
               Explore
             </Text>
             <Stack direction='column' spacing='22px'>
-              <NavLink to='/'>
+              <NavLink to='/templates/figma'>
                 <Text color='#878CBD' fontSize='md'>
                   Figma Products
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/templates/all-templates'>
                 <Text color='#878CBD' fontSize='md'>
                   Coded Products
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/apps'>
                 <Text color='#878CBD' fontSize='md'>
                   Apps & Plugins
                 </Text>
@@ -141,22 +138,22 @@ const Footer = () => {
                   Support & Contact
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/terms-of-service'>
                 <Text color='#878CBD' fontSize='md'>
                   Terms of Use
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/privacy-policy'>
                 <Text color='#878CBD' fontSize='md'>
                   Privacy Policy
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/licenses'>
                 <Text color='#878CBD' fontSize='md'>
                   License
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/about'>
                 <Text color='#878CBD' fontSize='md'>
                   About us
                 </Text>
@@ -168,17 +165,17 @@ const Footer = () => {
               Technologies
             </Text>
             <Stack direction='column' spacing='22px'>
-              <NavLink to='/'>
+              <NavLink to='/templates/figma'>
                 <Text color='#878CBD' fontSize='md'>
                   Figma
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/templates/react'>
                 <Text color='#878CBD' fontSize='md'>
                   ReactJS
                 </Text>
               </NavLink>
-              <NavLink to='/'>
+              <NavLink to='/templates/bootstrap'>
                 <Text color='#878CBD' fontSize='md'>
                   Bootstrap
                 </Text>
