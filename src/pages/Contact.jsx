@@ -284,34 +284,37 @@ const handleOthers = (e) => {
   return (
     <Layout>
       <Flex minH="1500px" pt="100px" pb="200px" w="100%" bg="#FAFCFE">
-        <Box position="absolute" w="586px" h="604px" right="60px" top="160px">
+        <Box position="absolute" w="586px" h="604px" right="0" top="280px" display={{sm: "none", xl: "block"}}>
           <Image src={simmmple3D} />
         </Box>
-        <Flex direction="column" w="1170px" mx="auto" align="center">
+        <Flex direction="column" w={{sm: "325px", md: "90%", lg: "100%", xl: "1170px"}} mx="auto" align="center">
           <Flex direction="column" textAlign="center" align="center" mb="100px">
             <Text color="brand.300" fontSize="sm" fontWeight="bold" mb="20px">
               GET IN TOUCH
             </Text>
-            <Text color="brand.700" fontSize="56px" fontWeight="bold" mb="20px">
+            <Text color="brand.700" fontSize={{sm: "42px", md: "56px"}} fontWeight="bold" mb="20px">
               How can we help you?
             </Text>
             <Text
               color="#878CBD"
               fontSize="lg"
               fontWeight="normal"
-              maxW="63%"
               lineHeight="38px"
             >
-              We’re here to help and answer any question you might have. We look
+              We’re here to help and answer any question you might have.<br /> We look
               forward to hearing from you.
             </Text>
           </Flex>
-          <Card p="50px 96px" w="780px">
+          <Card p={{sm: "22px", lg: "50px 96px"}} w={{sm: "325px", md: "90%", lg: "780px"}}>
             <Tabs defaultIndex={1}>
               <TabList border="none" mb="50px">
                 <Stack
                   direction="row"
-                  spacing="22px"
+                  flexWrap={{sm: "wrap", lg: "nowrap"}}
+                  spacing={{sm: "10px", lg: "22px"}}
+                  justify="center"
+                  py={{sm: "10px"}}
+                  align="center"
                   bg="#F6F8FD"
                   borderRadius="30px"
                   w="100%"
@@ -452,7 +455,7 @@ const handleOthers = (e) => {
                     </IconBox>
                     <Text
                       color="brand.700"
-                      fontSize="40px"
+                      fontSize={{sm: "26px", lg: "40px"}}
                       fontWeight="bold"
                       mb="20px"
                     >
@@ -462,7 +465,7 @@ const handleOthers = (e) => {
                       color="#878CBD"
                       fontSize="lg"
                       fontWeight="normal"
-                      maxW="65%"
+                      maxW={{md: "65%"}}
                       lineHeight="40px"
                       mb="36px"
                     >
@@ -473,7 +476,7 @@ const handleOthers = (e) => {
                       <Flex
                         direction="column"
                         display={generalSubmission.form ? "block" : "none"}
-                        w="100%"
+                    
                       >
                         <Flex
                           display="none"
@@ -482,8 +485,10 @@ const handleOthers = (e) => {
                           justify="center"
                           bg="#FFE4E4"
                           borderRadius="16px"
-                          h="56px"
+                          minH="56px"
+                          p={{sm: "12px", md: "0px"}}
                           mb="40px"
+                          fontSize={{sm: "sm", md: "md"}}
                         >
                           <Text color="red.500" fontWeight="500">
                             One or more fields have an error. Please check and
@@ -500,9 +505,11 @@ const handleOthers = (e) => {
                             Name*
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="name"
                             placeholder="Enter your name"
                             borderRadius="30px"
+                            fontSize={{sm: "sm", md: "md"}}
                             _placeholder={{ color: "#878CBD" }}
                             p="26px 32px"
                             mb="12px"
@@ -530,6 +537,7 @@ const handleOthers = (e) => {
                             Email*
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="email"
                             type="email"
                             placeholder="Enter your email address"
@@ -562,6 +570,7 @@ const handleOthers = (e) => {
                             Message*
                           </FormLabel>
                           <Textarea
+                          fontSize={{sm: "sm", md: "md"}}
                             id="textarea"
                             placeholder="Your message"
                             mb="18px"
@@ -592,7 +601,8 @@ const handleOthers = (e) => {
                           type="submit"
                           w="100%"
                           _hover={{ bg: "#1A05B7" }}
-                          h="56px"
+                          minH="56px"
+  
                           mt="50px"
                         >
                           <Text color="#fff" fontSize="sm" fontWeight="500">
@@ -608,8 +618,9 @@ const handleOthers = (e) => {
                       justify="center"
                       w="100%"
                       borderRadius="16px"
+                      p={{sm: "12px"}}
                       bg="#ECE9FF"
-                      h="56px"
+                      minH="56px"
                       display={generalSubmission.submission ? "flex" : "none"}
                     >
                       <Text color="brand.300" fontWeight="500">
@@ -631,7 +642,7 @@ const handleOthers = (e) => {
                     </IconBox>
                     <Text
                       color="brand.700"
-                      fontSize="40px"
+                      fontSize={{sm: "26px", lg: "40px"}}
                       fontWeight="bold"
                       mb="20px"
                     >
@@ -641,7 +652,7 @@ const handleOthers = (e) => {
                       color="#878CBD"
                       fontSize="lg"
                       fontWeight="normal"
-                      maxW="80%"
+                      maxW={{lg: "80%"}}
                       lineHeight="40px"
                       mb="36px"
                     >
@@ -668,7 +679,9 @@ const handleOthers = (e) => {
                           justify="center"
                           bg="#FFE4E4"
                           borderRadius="16px"
-                          h="56px"
+                          minH="56px"
+                          fontSize={{sm: "sm", md: "md"}}
+                          p={{sm: "12px", md: "0px"}}
                           mb="40px"
                         >
                           <Text color="red.500" fontWeight="500">
@@ -683,9 +696,10 @@ const handleOthers = (e) => {
                             fontWeight="500"
                             mb="12px"
                           >
-                            Name
+                            Name*
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="name-support"
                             placeholder="Enter your name"
                             borderRadius="30px"
@@ -714,9 +728,10 @@ const handleOthers = (e) => {
                             fontWeight="500"
                             mb="12px"
                           >
-                            Email
+                            Email*
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="email-support"
                             type="email"
                             placeholder="Enter your email address"
@@ -746,7 +761,7 @@ const handleOthers = (e) => {
                             fontWeight="500"
                             mb="12px"
                           >
-                            Product
+                            Product*
                           </FormLabel>
                           <Flex
                             align="center"
@@ -757,13 +772,13 @@ const handleOthers = (e) => {
                             mb="12px"
                           >
                             <Select
+                            fontSize={{sm: "sm", md: "md"}}
                               id="product-support"
                               _focus="none"
                               placeholder="Select Product"
                               border="none"
                               h="100%"
                               color="#878CBD"
-                              fontSize="md"
                               _placeholder={{ color: "#878CBD" }}
                               size="lg"
                               onChange={(e) =>
@@ -796,9 +811,10 @@ const handleOthers = (e) => {
                             fontWeight="500"
                             mb="12px"
                           >
-                            Problem Description
+                            Problem Description*
                           </FormLabel>
                           <Textarea
+                          fontSize={{sm: "sm", md: "md"}}
                             id="textarea-support"
                             placeholder="Your message"
                             borderRadius="30px"
@@ -827,7 +843,8 @@ const handleOthers = (e) => {
                           bg="brand.300"
                           w="100%"
                           _hover={{ bg: "#1A05B7" }}
-                          h="56px"
+                          minH="56px"
+  
                           mt="50px"
                           type="submit"
                         >
@@ -842,9 +859,11 @@ const handleOthers = (e) => {
                       mt="14px"
                       justify="center"
                       w="100%"
-                      borderRadius="16px"
+                      borderRa
+                      p={{sm: "12px"}}dius="16px"
                       bg="#ECE9FF"
-                      h="56px"
+                      borderRadius="30px"
+                      minH="56px"
                       display={supportSubmission.submission ? "flex" : "none"}
                     >
                       <Text color="brand.300" fontWeight="500">
@@ -874,7 +893,7 @@ const handleOthers = (e) => {
                             color="orange.500"
                           />
                         </IconBox>
-                        <Text color="#878CBD" fontSize="lg">
+                        <Text color="#878CBD" fontSize={{sm: "sm", lg: "lg"}}>
                           Please{" "}
                           <Text as="span" color="gray.800" fontWeight="500">
                             include as much detail as possible
@@ -898,7 +917,7 @@ const handleOthers = (e) => {
                             color="orange.500"
                           />
                         </IconBox>
-                        <Text color="#878CBD" fontSize="lg">
+                        <Text color="#878CBD" fontSize={{sm: "sm", lg: "lg"}}>
                           Support has priority for{" "}
                           <Text as="span" color="gray.800" fontWeight="500">
                             template & premium customers.
@@ -921,7 +940,7 @@ const handleOthers = (e) => {
                     </IconBox>
                     <Text
                       color="brand.700"
-                      fontSize="40px"
+                      fontSize={{sm: "26px", md: "40px"}}
                       fontWeight="bold"
                       mb="20px"
                     >
@@ -931,7 +950,7 @@ const handleOthers = (e) => {
                       color="#878CBD"
                       fontSize="lg"
                       fontWeight="normal"
-                      maxW="80%"
+                      maxW={{lg: "80%"}}
                       lineHeight="40px"
                       mb="36px"
                     >
@@ -952,7 +971,8 @@ const handleOthers = (e) => {
                         justify="center"
                         bg="#FFE4E4"
                         borderRadius="16px"
-                        h="56px"
+                        minH="56px"
+                        fontSize={{sm: "sm", md: "md"}}      
                         mb="40px"
                       >
                         <Text color="red.500" fontWeight="500">
@@ -970,6 +990,7 @@ const handleOthers = (e) => {
                             Name
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="name-partnerships"
                             placeholder="Enter your name"
                             borderRadius="30px"
@@ -1004,6 +1025,7 @@ const handleOthers = (e) => {
                             Email
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="email-partnerships"
                             type="email"
                             placeholder="Enter your email address"
@@ -1039,6 +1061,7 @@ const handleOthers = (e) => {
                             Company / Website
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="company-partnerships"
                             placeholder="Enter your email address"
                             borderRadius="30px"
@@ -1063,6 +1086,7 @@ const handleOthers = (e) => {
                             Message
                           </FormLabel>
                           <Textarea
+                          fontSize={{sm: "sm", md: "md"}}
                             id="textarea-partnerships"
                             placeholder="Your message"
                             mb="50px"
@@ -1093,7 +1117,8 @@ const handleOthers = (e) => {
                           w="100%"
                           type="submit"
                           _hover={{ bg: "#1A05B7" }}
-                          h="56px"
+                          minH="56px"
+  
                         >
                           <Text color="#fff" fontSize="sm" fontWeight="500">
                             Send Message
@@ -1108,7 +1133,8 @@ const handleOthers = (e) => {
                       w="100%"
                       borderRadius="16px"
                       bg="#ECE9FF"
-                      h="56px"
+                      minH="56px"
+                      p={{sm: "12px"}}
                       display={
                         partnershipsSubmission.submission ? "flex" : "none"
                       }
@@ -1132,7 +1158,7 @@ const handleOthers = (e) => {
                     </IconBox>
                     <Text
                       color="brand.700"
-                      fontSize="40px"
+                      fontSize={{sm: "26px", lg: "40px"}}
                       fontWeight="bold"
                       mb="20px"
                     >
@@ -1142,7 +1168,7 @@ const handleOthers = (e) => {
                       color="#878CBD"
                       fontSize="lg"
                       fontWeight="normal"
-                      maxW="55%"
+                      maxW={{md: "55%"}}
                       lineHeight="40px"
                       mb="36px"
                     >
@@ -1162,10 +1188,11 @@ const handleOthers = (e) => {
                           justify="center"
                           bg="#FFE4E4"
                           borderRadius="16px"
-                          h="56px"
+                          minH="56px"
+                          p={{sm: "12px", md: "0px"}}
                           mb="40px"
                         >
-                          <Text color="red.500" fontWeight="500">
+                          <Text color="red.500" fontWeight="500" fontSize={{sm: "sm", md: "md"}}>
                             One or more fields have an error. Please check and
                             try again!
                           </Text>
@@ -1180,6 +1207,7 @@ const handleOthers = (e) => {
                             Name*
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="name"
                             placeholder="Enter your name"
                             borderRadius="30px"
@@ -1211,6 +1239,7 @@ const handleOthers = (e) => {
                             Email*
                           </FormLabel>
                           <Input
+                          fontSize={{sm: "sm", md: "md"}}
                             id="email"
                             type="email"
                             placeholder="Enter your email address"
@@ -1243,6 +1272,7 @@ const handleOthers = (e) => {
                             Message*
                           </FormLabel>
                           <Textarea
+                          fontSize={{sm: "sm", md: "md"}}
                             id="textarea"
                             placeholder="Your message"
                             mb="18px"
@@ -1273,7 +1303,8 @@ const handleOthers = (e) => {
                           type="submit"
                           w="100%"
                           _hover={{ bg: "#1A05B7" }}
-                          h="56px"
+                          minH="56px"
+  
                           mt="50px"
                         >
                           <Text color="#fff" fontSize="sm" fontWeight="500">
@@ -1288,8 +1319,9 @@ const handleOthers = (e) => {
                       justify="center"
                       w="100%"
                       borderRadius="16px"
+                      p={{sm: "12px"}}
                       bg="#ECE9FF"
-                      h="56px"
+                      minH="56px"
                       display={othersSubmission.submission ? "flex" : "none"}
                     >
                       <Text color="brand.300" fontWeight="500">
