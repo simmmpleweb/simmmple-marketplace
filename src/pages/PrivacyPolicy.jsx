@@ -1051,7 +1051,6 @@ const PrivacyPolicy = () => {
               </Link>
             </Text>
             <Text
-              color='#878CBD'
               fontSize='lg'
               lineHeight='28px'
               fontWeight='700'

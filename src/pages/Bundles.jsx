@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import {
   Flex,
   Box,
@@ -7,7 +7,6 @@ import {
   Grid,
   Button,
   Link,
-  List,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
@@ -44,6 +43,11 @@ import vdb from "assets/img/bundles/vdb.png";
 import sensual from "assets/img/bundles/sensual.png";
 import venus from "assets/img/bundles/venus.png";
 import uranus from "assets/img/bundles/uranus.png";
+import purityresponsive from "assets/img/bundles/purityresponsive.png";
+import vdbresponsive from "assets/img/bundles/vdbresponsive.png";
+import sensualresponsive from "assets/img/bundles/sensualresponsive.png";
+import venusresponsive from "assets/img/bundles/venusresponsive.png";
+import uranusresponsive from "assets/img/bundles/uranusresponsive.png";
 import googleLogo from "assets/img/homepage/google.png";
 import msnLogo from "assets/img/homepage/msn.png";
 import microsoftLogo from "assets/img/homepage/microsoft.png";
@@ -56,14 +60,34 @@ const Bundles = () => {
   const leftEffect = useRef();
   const rightEffect = useRef();
 
+  const [width, setWindowWidth] = useState(0);
+  useEffect(() => {
+    updateDimensions();
+
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  };
+
+  const md = {
+    image: width < 1100,
+  };
+  const base = {
+    image: width < 450,
+  };
   return (
     <Layout>
       <Flex direction='column' bg='#fff' overflowX='hidden'>
         <Flex
+          px={{ base: "20px", xl: "0px" }}
+          py={{ base: "140px", md: "0px" }}
           justify='center'
           align='center'
           bgImage={bundlesBg}
-          h='1042px'
+          h={{ md: "860px", xl: "1042px" }}
           bgSize='cover'
           bgPosition='center center'>
           <Flex
@@ -71,15 +95,25 @@ const Bundles = () => {
             justify='center'
             align='center'
             textAlign='center'>
-            <SimmmpleLogoBundle w='182px' h='50px' mb='48px' />
-            <Text fontSize='64px' color='#fff' fontWeight='bold' mb='25px'>
+            <SimmmpleLogoBundle
+              w='182px'
+              h='50px'
+              mb='48px'
+              display={{ base: "none", xl: "flex" }}
+            />
+            <Text
+              fontSize={{ base: "44px", md: "64px" }}
+              px={{ base: "10px", "2sm": "30px", md: "0px" }}
+              color='#fff'
+              fontWeight='bold'
+              mb='25px'>
               Exclusive Digital Bundle
             </Text>
             <Text
               color='#fff'
-              fontSize='20px'
+              fontSize={{ base: "18px", md: "20px" }}
               lineHeight='40px'
-              maxW='70%'
+              maxW={{ base: "90%", md: "70%" }}
               mb='50px'>
               <Text as='span' fontWeight='bold'>
                 Save up to 80% OFF{" "}
@@ -90,7 +124,7 @@ const Bundles = () => {
             <Box>
               <Countdown date='17 December 2021' />
             </Box>
-            <Flex align='center' mt='54px'>
+            <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
                 ref={leftEffect}
                 color='#fff'
@@ -126,17 +160,17 @@ const Bundles = () => {
           </Flex>
         </Flex>
         <Grid
-          mx='auto'
-          maxW='1170px'
-          templateColumns='repeat(6, 1fr)'
-          gap='70px'
+          mx={{ base: "20px", xl: "auto" }}
+          templateColumns={{ base: "repeat(3, 1fr)", md: "repeat(6, 1fr)" }}
+          gap={{ base: "40px", lg: "70px" }}
           align='center'
           justify='center'
           bg='#fff'
           borderRadius='30px'
-          p='45px 100px'
+          p={{ base: "45px 50px", lg: "45px 100px" }}
           boxShadow='0px 18px 40px rgba(112, 144, 176, 0.12)'
-          w='100%'
+          w={{ base: "unset", xl: "100%" }}
+          maxW={{ base: "100%", xl: "1170px" }}
           transform='translateY(-50%)'
           mb='50px'>
           <Flex align='center' justify='center'>
@@ -158,7 +192,13 @@ const Bundles = () => {
             <Image src={deloitteLogo} />
           </Flex>
         </Grid>
-        <Flex py='100px' direction='column' w='1170px' mx='auto'>
+        <Flex
+          py='100px'
+          pt={{ base: "0px", lg: "80px" }}
+          direction='column'
+          w='1170px'
+          maxW='100%'
+          mx='auto'>
           <Flex direction='column' align='center' w='100%' mb='72px' mx='auto'>
             <Text
               fontSize='xs'
@@ -186,14 +226,27 @@ const Bundles = () => {
               color='#878CBD'
               fontWeight='400'
               mx='auto'
-              textAlign='center'>
+              textAlign='center'
+              px={{ base: "30px", md: "0px" }}>
               It's about building better products faster than ever before.
             </Text>
           </Flex>
-          <Flex flexWrap={{ base: "wrap", md: "nowrap" }}>
+          <Grid
+            templateColumns={{
+              base: "repeat(1, 1fr)",
+              md: "repeat(2, 1fr)",
+              xl: "repeat(4, 1fr)",
+            }}
+            gap='20px'
+            w='100%'
+            px={{ base: "20px", xl: "0px" }}>
             <Card h='320px' me='20px'>
               <CardBody h='100%' py='12px' justify='space-between' px='20px'>
-                <Flex flexDirection='column' align='center'>
+                <Flex
+                  flexDirection='column'
+                  align='center'
+                  justify='center'
+                  mx='auto'>
                   <Image src={simmmpleFolder} w='100px' h='100px' mb='auto' />
                   <Text
                     textAlign='center'
@@ -215,7 +268,11 @@ const Bundles = () => {
             </Card>
             <Card h='320px' me='20px'>
               <CardBody h='100%' py='12px' justify='space-between' px='20px'>
-                <Flex flexDirection='column' align='center'>
+                <Flex
+                  flexDirection='column'
+                  align='center'
+                  justify='center'
+                  mx='auto'>
                   <Flex mb='auto' flexDirection='column'>
                     <Image src={trophy} w='100px' h='100px' />
                     <Image
@@ -247,7 +304,11 @@ const Bundles = () => {
             </Card>
             <Card h='320px' me='20px'>
               <CardBody h='100%' py='12px' justify='space-between' px='20px'>
-                <Flex flexDirection='column' align='center'>
+                <Flex
+                  flexDirection='column'
+                  align='center'
+                  justify='center'
+                  mx='auto'>
                   <Image src={developers} w='100px' h='100px' mb='auto' />
                   <Text
                     textAlign='center'
@@ -269,7 +330,11 @@ const Bundles = () => {
             </Card>
             <Card h='320px'>
               <CardBody h='100%' py='12px' px='18px'>
-                <Flex flexDirection='column' align='center'>
+                <Flex
+                  flexDirection='column'
+                  align='center'
+                  justify='center'
+                  mx='auto'>
                   <Image src={medal} w='100px' h='129px' />
                   <Text
                     mt='auto'
@@ -290,10 +355,21 @@ const Bundles = () => {
                 </Flex>
               </CardBody>
             </Card>
-          </Flex>
+          </Grid>
         </Flex>
-        <Flex mb='118px' direction='column' w='1170px' mx='auto'>
-          <Flex direction='column' align='center' w='100%' mb='72px' mx='auto'>
+        <Flex
+          mb='118px'
+          direction='column'
+          mx='auto'
+          w='1170px'
+          maxW='100%'
+          px={{ base: "20px", xl: "auto" }}>
+          <Flex
+            direction='column'
+            align='center'
+            w='100%'
+            mb={{ base: "380px", lg: "460px", xl: "100px" }}
+            mx='auto'>
             <Text
               fontSize='xs'
               color='brand.300'
@@ -325,54 +401,89 @@ const Bundles = () => {
               products.
             </Text>
           </Flex>
-          <Flex flexWrap={{ base: "wrap", md: "nowrap" }} mb='100px'>
+          <Flex mb={{ base: "380px", lg: "460px", xl: "100px" }}>
             <Flex
-              w='100%'
-              h='550px'
+              w={{ base: "90%", "2sm": "92%", md: "730px", xl: "100%" }}
+              mx={{ base: "auto", xl: "0px" }}
+              h={{ md: "534px", xl: "550px" }}
               position='relative'
-              mb='90px'
               borderRadius='30px'>
               <Image
-                src={venus}
-                w='575px'
-                h='586px'
+                src={base.image ? venus : md.image ? venusresponsive : venus}
+                w={{
+                  base: "335px",
+                  "2sm": "385px",
+                  md: "600px",
+                  lg: "800px",
+                  xl: "575px",
+                }}
+                h={{
+                  base: "340px",
+                  "2sm": "390px",
+                  md: "300px",
+                  lg: "400px",
+                  xl: "586px",
+                }}
+                maxW='unset !important'
                 borderRadius='18px'
                 position='absolute'
-                left='0'
-                top='50%'
-                transform='translate(0px, -50%);'
+                left={{ base: "50%", md: "50%", lg: "-35px", xl: "0" }}
+                top={{ base: "-315px", md: "-280px", lg: "-360px", xl: "50%" }}
+                transform={{
+                  base: "translate(-50%, 0px)",
+                  md: "translate(-50%,0px)",
+                  lg: "translate(0px, 0%);",
+                  xl: "translate(0px, -50%);",
+                }}
                 zIndex='2'
               />
               <Flex
                 w='100%'
                 h='100%'
                 position='relative'
-                justifyContent='flex-end'
+                justifyContent={{ md: "center", xl: "flex-end" }}
+                pe={{ md: "0px", xl: "40px" }}
                 overflow='hidden'
-                pe='70px'
-                pt='45px'
+                p={{ base: "15px", md: "0px" }}
+                pt={{ md: "80px", lg: "45px" }}
                 borderRadius='30px'>
                 <Image
                   position='absolute'
                   transform='translate(-50%, -50%);'
-                  w='110%'
-                  h='110%'
-                  left='53%'
+                  w={{ base: "220%", xl: "110%" }}
+                  h={{ base: "220%", xl: "110%" }}
+                  left='50%'
                   top='50%'
                   src={sensualBg}
                   filter='blur(40px)'
                   zIndex='1'
                 />
-                <Flex w='456px' maxW='100%' flexDirection='column' zIndex='2'>
+                <Flex
+                  w={{ md: "70%", lg: "88%", xl: "456px" }}
+                  maxW='100%'
+                  flexDirection='column'
+                  zIndex='2'
+                  pt={{
+                    base: "40px",
+                    "2sm": "80px",
+                    md: "0px",
+                    lg: "40px",
+                    xl: "0px",
+                  }}>
                   <Text
                     fontWeight='bold'
-                    fontSize='50px'
+                    textAlign={{ base: "center", lg: "start" }}
+                    fontSize={{ base: "30px", md: "36px", xl: "50px" }}
+                    letterSpacing='-0.5px'
+                    lineHeight={{ base: "36px", md: "54px", lg: "64px" }}
                     mb='20px'
                     color='white'>
                     Venus Design System PRO
                   </Text>
                   <Text
-                    fontSize='md'
+                    textAlign={{ base: "center", lg: "start" }}
+                    mx={{ base: "auto", lg: "0px" }}
+                    fontSize={{ base: "md", md: "md" }}
                     lineHeight='28px'
                     color='white'
                     w='430px'
@@ -384,16 +495,22 @@ const Bundles = () => {
                   </Text>
                   <Flex
                     w='100%'
-                    justifyContent={{ base: "center", lg: "space-between" }}
+                    justifyContent={{ base: "center", md: "space-between" }}
+                    flexDirection={{ base: "column", md: "row" }}
                     align='center'
+                    px={{ base: "", md: "40px", lg: "0px" }}
+                    pe={{ base: "", md: "40px", lg: "160px", xl: "0px" }}
                     mb='54px'>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         250+
                       </Text>
                       <Text
@@ -404,13 +521,16 @@ const Bundles = () => {
                         Global Styles
                       </Text>
                     </Flex>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         2000+
                       </Text>
                       <Text
@@ -427,7 +547,8 @@ const Bundles = () => {
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         1400+
                       </Text>
                       <Text
@@ -439,11 +560,16 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                   </Flex>
-                  <Flex w='100%' justifyContent='space-between' align='center'>
+                  <Flex
+                    w='100%'
+                    align='center'
+                    justify={{ base: "center", lg: "flex-start" }}>
                     <Button
+                      bg='white'
                       color='#020425'
                       fontWeight='400'
                       fontSize='sm'
+                      me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
                       h='56px'
                       w='190px'>
@@ -469,44 +595,79 @@ const Bundles = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Flex flexWrap={{ base: "wrap", md: "nowrap" }}>
+          <Flex mb={{ base: "380px", lg: "460px", xl: "100px" }}>
             <Flex
-              w='100%'
-              h='550px'
+              w={{ base: "90%", "2sm": "92%", md: "730px", xl: "100%" }}
+              mx={{ base: "auto", xl: "0px" }}
+              h={{ md: "534px", xl: "550px" }}
               position='relative'
-              mb='90px'
               borderRadius='30px'>
               <Image
-                src={vdb}
-                w='575px'
-                h='586px'
+                src={base.image ? vdb : md.image ? vdbresponsive : vdb}
+                w={{
+                  base: "335px",
+                  "2sm": "385px",
+                  md: "600px",
+                  lg: "800px",
+                  xl: "575px",
+                }}
+                h={{
+                  base: "340px",
+                  "2sm": "390px",
+                  md: "300px",
+                  lg: "400px",
+                  xl: "586px",
+                }}
+                maxW='unset !important'
                 borderRadius='18px'
                 position='absolute'
-                right='0'
-                top='50%'
-                transform='translate(5%, -50%);'
+                right={{ base: "50%", md: "50%", lg: "-35px", xl: "-35px" }}
+                top={{ base: "-315px", md: "-280px", lg: "-360px", xl: "50%" }}
+                transform={{
+                  base: "translate(50%, 0px)",
+                  md: "translate(50%,0px)",
+                  lg: "translate(0px, 0%);",
+                  xl: "translate(0px, -50%);",
+                }}
                 zIndex='2'
               />
               <Flex
                 w='100%'
                 h='100%'
                 position='relative'
-                justifyContent='flex-start'
+                justifyContent={{ base: "center", xl: "flex-start" }}
                 overflow='hidden'
-                ps='70px'
-                pt='45px'
+                p={{ base: "15px", md: "0px" }}
+                ps={{ md: "0px", xl: "70px" }}
+                pt={{ md: "80px", lg: "45px" }}
                 borderRadius='30px'
                 bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'>
-                <Flex w='456px' maxW='100%' flexDirection='column' zIndex='2'>
+                <Flex
+                  w={{ md: "70%", lg: "88%", xl: "456px" }}
+                  maxW='100%'
+                  flexDirection='column'
+                  zIndex='2'
+                  pt={{
+                    base: "40px",
+                    "2sm": "80px",
+                    md: "0px",
+                    lg: "40px",
+                    xl: "0px",
+                  }}>
                   <Text
                     fontWeight='bold'
-                    fontSize='50px'
+                    textAlign={{ base: "center", lg: "start" }}
+                    fontSize={{ base: "30px", md: "36px", xl: "50px" }}
+                    letterSpacing='-0.5px'
+                    lineHeight={{ base: "36px", md: "54px", lg: "64px" }}
                     mb='20px'
                     color='white'>
                     Venus Dashboard Builder PRO
                   </Text>
                   <Text
-                    fontSize='md'
+                    textAlign={{ base: "center", lg: "start" }}
+                    mx={{ base: "auto", lg: "0px" }}
+                    fontSize={{ base: "md", md: "md" }}
                     lineHeight='28px'
                     color='white'
                     w='450px'
@@ -519,16 +680,22 @@ const Bundles = () => {
                   </Text>
                   <Flex
                     w='100%'
-                    justifyContent={{ base: "center", lg: "space-between" }}
+                    justifyContent={{ base: "center", md: "space-between" }}
+                    flexDirection={{ base: "column", md: "row" }}
                     align='center'
+                    px={{ base: "", md: "40px", lg: "0px" }}
+                    pe={{ base: "", md: "40px", lg: "160px", xl: "0px" }}
                     mb='54px'>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         90+
                       </Text>
                       <Text
@@ -539,13 +706,16 @@ const Bundles = () => {
                         Global Styles
                       </Text>
                     </Flex>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         400+
                       </Text>
                       <Text
@@ -562,7 +732,8 @@ const Bundles = () => {
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         30+
                       </Text>
                       <Text
@@ -574,11 +745,16 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                   </Flex>
-                  <Flex w='100%' justifyContent='space-between' align='center'>
+                  <Flex
+                    w='100%'
+                    align='center'
+                    justify={{ base: "center", lg: "flex-start" }}>
                     <Button
+                      bg='white'
                       color='#FF4555'
                       fontWeight='400'
                       fontSize='sm'
+                      me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
                       h='56px'
                       w='190px'>
@@ -604,45 +780,79 @@ const Bundles = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Flex flexWrap={{ base: "wrap", md: "nowrap" }}>
+          <Flex mb={{ base: "380px", lg: "460px", xl: "100px" }}>
             <Flex
-              w='100%'
-              h='550px'
+              w={{ base: "90%", "2sm": "92%", md: "730px", xl: "100%" }}
+              mx={{ base: "auto", xl: "0px" }}
+              h={{ md: "534px", xl: "550px" }}
               position='relative'
-              mb='90px'
               borderRadius='30px'>
               <Image
-                src={purity}
-                w='575px'
-                h='586px'
+                src={base.image ? purity : md.image ? purityresponsive : purity}
+                w={{
+                  base: "335px",
+                  "2sm": "385px",
+                  md: "600px",
+                  lg: "800px",
+                  xl: "575px",
+                }}
+                h={{
+                  base: "340px",
+                  "2sm": "390px",
+                  md: "300px",
+                  lg: "400px",
+                  xl: "586px",
+                }}
+                maxW='unset !important'
                 borderRadius='18px'
                 position='absolute'
-                left='0'
-                top='50%'
-                transform='translate(0px, -50%);'
+                left={{ base: "50%", md: "50%", lg: "-35px", xl: "0" }}
+                top={{ base: "-315px", md: "-280px", lg: "-360px", xl: "50%" }}
+                transform={{
+                  base: "translate(-50%, 0px)",
+                  md: "translate(-50%,0px)",
+                  lg: "translate(0px, 0%);",
+                  xl: "translate(0px, -50%);",
+                }}
                 zIndex='2'
               />
               <Flex
                 w='100%'
                 h='100%'
                 position='relative'
-                justifyContent='flex-end'
+                justifyContent={{ base: "center", xl: "flex-end" }}
                 overflow='hidden'
-                pe='70px'
-                pt='45px'
+                p={{ base: "15px", md: "0px" }}
+                pe={{ md: "0px", xl: "40px" }}
+                pt={{ md: "60px", lg: "45px" }}
                 borderRadius='30px'
                 background='linear-gradient(180deg, #7BCBD4 0%, #29C6B7 100%)'>
-                <Flex w='456px' maxW='100%' flexDirection='column' zIndex='2'>
+                <Flex
+                  w={{ md: "70%", lg: "88%", xl: "456px" }}
+                  maxW='100%'
+                  flexDirection='column'
+                  zIndex='2'
+                  pt={{
+                    base: "40px",
+                    "2sm": "80px",
+                    md: "0px",
+                    lg: "40px",
+                    xl: "0px",
+                  }}>
                   <Text
                     fontWeight='bold'
-                    fontSize='50px'
+                    textAlign={{ base: "center", lg: "start" }}
+                    fontSize={{ base: "30px", md: "36px", xl: "46px" }}
+                    letterSpacing='-0.5px'
+                    lineHeight={{ base: "36px", md: "54px", lg: "64px" }}
                     mb='20px'
-                    color='white'
-                    letterSpacing='-2.5px'>
+                    color='white'>
                     Purity UI - Chakra UI Admin Dashboard
                   </Text>
                   <Text
-                    fontSize='md'
+                    textAlign={{ base: "center", lg: "start" }}
+                    mx={{ base: "auto", lg: "0px" }}
+                    fontSize={{ base: "md", md: "md" }}
                     lineHeight='28px'
                     color='white'
                     w='430px'
@@ -654,16 +864,22 @@ const Bundles = () => {
                   </Text>
                   <Flex
                     w='100%'
-                    justifyContent={{ base: "center", lg: "space-between" }}
+                    justifyContent={{ base: "center", md: "space-between" }}
+                    flexDirection={{ base: "column", md: "row" }}
                     align='center'
+                    px={{ base: "", md: "40px", lg: "0px" }}
+                    pe={{ base: "", md: "40px", lg: "160px", xl: "0px" }}
                     mb='54px'>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         React
                       </Text>
                       <Text
@@ -674,13 +890,16 @@ const Bundles = () => {
                         Technology
                       </Text>
                     </Flex>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         300+
                       </Text>
                       <Text
@@ -697,7 +916,8 @@ const Bundles = () => {
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         Full
                       </Text>
                       <Text
@@ -709,11 +929,16 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                   </Flex>
-                  <Flex w='100%' justifyContent='space-between' align='center'>
+                  <Flex
+                    w='100%'
+                    align='center'
+                    justify={{ base: "center", lg: "flex-start" }}>
                     <Button
+                      bg='white'
                       color='#30C7BA'
                       fontWeight='400'
                       fontSize='sm'
+                      me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
                       h='56px'
                       w='190px'>
@@ -739,50 +964,86 @@ const Bundles = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Flex flexWrap={{ base: "wrap", md: "nowrap" }}>
+          <Flex mb={{ base: "380px", lg: "460px", xl: "100px" }}>
             <Flex
-              w='100%'
-              h='550px'
+              w={{ base: "90%", "2sm": "92%", md: "730px", xl: "100%" }}
+              mx={{ base: "auto", xl: "0px" }}
+              h={{ md: "534px", xl: "550px" }}
               position='relative'
-              mb='90px'
               borderRadius='30px'>
               <Image
-                src={uranus}
-                w='575px'
-                h='586px'
+                src={base.image ? uranus : md.image ? uranusresponsive : uranus}
+                w={{
+                  base: "335px",
+                  "2sm": "385px",
+                  md: "600px",
+                  lg: "800px",
+                  xl: "575px",
+                }}
+                h={{
+                  base: "340px",
+                  "2sm": "390px",
+                  md: "300px",
+                  lg: "400px",
+                  xl: "586px",
+                }}
+                maxW='unset !important'
                 borderRadius='18px'
                 position='absolute'
-                right='0'
-                top='50%'
-                transform='translate(5%, -50%);'
+                right={{ base: "50%", md: "50%", lg: "-35px", xl: "0" }}
+                top={{ base: "-315px", md: "-280px", lg: "-360px", xl: "50%" }}
+                transform={{
+                  base: "translate(50%, 0px)",
+                  md: "translate(50%,0px)",
+                  lg: "translate(0px, 0%);",
+                  xl: "translate(0px, -50%);",
+                }}
                 zIndex='2'
               />
               <Flex
                 w='100%'
                 h='100%'
                 position='relative'
-                justifyContent='flex-start'
+                justifyContent={{ base: "center", xl: "flex-start" }}
                 overflow='hidden'
-                ps='70px'
-                pt='45px'
+                p={{ base: "15px", md: "0px" }}
+                ps={{ md: "0px", xl: "70px" }}
+                pt={{ md: "60px", lg: "45px" }}
                 borderRadius='30px'
                 background='linear-gradient(135deg, #868CFF 0%, #4318FF 100%)'>
-                <Flex w='456px' maxW='100%' flexDirection='column' zIndex='2'>
+                <Flex
+                  w={{ md: "70%", lg: "88%", xl: "456px" }}
+                  maxW='100%'
+                  flexDirection='column'
+                  zIndex='2'
+                  pt={{
+                    base: "40px",
+                    "2sm": "80px",
+                    md: "0px",
+                    lg: "40px",
+                    xl: "0px",
+                  }}>
                   <Text
                     fontWeight='bold'
-                    fontSize='50px'
+                    textAlign={{ base: "center", lg: "start" }}
+                    fontSize={{ base: "30px", md: "36px", xl: "50px" }}
+                    letterSpacing='-0.8px'
+                    lineHeight={{ base: "36px", md: "54px", lg: "64px" }}
                     mb='20px'
-                    color='white'>
+                    color='white'
+                    px={{ md: "20px", lg: "0px" }}>
                     Uranus Bootstrap Wireframe Kit
                   </Text>
                   <Text
-                    fontSize='md'
+                    textAlign={{ base: "center", lg: "start" }}
+                    mx={{ base: "auto", lg: "0px" }}
+                    fontSize={{ base: "md", md: "md" }}
                     lineHeight='28px'
                     color='white'
                     w='460px'
                     maxW='100%'
                     mb='40px'
-                    letterSpacing='-0.8px'>
+                    letterSpacing={{ base: "0px" }}>
                     Uranus - Wireframe Kit is a wireframing pack with more than
                     180+ dark/light ready-to-use web elements/sections. The
                     basement idea of this kit was started from the wireframing
@@ -790,16 +1051,22 @@ const Bundles = () => {
                   </Text>
                   <Flex
                     w='100%'
-                    justifyContent={{ base: "center", lg: "space-between" }}
+                    justifyContent={{ base: "center", md: "space-between" }}
+                    flexDirection={{ base: "column", md: "row" }}
                     align='center'
+                    px={{ base: "", md: "40px", lg: "0px" }}
+                    pe={{ base: "", md: "40px", lg: "160px", xl: "0px" }}
                     mb='54px'>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         Bootstrap
                       </Text>
                       <Text
@@ -810,13 +1077,16 @@ const Bundles = () => {
                         Wireframe Kit
                       </Text>
                     </Flex>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         180+
                       </Text>
                       <Text
@@ -833,7 +1103,8 @@ const Bundles = () => {
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         Dark/Light
                       </Text>
                       <Text
@@ -845,11 +1116,16 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                   </Flex>
-                  <Flex w='100%' justifyContent='space-between' align='center'>
+                  <Flex
+                    w='100%'
+                    align='center'
+                    justify={{ base: "center", lg: "flex-start" }}>
                     <Button
+                      bg='white'
                       color='#634FFF'
                       fontWeight='400'
                       fontSize='sm'
+                      me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
                       h='56px'
                       w='190px'>
@@ -875,49 +1151,91 @@ const Bundles = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Flex flexWrap={{ base: "wrap", md: "nowrap" }}>
-            <Flex w='100%' h='550px' position='relative' borderRadius='30px'>
+          <Flex>
+            <Flex
+              w={{ base: "90%", "2sm": "92%", md: "730px", xl: "100%" }}
+              mx={{ base: "auto", xl: "0px" }}
+              h={{ md: "534px", xl: "550px" }}
+              position='relative'
+              borderRadius='30px'>
               <Image
-                src={sensual}
-                w='575px'
-                h='586px'
+                src={
+                  base.image ? sensual : md.image ? sensualresponsive : sensual
+                }
+                w={{
+                  base: "335px",
+                  "2sm": "385px",
+                  md: "600px",
+                  lg: "800px",
+                  xl: "575px",
+                }}
+                h={{
+                  base: "340px",
+                  "2sm": "390px",
+                  md: "300px",
+                  lg: "400px",
+                  xl: "586px",
+                }}
+                maxW='unset !important'
                 borderRadius='18px'
                 position='absolute'
-                left='0'
-                top='50%'
-                transform='translate(0px, -50%);'
+                left={{ base: "50%", md: "50%", lg: "-35px", xl: "0" }}
+                top={{ base: "-315px", md: "-280px", lg: "-360px", xl: "50%" }}
+                transform={{
+                  base: "translate(-50%, 0px)",
+                  md: "translate(-50%,0px)",
+                  lg: "translate(0px, 0%);",
+                  xl: "translate(0px, -50%);",
+                }}
                 zIndex='2'
               />
               <Flex
                 w='100%'
                 h='100%'
                 position='relative'
-                justifyContent='flex-end'
+                justifyContent={{ md: "center", xl: "flex-end" }}
+                pe={{ md: "0px", xl: "40px" }}
                 overflow='hidden'
-                pe='70px'
-                pt='45px'
+                p={{ base: "15px", md: "0px" }}
+                pt={{ md: "80px", lg: "45px" }}
                 borderRadius='30px'>
                 <Image
                   position='absolute'
                   transform='translate(-50%, -50%);'
-                  w='110%'
-                  h='110%'
-                  left='53%'
+                  w={{ base: "220%", xl: "110%" }}
+                  h={{ base: "220%", xl: "110%" }}
+                  left='50%'
                   top='50%'
                   src={sensualBg}
                   filter='blur(40px)'
                   zIndex='1'
                 />
-                <Flex w='456px' maxW='100%' flexDirection='column' zIndex='2'>
+                <Flex
+                  w={{ md: "70%", lg: "88%", xl: "456px" }}
+                  maxW='100%'
+                  flexDirection='column'
+                  zIndex='2'
+                  pt={{
+                    base: "40px",
+                    "2sm": "80px",
+                    md: "0px",
+                    lg: "40px",
+                    xl: "0px",
+                  }}>
                   <Text
                     fontWeight='bold'
-                    fontSize='50px'
+                    textAlign={{ base: "center", lg: "start" }}
+                    fontSize={{ base: "30px", md: "36px", xl: "50px" }}
+                    letterSpacing='-0.5px'
+                    lineHeight={{ base: "36px", md: "54px", lg: "64px" }}
                     mb='20px'
                     color='white'>
                     Purity UI React Sensual Kit
                   </Text>
                   <Text
-                    fontSize='md'
+                    textAlign={{ base: "center", lg: "start" }}
+                    mx={{ base: "auto", lg: "0px" }}
+                    fontSize={{ base: "md", md: "md" }}
                     lineHeight='28px'
                     color='white'
                     w='430px'
@@ -929,16 +1247,22 @@ const Bundles = () => {
                   </Text>
                   <Flex
                     w='100%'
-                    justifyContent={{ base: "center", lg: "space-between" }}
+                    justifyContent={{ base: "center", md: "space-between" }}
+                    flexDirection={{ base: "column", md: "row" }}
                     align='center'
+                    px={{ base: "", md: "40px", lg: "0px" }}
+                    pe={{ base: "", md: "40px", lg: "160px", xl: "0px" }}
                     mb='54px'>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         Trendy
                       </Text>
                       <Text
@@ -949,13 +1273,16 @@ const Bundles = () => {
                         Design Styles
                       </Text>
                     </Flex>
-                    <Flex flexDirection='column'>
+                    <Flex
+                      flexDirection='column'
+                      mb={{ base: "20px", md: "0px" }}>
                       <Text
                         textAlign='center'
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         300+
                       </Text>
                       <Text
@@ -972,7 +1299,8 @@ const Bundles = () => {
                         fontSize='26px'
                         lineHeight='33px'
                         color='white'
-                        fontWeight='700'>
+                        fontWeight='700'
+                        mb='6px'>
                         Full
                       </Text>
                       <Text
@@ -984,11 +1312,16 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                   </Flex>
-                  <Flex w='100%' justifyContent='space-between' align='center'>
+                  <Flex
+                    w='100%'
+                    align='center'
+                    justify={{ base: "center", lg: "flex-start" }}>
                     <Button
+                      bg='white'
                       color='#020425'
                       fontWeight='400'
                       fontSize='sm'
+                      me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
                       h='56px'
                       w='190px'>
@@ -1014,9 +1347,20 @@ const Bundles = () => {
               </Flex>
             </Flex>
           </Flex>
-        </Flex>{" "}
-        <HSeparator w='774px' mb='100px' mx='auto' />
-        <Flex pb='100px' direction='column' w='1170px' mx='auto'>
+        </Flex>
+        <HSeparator
+          w='774px'
+          maxW={{ base: "350px", md: "unset" }}
+          mb='100px'
+          mx={{ base: "auto" }}
+        />
+        <Flex
+          pb='100px'
+          direction='column'
+          w='1170px'
+          maxW='100%'
+          px={{ base: "20px", xl: "0px" }}
+          mx='auto'>
           <Flex direction='column' align='center' w='100%' mb='72px' mx='auto'>
             <Text
               fontSize='xs'
@@ -1036,7 +1380,8 @@ const Bundles = () => {
               mb='20px'
               mx='auto'
               textAlign='center'
-              w='450px'>
+              w='450px'
+              maxW='100%'>
               Start building today and save hours from the process.
             </Text>
             <Text
@@ -1050,9 +1395,22 @@ const Bundles = () => {
               companies
             </Text>
           </Flex>
-          <Flex flexWrap={{ base: "wrap", md: "nowrap" }}>
-            <Card h='735px' me='20px' boxShadow='50px 45px 76px 0px #7090B01A'>
-              <CardBody h='100%' pb='34px' pt='50px' px='34px'>
+          <Flex
+            maxW='100%'
+            flexDirection={{ base: "column", xl: "row" }}
+            alignItems='center'
+            px={{ base: "0px", md: "20px" }}>
+            <Card
+              maxW={{ base: "100%", md: "395px", xl: "unset" }}
+              h={{ base: "unset", xl: "735px" }}
+              me={{ base: "0px", xl: "20px" }}
+              mb={{ base: "20px", xl: "0px" }}
+              boxShadow='50px 45px 76px 0px #7090B01A'>
+              <CardBody
+                h='100%'
+                pb={{ base: "0px", md: "34px" }}
+                pt={{ base: "0px", md: "50px" }}
+                px={{ md: "34px", lg: "26px" }}>
                 <Flex flexDirection='column'>
                   <Flex align='center' mb='5px'>
                     <Text
@@ -1181,12 +1539,18 @@ const Bundles = () => {
               </CardBody>
             </Card>
             <Card
-              h='743px'
-              me='20px'
+              maxW={{ base: "100%", md: "395px", xl: "unset" }}
+              h={{ base: "unset", xl: "743px" }}
+              mb={{ base: "20px", xl: "0px" }}
+              me={{ base: "0px", xl: "20px" }}
               border='4px solid'
               borderColor='brand.300'
               boxShadow='50px 45px 76px 0px #7090B01A'>
-              <CardBody h='100%' pb='34px' pt='46px' px='26px'>
+              <CardBody
+                h='100%'
+                pb={{ base: "0px", md: "34px" }}
+                pt={{ base: "12px", md: "46px" }}
+                px={{ base: "0px", md: "26px" }}>
                 <Flex flexDirection='column'>
                   <Flex align='center' mb='5px'>
                     <Text
@@ -1313,8 +1677,15 @@ const Bundles = () => {
                 </Flex>
               </CardBody>
             </Card>
-            <Card h='735px' me='20px' boxShadow='50px 45px 76px 0px #7090B01A'>
-              <CardBody h='100%' pb='34px' pt='50px' px='34px'>
+            <Card
+              maxW={{ base: "100%", md: "395px", xl: "unset" }}
+              h={{ base: "unset", xl: "735px" }}
+              boxShadow='50px 45px 76px 0px #7090B01A'>
+              <CardBody
+                h='100%'
+                pb={{ base: "0px", md: "34px" }}
+                pt={{ base: "0px", md: "50px" }}
+                px={{ md: "34px", lg: "26px" }}>
                 <Flex flexDirection='column'>
                   <Flex align='center' mb='5px'>
                     <Text
@@ -1443,15 +1814,15 @@ const Bundles = () => {
               </CardBody>
             </Card>
           </Flex>
-          <Flex justify='space-between' mt='72px'>
+          <Flex
+            justify='space-between'
+            flexDirection={{ base: "column", xl: "row" }}
+            mt='72px'>
             <Flex flexDirection='column' align='center'>
               <Help color='brand.300' w='24px' h='24px' mb='16px' />
-              <Text
-                textAlign='center'
-                maxW='260px'
-                color='#8F9BBA'
-                letterSpacing='-1px'>
-                If have questions about the product or licensing please check
+              <Text textAlign='center' maxW='320px' color='#8F9BBA' mb='30px'>
+                If you have any questions about the product or licensing please
+                check
                 <Link
                   to='#'
                   fontWeight='500'
@@ -1469,7 +1840,8 @@ const Bundles = () => {
                 textAlign='center'
                 maxW='345px'
                 color='#8F9BBA'
-                letterSpacing='-1px'>
+                letterSpacing='0px'
+                mb='30px'>
                 Secure 128-bit SSL Encrypted payments powered by
                 <Link
                   to='#'
@@ -1495,17 +1867,28 @@ const Bundles = () => {
 
               <Text
                 textAlign='center'
-                maxW='260px'
+                maxW='300px'
                 color='#8F9BBA'
-                letterSpacing='-1px'>
+                letterSpacing='0px'>
                 The standard VAT rate may be charged, following the law of your
                 country.
               </Text>
             </Flex>
           </Flex>
         </Flex>
-        <HSeparator w='774px' mb='100px' mx='auto' />
-        <Flex pb='100px' direction='column' w='1170px' mx='auto'>
+        <HSeparator
+          w='774px'
+          maxW={{ base: "325px", md: "unset" }}
+          mb='100px'
+          mx={{ base: "auto" }}
+        />
+        <Flex
+          pb='100px'
+          direction='column'
+          w='1170px'
+          maxW='100%'
+          px={{ base: "0px", xl: "0px" }}
+          mx='auto'>
           <Flex direction='column' align='center' w='100%' mb='72px' mx='auto'>
             <Text
               fontSize='xs'
@@ -1525,12 +1908,22 @@ const Bundles = () => {
               mb='20px'
               mx='auto'
               textAlign='center'
-              w='450px'>
+              w='450px'
+              maxW='100%'
+              px={{ base: "20px", md: "0px" }}>
               Frequently Asked Questions
             </Text>
           </Flex>
-          <Flex w='100%' mb='72px' mx='auto'>
-            <Flex direction='column' w='50%' me='50px'>
+          <Flex
+            w='100%'
+            mb='72px'
+            mx='auto'
+            flexDirection={{ base: "column", xl: "row" }}>
+            <Flex
+              direction='column'
+              w={{ base: "90%", md: "50%" }}
+              mx={{ base: "auto", xl: "0px" }}
+              me={{ base: "auto", xl: "50px" }}>
               {/* 1. */}
               <Text
                 color='brand.700'
@@ -1545,6 +1938,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='548px'>
                 You will receive a license code in your order receipt. You do
@@ -1577,6 +1971,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='16px'
                 maxW='548px'>
                 The Freelancer license is aimed at people who work on their own.
@@ -1588,6 +1983,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='16px'
                 maxW='548px'>
                 The Company license is aimed at agencies or larger teams. It
@@ -1599,6 +1995,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='16px'
                 maxW='548px'>
                 The Enterprise license is aimed at large companies with multiple
@@ -1610,6 +2007,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='548px'>
                 All the differences between the types of licenses are{" "}
@@ -1636,6 +2034,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='548px'>
                 The images, fonts, icons and every other creative element for
@@ -1656,6 +2055,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='548px'>
                 These products are not Wordpress themes, however, they can be
@@ -1676,6 +2076,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='548px'>
                 It means that each theme within the Exclusive Digital Bundle
@@ -1708,20 +2109,61 @@ const Bundles = () => {
                 </Text>{" "}
                 ” and a link to the product page.
               </Text>
+
               <Text
                 fontSize='md'
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
-                mb='16px'
+                letterSpacing='-0.5px'
+                mb='60px'
                 maxW='548px'>
                 Please let us know after you launched the project and, if it is
                 helping the developers community, we will support you with
                 feedback and promote it in our gallery, social media and
                 newsletters.
               </Text>
+              <Flex
+                flexDirection='column'
+                bg='#F4F7FE'
+                ps='24px'
+                pe='23px'
+                pt='25px'
+                pb='35px'
+                borderRadius='20px'
+                maxW='575px'
+                display={{ base: "none", xl: "flex" }}>
+                <Text
+                  color='brand.700'
+                  fontSize='22px'
+                  lineHeight='28px'
+                  fontWeight='500'
+                  mb='16px'>
+                  Something unclear? We are here to help you!
+                </Text>
+                <Text
+                  fontSize='md'
+                  lineHeight='28px'
+                  color='#878CBD'
+                  fontWeight='400'
+                  maxW='548px'>
+                  Feel free to send us a message using the
+                  <Link
+                    to='#'
+                    textDecoration='underline'
+                    color='brand.300'
+                    mx='3px'>
+                    contact page
+                  </Link>{" "}
+                  and one of our team members will get back to you in the
+                  shortest time possible
+                </Text>
+              </Flex>
             </Flex>
-            <Flex direction='column' w='50%'>
+            <Flex
+              direction='column'
+              w={{ base: "90%", md: "50%" }}
+              mx={{ base: "auto", xl: "0px" }}>
               {/* 7. */}
               <Text
                 color='brand.700'
@@ -1736,6 +2178,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='16px'
                 maxW='548px'>
                 Depending on the License you purchase, you can use our products
@@ -1787,6 +2230,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='16px'
                 maxW='608px'>
                 Depending on your license type, you have a fixed period when you
@@ -1812,6 +2256,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='608px'>
                 If you purchase the Enterprise license, you will benefit from 24
@@ -1833,6 +2278,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='548px'>
                 Yes, they are. Each theme has a
@@ -1857,6 +2303,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='548px'>
                 In case you have already purchased a license, but you want to
@@ -1886,6 +2333,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='16px'
                 maxW='548px'>
                 The differences between the Free and Pro products consists of
@@ -1896,6 +2344,7 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
+                letterSpacing='-0.5px'
                 mb='72px'
                 maxW='548px'>
                 The Free versions contain only a few elements which allow you to
@@ -1916,7 +2365,9 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
-                maxW='548px'>
+                letterSpacing='-0.5px'
+                maxW='548px'
+                mb={{ base: "72px", xl: "0px" }}>
                 You can remove the copyright notice (if it's a premium item),
                 but then you will need to create a separate
                 <Text color='brand.300' mx='3px' as='span'>
@@ -1929,42 +2380,44 @@ const Bundles = () => {
                 , and copy paste the copyright text in there. This file should
                 be added to the root folder of your project.
               </Text>
+
+              <Flex
+                flexDirection='column'
+                bg='#F4F7FE'
+                ps='24px'
+                pe='23px'
+                pt='25px'
+                pb='35px'
+                borderRadius='20px'
+                maxW='575px'
+                display={{ base: "flex", xl: "none" }}>
+                <Text
+                  color='brand.700'
+                  fontSize='22px'
+                  lineHeight='28px'
+                  fontWeight='500'
+                  mb='16px'>
+                  Something unclear? We are here to help you!
+                </Text>
+                <Text
+                  fontSize='md'
+                  lineHeight='28px'
+                  color='#878CBD'
+                  fontWeight='400'
+                  maxW='548px'>
+                  Feel free to send us a message using the
+                  <Link
+                    to='#'
+                    textDecoration='underline'
+                    color='brand.300'
+                    mx='3px'>
+                    contact page
+                  </Link>{" "}
+                  and one of our team members will get back to you in the
+                  shortest time possible
+                </Text>
+              </Flex>
             </Flex>
-          </Flex>
-          <Flex
-            flexDirection='column'
-            bg='#F4F7FE'
-            ps='24px'
-            pe='23px'
-            pt='25px'
-            pb='35px'
-            borderRadius='20px'
-            maxW='575px'>
-            <Text
-              color='brand.700'
-              fontSize='22px'
-              lineHeight='28px'
-              fontWeight='500'
-              mb='16px'>
-              Something unclear? We are here to help you!
-            </Text>
-            <Text
-              fontSize='md'
-              lineHeight='28px'
-              color='#878CBD'
-              fontWeight='400'
-              maxW='548px'>
-              Feel free to send us a message using the
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'>
-                contact page
-              </Link>{" "}
-              and one of our team members will get back to you in the shortest
-              time possible
-            </Text>
           </Flex>
         </Flex>
       </Flex>

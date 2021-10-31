@@ -61,7 +61,7 @@ const Home = () => {
           minH={{ base: "800px", md: "870px" }}
           bgImage={homeBg}
           bgSize='cover'
-          bgPosition={{ base: "-60px 0px", md: "center" }}
+          bgPosition={{ base: "-46px 0px", md: "center" }}
           position='relative'>
           <Box
             position='absolute'
@@ -276,7 +276,7 @@ const Home = () => {
                     w='100%'
                     h='100%'
                     justify='center'>
-                    <Box w='150px' w='140px' mb='32px'>
+                    <Box w='140px' mb='32px'>
                       <Image src={mailLogo} w='100%' h='100%' />
                     </Box>
                     <Text
@@ -314,7 +314,7 @@ const Home = () => {
                     w='100%'
                     h='100%'
                     justify='center'>
-                    <Box w='160px' w='165px' transform='rotate(-5deg)'>
+                    <Box w='165px' transform='rotate(-5deg)'>
                       <Image src={simmmpleButtonLogo} w='100%' h='100%' />
                     </Box>
                     <Text

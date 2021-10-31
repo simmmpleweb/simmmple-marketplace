@@ -335,7 +335,6 @@ const TermsConditions = () => {
               color='#878CBD'
               fontSize='lg'
               lineHeight='28px'
-              fontWeight='400'
               mb='45px'
               fontWeight='500'>
               We reserve the right to limit the quantities of the Marketplace
