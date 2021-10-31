@@ -61,7 +61,7 @@ const Home = () => {
           minH={{ base: "800px", md: "870px" }}
           bgImage={homeBg}
           bgSize='cover'
-          bgPosition={{ base: "-60px 0px", md: "center" }}
+          bgPosition={{ base: "-46px 0px", md: "center" }}
           position='relative'>
           <Box
             position='absolute'
