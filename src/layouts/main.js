@@ -10,11 +10,10 @@ export default function MainLayout() {
   };
   return (
     <ScrollToTop>
-
-    <Switch>
-      {getRoutes(routes)}
-      <Redirect from='/' to='/homepage' />
-    </Switch>
+      <Switch>
+        {getRoutes(routes)}
+        <Redirect from='/' to='/homepage' />
+      </Switch>
     </ScrollToTop>
   );
 }
