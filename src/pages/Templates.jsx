@@ -70,7 +70,7 @@ const Templates = (props) => {
         <Flex
           bgImage={templatesBg}
           bgSize="cover"
-          minH="760px"
+          minH={{sm: "660px", lg: "760px"}}
           align="center"
           justify="center"
         >
@@ -84,14 +84,14 @@ const Templates = (props) => {
             <Text fontSize="xs" color="#fff" fontWeight="bold" mb="16px">
               BUILD BETTER, BUILD FASTER
             </Text>
-            <Text fontSize="44px" color="#fff" fontWeight="bold" mb="20px">
+            <Text fontSize={{sm: "34px", lg: "44px"}} color="#fff" fontWeight="bold" mb="20px">
               UI Tools & Templates
             </Text>
             <Text
               fontSize="md"
               color="#fff"
               textAlign="center"
-              maxW="60%"
+              maxW={{sm: "80%", lg: "60%"}}
               mb="64px"
             >
               Join over 10,000+ developers, designers & startups that use our
@@ -107,7 +107,7 @@ const Templates = (props) => {
                 justify="space-between"
                 bg="#fff"
                 borderRadius="70px"
-                w="470px"
+                w={{sm: "300px", lg: "470px"}}
                 h="70px"
                 p="22px 32px"
                 align="center"
@@ -124,7 +124,7 @@ const Templates = (props) => {
             </FormControl>
           </Flex>
         </Flex>
-        <Flex direction="column" w="1170px" mx="auto" pb="200px">
+        <Flex direction="column" w={{sm: "100%", lg: "980px", xl: "1170px"}} mx="auto" pb="200px">
           <Flex
             align="center"
             bg="#fff"
@@ -132,14 +132,18 @@ const Templates = (props) => {
             boxShadow="0px 18px 40px rgba(112, 144, 176, 0.12)"
             letterSpacing="-.5px"
             borderRadius="30px"
-            maxH="130px"
-            p="36px"
+            maxH={{xl: "130px"}}
+            maxW={{lg: "980px", xl: "100%"}}
+            mx="auto"
+            p={{sm: "16px", xl: "36px"}}
             transform="translateY(-50%)"
           >
-            <Stack direction="row" spacing="10px">
+            <Stack direction="row" spacing="10px" overflowX={{sm: "scroll", lg: "hidden"}} mx="auto" flexWrap={{lg: "wrap"}}>
               <NavLink to="/templates/all-templates">
                 <Flex
+                minW={{sm: "135px", md: "150px", lg: "auto"}}
                   align="center"
+                  mb={{lg: "10px", xl: "0px"}}
                   justify="center"
                   borderRadius="30px"
                   transition="all .25s ease"
@@ -159,15 +163,17 @@ const Templates = (props) => {
                     });
                     setActiveTitle("All Templates & Themes");
                   }}
-                  p="20px 22px"
+                  p={{sm: "20px 4px", lg: "20px 22px"}}
                 >
-                  <Text fontSize="sm" fontWeight="normal">
+                  <Text fontSize={{sm: "xs", md: "sm"}} fontWeight="normal">
                     All Templates
                   </Text>
                 </Flex>
               </NavLink>
               <NavLink to="/templates/admin-dashboards">
                 <Flex
+                minW={{sm: "135px", md: "150px", lg: "auto"}}
+                
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -188,15 +194,17 @@ const Templates = (props) => {
                     });
                     setActiveTitle("Admin & Dashboards");
                   }}
-                  p="20px 22px"
+                  p={{sm: "20px 4px", lg: "20px 22px"}}
                 >
-                  <Text fontSize="sm" fontWeight="normal">
+                  <Text fontSize={{sm: "xs", md: "sm"}} fontWeight="normal">
                     Admin & Dashboards
                   </Text>
                 </Flex>
               </NavLink>
               <NavLink to="/templates/ui-kits">
                 <Flex
+                minW={{sm: "135px", md: "150px", lg: "auto"}}
+                
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -217,15 +225,18 @@ const Templates = (props) => {
                     });
                     setActiveTitle("UI Kits");
                   }}
-                  p="20px 30px"
+                  p={{sm: "20px 4px", lg: "20px 30px"}}
+                  
                 >
-                  <Text fontSize="sm" fontWeight="normal">
+                  <Text fontSize={{sm: "xs", md: "sm"}} fontWeight="normal">
                     UI Kits
                   </Text>
                 </Flex>
               </NavLink>
               <NavLink to="/templates/free-templates">
                 <Flex
+                minW={{sm: "135px", md: "150px", lg: "auto"}}
+                
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -246,15 +257,18 @@ const Templates = (props) => {
                     });
                     setActiveTitle("Free templates");
                   }}
-                  p="20px 22px"
+                  p={{sm: "20px 4px", lg: "20px 22px"}}
+                  
                 >
-                  <Text fontSize="sm" fontWeight="normal">
+                  <Text fontSize={{sm: "xs", md: "sm"}} fontWeight="normal">
                     Free Templates
                   </Text>
                 </Flex>
               </NavLink>
               <NavLink to="/templates/premium-templates">
                 <Flex
+                minW={{sm: "135px", md: "150px", lg: "auto"}}
+                
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -275,15 +289,18 @@ const Templates = (props) => {
                     });
                     setActiveTitle("Premium templates");
                   }}
-                  p="20px 22px"
+                  p={{sm: "20px 4px", lg: "20px 22px"}}
+                  
                 >
-                  <Text fontSize="sm" fontWeight="normal">
+                  <Text fontSize={{sm: "xs", md: "sm"}} fontWeight="normal">
                     Premium Templates
                   </Text>
                 </Flex>
               </NavLink>
               <NavLink to="/templates/figma">
                 <Flex
+                minW={{sm: "135px", md: "150px", lg: "auto"}}
+                
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -304,15 +321,18 @@ const Templates = (props) => {
                     });
                     setActiveTitle("Figma Products");
                   }}
-                  p="20px 26px"
+                  p={{sm: "20px 4px", lg: "20px 26px"}}
+                  
                 >
-                  <Text fontSize="sm" fontWeight="normal">
+                  <Text fontSize={{sm: "xs", md: "sm"}} fontWeight="normal">
                     Figma
                   </Text>
                 </Flex>
               </NavLink>
               <NavLink to="/templates/react">
                 <Flex
+                minW={{sm: "135px", md: "150px", lg: "auto"}}
+                
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -333,15 +353,18 @@ const Templates = (props) => {
                     });
                     setActiveTitle("React Products");
                   }}
-                  p="20px 24px"
+                  p={{sm: "20px 4px", lg: "20px 24px"}}
+                  
                 >
-                  <Text fontSize="sm" fontWeight="normal">
+                  <Text fontSize={{sm: "xs", md: "sm"}} fontWeight="normal">
                     ReactJS
                   </Text>
                 </Flex>
               </NavLink>
               <NavLink to="/templates/bootstrap">
                 <Flex
+                minW={{sm: "135px", md: "150px", lg: "auto"}}
+                
                   align="center"
                   justify="center"
                   borderRadius="30px"
@@ -362,28 +385,30 @@ const Templates = (props) => {
                     });
                     setActiveTitle("Bootstrap Products");
                   }}
-                  p="20px 22px"
+                  p={{sm: "20px 4px", lg: "20px 22px"}}
+                  
                 >
-                  <Text fontSize="sm" fontWeight="normal">
+                  <Text fontSize={{sm: "xs", md: "sm"}} fontWeight="normal">
                     Bootstrap
                   </Text>
                 </Flex>
               </NavLink>
             </Stack>
           </Flex>
-          <Flex justify="space-between" mb="88px">
-            <Flex direction="column">
+          <Flex justify="space-between" direction={{sm: "column",md: "row", lg: "row"}} mb={{sm: "36px", md: "56px", lg: "88px"}} px={{md: "18px"}}>
+            <Flex direction="column" align={{sm: "center", md: "start"}}>
               <Text color="brand.300" fontSize="xs" mb="16px" fontWeight="500">
                 OUR DIGITAL PRODUCTS
               </Text>
-              <Text fontSize="34px" color="brand.700" fontWeight="500">
+              <Text fontSize={{sm: "24px", md: "34px"}} color="brand.700" fontWeight="500">
                 {activeTitle}
               </Text>
             </Flex>
             <Select
               maxW="190px"
               h="54px"
-              alignSelf="flex-end"
+              alignSelf={{sm: "center", lg: "flex-end"}}
+              mt={{sm: "32px", lg: "0px"}}
               color="brand.300"
               border="1px solid #E0E5F2"
               _focus={{ boxShadow: "none" }}
