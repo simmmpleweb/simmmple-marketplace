@@ -12,7 +12,8 @@ export default function MainLayout() {
     <ScrollToTop>
       <Switch>
         {getRoutes(routes)}
-        <Redirect from='/' to='/homepage' />
+        <Redirect from="*" to="/404" />
+        <Redirect from="/" to="/homepage" />
       </Switch>
     </ScrollToTop>
   );
