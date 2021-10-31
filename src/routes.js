@@ -10,6 +10,7 @@ import Affiliates from "pages/Affiliates";
 import Contact from "pages/Contact.jsx";
 import Templates from "pages/Templates";
 import AboutUs from "pages/AboutUs";
+import Page404 from "pages/Page404";
 const routes = [
   {
     name: "Home page",
@@ -107,6 +108,12 @@ const routes = [
     secondary: true,
     component: AboutUs,
   },
+  {
+    name: "404",
+    path: "/404",
+    secondary: true,
+    component: Page404
+  }
 ];
 
 export default routes;

@@ -51,7 +51,6 @@ const Product = (props) => {
 
   useEffect(() => {
     const productName = props.match.params.productName.split("-").join("");
-    console.log(productName);
     const foundProduct = productData.find((product) => product[productName]);
     setProduct(foundProduct[productName]);
   }, []);
@@ -84,6 +83,11 @@ const Product = (props) => {
     price,
     compatibility,
   } = product;
+
+  const [scroll, setScroll] = useState({
+    900: false,
+    3000: false,
+  });
 
   return (
     <Layout>
@@ -274,7 +278,15 @@ const Product = (props) => {
               </Flex>
             </Flex>
           </Flex>
-          <Flex direction="column" pt="75px">
+          <Flex
+            direction="column"
+            pt="75px"
+            // position={(scroll[900] && scroll[3000]) ? "absolute" : ((scroll[900] && !scroll[3000]) ? "fixed" : "absolute")}
+            // right={scroll[900] ? "50px" : "0"}
+            // top={scroll[900] ? "-700px" : null}
+            // bottom={scroll[3000] ? "0" : null}
+            w="312px"
+          >
             <Text fontSize="sm" color="brand.700" fontWeight="500" mb="16px">
               License Options
             </Text>

@@ -54,7 +54,6 @@ function Navbar() {
 
   useEffect(() => {
     let secondaryX = false;
-
     routes.forEach((route) => {
       if (route.path.lastIndexOf("/") !== 0) {
         if (
@@ -83,6 +82,9 @@ function Navbar() {
       setScrolled(false);
     }
   };
+  console.log("secondary: ", secondary);
+  console.log("scrolled: ", scrolled);
+
   window.addEventListener("scroll", changeNavbar);
   return (
     <Flex
@@ -109,7 +111,7 @@ function Navbar() {
           align='center'
           h='100%'
           me={{ sm: "auto", md: "auto", lg: "0px" }}>
-          <NavLink to='/'>
+          <NavLink to='/homepage'>
             {window.innerWidth < 768 ? (
               secondary || scrolled ? (
                 <SimmmpleLogoColoredMobile w='100%' h='48px' cursor='pointer' />
