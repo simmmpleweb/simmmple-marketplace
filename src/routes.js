@@ -10,6 +10,7 @@ import Affiliates from "pages/Affiliates";
 import Contact from "pages/Contact.jsx";
 import Templates from "pages/Templates";
 import AboutUs from "pages/AboutUs";
+import Search from "pages/Search";
 const routes = [
   {
     name: "Home page",
@@ -107,6 +108,12 @@ const routes = [
     secondary: true,
     component: AboutUs,
   },
+  {
+    name: "Search",
+    path: "/search",
+    secondary: false,
+    component: Search
+  }
 ];
 
 export default routes;
