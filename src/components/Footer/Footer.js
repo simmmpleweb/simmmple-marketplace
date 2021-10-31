@@ -54,7 +54,6 @@ const Footer = () => {
             mb={{ sm: "26px", lg: "0px" }}>
             <Text
               color='#fff'
-              mb='8px'
               fontSize={{ sm: "26px", lg: "24px" }}
               fontWeight='500'
               mb={{ sm: "8px", lg: "6px" }}

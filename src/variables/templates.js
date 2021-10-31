@@ -1,14 +1,13 @@
+import purityDashboard from "assets/img/homepage/purity-dashboard.png";
+import uranusWireframe from "assets/img/homepage/uranus-wireframe-kit.png";
+import venusFree from "assets/img/homepage/venus-db-free.png";
 import venusPro from "assets/img/homepage/venus-db-pro.png";
 import venusSystem from "assets/img/homepage/venus-design-system.png";
-import uranusWireframe from "assets/img/homepage/uranus-wireframe-kit.png";
-import purityDashboard from "assets/img/homepage/purity-dashboard.png";
-import venusFree from "assets/img/homepage/venus-db-free.png";
-import puritySensual from "assets/img/homepage/purity-sensual-kit.png";
-import venusSystemFree from "assets/img/templates/venus-system-free.png";
-import uranusWireframeFree from "assets/img/templates/uranus-free.png";
 import glassy from "assets/img/templates/glassy.png";
-import taskUI from "assets/img/templates/task-ui.png";
 import saturnUI from "assets/img/templates/saturn-ui.png";
+import taskUI from "assets/img/templates/task-ui.png";
+import uranusWireframeFree from "assets/img/templates/uranus-free.png";
+import venusSystemFree from "assets/img/templates/venus-system-free.png";
 
 export const templatesProducts = {
   alltemplates: [
@@ -121,7 +120,7 @@ export const templatesProducts = {
       category: "Category: Freebies, Figma Products",
       price: 0,
       path: "/",
-    }
+    },
   ],
   admindashboards: [
     {
@@ -174,7 +173,6 @@ export const templatesProducts = {
       category: "Coded, Figma, Dashboards",
       path: "/",
     },
-    
   ],
   uikits: [
     {
@@ -266,8 +264,7 @@ export const templatesProducts = {
       category: "Category: Freebies, Figma Products",
       price: 0,
       path: "/",
-    }
-    
+    },
   ],
   freetemplates: [
     {
@@ -527,6 +524,6 @@ export const templatesProducts = {
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
       path: "/",
-    }
-  ]
-}
+    },
+  ],
+};

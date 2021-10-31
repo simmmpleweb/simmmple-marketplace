@@ -7,7 +7,6 @@ import {
   Grid,
   Button,
   Link,
-  List,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
@@ -194,7 +193,6 @@ const Bundles = () => {
           </Flex>
         </Grid>
         <Flex
-          mx={{ base: "20px", xl: "0px" }}
           py='100px'
           pt={{ base: "0px", lg: "80px" }}
           direction='column'
@@ -471,9 +469,7 @@ const Bundles = () => {
                     md: "0px",
                     lg: "40px",
                     xl: "0px",
-                  }}
-                  flexDirection='column'
-                  zIndex='2'>
+                  }}>
                   <Text
                     fontWeight='bold'
                     textAlign={{ base: "center", lg: "start" }}
@@ -657,10 +653,7 @@ const Bundles = () => {
                     md: "0px",
                     lg: "40px",
                     xl: "0px",
-                  }}
-                  maxW='100%'
-                  flexDirection='column'
-                  zIndex='2'>
+                  }}>
                   <Text
                     fontWeight='bold'
                     textAlign={{ base: "center", lg: "start" }}
@@ -845,10 +838,7 @@ const Bundles = () => {
                     md: "0px",
                     lg: "40px",
                     xl: "0px",
-                  }}
-                  maxW='100%'
-                  flexDirection='column'
-                  zIndex='2'>
+                  }}>
                   <Text
                     fontWeight='bold'
                     textAlign={{ base: "center", lg: "start" }}
@@ -1032,10 +1022,7 @@ const Bundles = () => {
                     md: "0px",
                     lg: "40px",
                     xl: "0px",
-                  }}
-                  maxW='100%'
-                  flexDirection='column'
-                  zIndex='2'>
+                  }}>
                   <Text
                     fontWeight='bold'
                     textAlign={{ base: "center", lg: "start" }}
@@ -1234,10 +1221,7 @@ const Bundles = () => {
                     md: "0px",
                     lg: "40px",
                     xl: "0px",
-                  }}
-                  maxW='100%'
-                  flexDirection='column'
-                  zIndex='2'>
+                  }}>
                   <Text
                     fontWeight='bold'
                     textAlign={{ base: "center", lg: "start" }}
@@ -2260,7 +2244,6 @@ const Bundles = () => {
                 lineHeight='28px'
                 color='#878CBD'
                 fontWeight='400'
-                letterSpacing='-0.5px'
                 mb='16px'
                 maxW='608px'
                 letterSpacing='-0.2px'>

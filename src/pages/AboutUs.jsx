@@ -18,13 +18,10 @@ import zohoLogo from "assets/img/homepage/zoho.png";
 // Custom Components
 import Card from "components/card/Card";
 import CardBody from "components/card/CardBody";
-import React, { useRef } from "react";
+import React from "react";
 import Layout from "components/layout/Layout";
 
 const Bundles = () => {
-  const leftEffect = useRef();
-  const rightEffect = useRef();
-
   return (
     <Layout>
       <Flex direction='column' bg='#fff' overflowX='hidden' pt='120px'>

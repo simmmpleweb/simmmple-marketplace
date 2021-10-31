@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "components/card/Card";
 import { Flex, Text, Image, Button } from "@chakra-ui/react";
-import IconBox from "components/icons/IconBox";
 import { HSeparator } from "components/separator/Separator";
 
 const AppItem = ({ image, name, category, description }) => {

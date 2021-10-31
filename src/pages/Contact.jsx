@@ -1,18 +1,35 @@
 import {
-    Box, Button, Flex, FormControl, FormLabel, Icon,
-    Image, Input, Select, Stack, Tab, TabList, TabPanel, TabPanels, Tabs, Text, Textarea
+  Box,
+  Button,
+  Flex,
+  FormControl,
+  FormLabel,
+  Icon,
+  Image,
+  Input,
+  Select,
+  Stack,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+  Text,
+  Textarea,
 } from "@chakra-ui/react";
 import "assets/css/Contact.css";
 import simmmple3D from "assets/img/contact/simmmple-3d.png";
 import Card from "components/card/Card";
 import IconBox from "components/icons/IconBox";
 import {
-    contactGeneral, contactOthers, contactPartnerships, contactSupport
+  contactGeneral,
+  contactOthers,
+  contactPartnerships,
+  contactSupport,
 } from "components/icons/Icons";
 import Layout from "components/layout/Layout";
 import React, { useRef, useState } from "react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-
 
 const Contact = () => {
   const [tab, setTab] = useState({
@@ -217,24 +234,23 @@ const Contact = () => {
         e.target.children[0].children[4].lastChild.style.display = "none";
       }, 3000);
     } else {
-        e.target[0].value = "";
-        e.target[1].value = "";
-        e.target[2].value = "";
-        e.target[3].value = "";
-        setPartnerships({
-          name: "",
-          email: "",
-          company: "",
-          message: "",
-        });
-        setPartnershipsSubmission({
-          form: false,
-          submission: true,
-        })
+      e.target[0].value = "";
+      e.target[1].value = "";
+      e.target[2].value = "";
+      e.target[3].value = "";
+      setPartnerships({
+        name: "",
+        email: "",
+        company: "",
+        message: "",
+      });
+      setPartnershipsSubmission({
+        form: false,
+        submission: true,
+      });
     }
-
-};
-const handleOthers = (e) => {
+  };
+  const handleOthers = (e) => {
     e.preventDefault();
     if (others.name === "") {
       e.target[0].style.border = "1px solid red";
@@ -283,48 +299,62 @@ const handleOthers = (e) => {
 
   return (
     <Layout>
-      <Flex minH="1500px" pt="100px" pb="200px" w="100%" bg="#FAFCFE">
-        <Box position="absolute" w="586px" h="604px" right="0" top="280px" display={{sm: "none", xl: "block"}}>
+      <Flex minH='1500px' pt='100px' pb='200px' w='100%' bg='#FAFCFE'>
+        <Box
+          position='absolute'
+          w='586px'
+          h='604px'
+          right='0'
+          top='280px'
+          display={{ sm: "none", xl: "block" }}>
           <Image src={simmmple3D} />
         </Box>
-        <Flex direction="column" w={{sm: "325px", md: "90%", lg: "100%", xl: "1170px"}} mx="auto" align="center">
-          <Flex direction="column" textAlign="center" align="center" mb="100px">
-            <Text color="brand.300" fontSize="sm" fontWeight="bold" mb="20px">
+        <Flex
+          direction='column'
+          w={{ sm: "325px", md: "90%", lg: "100%", xl: "1170px" }}
+          mx='auto'
+          align='center'>
+          <Flex direction='column' textAlign='center' align='center' mb='100px'>
+            <Text color='brand.300' fontSize='sm' fontWeight='bold' mb='20px'>
               GET IN TOUCH
             </Text>
-            <Text color="brand.700" fontSize={{sm: "42px", md: "56px"}} fontWeight="bold" mb="20px">
+            <Text
+              color='brand.700'
+              fontSize={{ sm: "42px", md: "56px" }}
+              fontWeight='bold'
+              mb='20px'>
               How can we help you?
             </Text>
             <Text
-              color="#878CBD"
-              fontSize="lg"
-              fontWeight="normal"
-              lineHeight="38px"
-            >
-              We’re here to help and answer any question you might have.<br /> We look
-              forward to hearing from you.
+              color='#878CBD'
+              fontSize='lg'
+              fontWeight='normal'
+              lineHeight='38px'>
+              We’re here to help and answer any question you might have.
+              <br /> We look forward to hearing from you.
             </Text>
           </Flex>
-          <Card p={{sm: "22px", lg: "50px 96px"}} w={{sm: "325px", md: "90%", lg: "780px"}}>
+          <Card
+            p={{ sm: "22px", lg: "50px 96px" }}
+            w={{ sm: "325px", md: "90%", lg: "780px" }}>
             <Tabs defaultIndex={1}>
-              <TabList border="none" mb="50px">
+              <TabList border='none' mb='50px'>
                 <Stack
-                  direction="row"
-                  flexWrap={{sm: "wrap", lg: "nowrap"}}
-                  spacing={{sm: "10px", lg: "22px"}}
-                  justify="center"
-                  py={{sm: "10px"}}
-                  align="center"
-                  bg="#F6F8FD"
-                  borderRadius="30px"
-                  w="100%"
-                >
+                  direction='row'
+                  flexWrap={{ sm: "wrap", lg: "nowrap" }}
+                  spacing={{ sm: "10px", lg: "22px" }}
+                  justify='center'
+                  py={{ sm: "10px" }}
+                  align='center'
+                  bg='#F6F8FD'
+                  borderRadius='30px'
+                  w='100%'>
                   <Tab
-                    boxShadow="none"
-                    _focus="none"
-                    _active="none"
-                    border="none"
-                    px="8px"
+                    boxShadow='none'
+                    _focus='none'
+                    _active='none'
+                    border='none'
+                    px='8px'
                     onClick={() =>
                       setTab({
                         general: true,
@@ -332,8 +362,7 @@ const handleOthers = (e) => {
                         partnerships: false,
                         others: false,
                       })
-                    }
-                  >
+                    }>
                     <Button
                       bg={tab.general ? "#fff" : "none"}
                       boxShadow={
@@ -341,20 +370,19 @@ const handleOthers = (e) => {
                           ? "0px 43px 113px -9px rgba(112, 144, 176, 0.52)"
                           : null
                       }
-                      borderRadius="30px"
-                      transition="all .3s ease"
-                      p="24px"
-                    >
-                      <Text color="brand.300" fontSize="sm" fontWeight="500">
+                      borderRadius='30px'
+                      transition='all .3s ease'
+                      p='24px'>
+                      <Text color='brand.300' fontSize='sm' fontWeight='500'>
                         General
                       </Text>
                     </Button>
                   </Tab>
                   <Tab
-                    _focus="none"
-                    _active="none"
-                    border="none"
-                    px="8px"
+                    _focus='none'
+                    _active='none'
+                    border='none'
+                    px='8px'
                     onClick={() =>
                       setTab({
                         general: false,
@@ -362,8 +390,7 @@ const handleOthers = (e) => {
                         partnerships: false,
                         others: false,
                       })
-                    }
-                  >
+                    }>
                     <Button
                       bg={tab.support ? "#fff" : "none"}
                       boxShadow={
@@ -371,20 +398,19 @@ const handleOthers = (e) => {
                           ? "0px 43px 113px -9px rgba(112, 144, 176, 0.52)"
                           : null
                       }
-                      borderRadius="30px"
-                      transition="all .3s ease"
-                      p="24px"
-                    >
-                      <Text color="brand.300" fontSize="sm" fontWeight="500">
+                      borderRadius='30px'
+                      transition='all .3s ease'
+                      p='24px'>
+                      <Text color='brand.300' fontSize='sm' fontWeight='500'>
                         Support
                       </Text>
                     </Button>
                   </Tab>
                   <Tab
-                    _focus="none"
-                    _active="none"
-                    border="none"
-                    px="8px"
+                    _focus='none'
+                    _active='none'
+                    border='none'
+                    px='8px'
                     onClick={() =>
                       setTab({
                         general: false,
@@ -392,8 +418,7 @@ const handleOthers = (e) => {
                         partnerships: true,
                         others: false,
                       })
-                    }
-                  >
+                    }>
                     <Button
                       bg={tab.partnerships ? "#fff" : "none"}
                       boxShadow={
@@ -401,19 +426,18 @@ const handleOthers = (e) => {
                           ? "0px 43px 113px -9px rgba(112, 144, 176, 0.52)"
                           : null
                       }
-                      borderRadius="30px"
-                      p="24px 32px"
-                    >
-                      <Text color="brand.300" fontSize="sm" fontWeight="500">
+                      borderRadius='30px'
+                      p='24px 32px'>
+                      <Text color='brand.300' fontSize='sm' fontWeight='500'>
                         Partnerships
                       </Text>
                     </Button>
                   </Tab>
                   <Tab
-                    _focus="none"
-                    _active="none"
-                    border="none"
-                    px="8px"
+                    _focus='none'
+                    _active='none'
+                    border='none'
+                    px='8px'
                     onClick={() =>
                       setTab({
                         general: false,
@@ -421,8 +445,7 @@ const handleOthers = (e) => {
                         partnerships: false,
                         others: true,
                       })
-                    }
-                  >
+                    }>
                     <Button
                       bg={tab.others ? "#fff" : "none"}
                       boxShadow={
@@ -430,10 +453,9 @@ const handleOthers = (e) => {
                           ? "0px 43px 113px -9px rgba(112, 144, 176, 0.52)"
                           : null
                       }
-                      borderRadius="30px"
-                      p="24px 32px"
-                    >
-                      <Text color="brand.300" fontSize="sm" fontWeight="500">
+                      borderRadius='30px'
+                      p='24px 32px'>
+                      <Text color='brand.300' fontSize='sm' fontWeight='500'>
                         Others
                       </Text>
                     </Button>
@@ -442,142 +464,130 @@ const handleOthers = (e) => {
               </TabList>
 
               <TabPanels>
-                <TabPanel p="0px">
-                  <Flex direction="column" align="center" textAlign="center">
+                <TabPanel p='0px'>
+                  <Flex direction='column' align='center' textAlign='center'>
                     <IconBox
-                      w="110px"
-                      h="110px"
-                      bg="#F6F8FD"
-                      borderRadius="50%"
-                      mb="20px"
-                    >
-                      <Icon as={contactGeneral} w="35px" h="35px" />
+                      w='110px'
+                      h='110px'
+                      bg='#F6F8FD'
+                      borderRadius='50%'
+                      mb='20px'>
+                      <Icon as={contactGeneral} w='35px' h='35px' />
                     </IconBox>
                     <Text
-                      color="brand.700"
-                      fontSize={{sm: "26px", lg: "40px"}}
-                      fontWeight="bold"
-                      mb="20px"
-                    >
+                      color='brand.700'
+                      fontSize={{ sm: "26px", lg: "40px" }}
+                      fontWeight='bold'
+                      mb='20px'>
                       General Contact
                     </Text>
                     <Text
-                      color="#878CBD"
-                      fontSize="lg"
-                      fontWeight="normal"
-                      maxW={{md: "65%"}}
-                      lineHeight="40px"
-                      mb="36px"
-                    >
+                      color='#878CBD'
+                      fontSize='lg'
+                      fontWeight='normal'
+                      maxW={{ md: "65%" }}
+                      lineHeight='40px'
+                      mb='36px'>
                       Have some feedback or a general question? Get in touch
                       with us below 👋!
                     </Text>
                     <form onSubmit={handleGeneral}>
                       <Flex
-                        direction="column"
-                        display={generalSubmission.form ? "block" : "none"}
-                    
-                      >
+                        direction='column'
+                        display={generalSubmission.form ? "block" : "none"}>
                         <Flex
-                          display="none"
+                          display='none'
                           ref={errorGeneral}
-                          align="center"
-                          justify="center"
-                          bg="#FFE4E4"
-                          borderRadius="16px"
-                          minH="56px"
-                          p={{sm: "12px", md: "0px"}}
-                          mb="40px"
-                          fontSize={{sm: "sm", md: "md"}}
-                        >
-                          <Text color="red.500" fontWeight="500">
+                          align='center'
+                          justify='center'
+                          bg='#FFE4E4'
+                          borderRadius='16px'
+                          minH='56px'
+                          p={{ sm: "12px", md: "0px" }}
+                          mb='40px'
+                          fontSize={{ sm: "sm", md: "md" }}>
+                          <Text color='red.500' fontWeight='500'>
                             One or more fields have an error. Please check and
                             try again!
                           </Text>
                         </Flex>
-                        <FormControl mb="18px" mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="name"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='name'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Name*
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="name"
-                            placeholder="Enter your name"
-                            borderRadius="30px"
-                            fontSize={{sm: "sm", md: "md"}}
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='name'
+                            placeholder='Enter your name'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="12px"
+                            p='26px 32px'
+                            mb='12px'
                             onChange={(e) =>
                               setGeneral({ ...general, name: e.target.value })
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'>
                             The name field is required.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="email"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='email'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Email*
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="email"
-                            type="email"
-                            placeholder="Enter your email address"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='email'
+                            type='email'
+                            placeholder='Enter your email address'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="12px"
+                            p='26px 32px'
+                            mb='12px'
                             onChange={(e) =>
                               setGeneral({ ...general, email: e.target.value })
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The email field is required.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="textarea"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='textarea'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Message*
                           </FormLabel>
                           <Textarea
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="textarea"
-                            placeholder="Your message"
-                            mb="18px"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='textarea'
+                            placeholder='Your message'
+                            mb='18px'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            minH="210px"
+                            p='26px 32px'
+                            minH='210px'
                             onChange={(e) =>
                               setGeneral({
                                 ...general,
@@ -586,26 +596,23 @@ const handleOthers = (e) => {
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The message field is required.
                           </Text>
                         </FormControl>
                         <Button
-                          bg="brand.300"
-                          type="submit"
-                          w="100%"
+                          bg='brand.300'
+                          type='submit'
+                          w='100%'
                           _hover={{ bg: "#1A05B7" }}
-                          minH="56px"
-  
-                          mt="50px"
-                        >
-                          <Text color="#fff" fontSize="sm" fontWeight="500">
+                          minH='56px'
+                          mt='50px'>
+                          <Text color='#fff' fontSize='sm' fontWeight='500'>
                             Send Message
                           </Text>
                         </Button>
@@ -613,215 +620,200 @@ const handleOthers = (e) => {
                     </form>
 
                     <Flex
-                      align="center"
-                      mt="14px"
-                      justify="center"
-                      w="100%"
-                      borderRadius="16px"
-                      p={{sm: "12px"}}
-                      bg="#ECE9FF"
-                      minH="56px"
-                      display={generalSubmission.submission ? "flex" : "none"}
-                    >
-                      <Text color="brand.300" fontWeight="500">
+                      align='center'
+                      mt='14px'
+                      justify='center'
+                      w='100%'
+                      borderRadius='16px'
+                      p={{ sm: "12px" }}
+                      bg='#ECE9FF'
+                      minH='56px'
+                      display={generalSubmission.submission ? "flex" : "none"}>
+                      <Text color='brand.300' fontWeight='500'>
                         Thank you! Your submission has been received!
                       </Text>
                     </Flex>
                   </Flex>
                 </TabPanel>
                 <TabPanel>
-                  <Flex direction="column" align="center" textAlign="center">
+                  <Flex direction='column' align='center' textAlign='center'>
                     <IconBox
-                      w="110px"
-                      h="110px"
-                      bg="#FFF6E5"
-                      borderRadius="50%"
-                      mb="20px"
-                    >
-                      <Icon as={contactSupport} w="35px" h="35px" />
+                      w='110px'
+                      h='110px'
+                      bg='#FFF6E5'
+                      borderRadius='50%'
+                      mb='20px'>
+                      <Icon as={contactSupport} w='35px' h='35px' />
                     </IconBox>
                     <Text
-                      color="brand.700"
-                      fontSize={{sm: "26px", lg: "40px"}}
-                      fontWeight="bold"
-                      mb="20px"
-                    >
+                      color='brand.700'
+                      fontSize={{ sm: "26px", lg: "40px" }}
+                      fontWeight='bold'
+                      mb='20px'>
                       Premium Support
                     </Text>
                     <Text
-                      color="#878CBD"
-                      fontSize="lg"
-                      fontWeight="normal"
-                      maxW={{lg: "80%"}}
-                      lineHeight="40px"
-                      mb="36px"
-                    >
+                      color='#878CBD'
+                      fontSize='lg'
+                      fontWeight='normal'
+                      maxW={{ lg: "80%" }}
+                      lineHeight='40px'
+                      mb='36px'>
                       Have a question related to our{" "}
-                      <Text as="span" color="gray.800" fontWeight="500">
+                      <Text as='span' color='gray.800' fontWeight='500'>
                         UI Kits, Themes
                       </Text>{" "}
                       and other{" "}
-                      <Text as="span" color="gray.800" fontWeight="500">
+                      <Text as='span' color='gray.800' fontWeight='500'>
                         Premium Products?
                       </Text>{" "}
                       Please let us know below!
                     </Text>
                     <form onSubmit={handleSupport}>
                       <Flex
-                        direction="column"
-                        w="100%"
-                        display={supportSubmission.form ? "block" : "none"}
-                      >
+                        direction='column'
+                        w='100%'
+                        display={supportSubmission.form ? "block" : "none"}>
                         <Flex
-                          display="none"
+                          display='none'
                           ref={errorSupport}
-                          align="center"
-                          justify="center"
-                          bg="#FFE4E4"
-                          borderRadius="16px"
-                          minH="56px"
-                          fontSize={{sm: "sm", md: "md"}}
-                          p={{sm: "12px", md: "0px"}}
-                          mb="40px"
-                        >
-                          <Text color="red.500" fontWeight="500">
+                          align='center'
+                          justify='center'
+                          bg='#FFE4E4'
+                          borderRadius='16px'
+                          minH='56px'
+                          fontSize={{ sm: "sm", md: "md" }}
+                          p={{ sm: "12px", md: "0px" }}
+                          mb='40px'>
+                          <Text color='red.500' fontWeight='500'>
                             One or more fields have an error. Please check and
                             try again!
                           </Text>
                         </Flex>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="name-support"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='name-support'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Name*
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="name-support"
-                            placeholder="Enter your name"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='name-support'
+                            placeholder='Enter your name'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="12px"
+                            p='26px 32px'
+                            mb='12px'
                             onChange={(e) =>
                               setSupport({ ...support, name: e.target.value })
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The name field is required.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="email-support"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='email-support'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Email*
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="email-support"
-                            type="email"
-                            placeholder="Enter your email address"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='email-support'
+                            type='email'
+                            placeholder='Enter your email address'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="12px"
+                            p='26px 32px'
+                            mb='12px'
                             onChange={(e) =>
                               setSupport({ ...support, email: e.target.value })
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The email field is required.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="product-support"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='product-support'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Product*
                           </FormLabel>
                           <Flex
-                            align="center"
-                            px="16px"
-                            borderRadius="30px"
-                            border="1px solid rgb(226, 232, 240)"
-                            h="70px"
-                            mb="12px"
-                          >
+                            align='center'
+                            px='16px'
+                            borderRadius='30px'
+                            border='1px solid rgb(226, 232, 240)'
+                            h='70px'
+                            mb='12px'>
                             <Select
-                            fontSize={{sm: "sm", md: "md"}}
-                              id="product-support"
-                              _focus="none"
-                              placeholder="Select Product"
-                              border="none"
-                              h="100%"
-                              color="#878CBD"
+                              fontSize={{ sm: "sm", md: "md" }}
+                              id='product-support'
+                              _focus='none'
+                              placeholder='Select Product'
+                              border='none'
+                              h='100%'
+                              color='#878CBD'
                               _placeholder={{ color: "#878CBD" }}
-                              size="lg"
+                              size='lg'
                               onChange={(e) =>
                                 setSupport({
                                   ...support,
                                   product: e.target.value,
                                 })
-                              }
-                            >
-                              <option value="option1">option1</option>
-                              <option value="option2">option2</option>
-                              <option value="option3">option3</option>
+                              }>
+                              <option value='option1'>option1</option>
+                              <option value='option2'>option2</option>
+                              <option value='option3'>option3</option>
                             </Select>
                           </Flex>
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             You must choose a product.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="textarea-support"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='textarea-support'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Problem Description*
                           </FormLabel>
                           <Textarea
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="textarea-support"
-                            placeholder="Your message"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='textarea-support'
+                            placeholder='Your message'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            minH="210px"
-                            mb="12px"
+                            p='26px 32px'
+                            minH='210px'
+                            mb='12px'
                             onChange={(e) =>
                               setSupport({
                                 ...support,
@@ -830,96 +822,90 @@ const handleOthers = (e) => {
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'>
                             The message field is required.
                           </Text>
                         </FormControl>
                         <Button
-                          bg="brand.300"
-                          w="100%"
+                          bg='brand.300'
+                          w='100%'
                           _hover={{ bg: "#1A05B7" }}
-                          minH="56px"
-  
-                          mt="50px"
-                          type="submit"
-                        >
-                          <Text color="#fff" fontSize="sm" fontWeight="500">
+                          minH='56px'
+                          mt='50px'
+                          type='submit'>
+                          <Text color='#fff' fontSize='sm' fontWeight='500'>
                             Send Message
                           </Text>
                         </Button>
                       </Flex>
                     </form>
                     <Flex
-                      align="center"
-                      mt="14px"
-                      justify="center"
-                      w="100%"
+                      align='center'
+                      mt='14px'
+                      justify='center'
+                      w='100%'
                       borderRa
-                      p={{sm: "12px"}}dius="16px"
-                      bg="#ECE9FF"
-                      borderRadius="30px"
-                      minH="56px"
-                      display={supportSubmission.submission ? "flex" : "none"}
-                    >
-                      <Text color="brand.300" fontWeight="500">
+                      p={{ sm: "12px" }}
+                      dius='16px'
+                      bg='#ECE9FF'
+                      borderRadius='30px'
+                      minH='56px'
+                      display={supportSubmission.submission ? "flex" : "none"}>
+                      <Text color='brand.300' fontWeight='500'>
                         Thank you! Your submission has been received!
                       </Text>
                     </Flex>
                     <Flex
-                      direction="column"
-                      textAlign="center"
-                      align="center"
-                      mt="42px"
-                      display={supportSubmission.info ? "flex" : "none"}
-                    >
-                      <Flex align="center" mb="16px">
+                      direction='column'
+                      textAlign='center'
+                      align='center'
+                      mt='42px'
+                      display={supportSubmission.info ? "flex" : "none"}>
+                      <Flex align='center' mb='16px'>
                         <IconBox
-                          w="34px"
-                          h="34px"
-                          bg="#fff"
-                          boxShadow="0px 16px 18px rgba(112, 144, 176, 0.09)"
-                          borderRadius="50%"
-                          me="10px"
-                        >
+                          w='34px'
+                          h='34px'
+                          bg='#fff'
+                          boxShadow='0px 16px 18px rgba(112, 144, 176, 0.09)'
+                          borderRadius='50%'
+                          me='10px'>
                           <Icon
                             as={AiOutlineInfoCircle}
-                            w="21px"
-                            h="21px"
-                            color="orange.500"
+                            w='21px'
+                            h='21px'
+                            color='orange.500'
                           />
                         </IconBox>
-                        <Text color="#878CBD" fontSize={{sm: "sm", lg: "lg"}}>
+                        <Text color='#878CBD' fontSize={{ sm: "sm", lg: "lg" }}>
                           Please{" "}
-                          <Text as="span" color="gray.800" fontWeight="500">
+                          <Text as='span' color='gray.800' fontWeight='500'>
                             include as much detail as possible
                           </Text>{" "}
                           regarding your issue.
                         </Text>
                       </Flex>
-                      <Flex align="center">
+                      <Flex align='center'>
                         <IconBox
-                          w="34px"
-                          h="34px"
-                          bg="#fff"
-                          boxShadow="0px 16px 18px rgba(112, 144, 176, 0.09)"
-                          borderRadius="50%"
-                          me="10px"
-                        >
+                          w='34px'
+                          h='34px'
+                          bg='#fff'
+                          boxShadow='0px 16px 18px rgba(112, 144, 176, 0.09)'
+                          borderRadius='50%'
+                          me='10px'>
                           <Icon
                             as={AiOutlineInfoCircle}
-                            w="21px"
-                            h="21px"
-                            color="orange.500"
+                            w='21px'
+                            h='21px'
+                            color='orange.500'
                           />
                         </IconBox>
-                        <Text color="#878CBD" fontSize={{sm: "sm", lg: "lg"}}>
+                        <Text color='#878CBD' fontSize={{ sm: "sm", lg: "lg" }}>
                           Support has priority for{" "}
-                          <Text as="span" color="gray.800" fontWeight="500">
+                          <Text as='span' color='gray.800' fontWeight='500'>
                             template & premium customers.
                           </Text>
                         </Text>
@@ -928,75 +914,70 @@ const handleOthers = (e) => {
                   </Flex>
                 </TabPanel>
                 <TabPanel>
-                  <Flex direction="column" align="center" textAlign="center">
+                  <Flex direction='column' align='center' textAlign='center'>
                     <IconBox
-                      w="110px"
-                      h="110px"
-                      bg="#FFEFEF"
-                      borderRadius="50%"
-                      mb="20px"
-                    >
-                      <Icon as={contactPartnerships} w="35px" h="35px" />
+                      w='110px'
+                      h='110px'
+                      bg='#FFEFEF'
+                      borderRadius='50%'
+                      mb='20px'>
+                      <Icon as={contactPartnerships} w='35px' h='35px' />
                     </IconBox>
                     <Text
-                      color="brand.700"
-                      fontSize={{sm: "26px", md: "40px"}}
-                      fontWeight="bold"
-                      mb="20px"
-                    >
+                      color='brand.700'
+                      fontSize={{ sm: "26px", md: "40px" }}
+                      fontWeight='bold'
+                      mb='20px'>
                       Partnerships
                     </Text>
                     <Text
-                      color="#878CBD"
-                      fontSize="lg"
-                      fontWeight="normal"
-                      maxW={{lg: "80%"}}
-                      lineHeight="40px"
-                      mb="36px"
-                    >
+                      color='#878CBD'
+                      fontSize='lg'
+                      fontWeight='normal'
+                      maxW={{ lg: "80%" }}
+                      lineHeight='40px'
+                      mb='36px'>
                       Have something interesting we should know about? Get in
                       touch with us below! 👋
                     </Text>
                     <form onSubmit={handlePartnerships}>
-
                       <Flex
-                        direction="column"
-                        w="100%"
-                        display={partnershipsSubmission.form ? "block" : "none"}
-                      >
-                      <Flex
-                        display="none"
-                        ref={errorPartnerships}
-                        align="center"
-                        justify="center"
-                        bg="#FFE4E4"
-                        borderRadius="16px"
-                        minH="56px"
-                        fontSize={{sm: "sm", md: "md"}}      
-                        mb="40px"
-                      >
-                        <Text color="red.500" fontWeight="500">
-                          One or more fields have an error. Please check and try
-                          again!
-                        </Text>
-                      </Flex>
-                        <FormControl mb="18px">
+                        direction='column'
+                        w='100%'
+                        display={
+                          partnershipsSubmission.form ? "block" : "none"
+                        }>
+                        <Flex
+                          display='none'
+                          ref={errorPartnerships}
+                          align='center'
+                          justify='center'
+                          bg='#FFE4E4'
+                          borderRadius='16px'
+                          minH='56px'
+                          fontSize={{ sm: "sm", md: "md" }}
+                          mb='40px'>
+                          <Text color='red.500' fontWeight='500'>
+                            One or more fields have an error. Please check and
+                            try again!
+                          </Text>
+                        </Flex>
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="name-partnerships"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='name-partnerships'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Name
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="name-partnerships"
-                            placeholder="Enter your name"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='name-partnerships'
+                            placeholder='Enter your name'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="18px"
+                            p='26px 32px'
+                            mb='18px'
                             onChange={(e) =>
                               setPartnerships({
                                 ...partnerships,
@@ -1005,34 +986,32 @@ const handleOthers = (e) => {
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The name field is required.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="email-partnerships"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='email-partnerships'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Email
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="email-partnerships"
-                            type="email"
-                            placeholder="Enter your email address"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='email-partnerships'
+                            type='email'
+                            placeholder='Enter your email address'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="18px"
+                            p='26px 32px'
+                            mb='18px'
                             onChange={(e) =>
                               setPartnerships({
                                 ...partnerships,
@@ -1041,33 +1020,31 @@ const handleOthers = (e) => {
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The email field is required.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="company-partnerships"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='company-partnerships'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Company / Website
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="company-partnerships"
-                            placeholder="Enter your email address"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='company-partnerships'
+                            placeholder='Enter your email address'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="18px"
+                            p='26px 32px'
+                            mb='18px'
                             onChange={(e) =>
                               setPartnerships({
                                 ...partnerships,
@@ -1076,24 +1053,23 @@ const handleOthers = (e) => {
                             }
                           />
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="textarea-partnerships"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='textarea-partnerships'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Message
                           </FormLabel>
                           <Textarea
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="textarea-partnerships"
-                            placeholder="Your message"
-                            mb="50px"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='textarea-partnerships'
+                            placeholder='Your message'
+                            mb='50px'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            minH="210px"
+                            p='26px 32px'
+                            minH='210px'
                             onChange={(e) =>
                               setPartnerships({
                                 ...partnerships,
@@ -1102,184 +1078,173 @@ const handleOthers = (e) => {
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The message field is required.
                           </Text>
                         </FormControl>
                         <Button
-                          bg="brand.300"
-                          w="100%"
-                          type="submit"
+                          bg='brand.300'
+                          w='100%'
+                          type='submit'
                           _hover={{ bg: "#1A05B7" }}
-                          minH="56px"
-  
-                        >
-                          <Text color="#fff" fontSize="sm" fontWeight="500">
+                          minH='56px'>
+                          <Text color='#fff' fontSize='sm' fontWeight='500'>
                             Send Message
                           </Text>
                         </Button>
                       </Flex>
                     </form>
                     <Flex
-                      align="center"
-                      mt="14px"
-                      justify="center"
-                      w="100%"
-                      borderRadius="16px"
-                      bg="#ECE9FF"
-                      minH="56px"
-                      p={{sm: "12px"}}
+                      align='center'
+                      mt='14px'
+                      justify='center'
+                      w='100%'
+                      borderRadius='16px'
+                      bg='#ECE9FF'
+                      minH='56px'
+                      p={{ sm: "12px" }}
                       display={
                         partnershipsSubmission.submission ? "flex" : "none"
-                      }
-                    >
-                      <Text color="brand.300" fontWeight="500">
+                      }>
+                      <Text color='brand.300' fontWeight='500'>
                         Thank you! Your submission has been received!
                       </Text>
                     </Flex>
                   </Flex>
                 </TabPanel>
                 <TabPanel>
-                  <Flex direction="column" align="center" textAlign="center">
+                  <Flex direction='column' align='center' textAlign='center'>
                     <IconBox
-                      w="110px"
-                      h="110px"
-                      bg="#F6F8FD"
-                      borderRadius="50%"
-                      mb="20px"
-                    >
-                      <Icon as={contactOthers} w="35px" h="35px" />
+                      w='110px'
+                      h='110px'
+                      bg='#F6F8FD'
+                      borderRadius='50%'
+                      mb='20px'>
+                      <Icon as={contactOthers} w='35px' h='35px' />
                     </IconBox>
                     <Text
-                      color="brand.700"
-                      fontSize={{sm: "26px", lg: "40px"}}
-                      fontWeight="bold"
-                      mb="20px"
-                    >
+                      color='brand.700'
+                      fontSize={{ sm: "26px", lg: "40px" }}
+                      fontWeight='bold'
+                      mb='20px'>
                       Others
                     </Text>
                     <Text
-                      color="#878CBD"
-                      fontSize="lg"
-                      fontWeight="normal"
-                      maxW={{md: "55%"}}
-                      lineHeight="40px"
-                      mb="36px"
-                    >
+                      color='#878CBD'
+                      fontSize='lg'
+                      fontWeight='normal'
+                      maxW={{ md: "55%" }}
+                      lineHeight='40px'
+                      mb='36px'>
                       Have some other things to say to us? Get in touch with us
                       below 👋!
                     </Text>
                     <form onSubmit={handleOthers}>
                       <Flex
-                        direction="column"
+                        direction='column'
                         display={othersSubmission.form ? "block" : "none"}
-                        w="100%"
-                      >
+                        w='100%'>
                         <Flex
-                          display="none"
+                          display='none'
                           ref={errorOthers}
-                          align="center"
-                          justify="center"
-                          bg="#FFE4E4"
-                          borderRadius="16px"
-                          minH="56px"
-                          p={{sm: "12px", md: "0px"}}
-                          mb="40px"
-                        >
-                          <Text color="red.500" fontWeight="500" fontSize={{sm: "sm", md: "md"}}>
+                          align='center'
+                          justify='center'
+                          bg='#FFE4E4'
+                          borderRadius='16px'
+                          minH='56px'
+                          p={{ sm: "12px", md: "0px" }}
+                          mb='40px'>
+                          <Text
+                            color='red.500'
+                            fontWeight='500'
+                            fontSize={{ sm: "sm", md: "md" }}>
                             One or more fields have an error. Please check and
                             try again!
                           </Text>
                         </Flex>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="name"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='name'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Name*
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="name"
-                            placeholder="Enter your name"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='name'
+                            placeholder='Enter your name'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="12px"
+                            p='26px 32px'
+                            mb='12px'
                             onChange={(e) =>
                               setOthers({ ...others, name: e.target.value })
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The name field is required.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="email"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='email'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Email*
                           </FormLabel>
                           <Input
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="email"
-                            type="email"
-                            placeholder="Enter your email address"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='email'
+                            type='email'
+                            placeholder='Enter your email address'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            mb="12px"
+                            p='26px 32px'
+                            mb='12px'
                             onChange={(e) =>
                               setOthers({ ...others, email: e.target.value })
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The email field is required.
                           </Text>
                         </FormControl>
-                        <FormControl mb="18px">
+                        <FormControl mb='18px'>
                           <FormLabel
-                            htmlFor="textarea"
-                            color="brand.700"
-                            fontWeight="500"
-                            mb="12px"
-                          >
+                            htmlFor='textarea'
+                            color='brand.700'
+                            fontWeight='500'
+                            mb='12px'>
                             Message*
                           </FormLabel>
                           <Textarea
-                          fontSize={{sm: "sm", md: "md"}}
-                            id="textarea"
-                            placeholder="Your message"
-                            mb="18px"
-                            borderRadius="30px"
+                            fontSize={{ sm: "sm", md: "md" }}
+                            id='textarea'
+                            placeholder='Your message'
+                            mb='18px'
+                            borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
-                            p="26px 32px"
-                            minH="210px"
+                            p='26px 32px'
+                            minH='210px'
                             onChange={(e) =>
                               setOthers({
                                 ...others,
@@ -1288,43 +1253,39 @@ const handleOthers = (e) => {
                             }
                           />
                           <Text
-                            display="none"
-                            color="red.500"
-                            fontSize="sm"
-                            fontWeight="500"
-                            textAlign="start"
-                            mb="26px"
-                          >
+                            display='none'
+                            color='red.500'
+                            fontSize='sm'
+                            fontWeight='500'
+                            textAlign='start'
+                            mb='26px'>
                             The message field is required.
                           </Text>
                         </FormControl>
                         <Button
-                          bg="brand.300"
-                          type="submit"
-                          w="100%"
+                          bg='brand.300'
+                          type='submit'
+                          w='100%'
                           _hover={{ bg: "#1A05B7" }}
-                          minH="56px"
-  
-                          mt="50px"
-                        >
-                          <Text color="#fff" fontSize="sm" fontWeight="500">
+                          minH='56px'
+                          mt='50px'>
+                          <Text color='#fff' fontSize='sm' fontWeight='500'>
                             Send Message
                           </Text>
                         </Button>
                       </Flex>
                     </form>
                     <Flex
-                      align="center"
-                      mt="14px"
-                      justify="center"
-                      w="100%"
-                      borderRadius="16px"
-                      p={{sm: "12px"}}
-                      bg="#ECE9FF"
-                      minH="56px"
-                      display={othersSubmission.submission ? "flex" : "none"}
-                    >
-                      <Text color="brand.300" fontWeight="500">
+                      align='center'
+                      mt='14px'
+                      justify='center'
+                      w='100%'
+                      borderRadius='16px'
+                      p={{ sm: "12px" }}
+                      bg='#ECE9FF'
+                      minH='56px'
+                      display={othersSubmission.submission ? "flex" : "none"}>
+                      <Text color='brand.300' fontWeight='500'>
                         Thank you! Your submission has been received!
                       </Text>
                     </Flex>
