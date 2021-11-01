@@ -84,10 +84,32 @@ const Product = (props) => {
     compatibility,
   } = product;
 
-  const [scroll, setScroll] = useState({
-    900: false,
-    3000: false,
-  });
+  const [scroll900, setScroll900] = useState(false);
+  const [scroll3000, setScroll3000] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 900) {
+      setScroll900(true);
+    } else {
+      setScroll900(false);
+    }
+
+    if (window.scrollY >= 3000) {
+      setScroll3000(true);
+    } else {
+      setScroll3000(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    console.log('mounted')
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
+
+  console.log(scroll900)
 
   return (
     <Layout>
@@ -270,7 +292,14 @@ const Product = (props) => {
 
          
 
-          <Flex direction='column' pt='75px'>
+          <Flex 
+          direction='column'
+          pt='75px'
+          w="312px"
+          position={scroll900 ? (scroll900 && scroll3000 ? "absolute" : "fixed") : "absolute"}
+          top={scroll900 ? "-670px" : "0px"}
+          right={scroll900 ? "160px" : "0px"}
+          >
             <Text fontSize='sm' color='brand.700' fontWeight='500' mb='16px'>
 
               License Options

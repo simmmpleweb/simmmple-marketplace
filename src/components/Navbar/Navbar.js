@@ -82,8 +82,6 @@ function Navbar() {
       setScrolled(false);
     }
   };
-  console.log("secondary: ", secondary);
-  console.log("scrolled: ", scrolled);
 
   window.addEventListener("scroll", changeNavbar);
   return (
