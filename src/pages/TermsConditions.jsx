@@ -15,13 +15,25 @@ import { NavLink } from "react-router-dom";
 const TermsConditions = () => {
   return (
     <Layout>
-      <Flex direction='column' bg='white' overflowX='hidden' mb='100px'>
-        <Flex pb='100px' direction='column' w='775px' mx='auto' mt='150px'>
+      <Flex
+        direction='column'
+        bg='white'
+        overflowX='hidden'
+        mb='100px'
+        maxW='100%'>
+        <Flex
+          pb='100px'
+          direction='column'
+          w='775px'
+          maxW='100%'
+          mx='auto'
+          mt='150px'>
           {/* Mini Navbar */}
           <Flex
             bg='#F6F8FD'
             borderRadius='70px'
             w='582px'
+            maxW='100%'
             h='80px'
             mx='auto'
             mb='70px'
@@ -90,7 +102,8 @@ const TermsConditions = () => {
             flexDirection='column'
             w='774px'
             px='50px'
-            mx='auto'
+            maxW='95%'
+            mx={{ base: "auto", lg: "auto" }}
             pt='80px'
             pb='50px'>
             <Text
