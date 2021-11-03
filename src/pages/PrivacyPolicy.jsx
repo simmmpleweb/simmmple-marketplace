@@ -5,6 +5,7 @@ import {
   ListItem,
   OrderedList,
   Text,
+  Stack,
   UnorderedList,
 } from "@chakra-ui/react";
 import Layout from "components/layout/Layout";
@@ -16,18 +17,32 @@ import { NavLink } from "react-router-dom";
 const PrivacyPolicy = () => {
   return (
     <Layout>
-      <Flex direction='column' bg='white' overflowX='hidden' mb='100px'>
-        <Flex pb='100px' direction='column' w='775px' mx='auto' mt='150px'>
+      <Flex
+        direction='column'
+        bg='white'
+        maxW='100%'
+        overflowX='hidden'
+        mb='100px'>
+        <Flex
+          pb='100px'
+          direction='column'
+          w='775px'
+          maxW='100%'
+          mx='auto'
+          mt='150px'>
           {/* Mini Navbar */}
           <Flex
             bg='#F6F8FD'
             borderRadius='70px'
             w='582px'
-            h='80px'
+            minH={{ base: "140px", md: "80px" }}
             mx='auto'
             mb='70px'
             justify='space-between'
-            p='10px'>
+            p='10px'
+            px={{ base: "30px", md: "10px" }}
+            maxW='95%'
+            flexWrap={{ base: "wrap", md: "nowrap" }}>
             <NavLink to='/licenses'>
               <Button
                 h='100%'
@@ -90,9 +105,10 @@ const PrivacyPolicy = () => {
             borderRadius='30px'
             flexDirection='column'
             w='774px'
-            px='50px'
+            px={{ base: "16px", md: "50px" }}
             mx='auto'
             pt='80px'
+            maxW='95%'
             pb='50px'>
             <Text
               fontSize='40px'
@@ -1306,7 +1322,7 @@ const PrivacyPolicy = () => {
               in the past twelve (12) months:
             </Text>
             <HSeparator w='100%' mx='auto' />
-            <Flex flexDirection='column' width='674px' mb='56px'>
+            <Flex flexDirection='column' width='674px' maxW='100%' mb='56px'>
               <Flex mt='20px' px='20px'>
                 <Text
                   color='#878CBD'
@@ -1314,9 +1330,9 @@ const PrivacyPolicy = () => {
                   lineHeight='28px'
                   fontWeight='400'
                   mb='56px'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   Category
                 </Text>
                 <Text
@@ -1325,9 +1341,9 @@ const PrivacyPolicy = () => {
                   lineHeight='28px'
                   fontWeight='400'
                   mb='56px'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "100px", md: "335px" }}
+                  w={{ base: "60px", md: "335px" }}
+                  me={{ base: "10px", md: "45px" }}>
                   Examples
                 </Text>
                 <Text
@@ -1336,30 +1352,30 @@ const PrivacyPolicy = () => {
                   lineHeight='28px'
                   fontWeight='400'
                   mb='56px'
-                  w='100%'
+                  w={{ base: "100px", lg: "100%" }}
                   textAlign='center'>
                   Collected
                 </Text>
               </Flex>
-              <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' bg='#F4F7FE' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   A. Identifiers
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Contact details, such as real name, alias, postal address,
                   telephone or mobile contact number, unique personal
                   identifier, online identifier, Internet Protocol address,
@@ -1367,322 +1383,322 @@ const PrivacyPolicy = () => {
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   YES
                 </Text>
               </Flex>
-              <Flex p='20px' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   B. Personal information categories listed in the California
                   Customer Records statute
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Name, contact information, education, employment, employment
                   history and financial information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   YES
                 </Text>
               </Flex>
-              <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' bg='#F4F7FE' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   C. Protected classification characteristics under California
                   or federal law
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Gender and date of birth
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   NO
                 </Text>
               </Flex>
-              <Flex p='20px' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   D. Commercial information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Transaction information, purchase history, financial details
                   and payment information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   YES
                 </Text>
               </Flex>
-              <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' bg='#F4F7FE' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   E. Biometric information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Fingerprints and voiceprints
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   NO
                 </Text>
               </Flex>
-              <Flex p='20px' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   F. Internet or other similar network activity
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Browsing history, search history, online behavior, interest
                   data, and interactions with our and other websites,
                   applications, systems and advertisements
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   YES
                 </Text>
               </Flex>
-              <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' bg='#F4F7FE' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   G. Geolocation data
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Device location
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   YES
                 </Text>
               </Flex>
-              <Flex p='20px' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   H. Audio, electronic, visual, thermal, olfactory, or similar
                   information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Images and audio, video or call recordings created in
                   connection with our business activities
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   NO
                 </Text>
               </Flex>
-              <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' bg='#F4F7FE' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   I. Professional or employment-related information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Business contact details in order to provide you our services
                   at a business level, job title as well as work history and
                   professional qualifications if you apply for a job with us
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   NO
                 </Text>
               </Flex>
-              <Flex p='20px' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   J. Education Information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Student records and directory information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   NO
                 </Text>
               </Flex>
-              <Flex p='20px' bg='#F4F7FE' borderRadius='10px'>
+              <Flex p='20px' maxW='100%' bg='#F4F7FE' borderRadius='10px'>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='155px'
+                  minW={{ base: "100px", md: "155px" }}
                   me='10px'
-                  w='155px'>
+                  w={{ base: "100px", md: "155px" }}>
                   K. Inferences drawn from other personal information
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  minW='335px'
-                  w='335px'
-                  me='45px'>
+                  minW={{ base: "140px", md: "335px" }}
+                  w={{ base: "140px", md: "335px" }}
+                  me={{ base: "0px", md: "45px" }}>
                   Inferences drawn from any of the collected personal
                   information listed above to create a profile or summary about,
                   for example, an individual’s preferences and characteristics
                 </Text>
                 <Text
                   color='#878CBD'
-                  fontSize='sm'
+                  fontSize={{ base: "xs", md: "sm" }}
                   lineHeight='28px'
                   fontWeight='400'
-                  w='100%'>
+                  w={{ base: "40px", lg: "100%" }}>
                   NO
                 </Text>
               </Flex>

@@ -16,17 +16,26 @@ const Licenses = () => {
   return (
     <Layout>
       <Flex direction='column' overflowX='hidden' mb='100px'>
-        <Flex pb='100px' direction='column' w='775px' mx='auto' mt='150px'>
+        <Flex
+          pb='100px'
+          direction='column'
+          w='775px'
+          maxW='100%'
+          mx='auto'
+          mt='150px'>
           {/* Mini Navbar */}
           <Flex
             bg='#F6F8FD'
             borderRadius='70px'
             w='582px'
-            h='80px'
+            minH={{ base: "140px", md: "80px" }}
             mx='auto'
             mb='70px'
             justify='space-between'
-            p='10px'>
+            p='10px'
+            px={{ base: "30px", md: "10px" }}
+            maxW='95%'
+            flexWrap={{ base: "wrap", md: "nowrap" }}>
             <NavLink to='/licenses'>
               <Button
                 h='100%'
@@ -82,6 +91,7 @@ const Licenses = () => {
           </Flex>
           {/* Main Section */}
           <Flex
+            maxW='95%'
             boxShadow='75px 85px 113px 0px #7090B014'
             border='1px solid'
             borderColor='#E9EDF7'

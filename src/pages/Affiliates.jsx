@@ -12,18 +12,29 @@ const Affiliates = () => {
         direction='column'
         bg='white'
         boxShadow='75px 85px 113px 0px #7090B014'
-        overflowX='hidden'>
-        <Flex pb='100px' direction='column' w='775px' mx='auto' mt='150px'>
+        overflowX='hidden'
+        mb='100px'
+        maxW='100%'>
+        <Flex
+          pb='100px'
+          direction='column'
+          w='775px'
+          maxW='100%'
+          mx='auto'
+          mt='150px'>
           {/* Mini Navbar */}
           <Flex
             bg='#F6F8FD'
             borderRadius='70px'
             w='582px'
-            h='80px'
+            minH={{ base: "140px", md: "80px" }}
             mx='auto'
             mb='70px'
             justify='space-between'
-            p='10px'>
+            p='10px'
+            px={{ base: "30px", md: "10px" }}
+            maxW='95%'
+            flexWrap={{ base: "wrap", md: "nowrap" }}>
             <NavLink to='/licenses'>
               <Button
                 h='100%'
@@ -85,6 +96,7 @@ const Affiliates = () => {
             borderColor='#E9EDF7'
             borderRadius='30px'
             flexDirection='column'
+            maxW='95%'
             w='774px'
             px='50px'
             mx='auto'
@@ -172,34 +184,6 @@ const Affiliates = () => {
               </Link>
             </Text>
           </Flex>
-          {/* x. */}
-          <Text
-            color='brand.700'
-            fontSize='30px'
-            lineHeight='40px'
-            fontWeight='500'
-            mb='16px'
-            display='flex'>
-            General
-          </Text>
-          <Text
-            color='#878CBD'
-            fontSize='lg'
-            lineHeight='28px'
-            fontWeight='400'
-            mb='45px'>
-            Supplemental terms and conditions or documents that may be posted on
-            the Site from time to time are hereby expressly incorporated herein
-            by reference. We reserve the right, in our sole discretion, to make
-            changes or modifications to these Terms of Use at any time and for
-            any reason
-          </Text>
-          <Link to='#' textDecoration='underline' color='brand.300' mx='3px'>
-            contact page
-          </Link>
-          <Text fontWeight='500' mx='3px' as='span'>
-            X product from Simmmple
-          </Text>{" "}
         </Flex>
       </Flex>
     </Layout>

@@ -33,12 +33,14 @@ const TermsConditions = () => {
             bg='#F6F8FD'
             borderRadius='70px'
             w='582px'
-            maxW='100%'
-            h='80px'
+            minH={{ base: "140px", md: "80px" }}
             mx='auto'
             mb='70px'
             justify='space-between'
-            p='10px'>
+            p='10px'
+            px={{ base: "30px", md: "10px" }}
+            maxW='95%'
+            flexWrap={{ base: "wrap", md: "nowrap" }}>
             <NavLink to='/licenses'>
               <Button
                 h='100%'
