@@ -753,19 +753,7 @@ const Product = (props) => {
           </Flex>
 
           <Box pt='75px' w='312px'>
-            <Flex
-              flexDirection='column'
-              // position={
-              //   scroll900
-              //     ? scroll900 && scroll3000
-              //       ? "absolute"
-              //       : "fixed"
-              //     : "absolute"
-              // }
-              // top={scroll900 ? "-670px" : "0px"}
-              // right={scroll900 ? "0px" : "0px"}
-              // transform={scroll900 ? "translate(0%, 0px)" : "translate(0%, 0px)"}
-            >
+            <Flex flexDirection='column'>
               <Text fontSize='sm' color='brand.700' fontWeight='500' mb='16px'>
                 License Options
               </Text>
@@ -920,159 +908,138 @@ const Product = (props) => {
                 </Flex>
               </Stack>
 
-              <StickyContainer>
-                <Sticky topOffset={80}>
-                  {() => (
-                    <Box>
-                      <Link href='#' textDecoration='none'>
-                        <Button
-                          borderRadius='70px'
-                          bg='#ECE9FF'
-                          w='100%'
-                          border='1px solid'
-                          borderColor='brand.300'
-                          h='60px'
-                          mb='14px'>
-                          <Text color='brand.300' fontSize='sm'>
-                            Live Preview
-                          </Text>
-                        </Button>
-                      </Link>
-                      <Link href='#' textDecoration='none'>
-                        <Button
-                          borderRadius='70px'
-                          bg='brand.300'
-                          w='100%'
-                          h='60px'
-                          _hover={{ bg: "#1A05B7" }}>
-                          <Text color='#fff' fontSize='sm'>
-                            Buy it Now!
-                          </Text>
-                        </Button>
-                      </Link>
-                      <Divider
-                        h='1px'
-                        bg='rgba(135, 140, 189, 0.2)'
-                        my='32px'
-                      />
-                      <Flex
-                        direction='column'
-                        p='24px'
-                        bg='#F8F7FF'
-                        borderRadius='30px'
-                        mb='26px'>
-                        <Text
-                          color='brand.300'
-                          fontSize='md'
-                          fontWeight='500'
-                          mb='10px'>
-                          Features
-                        </Text>
-                        <Stack direction='column' spacing='6px'>
-                          <Flex align='center'>
-                            <Icon
-                              as={BsPatchCheckFill}
-                              me='12px'
-                              w='18px'
-                              h='18px'
-                              color='brand.300'
-                            />
-                            <Text color='#878CBD' fontSize='sm'>
-                              Perfect for construction businesses
-                            </Text>
-                          </Flex>
-                          <Flex align='center'>
-                            <Icon
-                              as={BsPatchCheckFill}
-                              me='12px'
-                              w='18px'
-                              h='18px'
-                              color='brand.300'
-                            />
-                            <Text color='#878CBD' fontSize='sm'>
-                              Production Quality Build
-                            </Text>
-                          </Flex>
-                          <Flex align='center'>
-                            <Icon
-                              as={BsPatchCheckFill}
-                              me='12px'
-                              w='18px'
-                              h='18px'
-                              color='brand.300'
-                            />
-                            <Text color='#878CBD' fontSize='sm'>
-                              Beautiful & Modern
-                            </Text>
-                          </Flex>
-                          <Flex align='center'>
-                            <Icon
-                              as={BsPatchCheckFill}
-                              me='12px'
-                              w='18px'
-                              h='18px'
-                              color='brand.300'
-                            />
-                            <Text color='#878CBD' fontSize='sm'>
-                              Easily Edited
-                            </Text>
-                          </Flex>
-                        </Stack>
-                        <Divider
-                          h='1px'
-                          bg='rgba(135, 140, 189, 0.2)'
-                          my='22px'
-                        />
-                        <Text color='brand.300' fontWeight='500' mb='20px'>
-                          Compatibility
-                        </Text>
-                        <Stack direction='row' spacing='14px'>
-                          {compatibility.map((item, index) => item)}
-                        </Stack>
-                        <Divider
-                          h='1px'
-                          bg='rgba(135, 140, 189, 0.2)'
-                          my='22px'
-                        />
-                        <Text fontSize='sm' color='#878CBD' textAlign='center'>
-                          Sold via gumroad.com
-                        </Text>
-                      </Flex>
-                      <Link href='#'>
-                        <Flex
-                          justify='space-between'
-                          p='22px'
-                          border='1px solid #ECE9FF'
-                          borderRadius='30px'
-                          align='center'
-                          mb='24px'>
-                          <Flex align='center' me='auto'>
-                            <DribbleIcon w='36px' h='36px' me='20px' />
-                            <Flex direction='column'>
-                              <Text color='brand.700' fontSize='md'>
-                                Simmmple
-                              </Text>
-                              <Text color='#878CBD' fontSize='sm'>
-                                Follow us on Dribbble
-                              </Text>
-                            </Flex>
-                          </Flex>
-                          <ChevronRight w='16px' h='16px' />
-                        </Flex>
-                      </Link>
-                      <Text
-                        textAlign='center'
-                        color='#878CBD'
-                        fontSize='xs'
-                        maxW='80%'
-                        mx='auto'>
-                        *Product sales are made via the official Gumroad
-                        marketplace.
+              <Link href='#' textDecoration='none'>
+                <Button
+                  borderRadius='70px'
+                  bg='#ECE9FF'
+                  w='100%'
+                  border='1px solid'
+                  borderColor='brand.300'
+                  h='60px'
+                  mb='14px'>
+                  <Text color='brand.300' fontSize='sm'>
+                    Live Preview
+                  </Text>
+                </Button>
+              </Link>
+              <Link href='#' textDecoration='none'>
+                <Button
+                  borderRadius='70px'
+                  bg='brand.300'
+                  w='100%'
+                  h='60px'
+                  _hover={{ bg: "#1A05B7" }}>
+                  <Text color='#fff' fontSize='sm'>
+                    Buy it Now!
+                  </Text>
+                </Button>
+              </Link>
+              <Divider h='1px' bg='rgba(135, 140, 189, 0.2)' my='32px' />
+              <Flex
+                direction='column'
+                p='24px'
+                bg='#F8F7FF'
+                borderRadius='30px'
+                mb='26px'>
+                <Text
+                  color='brand.300'
+                  fontSize='md'
+                  fontWeight='500'
+                  mb='10px'>
+                  Features
+                </Text>
+                <Stack direction='column' spacing='6px'>
+                  <Flex align='center'>
+                    <Icon
+                      as={BsPatchCheckFill}
+                      me='12px'
+                      w='18px'
+                      h='18px'
+                      color='brand.300'
+                    />
+                    <Text color='#878CBD' fontSize='sm'>
+                      Perfect for construction businesses
+                    </Text>
+                  </Flex>
+                  <Flex align='center'>
+                    <Icon
+                      as={BsPatchCheckFill}
+                      me='12px'
+                      w='18px'
+                      h='18px'
+                      color='brand.300'
+                    />
+                    <Text color='#878CBD' fontSize='sm'>
+                      Production Quality Build
+                    </Text>
+                  </Flex>
+                  <Flex align='center'>
+                    <Icon
+                      as={BsPatchCheckFill}
+                      me='12px'
+                      w='18px'
+                      h='18px'
+                      color='brand.300'
+                    />
+                    <Text color='#878CBD' fontSize='sm'>
+                      Beautiful & Modern
+                    </Text>
+                  </Flex>
+                  <Flex align='center'>
+                    <Icon
+                      as={BsPatchCheckFill}
+                      me='12px'
+                      w='18px'
+                      h='18px'
+                      color='brand.300'
+                    />
+                    <Text color='#878CBD' fontSize='sm'>
+                      Easily Edited
+                    </Text>
+                  </Flex>
+                </Stack>
+                <Divider h='1px' bg='rgba(135, 140, 189, 0.2)' my='22px' />
+                <Text color='brand.300' fontWeight='500' mb='20px'>
+                  Compatibility
+                </Text>
+                <Stack direction='row' spacing='14px'>
+                  {compatibility.map((item, index) => item)}
+                </Stack>
+                <Divider h='1px' bg='rgba(135, 140, 189, 0.2)' my='22px' />
+                <Text fontSize='sm' color='#878CBD' textAlign='center'>
+                  Sold via gumroad.com
+                </Text>
+              </Flex>
+              <Link href='#'>
+                <Flex
+                  justify='space-between'
+                  p='22px'
+                  border='1px solid #ECE9FF'
+                  borderRadius='30px'
+                  align='center'
+                  mb='24px'>
+                  <Flex align='center' me='auto'>
+                    <DribbleIcon w='36px' h='36px' me='20px' />
+                    <Flex direction='column'>
+                      <Text color='brand.700' fontSize='md'>
+                        Simmmple
                       </Text>
-                    </Box>
-                  )}
-                </Sticky>
-              </StickyContainer>
+                      <Text color='#878CBD' fontSize='sm'>
+                        Follow us on Dribbble
+                      </Text>
+                    </Flex>
+                  </Flex>
+                  <ChevronRight w='16px' h='16px' />
+                </Flex>
+              </Link>
+              <Text
+                textAlign='center'
+                color='#878CBD'
+                fontSize='xs'
+                maxW='80%'
+                mx='auto'>
+                *Product sales are made via the official Gumroad marketplace.
+              </Text>
             </Flex>
           </Box>
         </Flex>
