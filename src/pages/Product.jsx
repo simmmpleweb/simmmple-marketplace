@@ -186,9 +186,10 @@ const Product = (props) => {
                         lg: "525px",
                         xl: "680px",
                       }}
+                      borderRadius="20px"
                     >
-                      <ModalBody w="100%" h="100%" p="0px">
-                        <Image src={images[1]} w="100%" h="100%" />
+                      <ModalBody w="100%" h="100%" p="0px" borderRadius="20px">
+                        <Image src={images[1]} w="100%" h="100%" borderRadius="20px"/>
                       </ModalBody>
                     </ModalContent>
                   </Modal>
@@ -220,9 +221,10 @@ const Product = (props) => {
                         lg: "525px",
                         xl: "680px",
                       }}
+                      borderRadius="20px"
                     >
-                      <ModalBody w="100%" h="100%" p="0px">
-                        <Image src={images[2]} w="100%" h="100%" />
+                      <ModalBody w="100%" h="100%" p="0px" borderRadius="20px">
+                        <Image src={images[2]} w="100%" h="100%" borderRadius="20px"/>
                       </ModalBody>
                     </ModalContent>
                   </Modal>
@@ -254,9 +256,10 @@ const Product = (props) => {
                         lg: "525px",
                         xl: "680px",
                       }}
+                      borderRadius="20px"
                     >
-                      <ModalBody w="100%" h="100%" p="0px">
-                        <Image src={images[3]} w="100%" h="100%" />
+                      <ModalBody w="100%" h="100%" p="0px" borderRadius="20px">
+                        <Image src={images[3]} w="100%" h="100%" borderRadius="20px"/>
                       </ModalBody>
                     </ModalContent>
                   </Modal>
@@ -288,9 +291,10 @@ const Product = (props) => {
                         lg: "525px",
                         xl: "680px",
                       }}
+                      borderRadius="20px"
                     >
-                      <ModalBody w="100%" h="100%" p="0px">
-                        <Image src={images[4]} w="100%" h="100%" />
+                      <ModalBody w="100%" h="100%" p="0px" borderRadius="20px">
+                        <Image src={images[4]} w="100%" h="100%" borderRadius="20px"/>
                       </ModalBody>
                     </ModalContent>
                   </Modal>
