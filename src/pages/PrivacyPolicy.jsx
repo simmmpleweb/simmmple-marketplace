@@ -123,7 +123,7 @@ const PrivacyPolicy = () => {
               textAlign='center'
               mx='auto'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Last updated January 29, 2021
@@ -133,7 +133,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Thank you for choosing to be part of our community at Simmmple Web
@@ -157,30 +157,32 @@ const PrivacyPolicy = () => {
               your right to privacy. If you have any questions or concerns about
               this privacy notice, or our practices with regards to your
               personal information, please contact us at our{" "}
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'
-                fontWeight='500'>
-                contact page.
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>contact page.</Text>
+                  </NavLink>
             </Text>
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               When you visit our website
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'
-                fontWeight='500'>
-                https://simmmple.com
-              </Link>{" "}
+              <NavLink
+                    to='/'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>https://simmmple.com</Text>
+                  </NavLink>{""}
               (the "
               <Text fontWeight='500' mx='1px' as='span'>
                 Website
@@ -198,7 +200,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               This privacy notice applies to all information collected through
@@ -208,7 +210,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='500'
               mb='45px'>
               Please read this privacy notice carefully as it will help you
@@ -301,7 +303,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -312,7 +314,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               We collect personal information that you voluntarily provide to us
@@ -324,7 +326,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               The personal information that we collect depends on the context of
@@ -335,7 +337,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -347,7 +349,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -359,7 +361,7 @@ const PrivacyPolicy = () => {
               payment instrument. All payment data is stored by Gumroad. You may
               find their privacy notice link(s) here:
               <Link
-                to='https://gumroad.com/privacy'
+                href='https://gumroad.com/privacy'
                 textDecoration='underline'
                 color='brand.300'
                 mx='3px'
@@ -370,7 +372,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               All personal information that you provide to us must be true,
@@ -380,7 +382,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='500'
               mb='38px'>
               Information automatically collected
@@ -388,7 +390,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               <Text fontWeight='500' mx='3px' me='0px' as='span'>
@@ -401,7 +403,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               We automatically collect certain information when you visit, use
@@ -418,7 +420,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               Like many businesses, we also collect information through cookies
@@ -427,7 +429,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='38px'>
               The information we collect includes:
@@ -436,7 +438,7 @@ const PrivacyPolicy = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='45px'>
                   <em>Log and Usage Data</em>. Log and usage data is
@@ -456,7 +458,7 @@ const PrivacyPolicy = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='45px'>
                   <em>Device Data</em>. We collect device data such as
@@ -472,7 +474,7 @@ const PrivacyPolicy = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='45px'>
                   <em>Location Data</em>. We collect location data such as
@@ -503,7 +505,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -516,7 +518,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We use personal information collected via our Website for a
@@ -530,7 +532,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We use the information we collect or receive:
@@ -558,14 +560,15 @@ const PrivacyPolicy = () => {
                   obtain your consent to use your name and the content of the
                   testimonial. If you wish to update, or delete your
                   testimonial, please contact us at{" "}
-                  <Link
-                    to='https://simmmple.com/contact'
-                    textDecoration='none !important'
+                  <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
                     color='brand.300'
-                    mx='3px'
-                    fontWeight='500'>
-                    https://simmmple.com/contact
-                  </Link>
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>https://simmmple.com/contact</Text>
+                  </NavLink>{""}
                   and be sure to include your name, testimonial location, and
                   contact information.
                 </Text>
@@ -717,7 +720,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               {" "}
@@ -731,7 +734,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We may process or share your data that we hold based on the
@@ -739,7 +742,7 @@ const PrivacyPolicy = () => {
             </Text>
             <UnorderedList>
               <ListItem lineHeight='38px' color='#878CBD'>
-                <Text fontSize='lg' lineHeight='28px' fontWeight='400'>
+                <Text fontSize='lg' lineHeight='34px' fontWeight='400'>
                   <Text fontWeight='500' mx='3px' ms='0px' as='span'>
                     Consent:
                   </Text>{" "}
@@ -748,7 +751,7 @@ const PrivacyPolicy = () => {
                 </Text>
               </ListItem>
               <ListItem lineHeight='38px' color='#878CBD'>
-                <Text fontSize='lg' lineHeight='28px' fontWeight='400'>
+                <Text fontSize='lg' lineHeight='34px' fontWeight='400'>
                   <Text fontWeight='500' mx='3px' ms='0px' as='span'>
                     Legitimate Interests:
                   </Text>{" "}
@@ -757,7 +760,7 @@ const PrivacyPolicy = () => {
                 </Text>
               </ListItem>
               <ListItem lineHeight='38px' color='#878CBD'>
-                <Text fontSize='lg' lineHeight='28px' fontWeight='400'>
+                <Text fontSize='lg' lineHeight='34px' fontWeight='400'>
                   <Text fontWeight='500' mx='3px' ms='0px' as='span'>
                     Performance of a Contract:
                   </Text>{" "}
@@ -767,7 +770,7 @@ const PrivacyPolicy = () => {
                 </Text>
               </ListItem>
               <ListItem lineHeight='38px' color='#878CBD'>
-                <Text fontSize='lg' lineHeight='28px' fontWeight='400'>
+                <Text fontSize='lg' lineHeight='34px' fontWeight='400'>
                   <Text fontWeight='500' mx='3px' ms='0px' as='span'>
                     Legal Obligations:
                   </Text>{" "}
@@ -782,7 +785,7 @@ const PrivacyPolicy = () => {
               <ListItem lineHeight='38px' color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='45px'>
                   <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -800,7 +803,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               More specifically, we may need to process your data or share your
@@ -810,7 +813,7 @@ const PrivacyPolicy = () => {
               <ListItem lineHeight='38px' color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='45px'>
                   <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -838,7 +841,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -850,7 +853,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We may use cookies and similar tracking technologies (like web
@@ -872,7 +875,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -885,7 +888,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               The Website may contain advertisements from third parties that are
@@ -913,7 +916,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -926,7 +929,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We will only keep your personal information for as long as it is
@@ -940,7 +943,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               When we have no ongoing legitimate business need to process your
@@ -964,7 +967,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -978,7 +981,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               In some regions (like the European Economic Area), you have
@@ -989,21 +992,22 @@ const PrivacyPolicy = () => {
               (iv) if applicable, to data portability. In certain circumstances,
               you may also have the right to object to the processing of your
               personal information. To make such a request, please use the
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'
-                fontWeight='500'>
-                contact details
-              </Link>
+              <NavLink
+                    to='/'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>contact details</Text>
+                  </NavLink>{""}
               provided below. We will consider and act upon any request in
               accordance with applicable data protection laws.
             </Text>
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If we are relying on your consent to process your personal
@@ -1016,7 +1020,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If you are a resident in the European Economic Area and you
@@ -1024,7 +1028,7 @@ const PrivacyPolicy = () => {
               you also have the right to complain to your local data protection
               supervisory authority. You can find their contact details here:
               <Link
-                to='http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.html'
+                href='http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.html'
                 textDecoration='underline'
                 color='brand.300'
                 mx='3px'
@@ -1035,13 +1039,13 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If you are a resident in Switzerland, the contact details for the
               data protection authorities are available here:
               <Link
-                to='https://www.edoeb.admin.ch/edoeb/en/home.html'
+                href='https://www.edoeb.admin.ch/edoeb/en/home.html'
                 textDecoration='underline'
                 color='brand.300'
                 mx='3px'
@@ -1052,23 +1056,24 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If you have questions or comments about your privacy rights, you
               may
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'
-                fontWeight='500'>
-                contact us here.
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>contact us here.</Text>
+                  </NavLink>{""}
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='700'
               mb='45px'
               color='brand.700'>
@@ -1077,7 +1082,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If you would at any time like to review or change the information
@@ -1102,7 +1107,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Upon your request to terminate your account, we will deactivate or
@@ -1115,7 +1120,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text
@@ -1133,7 +1138,7 @@ const PrivacyPolicy = () => {
               our Website. To opt-out of interest-based advertising by
               advertisers on our Website visit{" "}
               <Link
-                to='#'
+                href='http://www.aboutads.info/choices/'
                 textDecoration='underline'
                 color='brand.300'
                 mx='3px'
@@ -1144,7 +1149,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text
@@ -1178,7 +1183,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Most web browsers and some mobile operating systems and mobile
@@ -1207,7 +1212,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -1219,7 +1224,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               California Civil Code Section 1798.83, also known as the "Shine
@@ -1236,7 +1241,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If you are under 18 years of age, reside in California, and have a
@@ -1253,7 +1258,7 @@ const PrivacyPolicy = () => {
             <Text
               color='brand.700'
               fontSize='xl'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='500'
               mb='45px'>
               CCPA Privacy Notice
@@ -1261,7 +1266,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               The California Code of Regulations defines a "resident" as:
@@ -1289,7 +1294,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               All other individuals are defined as "non-residents."
@@ -1297,7 +1302,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If this definition of "resident" applies to you, we must adhere to
@@ -1307,7 +1312,7 @@ const PrivacyPolicy = () => {
             <Text
               color='brand.700'
               fontSize='xl'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='500'
               mb='45px'>
               What categories of personal information do we collect?
@@ -1315,7 +1320,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='56px'>
               We have collected the following categories of personal information
@@ -1327,7 +1332,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize='md'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='56px'
                   minW={{ base: "100px", md: "155px" }}
@@ -1338,7 +1343,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize='md'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='56px'
                   minW={{ base: "100px", md: "335px" }}
@@ -1349,7 +1354,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize='md'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='56px'
                   w={{ base: "100px", lg: "100%" }}
@@ -1361,7 +1366,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1371,7 +1376,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1384,7 +1389,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   YES
@@ -1394,7 +1399,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1405,7 +1410,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1416,7 +1421,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   YES
@@ -1426,7 +1431,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1437,7 +1442,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1447,7 +1452,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   NO
@@ -1457,7 +1462,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1467,7 +1472,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1478,7 +1483,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   YES
@@ -1488,7 +1493,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1498,7 +1503,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1508,7 +1513,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   NO
@@ -1518,7 +1523,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1528,7 +1533,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1540,7 +1545,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   YES
@@ -1550,7 +1555,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1560,7 +1565,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1570,7 +1575,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   YES
@@ -1580,7 +1585,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1591,7 +1596,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1602,7 +1607,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   NO
@@ -1612,7 +1617,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1622,7 +1627,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1634,7 +1639,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   NO
@@ -1644,7 +1649,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1654,7 +1659,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1664,7 +1669,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   NO
@@ -1674,7 +1679,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "100px", md: "155px" }}
                   me='10px'
@@ -1684,7 +1689,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   minW={{ base: "140px", md: "335px" }}
                   w={{ base: "140px", md: "335px" }}
@@ -1696,7 +1701,7 @@ const PrivacyPolicy = () => {
                 <Text
                   color='#878CBD'
                   fontSize={{ base: "xs", md: "sm" }}
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   w={{ base: "40px", lg: "100%" }}>
                   NO
@@ -1706,7 +1711,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We may also collect other personal information outside of these
@@ -1715,19 +1720,19 @@ const PrivacyPolicy = () => {
             </Text>
             <UnorderedList>
               <ListItem lineHeight='38px' color='#878CBD'>
-                <Text fontSize='lg' lineHeight='28px' fontWeight='400'>
+                <Text fontSize='lg' lineHeight='34px' fontWeight='400'>
                   Receiving help through our customer support channels;
                 </Text>
               </ListItem>
               <ListItem lineHeight='38px' color='#878CBD'>
-                <Text fontSize='lg' lineHeight='28px' fontWeight='400'>
+                <Text fontSize='lg' lineHeight='34px' fontWeight='400'>
                   Participation in customer surveys or contests; and
                 </Text>
               </ListItem>
               <ListItem lineHeight='38px' color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='40px'>
                   Facilitation in the delivery of our Services and to respond to
@@ -1739,7 +1744,7 @@ const PrivacyPolicy = () => {
             <Text
               color='brand.700'
               fontSize='xl'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='500'
               mb='45px'>
               How do we use and share your personal information?
@@ -1747,7 +1752,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               More information about our data collection and sharing practices
@@ -1756,25 +1761,26 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               You may contact us by visiting{" "}
-              <Link
-                to='https://simmmple.com/contact'
-                fontWeight='500'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'>
-                https://simmmple.com/contact
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>https://simmmple.com/contact</Text>
+                  </NavLink>
               , or by referring to the contact details at the bottom of this
               document.
             </Text>
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If you are using an authorized agent to exercise your right to
@@ -1785,7 +1791,7 @@ const PrivacyPolicy = () => {
             <Text
               color='brand.700'
               fontSize='xl'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='700'
               mb='45px'>
               Will your information be shared with anyone else?
@@ -1793,7 +1799,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We may disclose your personal information with our service
@@ -1804,7 +1810,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We may use your personal information for our own business
@@ -1815,7 +1821,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Simmmple Web LLC has not disclosed or sold any personal
@@ -1827,7 +1833,7 @@ const PrivacyPolicy = () => {
             <Text
               color='brand.700'
               fontSize='xl'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='500'
               mb='45px'>
               Your rights with respect to your personal data
@@ -1835,7 +1841,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'
               textDecoration='underline'>
@@ -1844,7 +1850,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               You can ask for the deletion of your personal information. If you
@@ -1859,7 +1865,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'
               textDecoration='underline'>
@@ -1868,7 +1874,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Depending on the circumstances, you have a right to know:
@@ -1911,7 +1917,7 @@ const PrivacyPolicy = () => {
               <ListItem lineHeight='38px' color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='40px'>
                   the business or commercial purpose for collecting or selling
@@ -1922,7 +1928,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               In accordance with applicable law, we are not obligated to provide
@@ -1933,7 +1939,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'
               textDecoration='underline'>
@@ -1943,7 +1949,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We will not discriminate against you if you exercise your privacy
@@ -1952,7 +1958,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'
               textDecoration='underline'>
@@ -1961,7 +1967,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Upon receiving your request, we will need to verify your identity
@@ -1979,7 +1985,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We will only use personal information provided in your request to
@@ -1995,7 +2001,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'
               textDecoration='underline'>
@@ -2040,21 +2046,19 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               To exercise these rights, you can contact us by visiting
-              <Link
-                to='https://simmmple.com/contact'
-                textDecoration='underline'
-                color='brand.300'
-                mx='2px'
-                fontWeight='500'
-                as='span'>
-                https://simmmple.com
-                <br />
-                /contact
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>https://simmmple.com/contact</Text>
+                  </NavLink>
               , or by referring to the contact details at the bottom of this
               document. If you have a complaint about how we handle your data,
               we would like to hear from you.
@@ -2073,7 +2077,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' ms='0px' as='span'>
@@ -2085,7 +2089,7 @@ const PrivacyPolicy = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We may update this privacy notice from time to time. The updated
@@ -2108,22 +2112,23 @@ const PrivacyPolicy = () => {
               display='flex'>
               11. How can you contact us about this notice?
             </Text>
-            <Text color='#878CBD' fontSize='lg' lineHeight='28px' mb='45px'>
+            <Text color='#878CBD' fontSize='lg' lineHeight='34px' mb='45px'>
               If you have questions or comments about this notice, you may{" "}
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'
-                fontWeight='500'>
-                contact us here
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>contact us here</Text>
+                  </NavLink>
               and this is our mailing address:
             </Text>
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Simmmple Web LLC, Str. Matei Voievod 103-113, Bloc O3, Scara 3,
@@ -2135,43 +2140,46 @@ const PrivacyPolicy = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               12. How can you review, update, or delete the data we collect from
               you?
             </Text>
-            <Text color='#878CBD' fontSize='lg' lineHeight='28px' mb='45px'>
+            <Text color='#878CBD' fontSize='lg' lineHeight='34px' mb='45px'>
               Based on the applicable laws of your country, you may have the
               right to request access to the personal information we collect
               from you, change that information, or delete it in some
               circumstances. To request to review, update, or delete your
               personal information, please visit:
-              <Link
-                to='https://simmmple.com/contact'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'
-                fontWeight='500'>
-                https://simmmple.com/contact
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>https://simmmple.com/contact</Text>
+                  </NavLink>
               . We will respond to your request within 30 days.
             </Text>
             <HSeparator w='100%' mb='40px' mx='auto' />
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               textAlign='center'
               mx='auto'>
               Got a question?{" "}
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'>
-                Contact us.
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>Contact us</Text>
+                  </NavLink>{""}
             </Text>
           </Flex>
         </Flex>
