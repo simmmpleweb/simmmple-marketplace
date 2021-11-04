@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import {
   Flex,
   Box,
@@ -52,6 +52,15 @@ import Layout from "components/layout/Layout";
 const Home = () => {
   const leftEffect = useRef();
   const rightEffect = useRef();
+  const inputValue = useRef('');
+  const history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const urlParameter = inputValue.current.value.split(' ').join('-');
+    history.push(`/search/${urlParameter}`)
+  }
 
   return (
     <Layout>
@@ -110,7 +119,9 @@ const Home = () => {
                 responsive mobile-first websites and apps.
               </Text>
             </Flex>
-            <FormControl>
+            <form onSubmit={handleSubmit}>
+
+            <FormControl >
               <Flex
                 justify='space-between'
                 bg='#fff'
@@ -121,15 +132,20 @@ const Home = () => {
                 p='22px 32px'
                 align='center'>
                 <Input
+                ref={inputValue}
                   placeholder='eg. Venus Design System'
                   boxShadow='none'
                   border='none'
                   _focus={{ border: "none" }}
                   _placeholder={{ color: "#878CBD" }}
                 />
+                <Button type="submit" boxShadow="none">
+                  
                 <Icon as={BsSearch} w='20px' h='20px' color='#878CBD' />
+                </Button>
               </Flex>
             </FormControl>
+            </form>
           </Flex>
         </Flex>
 

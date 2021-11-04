@@ -120,7 +120,7 @@ const routes = [
   },
     {
     name: "Search",
-    path: "/search",
+    path: "/search/:userInput",
     secondary: false,
     component: Search
   }
