@@ -12,24 +12,127 @@ import "assets/css/Templates.css";
 import templatesBg from "assets/img/templates/templates-background.png";
 import Layout from "components/layout/Layout";
 import ProductList from "components/products/ProductList";
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import { BsSearch } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { templatesProducts } from "variables/templates";
 
 const Templates = (props) => {
-  const [activeTab, setActiveTab] = useState({
-    all: true,
-    admin: false,
-    ui: false,
-    free: false,
-    premium: false,
-    figma: false,
-    react: false,
-    bootstrap: false,
-  });
+  const [activeTab, setActiveTab] = useState({});
   const [activeSort, setActiveSort] = useState("Most Recent");
-  const [activeTitle, setActiveTitle] = useState("All Templates & Themes");
+  const [activeTitle, setActiveTitle] = useState(() => {
+    if (window.location.href.includes('/all-templates')) {
+      return "All Templates & Themes"
+    } else if (window.location.href.includes('/admin-dashboards')) {
+      return "Admin & Dashboards"
+    } else if (window.location.href.includes('/ui-kits')) {
+      return "UI Kits"
+    } else if (window.location.href.includes('/free-templates')) {
+      return "Free Templates"
+    } else if (window.location.href.includes('/premium-templates')) {
+      return "Premium Templates"
+    } else if (window.location.href.includes('/figma')) {
+      return "Figma Products"
+    } else if (window.location.href.includes('/react')) {
+      return "React Products"
+    } else if (window.location.href.includes('/bootstrap')) {
+      return "Bootstrap Products"
+    }
+  });
+
+  useEffect(() => {
+      if (window.location.href.includes('/all-templates')) {
+        setActiveTab({
+          all: true,
+          admin: false,
+          ui: false,
+          free: false,
+          premium: false,
+          figma: false,
+          react: false,
+          bootstrap: false,
+        })
+      } else if (window.location.href.includes('/admin-dashboards')) {
+        setActiveTab({
+          all: false,
+          admin: true,
+          ui: false,
+          free: false,
+          premium: false,
+          figma: false,
+          react: false,
+          bootstrap: false,
+        })
+      } else if (window.location.href.includes('/ui-kits')) {
+        setActiveTab({
+          all: false,
+          admin: false,
+          ui: true,
+          free: false,
+          premium: false,
+          figma: false,
+          react: false,
+          bootstrap: false,
+        })
+      } else if (window.location.href.includes('/free-templates')) {
+        setActiveTab({
+          all: false,
+          admin: false,
+          ui: false,
+          free: true,
+          premium: false,
+          figma: false,
+          react: false,
+          bootstrap: false,
+        })
+      } else if (window.location.href.includes('/premium-templates')) {
+        setActiveTab({
+          all: false,
+          admin: false,
+          ui: false,
+          free: false,
+          premium: true,
+          figma: false,
+          react: false,
+          bootstrap: false,
+        })
+      } else if (window.location.href.includes('/figma')) {
+        setActiveTab({
+          all: false,
+          admin: false,
+          ui: false,
+          free: false,
+          premium: false,
+          figma: true,
+          react: false,
+          bootstrap: false,
+        })
+      } else if (window.location.href.includes('/react')) {
+        setActiveTab({
+          all: false,
+          admin: false,
+          ui: false,
+          free: false,
+          premium: false,
+          figma: false,
+          react: true,
+          bootstrap: false,
+        })
+      } else if (window.location.href.includes('/bootstrap')) {
+        setActiveTab({
+          all: false,
+          admin: false,
+          ui: false,
+          free: false,
+          premium: false,
+          figma: false,
+          react: false,
+          bootstrap: true,
+        })
+      } 
+  }, [window.location.href])
+
+  console.log(window.location.href)
 
   const sort = (type) => {
     const templateName = props.match.params.templateName;
