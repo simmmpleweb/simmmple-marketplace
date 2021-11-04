@@ -132,8 +132,6 @@ const Templates = (props) => {
       } 
   }, [window.location.href])
 
-  console.log(window.location.href)
-
   const sort = (type) => {
     const templateName = props.match.params.templateName;
     const templateProductsData = templateName.split("-").join("");

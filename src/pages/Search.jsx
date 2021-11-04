@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Flex, Text, FormControl, Input, Icon, Box } from "@chakra-ui/react";
 import homeBg from "assets/img/homepage/home-background.png";
 import Layout from "components/layout/Layout";
 import { BsSearch } from "react-icons/bs";
 import ProductList from "components/products/ProductList";
-import { featuredProducts } from "variables/products";
+import { templatesProducts } from "variables/templates";
 
-const Search = () => {
+const Search = ({match}) => {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const keywords = match.params.userInput.split('-');
+    const filteredProducts = templatesProducts['alltemplates'].filter(product => {
+      let count = 0;
+      keywords.forEach(keyword => {
+        if (product.keywords.indexOf(keyword) !== -1) {
+          count++;
+        }
+      })
+      if (count > 0) {
+        return product;
+      }
+    })
+    setProducts(filteredProducts);
+  }, [])
+  
+  
+
   return (
     <Layout>
       <Flex direction='column'>
@@ -22,7 +43,7 @@ const Search = () => {
             BUILD BETTER, BUILD FASTER
           </Text>
           <Text fontSize='30px' color='#fff' mb='64px'>
-            12 products found for: "kit"
+            12 products found for: "{match.params.userInput.split('-').join(' ')}"
           </Text>
           <FormControl>
             <Flex align='center' justify='center'>
@@ -48,7 +69,7 @@ const Search = () => {
           </FormControl>
         </Flex>
         <Box maxW='1170px' mx='auto' pt='60px' pb='200px'>
-          <ProductList products={featuredProducts} />
+          <ProductList products={products} />
         </Box>
       </Flex>
     </Layout>
