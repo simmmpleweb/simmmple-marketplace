@@ -116,13 +116,13 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'>
               General
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -141,7 +141,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -159,13 +159,13 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'>
               License Period
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -185,13 +185,13 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'>
               About the Source Code
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -206,13 +206,13 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'>
               Use of the License
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -226,13 +226,13 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'>
               Freebies License
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='8px'>
@@ -240,7 +240,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='8px'>
@@ -248,7 +248,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -256,7 +256,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -270,7 +270,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -279,7 +279,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -297,14 +297,14 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Freebies License
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='8px'>
@@ -312,7 +312,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='8px'>
@@ -320,7 +320,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -328,7 +328,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -342,7 +342,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -351,7 +351,7 @@ const Licenses = () => {
             </Text>
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               color='#878CBD'
               fontWeight='400'
               mb='40px'>
@@ -369,11 +369,11 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Freelancer License
-              <Text ms='5px' fontSize='18px'>
+              <Text fontWeight='500' ms='5px' fontSize='18px'>
                 (Formerly known as Personal license)
               </Text>
             </Text>
@@ -381,7 +381,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   The Freelancer License grants you, the purchaser, an ongoing,
@@ -397,7 +397,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You are licensed to use the Item to create one single End
@@ -409,7 +409,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   An End Product is one of the following things, both requiring
@@ -418,10 +418,10 @@ const Licenses = () => {
               </ListItem>
 
               <Text
-                ps='75px'
+                ps='45px'
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 a. For an Item that is a template, the End Product is a
@@ -430,10 +430,10 @@ const Licenses = () => {
                 customised with your content.
               </Text>
               <Text
-                ps='75px'
+                ps='45px'
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 b. For other types of Item, an End Product is a work that
@@ -445,7 +445,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can create one End Product for a client, and you can
@@ -456,7 +456,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can make any number of copies of the single End Product,
@@ -466,7 +466,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can modify or manipulate the Item. You can combine the
@@ -479,7 +479,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t Sell the End Product, except to one client. (If you
@@ -490,7 +490,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t re-distribute the Item as stock, in a tool or
@@ -503,7 +503,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: You can’t purchase an HTML template, convert it to
@@ -514,7 +514,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t use the Item in any application allowing an end user
@@ -528,7 +528,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: You can’t purchase an HTML template, convert it to
@@ -539,7 +539,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You must not permit an end user of the End Product to extract
@@ -549,7 +549,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t use an Item in a logo, trademark, or service mark.
@@ -558,7 +558,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   For some Items, a component of the Item will be sourced from
@@ -574,7 +574,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: A theme might contain images licensed under a
@@ -584,7 +584,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can only use the Item for lawful purposes. Also, if an
@@ -598,17 +598,19 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license applies in conjunction with the
-                  <Link
-                    to='#'
-                    textDecoration='none !important'
+                  <NavLink
+                    to='/terms-of-service'>
+                    <Text
+                    textDecoration='underline'
                     color='brand.300'
-                    mx='3px'>
-                    Simmmple Terms and Conditions
-                  </Link>{" "}
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>Simmmple Terms and Conditions</Text>
+                  </NavLink>{""}
                   . If there is an inconsistency between this license and the
                   Terms and Conditions, this license will apply to the extent
                   necessary to resolve the inconsistency.
@@ -617,7 +619,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license can be terminated if you breach it. If that
@@ -628,7 +630,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Simmmple retains ownership of the Item but grants you the
@@ -642,11 +644,11 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Company License
-              <Text ms='5px' fontSize='18px'>
+              <Text fontWeight='500' ms='5px' fontSize='18px'>
                 (Formerly known as Team license)
               </Text>
             </Text>
@@ -654,7 +656,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   The Company License grants you, the purchaser, an ongoing,
@@ -670,7 +672,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You are licensed to use the Item to create multiple End
@@ -681,7 +683,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   An End Product is one of the following things, both requiring
@@ -690,10 +692,10 @@ const Licenses = () => {
               </ListItem>
 
               <Text
-                ps='75px'
+                ps='45px'
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 a. For an Item that is a template, the End Product is a
@@ -702,10 +704,10 @@ const Licenses = () => {
                 customised with your content.
               </Text>
               <Text
-                ps='75px'
+                ps='45px'
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 b. For other types of Item, an End Product is something that
@@ -716,7 +718,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can create the End Product for a client, and this license
@@ -726,7 +728,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can Sell and make any number of copies of the End Product.
@@ -735,7 +737,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can modify or manipulate the Item. You can combine the
@@ -748,7 +750,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license is a “multi-use” license and not a “single
@@ -759,7 +761,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t re-distribute the Item as stock, in a tool or
@@ -772,7 +774,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: You can’t license an item and then make it
@@ -781,7 +783,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t use the Item in any application allowing an end user
@@ -795,7 +797,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: you can't create a website builder.
@@ -803,7 +805,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You must not permit an end user of the End Product to extract
@@ -813,7 +815,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t use an Item in a logo, trademark, or service mark.
@@ -822,7 +824,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   For some Items, a component of the Item will be sourced from
@@ -838,7 +840,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: A theme might contain images licensed under a
@@ -848,7 +850,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can only use the Item for lawful purposes. Also, if an
@@ -862,17 +864,19 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license applies in conjunction with the
-                  <Link
-                    to='#'
-                    textDecoration='none !important'
+                  <NavLink
+                    to='/terms-of-service'>
+                    <Text
+                    textDecoration='underline'
                     color='brand.300'
-                    mx='3px'>
-                    Simmmple Terms and Conditions
-                  </Link>
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>Simmmple Terms and Conditions</Text>
+                  </NavLink>
                   . If there is an inconsistency between this license and the
                   Terms and Conditions, this license will apply to the extent
                   necessary to resolve the inconsistency.
@@ -881,7 +885,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license can be terminated if you breach it. If that
@@ -892,7 +896,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Simmmple retains ownership of the Item but grants you the
@@ -903,7 +907,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   The Company License allows you to create unlimited End
@@ -914,7 +918,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license allows you access to the product's designer
@@ -927,11 +931,11 @@ const Licenses = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Enterprise License
-              <Text ms='5px' fontSize='18px'>
+              <Text fontWeight='500' ms='5px' fontSize='18px'>
                 (Formerly known as Extended license)
               </Text>
             </Text>
@@ -939,7 +943,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   The Enterprise License grants you, the purchaser, an ongoing,
@@ -955,7 +959,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You are licensed to use the Item to create multiple End
@@ -966,7 +970,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   An End Product is one of the following things, both requiring
@@ -974,10 +978,10 @@ const Licenses = () => {
                 </Text>
               </ListItem>
               <Text
-                ps='75px'
+                ps='45px'
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 a. For an Item that is a template, the End Product is a
@@ -986,10 +990,10 @@ const Licenses = () => {
                 customised with your content.
               </Text>
               <Text
-                ps='75px'
+                ps='45px'
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 b. For other types of Item, an End Product is something that
@@ -1000,7 +1004,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can create the End Product for a client, and this license
@@ -1010,7 +1014,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can Sell and make any number of copies of the End Product.
@@ -1019,7 +1023,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can modify or manipulate the Item. You can combine the
@@ -1032,7 +1036,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license is a “multi-use” license and not a “single
@@ -1043,7 +1047,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t re-distribute the Item as stock, in a tool or
@@ -1056,7 +1060,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: You can’t license an item and then make it
@@ -1065,7 +1069,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t use the Item in any application allowing an end user
@@ -1079,7 +1083,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: you can't create a website builder.
@@ -1087,7 +1091,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You must not permit an end user of the End Product to extract
@@ -1097,7 +1101,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can’t use an Item in a logo, trademark, or service mark.
@@ -1106,7 +1110,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   For some Items, a component of the Item will be sourced from
@@ -1122,7 +1126,7 @@ const Licenses = () => {
               <Text
                 color='#878CBD'
                 fontSize='lg'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='400'
                 mb='25px'>
                 For example: A theme might contain images licensed under a
@@ -1132,7 +1136,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You can only use the Item for lawful purposes. Also, if an
@@ -1146,17 +1150,19 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license applies in conjunction with the{" "}
-                  <Link
-                    to='#'
-                    textDecoration='none !important'
+                  <NavLink
+                    to='/terms-of-service'>
+                    <Text
+                    textDecoration='underline'
                     color='brand.300'
-                    mx='3px'>
-                    Simmmple Terms and Conditions
-                  </Link>
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>Simmmple Terms and Conditions</Text>
+                  </NavLink>
                   . If there is an inconsistency between this license and the
                   Terms and Conditions, this license will apply to the extent
                   necessary to resolve the inconsistency.
@@ -1165,7 +1171,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   This license can be terminated if you breach it. If that
@@ -1176,7 +1182,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Simmmple retains ownership of the Item but grants you the
@@ -1187,7 +1193,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   The Company License allows you to create unlimited End
@@ -1198,7 +1204,7 @@ const Licenses = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='40px'>
                   This license allows you access to the product's designer
@@ -1209,18 +1215,20 @@ const Licenses = () => {
             <HSeparator w='100%' mb='40px' mx='auto' />
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               textAlign='center'
               mx='auto'>
               Got a question?{" "}
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'>
-                Contact us.
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>Contact us</Text>
+                  </NavLink>{""}
             </Text>
           </Flex>
         </Flex>

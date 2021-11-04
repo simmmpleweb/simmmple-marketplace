@@ -26,7 +26,6 @@ import ProductList from "components/products/ProductList";
 import { featuredProducts } from "variables/products";
 import { DribbleIcon } from "components/icons/Icons";
 import Layout from "components/layout/Layout";
-import { StickyContainer, Sticky } from "react-sticky";
 
 const Product = (props) => {
   const [product, setProduct] = useState({
