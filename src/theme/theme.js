@@ -9,6 +9,10 @@ import { breakpoints } from "./foundations/breakpoints";
 import { globalStyles } from "./styles";
 // import { mode } from "@chakra-ui/theme-tools";
 export default extendTheme(
+  {
+    initialColorMode: "light",
+    useSystemColorMode: false,
+  },
   { breakpoints }, // Breakpoints
   globalStyles,
   buttonStyles, // Button styles
