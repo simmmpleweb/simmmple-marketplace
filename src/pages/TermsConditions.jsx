@@ -122,7 +122,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Terms of Use
@@ -130,20 +130,22 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               These Terms of Use constitute a legally binding agreement made
               between you, whether personally or on behalf of an entity (“you”)
               and Simmmple Web LLC ("Company", “we”, “us”, or “our”), concerning
               your access to and use of the
-              <Link
-                to='https://simmmple.com'
-                textDecoration='none !important'
-                color='brand.300'
-                mx='3px'>
-                https://simmmple.com
-              </Link>
+              <NavLink
+                    to='/'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>https://simmmple.com</Text>
+                  </NavLink>{""}
               website as well as any other media form, media channel, mobile
               website or mobile application related, linked, or otherwise
               connected thereto (collectively, the “Site”). The Site provides an
@@ -161,7 +163,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Supplemental terms and conditions or documents that may be posted
@@ -180,7 +182,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               The information provided on the Site is not intended for
@@ -198,7 +200,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Intellectual Property Rights
@@ -206,7 +208,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Unless otherwise indicated, the Site and the Marketplace Offerings
@@ -230,7 +232,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Provided that you are eligible to use the Site, you are granted a
@@ -245,7 +247,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               User Representations
@@ -253,7 +255,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' as='span'>
@@ -272,7 +274,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If you provide any information that is untrue, inaccurate, not
@@ -283,7 +285,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               You may not use the Site or the Marketplace Offerings for any
@@ -299,7 +301,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We are a service provider and make no representations as to the
@@ -319,7 +321,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Marketplace Offerings
@@ -327,7 +329,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               <Text fontWeight='500' mx='3px' as='span'>
@@ -349,7 +351,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               mb='45px'
               fontWeight='500'>
               We reserve the right to limit the quantities of the Marketplace
@@ -367,7 +369,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Purchases and Payment
@@ -375,7 +377,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We accept the following forms of payment:
@@ -383,7 +385,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               You agree to provide current, complete, and accurate purchase and
@@ -399,7 +401,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               You agree to pay all charges at the prices then in effect for your
@@ -412,7 +414,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We reserve the right to refuse any order placed through the Site.
@@ -429,7 +431,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Prohibited Activities
@@ -437,7 +439,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='500'
               mb='45px'>
               You may not access or use the Site for any purpose other than that
@@ -448,7 +450,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               As a user of the Site, you agree not to:
@@ -458,7 +460,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               User Generated Contributions
@@ -466,7 +468,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='500'
               mb='45px'>
               The Site does offer users to submit or post content. We may
@@ -485,7 +487,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   The creation, distribution, transmission, public display, or
@@ -499,7 +501,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You are the creator and owner of or have the necessary
@@ -512,7 +514,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   You have the written consent, release, and/or permission of
@@ -526,7 +528,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions are not false, inaccurate, or misleading.
@@ -535,7 +537,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions are not unsolicited or unauthorized
@@ -546,7 +548,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions are not obscene, lewd, lascivious, filthy,
@@ -557,7 +559,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions do not ridicule, mock, disparage,
@@ -567,7 +569,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions are not used to harass or threaten (in the
@@ -578,7 +580,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions do not violate any applicable law,
@@ -588,7 +590,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions do not violate the privacy or publicity
@@ -598,7 +600,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions do not contain any material that solicits
@@ -610,7 +612,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions do not violate any applicable law
@@ -621,7 +623,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions do not include any offensive comments that
@@ -632,7 +634,7 @@ const TermsConditions = () => {
               <ListItem color='#878CBD'>
                 <Text
                   fontSize='lg'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='400'
                   mb='25px'>
                   Your Contributions do not otherwise violate, or link to
@@ -644,7 +646,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Any use of the Site or the Marketplace Offerings in violation of
@@ -657,7 +659,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Contribution License
@@ -665,7 +667,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               You and the Site agree that we may access, store, process, and use
@@ -675,7 +677,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               By submitting suggestions or other feedback regarding the Site,
@@ -685,7 +687,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We do not assert any ownership over your Contributions. You retain
@@ -703,7 +705,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Submissions
@@ -711,7 +713,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               You acknowledge and agree that any questions, comments,
@@ -734,7 +736,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Site Management
@@ -742,7 +744,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We reserve the right, but not the obligation, to: (1) monitor the
@@ -766,7 +768,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Term and Termination
@@ -774,7 +776,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               These Terms of Use shall remain in full force and effect while you
@@ -793,7 +795,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               If we terminate or suspend your account for any reason, you are
@@ -809,7 +811,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               Modifications and Interruptions
@@ -817,7 +819,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We reserve the right to change, modify, or remove the contents of
@@ -832,7 +834,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We cannot guarantee the Site and the Marketplace Offerings will be
@@ -855,7 +857,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               DISCLAIMER
@@ -863,7 +865,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               THE SITE AND THE MARKETPLACE OFFERINGS ARE PROVIDED ON AN AS-IS
@@ -904,7 +906,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               LIMITATIONS OF LIABILITY
@@ -912,7 +914,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE
@@ -936,7 +938,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               INDEMNIFICATION
@@ -944,7 +946,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               You agree to defend, indemnify, and hold us harmless, including
@@ -971,7 +973,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               USER DATA
@@ -979,7 +981,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               We will maintain certain data that you transmit to the Site for
@@ -998,7 +1000,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               ELECTRONIC COMMUNICATIONS, <br /> TRANSACTIONS, AND SIGNATURES
@@ -1006,7 +1008,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               Visiting the Site, sending us emails, and completing online forms
@@ -1029,7 +1031,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               MISCELLANEOUS
@@ -1037,7 +1039,7 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               These Terms of Use and any policies or operating rules posted by
@@ -1067,7 +1069,7 @@ const TermsConditions = () => {
               color='brand.700'
               fontSize='30px'
               lineHeight='40px'
-              fontWeight='500'
+              fontWeight='700'
               mb='16px'
               display='flex'>
               CONTACT US
@@ -1075,37 +1077,40 @@ const TermsConditions = () => {
             <Text
               color='#878CBD'
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               mb='45px'>
               In order to resolve a complaint regarding the Site or the
               Marketplace Offerings or to receive further information regarding
               use of the Site or the Marketplace Offerings, please contact us at{" "}
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'
-                fontWeight='500'>
-                https://simmmple.com/contact
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>https://simmmple.com/contact</Text>
+                  </NavLink>
               .
             </Text>
             <HSeparator w='100%' mb='40px' mx='auto' />
             <Text
               fontSize='lg'
-              lineHeight='28px'
+              lineHeight='34px'
               fontWeight='400'
               textAlign='center'
               mx='auto'>
               Got a question?{" "}
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'>
-                Contact us.
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>Contact us</Text>
+                  </NavLink>{""}
             </Text>
           </Flex>
         </Flex>

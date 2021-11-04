@@ -175,13 +175,15 @@ const Affiliates = () => {
               textAlign='center'
               mx='auto'>
               Got a question?{" "}
-              <Link
-                to='#'
-                textDecoration='underline'
-                color='brand.300'
-                mx='3px'>
-                Contact us.
-              </Link>
+              <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>Contact us</Text>
+                  </NavLink>{""}
             </Text>
           </Flex>
         </Flex>
