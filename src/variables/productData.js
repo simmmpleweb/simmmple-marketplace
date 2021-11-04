@@ -1,10 +1,10 @@
 import { Text, Icon } from "@chakra-ui/react";
 
 import productVenusDBPRO1 from "assets/img/product/product-venus-db-pro1.png";
-import productVenusDBPRO2 from "assets/img/product/product-venus-db-pro2.png";
-import productVenusDBPRO3 from "assets/img/product/product-venus-db-pro3.png";
-import productVenusDBPRO4 from "assets/img/product/product-venus-db-pro4.png";
-import productVenusDBPRO5 from "assets/img/product/product-venus-db-pro5.png";
+import productVenusDBPRO2 from "assets/img/product/product-venus-db-pro2-min.png";
+import productVenusDBPRO3 from "assets/img/product/product-venus-db-pro3-min.png";
+import productVenusDBPRO4 from "assets/img/product/product-venus-db-pro4-min.png";
+import productVenusDBPRO5 from "assets/img/product/product-venus-db-pro5-min.png";
 import productVenusDBPROMain from "assets/img/product/product-venus-db-pro-main.png";
 import IconBox from "components/icons/IconBox";
 import { figmaIcon } from "components/icons/Icons";
