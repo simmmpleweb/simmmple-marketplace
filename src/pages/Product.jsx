@@ -11,8 +11,6 @@ import React, { useEffect, useState } from "react";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { productData } from "variables/productData";
 import { featuredProducts } from "variables/products";
-import { DribbleIcon } from "components/icons/Icons";
-import Layout from "components/layout/Layout";
 
 const Product = (props) => {
   const {
