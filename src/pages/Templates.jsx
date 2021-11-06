@@ -177,7 +177,7 @@ const Templates = (props) => {
             mx='auto'
             align='center'
             justify='center'>
-            <Text fontSize='xs' color='#fff' fontWeight='bold' mb='16px'>
+            <Text fontSize='xs' color='#fff' fontWeight='bold' mb='16px' letterSpacing='2px'>
               BUILD BETTER, BUILD FASTER
             </Text>
             <Text
@@ -188,15 +188,20 @@ const Templates = (props) => {
               UI Tools & Templates
             </Text>
             <Text
-              fontSize='md'
-              color='#fff'
-              textAlign='center'
-              maxW={{ sm: "80%", lg: "60%" }}
-              mb='64px'>
-              Join over 10,000+ developers, designers & startups that use our
-              digital solutions to quickly design and build responsive
-              mobile-first websites and apps.
-            </Text>
+                fontWeight='normal'
+                fontSize='16px'
+                lineHeight='28px'
+                textAlign='center'
+                maxW={{ sm: "80%", lg: "55%" }}
+                color='#fff'
+                mb='64px'>
+                Join over{" "}
+                <Text as='span' fontWeight='bold'>
+                  10,000+ developers, designers & startups
+                </Text>{" "}
+                that use our digital solutions to quickly design and build
+                responsive mobile-first websites and apps.
+              </Text>
             <FormControl
               display='flex'
               justifyContent='center'
@@ -207,7 +212,7 @@ const Templates = (props) => {
                 borderRadius='70px'
                 w={{ sm: "300px", lg: "470px" }}
                 h='70px'
-                p='22px 32px'
+                p='22px 28px 22px 20px'
                 align='center'>
                 <Input
                   placeholder='eg. Venus Design System'
@@ -272,7 +277,7 @@ const Templates = (props) => {
                     setActiveTitle("All Templates & Themes");
                   }}
                   p={{ sm: "20px 4px", lg: "20px 22px" }}>
-                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='normal'>
+                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='500'>
                     All Templates
                   </Text>
                 </Flex>
@@ -302,7 +307,7 @@ const Templates = (props) => {
                     setActiveTitle("Admin & Dashboards");
                   }}
                   p={{ sm: "20px 4px", lg: "20px 22px" }}>
-                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='normal'>
+                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='500'>
                     Admin & Dashboards
                   </Text>
                 </Flex>
@@ -332,7 +337,7 @@ const Templates = (props) => {
                     setActiveTitle("UI Kits");
                   }}
                   p={{ sm: "20px 4px", lg: "20px 30px" }}>
-                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='normal'>
+                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='500'>
                     UI Kits
                   </Text>
                 </Flex>
@@ -362,7 +367,7 @@ const Templates = (props) => {
                     setActiveTitle("Free templates");
                   }}
                   p={{ sm: "20px 4px", lg: "20px 22px" }}>
-                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='normal'>
+                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='500'>
                     Free Templates
                   </Text>
                 </Flex>
@@ -391,7 +396,7 @@ const Templates = (props) => {
                     setActiveTitle("Premium templates");
                   }}
                   p={{ sm: "20px 4px", lg: "20px 22px" }}>
-                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='normal'>
+                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='500'>
                     Premium Templates
                   </Text>
                 </Flex>
@@ -420,7 +425,7 @@ const Templates = (props) => {
                     setActiveTitle("Figma Products");
                   }}
                   p={{ sm: "20px 4px", lg: "20px 26px" }}>
-                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='normal'>
+                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='500'>
                     Figma
                   </Text>
                 </Flex>
@@ -449,7 +454,7 @@ const Templates = (props) => {
                     setActiveTitle("React Products");
                   }}
                   p={{ sm: "20px 4px", lg: "20px 24px" }}>
-                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='normal'>
+                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='500'>
                     ReactJS
                   </Text>
                 </Flex>
@@ -478,7 +483,7 @@ const Templates = (props) => {
                     setActiveTitle("Bootstrap Products");
                   }}
                   p={{ sm: "20px 4px", lg: "20px 22px" }}>
-                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='normal'>
+                  <Text fontSize={{ sm: "xs", md: "sm" }} fontWeight='500'>
                     Bootstrap
                   </Text>
                 </Flex>
@@ -491,7 +496,7 @@ const Templates = (props) => {
             mb={{ sm: "36px", md: "56px", lg: "88px" }}
             px={{ md: "18px" }}>
             <Flex direction='column' align={{ sm: "center", md: "start" }}>
-              <Text color='brand.300' fontSize='xs' mb='16px' fontWeight='500'>
+              <Text color='brand.300' fontSize='xs' mb='16px' fontWeight='500' letterSpacing='2px'>
                 OUR DIGITAL PRODUCTS
               </Text>
               <Text
@@ -502,7 +507,7 @@ const Templates = (props) => {
               </Text>
             </Flex>
             <Select
-              maxW='190px'
+              maxW='160px'
               h='54px'
               alignSelf={{ sm: "center", lg: "flex-end" }}
               mt={{ sm: "32px", lg: "0px" }}
@@ -512,6 +517,7 @@ const Templates = (props) => {
               iconColor='gray.700'
               borderRadius='30px'
               display='flex'
+              fontWeight='500'
               alignItems='center'
               justifyContent='center'
               cursor='pointer'

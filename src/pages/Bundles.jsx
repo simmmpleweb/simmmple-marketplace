@@ -16,6 +16,7 @@ import Card from "components/card/Card";
 import CardBody from "components/card/CardBody";
 import Countdown from "components/countdown/Countdown";
 import { HSeparator } from "components/separator/Separator";
+import { NavLink } from "react-router-dom";
 
 // Icons
 import {
@@ -113,13 +114,12 @@ const Bundles = () => {
               color='#fff'
               fontSize={{ base: "18px", md: "20px" }}
               lineHeight='40px'
-              maxW={{ base: "90%", md: "70%" }}
+              maxW={{ base: "90%", md: "60%" }}
               mb='50px'>
+              The most special and exclusive digital bundle which contains all of our premium products & tools that will help you design faster & easier.{" "}
               <Text as='span' fontWeight='bold'>
-                Save up to 80% OFF{" "}
+                Save up to 80%!
               </Text>
-              to all Premium Coded & Design Products & Tools with our Exclusive
-              Digital Bundle!
             </Text>
             <Box>
               <Countdown date='17 December 2021' />
@@ -132,23 +132,25 @@ const Bundles = () => {
                 h='115px'
                 transition='all .5s ease'
               />
-              <Button
-                bg='white'
-                variant='solid'
-                w='190px'
-                h='56px'
-                onMouseEnter={() => {
-                  leftEffect.current.style.transform = "translateX(-5px)";
-                  rightEffect.current.style.transform = "translateX(5px)";
-                }}
-                onMouseLeave={() => {
-                  leftEffect.current.style.transform = "translateX(5px)";
-                  rightEffect.current.style.transform = "translateX(-5px)";
-                }}>
-                <Text color='brand.700' fontSize='sm'>
-                  Save up to 80% now
-                </Text>
-              </Button>
+              <Link href='#pricing'>
+                <Button
+                  bg='white'
+                  variant='solid'
+                  w='190px'
+                  h='56px'
+                  onMouseEnter={() => {
+                    leftEffect.current.style.transform = "translateX(-5px)";
+                    rightEffect.current.style.transform = "translateX(5px)";
+                  }}
+                  onMouseLeave={() => {
+                    leftEffect.current.style.transform = "translateX(5px)";
+                    rightEffect.current.style.transform = "translateX(-5px)";
+                  }}>
+                  <Text color='brand.700' fontSize='sm'>
+                    Save up to 80% now
+                  </Text>
+                </Button>
+              </Link>
               <RightButtonEffect
                 ref={rightEffect}
                 color='#fff'
@@ -194,7 +196,7 @@ const Bundles = () => {
         </Grid>
         <Flex
           py='100px'
-          pt={{ base: "0px", lg: "80px" }}
+          pt={{ base: "0px", lg: "30px" }}
           direction='column'
           w='1170px'
           maxW='100%'
@@ -377,7 +379,7 @@ const Bundles = () => {
               mb='16px'
               letterSpacing='2px'
               textAlign='center'>
-              EXCLUSIVE DIGITAL BUNDLE BENEFITS
+              WHAT EXCLUSIVE DIGITAL BUNDLE CONTAINS
             </Text>
             <Text
               fontSize='34px'
@@ -567,7 +569,7 @@ const Bundles = () => {
                     <Button
                       bg='white'
                       color='#020425'
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
@@ -583,7 +585,7 @@ const Bundles = () => {
                         bg: "none",
                         opacity: "0.8",
                       }}
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       lineHeight='14px'
                       h='56px'
@@ -752,7 +754,7 @@ const Bundles = () => {
                     <Button
                       bg='white'
                       color='#FF4555'
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
@@ -768,7 +770,7 @@ const Bundles = () => {
                         bg: "none",
                         opacity: "0.8",
                       }}
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       lineHeight='14px'
                       h='56px'
@@ -936,7 +938,7 @@ const Bundles = () => {
                     <Button
                       bg='white'
                       color='#30C7BA'
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
@@ -952,7 +954,7 @@ const Bundles = () => {
                         bg: "none",
                         opacity: "0.8",
                       }}
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       lineHeight='14px'
                       h='56px'
@@ -1123,7 +1125,7 @@ const Bundles = () => {
                     <Button
                       bg='white'
                       color='#634FFF'
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
@@ -1139,7 +1141,7 @@ const Bundles = () => {
                         bg: "none",
                         opacity: "0.8",
                       }}
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       lineHeight='14px'
                       h='56px'
@@ -1319,7 +1321,7 @@ const Bundles = () => {
                     <Button
                       bg='white'
                       color='#020425'
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       me={{ base: "15px", md: "20px" }}
                       lineHeight='14px'
@@ -1335,7 +1337,7 @@ const Bundles = () => {
                         bg: "none",
                         opacity: "0.8",
                       }}
-                      fontWeight='400'
+                      fontWeight='500'
                       fontSize='sm'
                       lineHeight='14px'
                       h='56px'
@@ -1349,6 +1351,7 @@ const Bundles = () => {
           </Flex>
         </Flex>
         <HSeparator
+          id='pricing'
           w='774px'
           maxW={{ base: "350px", md: "unset" }}
           mb='100px'
@@ -1440,7 +1443,7 @@ const Bundles = () => {
                         textDecoration='line-through'>
                         reg. $354
                       </Text>
-                      <Text color='green.600' fontSize='16px' lineHeight='21px'>
+                      <Text fontWeight='500' color='#009B73' fontSize='16px' lineHeight='20px'>
                         Save up to 80%
                       </Text>
                     </Flex>
@@ -1464,6 +1467,7 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
+                        color='#02044A'
                         letterSpacing='-0.5px'>
                         Full Documentation
                       </Text>
@@ -1477,7 +1481,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Projects:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           {" "}
                           1/Product
                         </Text>
@@ -1492,7 +1496,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Team size:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           1 Developer
                         </Text>
                       </Text>
@@ -1507,7 +1511,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Premium support:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           8 Months
                         </Text>
                       </Text>
@@ -1521,7 +1525,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Free updates:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           8 Months
                         </Text>
                       </Text>
@@ -1530,7 +1534,9 @@ const Bundles = () => {
                   <Button
                     minH='56px'
                     bg='brand.300'
+                    fontWeight='500'
                     color='white'
+                    fontSize='sm'
                     _hover={{ background: "brand.300", opacity: "0.9" }}
                     _active={{ background: "brand.300", opacity: "0.7" }}>
                     Buy it now
@@ -1580,7 +1586,7 @@ const Bundles = () => {
                         textDecoration='line-through'>
                         reg. $1085
                       </Text>
-                      <Text color='green.600' fontSize='16px' lineHeight='21px'>
+                      <Text fontWeight='500' color='#009B73' fontSize='16px' lineHeight='20px'>
                         Save up to 63%
                       </Text>
                     </Flex>
@@ -1603,6 +1609,7 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
+                        color='#02044A'
                         letterSpacing='-0.5px'>
                         Full Documentation
                       </Text>
@@ -1616,7 +1623,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Projects:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           {" "}
                           Unlimited
                         </Text>
@@ -1631,7 +1638,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Team size:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           1-15 Developers
                         </Text>
                       </Text>
@@ -1646,7 +1653,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Premium support:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           12 Months
                         </Text>
                       </Text>
@@ -1660,7 +1667,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Free updates:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           12 Months
                         </Text>
                       </Text>
@@ -1669,7 +1676,9 @@ const Bundles = () => {
                   <Button
                     minH='56px'
                     bg='brand.300'
+                    fontWeight='500'
                     color='white'
+                    fontSize='sm'
                     _hover={{ background: "brand.300", opacity: "0.9" }}
                     _active={{ background: "brand.300", opacity: "0.7" }}>
                     Buy it now
@@ -1715,7 +1724,7 @@ const Bundles = () => {
                         textDecoration='line-through'>
                         reg. $1945
                       </Text>
-                      <Text color='green.600' fontSize='16px' lineHeight='21px'>
+                      <Text fontWeight='500' color='#009B73' fontSize='16px' lineHeight='20px'>
                         Save up to 55%
                       </Text>
                     </Flex>
@@ -1739,6 +1748,7 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
+                        color='#02044A'
                         letterSpacing='-0.5px'>
                         Full Documentation
                       </Text>
@@ -1752,7 +1762,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Projects:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           {" "}
                           Unlimited
                         </Text>
@@ -1767,7 +1777,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Team size:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           Unlimited
                         </Text>
                       </Text>
@@ -1796,7 +1806,7 @@ const Bundles = () => {
                         display='flex'
                         letterSpacing='-0.5px'>
                         Free updates:
-                        <Text fontWeight='bold' ms='5px'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           24 Months
                         </Text>
                       </Text>
@@ -1805,7 +1815,9 @@ const Bundles = () => {
                   <Button
                     minH='56px'
                     bg='brand.300'
+                    fontWeight='500'
                     color='white'
+                    fontSize='sm'
                     _hover={{ background: "brand.300", opacity: "0.9" }}
                     _active={{ background: "brand.300", opacity: "0.7" }}>
                     Buy it now
@@ -1820,17 +1832,9 @@ const Bundles = () => {
             mt='72px'>
             <Flex flexDirection='column' align='center'>
               <Help color='brand.300' w='24px' h='24px' mb='16px' />
-              <Text textAlign='center' maxW='320px' color='#8F9BBA' mb='30px'>
+              <Text textAlign='center' maxW='320px' color='#8F9BBA' mb='30px' fontSize='14px'>
                 If you have any questions about the product or licensing please
-                check
-                <Link
-                  to='#'
-                  fontWeight='500'
-                  ms='3px'
-                  textDecoration='underline'>
-                  FAQ page
-                </Link>
-                .
+                check FAQs bellow.
               </Text>
             </Flex>
             <Flex flexDirection='column' align='center'>
@@ -1841,10 +1845,11 @@ const Bundles = () => {
                 maxW='345px'
                 color='#8F9BBA'
                 letterSpacing='0px'
+                fontSize='14px'
                 mb='30px'>
                 Secure 128-bit SSL Encrypted payments powered by
                 <Link
-                  to='#'
+                  href='https://customers.gumroad.com/article/191-a-guide-to-buying-on-gumroad'
                   fontWeight='500'
                   ms='3px'
                   textDecoration='underline'>
@@ -1852,7 +1857,7 @@ const Bundles = () => {
                 </Link>
                 . If you're having issues with the checkout please contact
                 <Link
-                  to='#'
+                  href='https://help.gumroad.com/article/20-how-do-i-contact-gumroad'
                   fontWeight='500'
                   ms='3px'
                   textDecoration='underline'>
@@ -1869,7 +1874,8 @@ const Bundles = () => {
                 textAlign='center'
                 maxW='300px'
                 color='#8F9BBA'
-                letterSpacing='0px'>
+                letterSpacing='0px'
+                fontSize='14px'>
                 The standard VAT rate may be charged, following the law of your
                 country.
               </Text>
@@ -1928,7 +1934,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
                 How do I use the license that I got with my purchase?
@@ -1945,14 +1951,16 @@ const Bundles = () => {
                 not need to insert it anywhere. Please keep it in your records
                 for any future inquiry from us. If you create a client project,
                 you can either keep this code or you can send us an email using
-                our{" "}
-                <Link
-                  to='#'
-                  textDecoration='underline'
-                  color='brand.300'
-                  mx='3px'>
-                  contact page
-                </Link>
+                our
+                <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>contact page</Text>
+                </NavLink>{""}
                 , and we will transfer the license to your client, provided that
                 they have an account on our website.
               </Text>
@@ -1960,7 +1968,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
                 What is the difference between the Freelancer/Company/Enterprise
@@ -2011,20 +2019,22 @@ const Bundles = () => {
                 mb='72px'
                 maxW='548px'>
                 All the differences between the types of licenses are{" "}
-                <Link
-                  to='#'
-                  textDecoration='underline'
-                  color='brand.300'
-                  mx='3px'>
-                  available here
-                </Link>
+                <NavLink
+                    to='/licenses'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>available here</Text>
+                </NavLink>
                 .
               </Text>
               {/* 3. */}
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
                 Are the images, fonts, and icons free to use?
@@ -2045,7 +2055,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
                 Do these themes work with Wordpress?
@@ -2065,7 +2075,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'
                 pe='90px'>
@@ -2088,7 +2098,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'
                 pe='90px'>
@@ -2136,7 +2146,7 @@ const Bundles = () => {
                 <Text
                   color='brand.700'
                   fontSize='22px'
-                  lineHeight='28px'
+                  lineHeight='34px'
                   fontWeight='500'
                   mb='16px'>
                   Something unclear? We are here to help you!
@@ -2148,13 +2158,15 @@ const Bundles = () => {
                   fontWeight='400'
                   maxW='548px'>
                   Feel free to send us a message using the
-                  <Link
-                    to='#'
+               <NavLink
+                    to='/contact'>
+                    <Text
                     textDecoration='underline'
                     color='brand.300'
-                    mx='3px'>
-                    contact page
-                  </Link>{" "}
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>contact page</Text>
+                </NavLink>{""}
                   and one of our team members will get back to you in the
                   shortest time possible
                 </Text>
@@ -2168,7 +2180,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
                 What does the number of "Projects" refer to?
@@ -2220,7 +2232,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
                 What does the refer to?
@@ -2267,7 +2279,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
                 Are the themes available with only classic CSS and without Sass
@@ -2292,7 +2304,7 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
                 If I purchased a Freelancer/Company License, how can I upgrade
@@ -2308,13 +2320,15 @@ const Bundles = () => {
                 maxW='548px'>
                 In case you have already purchased a license, but you want to
                 upgrade, you can just send us a message using the
-                <Link
-                  to='#'
-                  textDecoration='underline'
-                  color='brand.300'
-                  mx='3px'>
-                  contact page
-                </Link>{" "}
+                <NavLink
+                    to='/contact'>
+                    <Text
+                    textDecoration='underline'
+                    color='brand.300'
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>contact page</Text>
+                </NavLink>{""}
                 and we will send you a discount code so you will only pay the
                 difference for the upgrade.
               </Text>
@@ -2322,11 +2336,10 @@ const Bundles = () => {
               <Text
                 color='brand.700'
                 fontSize='22px'
-                lineHeight='28px'
+                lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
-                If I purchased a Freelancer/Company License, how can I upgrade
-                to the Company/Enterprise License?
+                  What  is the difference between a Free and a PRO product?
               </Text>
               <Text
                 fontSize='md'
@@ -2406,13 +2419,15 @@ const Bundles = () => {
                   fontWeight='400'
                   maxW='548px'>
                   Feel free to send us a message using the
-                  <Link
-                    to='#'
+                  <NavLink
+                    to='/contact'>
+                    <Text
                     textDecoration='underline'
                     color='brand.300'
-                    mx='3px'>
-                    contact page
-                  </Link>{" "}
+                    fontWeight="500"
+                    as="span"
+                    mx='3px'>contact page</Text>
+                </NavLink>{""}
                   and one of our team members will get back to you in the
                   shortest time possible
                 </Text>

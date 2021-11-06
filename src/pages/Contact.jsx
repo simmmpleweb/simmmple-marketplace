@@ -315,7 +315,7 @@ const Contact = () => {
           mx='auto'
           align='center'>
           <Flex direction='column' textAlign='center' align='center' mb='100px'>
-            <Text color='brand.300' fontSize='sm' fontWeight='bold' mb='20px'>
+            <Text color='brand.300' fontSize='sm' fontWeight='bold' mb='20px' letterSpacing='2px'>
               GET IN TOUCH
             </Text>
             <Text
@@ -660,11 +660,11 @@ const Contact = () => {
                       lineHeight='40px'
                       mb='36px'>
                       Have a question related to our{" "}
-                      <Text as='span' color='gray.800' fontWeight='500'>
+                      <Text as='span' color='#2D396B' fontWeight='500'>
                         UI Kits, Themes
                       </Text>{" "}
                       and other{" "}
-                      <Text as='span' color='gray.800' fontWeight='500'>
+                      <Text as='span' color='#2D396B' fontWeight='500'>
                         Premium Products?
                       </Text>{" "}
                       Please let us know below!
@@ -968,7 +968,7 @@ const Contact = () => {
                             color='brand.700'
                             fontWeight='500'
                             mb='12px'>
-                            Name
+                            Name*
                           </FormLabel>
                           <Input
                             fontSize={{ sm: "sm", md: "md" }}
@@ -1001,7 +1001,7 @@ const Contact = () => {
                             color='brand.700'
                             fontWeight='500'
                             mb='12px'>
-                            Email
+                            Email*
                           </FormLabel>
                           <Input
                             fontSize={{ sm: "sm", md: "md" }}
@@ -1059,7 +1059,7 @@ const Contact = () => {
                             color='brand.700'
                             fontWeight='500'
                             mb='12px'>
-                            Message
+                            Message*
                           </FormLabel>
                           <Textarea
                             fontSize={{ sm: "sm", md: "md" }}

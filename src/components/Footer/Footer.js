@@ -164,6 +164,16 @@ const Footer = () => {
               Technologies
             </Text>
             <Stack direction='column' spacing='22px'>
+              <NavLink to='/templates/premium-templates'>
+                  <Text color='#878CBD' fontSize='md'>
+                    Premium Products
+                  </Text>
+                </NavLink>
+              <NavLink to='/templates/free-templates'>
+                <Text color='#878CBD' fontSize='md'>
+                  Free Products
+                </Text>
+              </NavLink>
               <NavLink to='/templates/figma'>
                 <Text color='#878CBD' fontSize='md'>
                   Figma
@@ -179,16 +189,6 @@ const Footer = () => {
                   Bootstrap
                 </Text>
               </NavLink>
-              <NavLink to='/'>
-                <Text color='#878CBD' fontSize='md'>
-                  Adobe XD
-                </Text>
-              </NavLink>
-              <NavLink to='/'>
-                <Text color='#878CBD' fontSize='md'>
-                  HTML & CSS
-                </Text>
-              </NavLink>
             </Stack>
           </Flex>
           <Flex direction='column' justifySelf='center'>
@@ -196,29 +196,24 @@ const Footer = () => {
               Resources
             </Text>
             <Stack direction='column' spacing='22px' w='100%'>
-              <NavLink to='/'>
+              <Link href='https://dribbble.com/simmmple'>
                 <Text color='#878CBD' fontSize='md'>
                   Inspiration
                 </Text>
-              </NavLink>
-              <NavLink to='/'>
+              </Link>
+              <Link href='https://blog.simmmple.com'>
                 <Text color='#878CBD' fontSize='md'>
                   Tutorials & Guides
                 </Text>
-              </NavLink>
-              <NavLink to='/'>
+              </Link>
+              <Link href='https://venusdesignsystem.com/dashboard-builder?ref=simmmple'>
                 <Text color='#878CBD' fontSize='md'>
                   Dashboard Builder
                 </Text>
-              </NavLink>
-              <NavLink to='/'>
+              </Link>
+              <NavLink to='/apps'>
                 <Text color='#878CBD' fontSize='md'>
                   Third-Party Tools
-                </Text>
-              </NavLink>
-              <NavLink to='/'>
-                <Text color='#878CBD' fontSize='md'>
-                  Made with Simmmple
                 </Text>
               </NavLink>
             </Stack>
