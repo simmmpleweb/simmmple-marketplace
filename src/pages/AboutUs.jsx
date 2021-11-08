@@ -63,14 +63,14 @@ const Bundles = () => {
               w={{ base: "250px", md: "300px", lg: "400px", xl: "unset" }}
             />
             <Text
-              fontSize={{ base: "26px", md: "32px", lg: "46px", xl: "56px" }}
+              fontSize={{ base: "28px", md: "32px", lg: "46px", xl: "54px" }}
               color='brand.700'
               fontWeight='bold'
               mb={{ base: "40px", lg: "70px" }}
               w={{ xl: "1069px" }}
               maxW='100%'
-              letterSpacing='-1px'
-              lineHeight={{ base: "36px", md: "44px", md: "48px" }}>
+              letterSpacing='0px'
+              lineHeight={{ base: "38px", md: "44px", md: "64px" }}>
               Our mission is to empower
               <Text color='brand.300' as='span' mx='10px'>
                 all developers <br /> & designers
@@ -84,7 +84,7 @@ const Bundles = () => {
               color='#878CBD'
               fontSize={{ base: "18px", lg: "18px", xl: "20px" }}
               lineHeight={{ base: "30px", lg: "32px", xl: "40px" }}
-              maxW={{ base: "95%", md: "90%", lg: "70%" }}
+              maxW={{ base: "95%", md: "90%", lg: "90%" }}
               mb='78px'
               w='773px'
               letterSpacing='-0.2px'>
@@ -163,7 +163,7 @@ const Bundles = () => {
         </Flex>
         <Grid
           templateColumns={{ base: "repeat(3, 1fr)", md: "repeat(6, 1fr)" }}
-          gap={{ base: "40px", lg: "70px" }}
+          gap={{ base: "40px", lg: "0px" }}
           align='center'
           justify='center'
           bg='#fff'
@@ -211,7 +211,6 @@ const Bundles = () => {
             <Text
               fontSize={{ base: "30px", md: "42px" }}
               lineHeight='44px'
-              letterSpacing='-1px'
               color='brand.700'
               fontWeight='500'
               mb='20px'
@@ -246,7 +245,7 @@ const Bundles = () => {
                     borderRadius='20px'
                   />
                   <Text mx='12px' fontWeight='700' fontSize='lg'>
-                    Craciun Andrei-Fredy
+                  Andrei-Fredy Craciun
                   </Text>
                   <Text
                     mx='12px'
@@ -275,7 +274,7 @@ const Bundles = () => {
                     borderRadius='20px'
                   />
                   <Text mx='12px' fontWeight='700' fontSize='lg'>
-                    Mihalache Vlad Gabriel
+                  Vlad Mihalache
                   </Text>
                   <Text
                     mx='12px'
@@ -305,7 +304,7 @@ const Bundles = () => {
                     borderRadius='20px'
                   />
                   <Text mx='12px' fontWeight='700' fontSize='lg'>
-                    Dumitrache Theodor
+                    Theodor Dumitrache
                   </Text>
                   <Text
                     mx='12px'
@@ -368,7 +367,6 @@ const Bundles = () => {
             <Text
               fontSize={{ base: "30px", md: "42px" }}
               lineHeight='44px'
-              letterSpacing='-1px'
               color='brand.700'
               fontWeight='500'
               mb='20px'

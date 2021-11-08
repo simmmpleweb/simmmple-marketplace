@@ -33,10 +33,10 @@ const ProductList = ({ products, comingSoon }) => {
             <Box w='168px' h='174px' mb='30px' transform='rotate(-9deg)'>
               <Image src={simmmple3d} w='100%' h='100%' />
             </Box>
-            <Text fontSize='24px' color='brand.700' fontWeight='500' mb='12px'>
+            <Text fontSize='24px' color='brand.700' fontWeight='500' mb='12px' lineHeight='32px' maxW='220px'>
               More awesome tools coming soon!{" "}
             </Text>
-            <Text color='#878CBD' fontSize='sm' fontWeight='normal'>
+            <Text color='#878CBD' fontSize='sm' fontWeight='normal' lineHeight='28px'>
               Awesome Design tools, UI Kits, Dashboards are in progress and will
               come soon!
             </Text>

@@ -112,18 +112,18 @@ const routes = [
     secondary: true,
     component: AboutUs,
   },
+  // {
+  //   name: "404",
+  //   path: "/404",
+  //   secondary: true,
+  //   component: Page404,
+  // },
   {
-    name: "404",
-    path: "/404",
-    secondary: true,
-    component: Page404,
-  },
-    {
     name: "Search",
     path: "/search/:userInput",
     secondary: false,
-    component: Search
-  }
+    component: Search,
+  },
 ];
 
 export default routes;
