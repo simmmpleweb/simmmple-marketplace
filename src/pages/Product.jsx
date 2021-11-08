@@ -151,15 +151,17 @@ const Product = (props) => {
               separator={<ChevronRight color='#878CBD' />}
               mb='56px'>
               <BreadcrumbItem color='#878CBD'>
-                <BreadcrumbLink href='#'>Home</BreadcrumbLink>
+                <BreadcrumbLink href='/'>Home</BreadcrumbLink>
               </BreadcrumbItem>
 
               <BreadcrumbItem color='#878CBD'>
-                <BreadcrumbLink href='#'>Store</BreadcrumbLink>
+                <BreadcrumbLink href='/templates/all-templates'>
+                  Products
+                </BreadcrumbLink>
               </BreadcrumbItem>
 
               <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href='#' color='brand.300'>
+                <BreadcrumbLink href='' color='brand.300'>
                   {title}
                 </BreadcrumbLink>
               </BreadcrumbItem>

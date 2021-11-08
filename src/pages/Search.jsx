@@ -8,9 +8,9 @@ import {
   Box,
   Button,
 } from "@chakra-ui/react";
-import homeBg from "assets/img/homepage/home-background.png";
+import templatesBg from "assets/img/templates/templates-background.png";
 import Layout from "components/layout/Layout";
-import { BsSearch } from "react-icons/bs";
+import { SearchIcon } from "components/icons/Icons";
 import ProductList from "components/products/ProductList";
 import { templatesProducts } from "variables/templates";
 import { useHistory } from "react-router-dom";
@@ -49,65 +49,68 @@ const Search = ({ match }) => {
       history.push(`/search/${urlParameter}`);
     }
 
-    inputValue.current.value = '';
+    inputValue.current.value = "";
   };
 
   return (
     <Layout>
-      <Flex direction="column">
+      <Flex direction='column'>
         <Flex
-          direction="column"
-          bgImage={homeBg}
-          minH="500px"
-          bgSize="cover"
-          align="center"
-          justify="flex-end"
-          pb="100px"
-        >
-          <Text fontSize="xs" color="#fff" fontWeight="bold" mb="16px">
+          direction='column'
+          bgImage={templatesBg}
+          minH='500px'
+          bgSize='cover'
+          align='center'
+          justify='flex-end'
+          pb='100px'
+          px='20px'>
+          <Text
+            fontSize='xs'
+            color='#fff'
+            fontWeight='bold'
+            mb='16px'
+            letterSpacing='2px'>
             BUILD BETTER, BUILD FASTER
           </Text>
-          <Text fontSize="30px" color="#fff" mb="64px">
+          <Text fontSize='30px' color='#fff' mb='64px' textAlign='center'>
             {products.length} products found for: "
             {match.params.userInput.split("-").join(" ")}"
           </Text>
           <form onSubmit={handleSubmit}>
             <FormControl>
-              <Flex align="center" justify="center">
+              <Flex align='center' justify='center'>
                 <Flex
-                  justify="space-between"
-                  bg="#fff"
-                  borderRadius="70px"
-                  w="600px"
-                  maxW="100%"
-                  h="70px"
-                  p="22px 32px"
-                  align="center"
-                >
+                  justify='space-between'
+                  bg='#fff'
+                  borderRadius='70px'
+                  w='600px'
+                  maxW='100%'
+                  h='70px'
+                  p='22px 22px'
+                  align='center'>
                   <Input
                     ref={inputValue}
-                    placeholder="eg. Venus Design System"
-                    boxShadow="none"
-                    border="none"
+                    placeholder='eg. Venus Design System'
+                    boxShadow='none'
+                    border='none'
                     _focus={{ border: "none" }}
                     _placeholder={{ color: "#878CBD" }}
                   />
                   <Button
-                    type="submit"
-                    boxShadow="none"
-                    bg="transparent"
-                    _hover="none"
-                    _active="none"
-                    p="0px"
-                  >
-                    <Icon as={BsSearch} w="20px" h="20px" color="#878CBD" />
+                    type='submit'
+                    boxShadow='none'
+                    bg='transparent'
+                    _hover='none'
+                    _active='none'
+                    p='0px'>
+                    <SearchIcon w='18px' h='18px' color='#878CBD' />
                   </Button>
                 </Flex>
               </Flex>
             </FormControl>
           </form>
         </Flex>
-        <Box maxW="1170px" mx="auto" pt="60px" pb="200px">
+        <Box maxW='1170px' mx='auto' pt='60px' pb='200px'>
           <ProductList products={products} />
         </Box>
       </Flex>

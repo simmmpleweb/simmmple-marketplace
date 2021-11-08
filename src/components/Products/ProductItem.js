@@ -39,18 +39,6 @@ const ProductItem = ({
                   p='7px 14px'>
                   {tag}
                 </Tag>
-                <Flex align='center'>
-                  <Icon
-                    as={FiDownload}
-                    color='brand.300'
-                    w='14px'
-                    h='14px'
-                    me='6px'
-                  />
-                  <Text fontSize='sm' color='brand.300' fontWeight='500'>
-                    {downloads}
-                  </Text>
-                </Flex>
               </Flex>
               <Tag
                 bg={price === 0 ? "#5AC39B" : "brand.300"}
