@@ -220,6 +220,7 @@ const Templates = (props) => {
                 that use our digital solutions to quickly design and build
                 responsive mobile-first websites and apps.
               </Text>
+              <form onSubmit={handleSubmit}>
             <FormControl
               display='flex'
               justifyContent='center'
@@ -233,15 +234,27 @@ const Templates = (props) => {
                 p='22px 28px 22px 20px'
                 align='center'>
                 <Input
+                ref={inputValue}
                   placeholder='eg. Venus Design System'
                   boxShadow='none'
                   border='none'
                   _focus={{ border: "none" }}
                   _placeholder={{ color: "#878CBD" }}
                 />
-                <Icon as={BsSearch} w='20px' h='20px' color='#878CBD' />
+                <Button
+                    type="submit"
+                    boxShadow="none"
+                    bg="transparent"
+                    _hover="none"
+                    _active="none"
+                    p="0px"
+                  >
+                    <Icon as={BsSearch} w="20px" h="20px" color="#878CBD" />
+                  </Button>
               </Flex>
             </FormControl>
+
+              </form>
           </Flex>
         </Flex>
         <Flex

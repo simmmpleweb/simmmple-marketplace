@@ -48,6 +48,8 @@ const Search = ({ match }) => {
       const urlParameter = inputValue.current.value.split(" ").join("-");
       history.push(`/search/${urlParameter}`);
     }
+
+    inputValue.current.value = '';
   };
 
   return (
@@ -95,6 +97,7 @@ const Search = ({ match }) => {
                     boxShadow="none"
                     bg="transparent"
                     _hover="none"
+                    _active="none"
                     p="0px"
                   >
                     <Icon as={BsSearch} w="20px" h="20px" color="#878CBD" />
