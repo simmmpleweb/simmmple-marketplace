@@ -419,16 +419,18 @@ const Home = () => {
                   Featured products
                 </Text>
               </Flex>
-              <Button
-                bg="#fff"
-                w="190px"
-                h="56px"
-                display={{ base: "none", md: "flex" }}
-              >
-                <Text color="brand.300" fontWeight="500" fontSize="sm">
-                  Explore all Products
-                </Text>
-              </Button>
+
+              <NavLink to='/templates/all-templates'>
+                <Button
+                  bg='#fff'
+                  w='190px'
+                  h='56px'
+                  display={{ base: "none", md: "flex" }}>
+                  <Text color='brand.300' fontWeight='500' fontSize='sm'>
+                    Explore all Products
+                  </Text>
+                </Button>
+              </NavLink>
             </Flex>
             <ProductList products={featuredProducts} />
             <Button
@@ -556,16 +558,17 @@ const Home = () => {
                   Latest products
                 </Text>
               </Flex>
-              <Button
-                bg="#fff"
-                w="190px"
-                h="56px"
-                display={{ base: "none", md: "flex" }}
-              >
-                <Text color="brand.300" fontWeight="500" fontSize="sm">
-                  Explore all Products
-                </Text>
-              </Button>
+              <NavLink to='/templates/all-templates'>
+                <Button
+                  bg='#fff'
+                  w='190px'
+                  h='56px'
+                  display={{ base: "none", md: "flex" }}>
+                  <Text color='brand.300' fontWeight='500' fontSize='sm'>
+                    Explore all Products
+                  </Text>
+                </Button>
+              </NavLink>
             </Flex>
             <ProductList products={featuredProducts} />
 
