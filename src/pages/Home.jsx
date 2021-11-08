@@ -11,6 +11,7 @@ import {
   Grid,
   Button,
   Tag,
+  Link,
 } from "@chakra-ui/react";
 
 // Custom Components
@@ -234,7 +235,7 @@ const Home = () => {
                       mb='12px'>
                       Figma Products
                     </Text>
-                    <NavLink to='/'>
+                    <NavLink to='/templates/figma'>
                       <Flex align='center' color='brand.300'>
                         <Text
                           fontSize='16px'
@@ -272,7 +273,7 @@ const Home = () => {
                       mb='12px'>
                       Coded Products
                     </Text>
-                    <NavLink to='/'>
+                    <NavLink to='/templates/all-templates'>
                       <Flex align='center' color='brand.300'>
                         <Text
                           fontSize='16px'
@@ -310,7 +311,7 @@ const Home = () => {
                       mb='12px'>
                       Articles & Guides
                     </Text>
-                    <NavLink to='/'>
+                    <Link href='https://blog.simmmple.com'>
                       <Flex align='center' color='brand.300'>
                         <Text
                           fontSize='16px'
@@ -326,7 +327,7 @@ const Home = () => {
                           mt='4px'
                         />
                       </Flex>
-                    </NavLink>
+                    </Link>
                   </Flex>
                 </CardBody>
               </Card>
@@ -348,7 +349,7 @@ const Home = () => {
                       mb='12px'>
                       Apps & Plugins
                     </Text>
-                    <NavLink to='/'>
+                    <NavLink to='/apps'>
                       <Flex align='center' color='brand.300'>
                         <Text
                           fontSize='16px'
@@ -475,23 +476,25 @@ const Home = () => {
                 h='115px'
                 transition='all .5s ease'
               />
-              <Button
-                bg='white'
-                variant='solid'
-                w='190px'
-                h='56px'
-                onMouseEnter={() => {
-                  leftEffect.current.style.transform = "translateX(-5px)";
-                  rightEffect.current.style.transform = "translateX(5px)";
-                }}
-                onMouseLeave={() => {
-                  leftEffect.current.style.transform = "translateX(5px)";
-                  rightEffect.current.style.transform = "translateX(-5px)";
-                }}>
-                <Text color='brand.700' fontSize='sm'>
-                  Save up to 80% now
-                </Text>
-              </Button>
+              <NavLink to='/bundles'>
+                <Button
+                  bg='white'
+                  variant='solid'
+                  w='190px'
+                  h='56px'
+                  onMouseEnter={() => {
+                    leftEffect.current.style.transform = "translateX(-5px)";
+                    rightEffect.current.style.transform = "translateX(5px)";
+                  }}
+                  onMouseLeave={() => {
+                    leftEffect.current.style.transform = "translateX(5px)";
+                    rightEffect.current.style.transform = "translateX(-5px)";
+                  }}>
+                  <Text color='brand.700' fontSize='sm'>
+                    Save up to 80% now
+                  </Text>
+                </Button>
+              </NavLink>
               <RightButtonEffect
                 ref={rightEffect}
                 color='#fff'
@@ -726,16 +729,18 @@ const Home = () => {
                 </Card>
               </NavLink>
             </Grid>
-            <Button
-              bg='#ECE9FF'
-              w='152px'
-              h='56px'
-              alignSelf='center'
-              mt='52px'>
-              <Text color='brand.300' fontSize='sm'>
-                Learn more
-              </Text>
-            </Button>
+            <Link href='https://blog.simmmple.com' mx='auto'>
+              <Button
+                bg='#ECE9FF'
+                w='152px'
+                h='56px'
+                alignSelf='center'
+                mt='52px'>
+                <Text color='brand.300' fontSize='sm'>
+                  Learn more
+                </Text>
+              </Button>
+            </Link>
           </Flex>
         </Flex>
       </Flex>

@@ -116,7 +116,9 @@ const Bundles = () => {
               lineHeight='40px'
               maxW={{ base: "90%", md: "60%" }}
               mb='50px'>
-              The most special and exclusive digital bundle which contains all of our premium products & tools that will help you design faster & easier.{" "}
+              The most special and exclusive digital bundle which contains all
+              of our premium products & tools that will help you design faster &
+              easier.{" "}
               <Text as='span' fontWeight='bold'>
                 Save up to 80%!
               </Text>
@@ -623,7 +625,7 @@ const Bundles = () => {
                 maxW='unset !important'
                 borderRadius='18px'
                 position='absolute'
-                right={{ base: "50%", md: "50%", lg: "-35px", xl: "-35px" }}
+                right={{ base: "50%", md: "50%", lg: "-35px", xl: "-10px" }}
                 top={{ base: "-315px", md: "-280px", lg: "-360px", xl: "50%" }}
                 transform={{
                   base: "translate(50%, 0px)",
@@ -1443,7 +1445,11 @@ const Bundles = () => {
                         textDecoration='line-through'>
                         reg. $354
                       </Text>
-                      <Text fontWeight='500' color='#009B73' fontSize='16px' lineHeight='20px'>
+                      <Text
+                        fontWeight='500'
+                        color='#009B73'
+                        fontSize='16px'
+                        lineHeight='20px'>
                         Save up to 80%
                       </Text>
                     </Flex>
@@ -1586,7 +1592,11 @@ const Bundles = () => {
                         textDecoration='line-through'>
                         reg. $1085
                       </Text>
-                      <Text fontWeight='500' color='#009B73' fontSize='16px' lineHeight='20px'>
+                      <Text
+                        fontWeight='500'
+                        color='#009B73'
+                        fontSize='16px'
+                        lineHeight='20px'>
                         Save up to 63%
                       </Text>
                     </Flex>
@@ -1724,7 +1734,11 @@ const Bundles = () => {
                         textDecoration='line-through'>
                         reg. $1945
                       </Text>
-                      <Text fontWeight='500' color='#009B73' fontSize='16px' lineHeight='20px'>
+                      <Text
+                        fontWeight='500'
+                        color='#009B73'
+                        fontSize='16px'
+                        lineHeight='20px'>
                         Save up to 55%
                       </Text>
                     </Flex>
@@ -1832,7 +1846,12 @@ const Bundles = () => {
             mt='72px'>
             <Flex flexDirection='column' align='center'>
               <Help color='brand.300' w='24px' h='24px' mb='16px' />
-              <Text textAlign='center' maxW='320px' color='#8F9BBA' mb='30px' fontSize='14px'>
+              <Text
+                textAlign='center'
+                maxW='320px'
+                color='#8F9BBA'
+                mb='30px'
+                fontSize='14px'>
                 If you have any questions about the product or licensing please
                 check FAQs bellow.
               </Text>
@@ -1952,17 +1971,18 @@ const Bundles = () => {
                 for any future inquiry from us. If you create a client project,
                 you can either keep this code or you can send us an email using
                 our
-                <NavLink
-                    to='/contact'>
-                    <Text
+                <NavLink to='/contact'>
+                  <Text
                     textDecoration='underline'
                     color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>contact page</Text>
-                </NavLink>{""}
-                , and we will transfer the license to your client, provided that
-                they have an account on our website.
+                    fontWeight='500'
+                    as='span'
+                    mx='3px'>
+                    contact page
+                  </Text>
+                </NavLink>
+                {""}, and we will transfer the license to your client, provided
+                that they have an account on our website.
               </Text>
               {/* 2. */}
               <Text
@@ -2019,14 +2039,15 @@ const Bundles = () => {
                 mb='72px'
                 maxW='548px'>
                 All the differences between the types of licenses are{" "}
-                <NavLink
-                    to='/licenses'>
-                    <Text
+                <NavLink to='/licenses'>
+                  <Text
                     textDecoration='underline'
                     color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>available here</Text>
+                    fontWeight='500'
+                    as='span'
+                    mx='3px'>
+                    available here
+                  </Text>
                 </NavLink>
                 .
               </Text>
@@ -2158,15 +2179,17 @@ const Bundles = () => {
                   fontWeight='400'
                   maxW='548px'>
                   Feel free to send us a message using the
-               <NavLink
-                    to='/contact'>
+                  <NavLink to='/contact'>
                     <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>contact page</Text>
-                </NavLink>{""}
+                      textDecoration='underline'
+                      color='brand.300'
+                      fontWeight='500'
+                      as='span'
+                      mx='3px'>
+                      contact page
+                    </Text>
+                  </NavLink>
+                  {""}
                   and one of our team members will get back to you in the
                   shortest time possible
                 </Text>
@@ -2320,15 +2343,17 @@ const Bundles = () => {
                 maxW='548px'>
                 In case you have already purchased a license, but you want to
                 upgrade, you can just send us a message using the
-                <NavLink
-                    to='/contact'>
-                    <Text
+                <NavLink to='/contact'>
+                  <Text
                     textDecoration='underline'
                     color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>contact page</Text>
-                </NavLink>{""}
+                    fontWeight='500'
+                    as='span'
+                    mx='3px'>
+                    contact page
+                  </Text>
+                </NavLink>
+                {""}
                 and we will send you a discount code so you will only pay the
                 difference for the upgrade.
               </Text>
@@ -2339,7 +2364,7 @@ const Bundles = () => {
                 lineHeight='34px'
                 fontWeight='500'
                 mb='16px'>
-                  What  is the difference between a Free and a PRO product?
+                What is the difference between a Free and a PRO product?
               </Text>
               <Text
                 fontSize='md'
@@ -2419,15 +2444,17 @@ const Bundles = () => {
                   fontWeight='400'
                   maxW='548px'>
                   Feel free to send us a message using the
-                  <NavLink
-                    to='/contact'>
+                  <NavLink to='/contact'>
                     <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>contact page</Text>
-                </NavLink>{""}
+                      textDecoration='underline'
+                      color='brand.300'
+                      fontWeight='500'
+                      as='span'
+                      mx='3px'>
+                      contact page
+                    </Text>
+                  </NavLink>
+                  {""}
                   and one of our team members will get back to you in the
                   shortest time possible
                 </Text>

@@ -315,7 +315,12 @@ const Contact = () => {
           mx='auto'
           align='center'>
           <Flex direction='column' textAlign='center' align='center' mb='100px'>
-            <Text color='brand.300' fontSize='sm' fontWeight='bold' mb='20px' letterSpacing='2px'>
+            <Text
+              color='brand.300'
+              fontSize='sm'
+              fontWeight='bold'
+              mb='20px'
+              letterSpacing='2px'>
               GET IN TOUCH
             </Text>
             <Text
@@ -782,9 +787,39 @@ const Contact = () => {
                                   product: e.target.value,
                                 })
                               }>
-                              <option value='option1'>option1</option>
-                              <option value='option2'>option2</option>
-                              <option value='option3'>option3</option>
+                              <option value='Purity UI Dashboard PRO'>
+                                Purity UI Dashboard PRO
+                              </option>
+                              <option value='Purity UI Dashboard Free'>
+                                Purity UI Dashboard Free
+                              </option>
+                              <option value='Venus Design System PRO'>
+                                Venus Design System PRO
+                              </option>
+                              <option value='Venus Design System Free'>
+                                Venus Design System Free
+                              </option>
+                              <option value='Venus Dashboard Builder PRO'>
+                                Venus Dashboard Builder PRO
+                              </option>
+                              <option value='Venus Dashboard Builder Free'>
+                                Venus Dashboard Builder Free
+                              </option>
+                              <option value='Uranus Wireframe Kit PRO'>
+                                Uranus Wireframe Kit PRO
+                              </option>
+                              <option value='Uranus Wireframe Kit Demo'>
+                                Uranus Wireframe Kit Demo
+                              </option>
+                              <option value='Glassy - Trendy Glassmorphism Cards'>
+                                Glassy - Trendy Glassmorphism Cards
+                              </option>
+                              <option value='Task List UI - React App'>
+                                Task List UI - React App
+                              </option>
+                              <option value='Saturn - UI Kit Headers'>
+                                Saturn - UI Kit Headers
+                              </option>
                             </Select>
                           </Flex>
                           <Text

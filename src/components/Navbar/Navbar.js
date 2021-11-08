@@ -16,16 +16,23 @@ import {
   Stack,
   Text,
   useDisclosure,
+  Link,
 } from "@chakra-ui/react";
+import chakraLogo from "assets/img/apps/chakra.png";
+import bootstrapLogo from "assets/img/navbar/BootstrapLogo.png";
 // Images
 import exploreBackground from "assets/img/navbar/explore-background.png";
 import figmaLogo from "assets/img/navbar/figma.png";
 import mailLogo from "assets/img/navbar/mail.png";
+import reactLogo from "assets/img/navbar/ReactLogo.png";
+import vdbLogo from "assets/img/apps/vdb.png";
 import vscodeLogo from "assets/img/navbar/vscode.png";
+import bulb from "assets/img/navbar/bulb.png";
 // Custom Components
 import IconBox from "components/icons/IconBox";
 // Icons
 import {
+  contactSupport,
   SimmmpleLogoBundle,
   SimmmpleLogoColored,
   SimmmpleLogoColoredMobile,
@@ -44,6 +51,16 @@ function Navbar() {
     isOpen: isOpenExplore,
     onOpen: onOpenExplore,
     onClose: onCloseExplore,
+  } = useDisclosure();
+  const {
+    isOpen: isOpenTech,
+    onOpen: onOpenTech,
+    onClose: onCloseTech,
+  } = useDisclosure();
+  const {
+    isOpen: isOpenResources,
+    onOpen: onOpenResources,
+    onClose: onCloseResources,
   } = useDisclosure();
 
   const { isOpen: isOpenFade, onToggle } = useDisclosure();
@@ -187,19 +204,19 @@ function Navbar() {
                   border='none'>
                   <Grid templateColumns='repeat(2, 1fr)'>
                     <Stack direction='column' spacing='12px' p='12px'>
-                      <Flex align='center'>
-                        <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
-                          <Image src={figmaLogo} w='26px' h='38px' />
-                        </IconBox>
-                        <Flex direction='column'>
-                          <Text
-                            fontSize='md'
-                            color='brand.700'
-                            fontWeight='bold'
-                            mb='2px'>
-                            Figma Products
-                          </Text>
-                          <NavLink to='/templates/all-templates'>
+                      <NavLink to='/templates/figma'>
+                        <Flex align='center'>
+                          <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                            <Image src={figmaLogo} w='26px' h='38px' />
+                          </IconBox>
+                          <Flex direction='column'>
+                            <Text
+                              fontSize='md'
+                              color='brand.700'
+                              fontWeight='bold'
+                              mb='2px'>
+                              Figma Products
+                            </Text>
                             <Flex align='center' color='brand.300'>
                               <Text fontSize='sm' color='brand.300'>
                                 See all products
@@ -211,22 +228,22 @@ function Navbar() {
                                 mt='2px'
                               />
                             </Flex>
-                          </NavLink>
+                          </Flex>
                         </Flex>
-                      </Flex>
-                      <Flex align='center'>
-                        <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
-                          <Image src={vscodeLogo} w='38px' h='38px' />
-                        </IconBox>
-                        <Flex direction='column'>
-                          <Text
-                            fontSize='md'
-                            color='brand.700'
-                            fontWeight='bold'
-                            mb='2px'>
-                            Coded Products
-                          </Text>
-                          <NavLink to='/templates/all-templates'>
+                      </NavLink>
+                      <NavLink to='/templates/all-templates'>
+                        <Flex align='center'>
+                          <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                            <Image src={vscodeLogo} w='38px' h='38px' />
+                          </IconBox>
+                          <Flex direction='column'>
+                            <Text
+                              fontSize='md'
+                              color='brand.700'
+                              fontWeight='bold'
+                              mb='2px'>
+                              Coded Products
+                            </Text>
                             <Flex align='center' color='brand.300'>
                               <Text fontSize='sm' color='brand.300'>
                                 See all products
@@ -238,22 +255,22 @@ function Navbar() {
                                 mt='2px'
                               />
                             </Flex>
-                          </NavLink>
+                          </Flex>
                         </Flex>
-                      </Flex>
-                      <Flex align='center'>
-                        <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
-                          <Image src={mailLogo} w='46px' h='43px' />
-                        </IconBox>
-                        <Flex direction='column'>
-                          <Text
-                            fontSize='md'
-                            color='brand.700'
-                            fontWeight='bold'
-                            mb='2px'>
-                            Apps & Plugins
-                          </Text>
-                          <NavLink to='/apps'>
+                      </NavLink>
+                      <NavLink to='/apps'>
+                        <Flex align='center'>
+                          <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                            <Image src={bulb} ms='-4px' w='46px' h='49px' />
+                          </IconBox>
+                          <Flex direction='column'>
+                            <Text
+                              fontSize='md'
+                              color='brand.700'
+                              fontWeight='bold'
+                              mb='2px'>
+                              Apps & Plugins
+                            </Text>
                             <Flex align='center' color='brand.300'>
                               <Text fontSize='sm' color='brand.300'>
                                 Learn more
@@ -265,9 +282,9 @@ function Navbar() {
                                 mt='2px'
                               />
                             </Flex>
-                          </NavLink>
+                          </Flex>
                         </Flex>
-                      </Flex>
+                      </NavLink>
                     </Stack>
                     <Flex
                       direction='column'
@@ -284,7 +301,7 @@ function Navbar() {
                       <SimmmpleLogoBundle w='100%' h='31px' />
                       <Text
                         transition='color 0.3s linear'
-                        color={secondary || scrolled ? "#878CBD" : "#fff"}
+                        color='#fff'
                         fontSize='sm'
                         mt='20px'
                         mb='26px'>
@@ -292,7 +309,7 @@ function Navbar() {
                         bundles!
                       </Text>
                       <NavLink to='/bundles'>
-                        <Button variant='solid' w='150px' h='42px'>
+                        <Button variant='solid' w='150px' h='42px' bg='white'>
                           <Text color='#4F61FF' fontSize='sm'>
                             Explore all
                           </Text>
@@ -315,7 +332,13 @@ function Navbar() {
                 </Text>
               </Flex>
             </NavLink>
-            <Flex align='center' cursor='pointer'>
+            <Flex
+              align='center'
+              cursor='pointer'
+              h='100%'
+              onMouseEnter={onOpenTech}
+              onMouseLeave={onCloseTech}
+              position='relative'>
               <Text
                 transition='color 0.3s linear'
                 color={secondary || scrolled ? "#878CBD" : "#fff"}
@@ -332,8 +355,136 @@ function Navbar() {
                 color={secondary || scrolled ? "#878CBD" : "#fff"}
                 mt='4px'
               />
+              <Menu isOpen={isOpenTech}>
+                <MenuList
+                  p='0px'
+                  minW='500px'
+                  cursor='default'
+                  borderRadius='30px'
+                  position='absolute'
+                  top='50px'
+                  left='-10px'
+                  border='none'>
+                  <Grid templateColumns='repeat(2, 1fr)' gap='10px' p='10px'>
+                    <NavLink to='/templates/figma'>
+                      <Flex align='center'>
+                        <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                          <Image src={figmaLogo} w='26px' h='38px' />
+                        </IconBox>
+                        <Flex direction='column'>
+                          <Text
+                            fontSize='md'
+                            color='brand.700'
+                            fontWeight='bold'
+                            mb='2px'>
+                            Figma
+                          </Text>
+                          <Flex align='center' color='brand.300'>
+                            <Text fontSize='sm' color='brand.300'>
+                              See all products
+                            </Text>
+                            <Icon
+                              as={MdKeyboardArrowRight}
+                              w='14px'
+                              h='14px'
+                              mt='2px'
+                            />
+                          </Flex>
+                        </Flex>
+                      </Flex>
+                    </NavLink>
+                    <NavLink to='/templates/react'>
+                      <Flex align='center'>
+                        <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                          <Image src={reactLogo} w='40px' h='36px' />
+                        </IconBox>
+                        <Flex direction='column'>
+                          <Text
+                            fontSize='md'
+                            color='brand.700'
+                            fontWeight='bold'
+                            mb='2px'>
+                            React JS
+                          </Text>
+                          <Flex align='center' color='brand.300'>
+                            <Text fontSize='sm' color='brand.300'>
+                              See all products
+                            </Text>
+                            <Icon
+                              as={MdKeyboardArrowRight}
+                              w='14px'
+                              h='14px'
+                              mt='2px'
+                            />
+                          </Flex>
+                        </Flex>
+                      </Flex>
+                    </NavLink>
+                    <NavLink to='/templates/bootstrap'>
+                      <Flex align='center'>
+                        <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                          <Image src={bootstrapLogo} w='44px' h='36px' />
+                        </IconBox>
+                        <Flex direction='column'>
+                          <Text
+                            fontSize='md'
+                            color='brand.700'
+                            fontWeight='bold'
+                            mb='2px'>
+                            Bootstrap
+                          </Text>
+                          <Flex align='center' color='brand.300'>
+                            <Text fontSize='sm' color='brand.300'>
+                              See all products
+                            </Text>
+                            <Icon
+                              as={MdKeyboardArrowRight}
+                              w='14px'
+                              h='14px'
+                              mt='2px'
+                            />
+                          </Flex>
+                        </Flex>
+                      </Flex>
+                    </NavLink>
+                    <NavLink to='/templates/react'>
+                      <Flex align='center'>
+                        <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                          <Image src={chakraLogo} w='40px' h='40px' />
+                        </IconBox>
+                        <Flex direction='column'>
+                          <Text
+                            fontSize='md'
+                            color='brand.700'
+                            fontWeight='bold'
+                            mb='2px'>
+                            Chakra UI
+                          </Text>
+                          <Flex align='center' color='brand.300'>
+                            <Text fontSize='sm' color='brand.300'>
+                              See all products
+                            </Text>
+                            <Icon
+                              as={MdKeyboardArrowRight}
+                              w='14px'
+                              h='14px'
+                              mt='2px'
+                            />
+                          </Flex>
+                        </Flex>
+                      </Flex>
+                    </NavLink>
+                  </Grid>
+                </MenuList>
+              </Menu>
             </Flex>
-            <Flex align='center' cursor='pointer'>
+            <Flex
+              align='center'
+              cursor='pointer'
+              position='relative'
+              h='100%'
+              onMouseEnter={onOpenResources}
+              onMouseLeave={onCloseResources}>
               <Text
                 transition='color 0.3s linear'
                 color={secondary || scrolled ? "#878CBD" : "#fff"}
@@ -350,6 +501,133 @@ function Navbar() {
                 color={secondary || scrolled ? "#878CBD" : "#fff"}
                 mt='4px'
               />
+              <Menu isOpen={isOpenResources}>
+                <MenuList
+                  p='0px'
+                  minW='500px'
+                  cursor='default'
+                  borderRadius='30px'
+                  position='absolute'
+                  top='50px'
+                  left='-10px'
+                  border='none'>
+                  <Grid templateColumns='repeat(2, 1fr)'>
+                    <Stack direction='column' spacing='12px' p='12px'>
+                      <Link href='https://venusdesignsystem.com/dashboard-builder?ref=simmmple'>
+                        <Flex align='center'>
+                          <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                            <Image src={vdbLogo} w='38px' h='38px' />
+                          </IconBox>
+                          <Flex direction='column'>
+                            <Text
+                              fontSize='md'
+                              color='brand.700'
+                              fontWeight='bold'
+                              mb='2px'>
+                              Dashboard Builder
+                            </Text>
+                            <Flex align='center' color='brand.300'>
+                              <Text fontSize='sm' color='brand.300'>
+                                Learn more
+                              </Text>
+                              <Icon
+                                as={MdKeyboardArrowRight}
+                                w='14px'
+                                h='14px'
+                                mt='2px'
+                              />
+                            </Flex>
+                          </Flex>
+                        </Flex>
+                      </Link>
+                      <Link href='https://blog.simmmple.com'>
+                        <Flex align='center'>
+                          <IconBox w='68px' h='68px' bg='#F4F7FE' me='20px'>
+                            <Image src={mailLogo} w='38px' h='38px' />
+                          </IconBox>
+                          <Flex direction='column'>
+                            <Text
+                              fontSize='md'
+                              color='brand.700'
+                              fontWeight='bold'
+                              mb='2px'>
+                              Blogs
+                            </Text>
+                            <Flex align='center' color='brand.300'>
+                              <Text fontSize='sm' color='brand.300'>
+                                Articles & Tutorials
+                              </Text>
+                              <Icon
+                                as={MdKeyboardArrowRight}
+                                w='14px'
+                                h='14px'
+                                mt='2px'
+                              />
+                            </Flex>
+                          </Flex>
+                        </Flex>
+                      </Link>
+                      <NavLink to='/contact'>
+                        <Flex align='center'>
+                          <IconBox w='68px' h='68px' bg='#fff6e5' me='20px'>
+                            <Icon as={contactSupport} w='28px' h='28px' />
+                          </IconBox>
+                          <Flex direction='column'>
+                            <Text
+                              fontSize='md'
+                              color='brand.700'
+                              fontWeight='bold'
+                              mb='2px'>
+                              Support
+                            </Text>
+                            <Flex align='center' color='brand.300'>
+                              <Text fontSize='sm' color='brand.300'>
+                                Get in touch
+                              </Text>
+                              <Icon
+                                as={MdKeyboardArrowRight}
+                                w='14px'
+                                h='14px'
+                                mt='2px'
+                              />
+                            </Flex>
+                          </Flex>
+                        </Flex>
+                      </NavLink>
+                    </Stack>
+                    <Flex
+                      direction='column'
+                      textAlign='center'
+                      bgImage={exploreBackground}
+                      bgSize='cover'
+                      bgPosition='1px'
+                      w='100%'
+                      h='100%'
+                      borderRadius='0px 26px 26px 0px'
+                      align='center'
+                      justify='center'
+                      px='22px'>
+                      <SimmmpleLogoBundle w='100%' h='31px' />
+                      <Text
+                        transition='color 0.3s linear'
+                        color='#fff'
+                        fontSize='sm'
+                        mt='20px'
+                        mb='26px'>
+                        Save money to all products with our digital categories
+                        bundles!
+                      </Text>
+                      <NavLink to='/bundles'>
+                        <Button variant='solid' w='150px' h='42px' bg='white'>
+                          <Text color='#4F61FF' fontSize='sm'>
+                            Explore all
+                          </Text>
+                        </Button>
+                      </NavLink>
+                    </Flex>
+                  </Grid>
+                </MenuList>
+              </Menu>
             </Flex>
           </Stack>
           <Flex align='center' justify='flex-end'>
@@ -398,9 +676,11 @@ function Navbar() {
                 top='100px'
                 borderRadius='16px'>
                 <Accordion allowToggle boxShadow='none' color='#4e547e'>
+                  {/* RESPONSIVE NAVBAR */}
                   <AccordionItem border='none'>
                     <h2>
                       <AccordionButton
+                        borderRadius='20px'
                         boxShadow='none'
                         _focus={{ boxShadow: "none", bg: "#fff" }}
                         py='14px'>
@@ -416,18 +696,18 @@ function Navbar() {
                     </h2>
                     <AccordionPanel pb={4}>
                       <Stack direction='column' spacing='16px' w='100%'>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={figmaLogo} w='18px' h='26px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Figma Products
-                          </Text>
-                          <NavLink to='/'>
+                        <NavLink to='/templates/figma'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={figmaLogo} w='18px' h='26px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Figma Products
+                            </Text>
                             <Flex align='center' color='brand.300'>
                               <Text fontSize='sm' color='brand.300'>
                                 See all
@@ -439,20 +719,20 @@ function Navbar() {
                                 mt='2px'
                               />
                             </Flex>
-                          </NavLink>
-                        </Flex>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={vscodeLogo} w='26px' h='26px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Coded Products
-                          </Text>
-                          <NavLink to='/'>
+                          </Flex>
+                        </NavLink>
+                        <NavLink to='/templates/all-templates'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={vscodeLogo} w='26px' h='26px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Coded Products
+                            </Text>
                             <Flex align='center' color='brand.300'>
                               <Text fontSize='sm' color='brand.300'>
                                 See all
@@ -464,20 +744,20 @@ function Navbar() {
                                 mt='2px'
                               />
                             </Flex>
-                          </NavLink>
-                        </Flex>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={mailLogo} w='32px' h='30px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Apps & Plugins
-                          </Text>
-                          <NavLink to='/'>
+                          </Flex>
+                        </NavLink>
+                        <NavLink to='/apps'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={bulb} w='28px' h='30px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Apps & Plugins
+                            </Text>
                             <Flex align='center' color='brand.300'>
                               <Text fontSize='sm' color='brand.300'>
                                 Learn more
@@ -489,30 +769,34 @@ function Navbar() {
                                 mt='2px'
                               />
                             </Flex>
-                          </NavLink>
-                        </Flex>
+                          </Flex>
+                        </NavLink>
                       </Stack>
                     </AccordionPanel>
                   </AccordionItem>
                   <AccordionItem border='none'>
                     <h2>
-                      <AccordionButton
-                        boxShadow='none'
-                        _focus={{ boxShadow: "none", bg: "#fff" }}
-                        py='14px'>
-                        <Box
-                          flex='1'
-                          textAlign='left'
-                          color='brand.700'
-                          fontWeight='500'>
-                          Products
-                        </Box>
-                      </AccordionButton>
+                      <NavLink to='/templates/all-templates'>
+                        <AccordionButton
+                          borderRadius='20px'
+                          boxShadow='none'
+                          _focus={{ boxShadow: "none", bg: "#fff" }}
+                          py='14px'>
+                          <Box
+                            flex='1'
+                            textAlign='left'
+                            color='brand.700'
+                            fontWeight='500'>
+                            Products
+                          </Box>
+                        </AccordionButton>
+                      </NavLink>
                     </h2>
                   </AccordionItem>
                   <AccordionItem border='none'>
                     <h2>
                       <AccordionButton
+                        borderRadius='20px'
                         boxShadow='none'
                         _focus={{ boxShadow: "none", bg: "#fff" }}
                         py='14px'>
@@ -526,65 +810,74 @@ function Navbar() {
                         <AccordionIcon />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4} pe='0px'>
+                    <AccordionPanel pb={4} px='10px'>
                       <Grid
                         templateColumns='repeat(2, 1fr)'
                         columnGap='35px'
                         rowGap='20px'>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={figmaLogo} w='18px' h='26px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Figma
-                          </Text>
-                        </Flex>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={figmaLogo} w='18px' h='26px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            React JS
-                          </Text>
-                        </Flex>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={figmaLogo} w='18px' h='26px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Bootstrap
-                          </Text>
-                        </Flex>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={figmaLogo} w='18px' h='26px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Chakra UI
-                          </Text>
-                        </Flex>
+                        <NavLink to='/templates/figma'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={figmaLogo} w='18px' h='26px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Figma
+                            </Text>
+                          </Flex>
+                        </NavLink>
+                        <NavLink to='/templates/react'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={reactLogo} w='24px' h='22px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              React JS
+                            </Text>
+                          </Flex>
+                        </NavLink>
+                        <NavLink to='/templates/bootstrap'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={bootstrapLogo} w='24px' h='22px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Bootstrap
+                            </Text>
+                          </Flex>
+                        </NavLink>
+                        <NavLink to='/templates/react'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={chakraLogo} w='24px' h='24px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Chakra UI
+                            </Text>
+                          </Flex>
+                        </NavLink>
                       </Grid>
                     </AccordionPanel>
                   </AccordionItem>
                   <AccordionItem border='none'>
                     <h2>
                       <AccordionButton
+                        borderRadius='20px'
                         boxShadow='none'
                         _focus={{ boxShadow: "none", bg: "#fff" }}
                         py='14px'>
@@ -600,68 +893,18 @@ function Navbar() {
                     </h2>
                     <AccordionPanel pb={4}>
                       <Stack direction='column' spacing='16px' w='100%'>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={figmaLogo} w='18px' h='26px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Figma Products
-                          </Text>
-                          <NavLink to='/'>
-                            <Flex align='center' color='brand.300'>
-                              <Text fontSize='sm' color='brand.300'>
-                                See all
-                              </Text>
-                              <Icon
-                                as={MdKeyboardArrowRight}
-                                w='14px'
-                                h='14px'
-                                mt='2px'
-                              />
-                            </Flex>
-                          </NavLink>
-                        </Flex>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={vscodeLogo} w='26px' h='26px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Coded Products
-                          </Text>
-                          <NavLink to='/'>
-                            <Flex align='center' color='brand.300'>
-                              <Text fontSize='sm' color='brand.300'>
-                                See all
-                              </Text>
-                              <Icon
-                                as={MdKeyboardArrowRight}
-                                w='14px'
-                                h='14px'
-                                mt='2px'
-                              />
-                            </Flex>
-                          </NavLink>
-                        </Flex>
-                        <Flex align='center' w='100%'>
-                          <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
-                            <Image src={mailLogo} w='32px' h='30px' />
-                          </IconBox>
-                          <Text
-                            fontSize='sm'
-                            fontWeight='normal'
-                            color='brand.700'
-                            me='auto'>
-                            Apps & Plugins
-                          </Text>
-                          <NavLink to='/'>
+                        <Link href='https://venusdesignsystem.com/dashboard-builder?ref=simmmple'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={vdbLogo} w='26px' h='26px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Dashboard Builder
+                            </Text>
                             <Flex align='center' color='brand.300'>
                               <Text fontSize='sm' color='brand.300'>
                                 Learn more
@@ -673,8 +916,58 @@ function Navbar() {
                                 mt='2px'
                               />
                             </Flex>
-                          </NavLink>
-                        </Flex>
+                          </Flex>
+                        </Link>
+                        <Link href='https://blog.simmmple.com'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
+                              <Image src={mailLogo} w='32px' h='30px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Blogs
+                            </Text>
+                            <Flex align='center' color='brand.300'>
+                              <Text fontSize='sm' color='brand.300'>
+                                Articles & Tutorials
+                              </Text>
+                              <Icon
+                                as={MdKeyboardArrowRight}
+                                w='14px'
+                                h='14px'
+                                mt='2px'
+                              />
+                            </Flex>
+                          </Flex>
+                        </Link>
+                        <NavLink to='/contact'>
+                          <Flex align='center' w='100%'>
+                            <IconBox w='48px' h='48px' bg='#fff6e5' me='16px'>
+                              <Icon as={contactSupport} w='22px' h='22px' />
+                            </IconBox>
+                            <Text
+                              fontSize='sm'
+                              fontWeight='normal'
+                              color='brand.700'
+                              me='auto'>
+                              Support
+                            </Text>
+                            <Flex align='center' color='brand.300'>
+                              <Text fontSize='sm' color='brand.300'>
+                                Get in touch
+                              </Text>
+                              <Icon
+                                as={MdKeyboardArrowRight}
+                                w='14px'
+                                h='14px'
+                                mt='2px'
+                              />
+                            </Flex>
+                          </Flex>
+                        </NavLink>
                       </Stack>
                     </AccordionPanel>
                   </AccordionItem>
@@ -702,11 +995,13 @@ function Navbar() {
                     Save money to all products with our digital categories
                     bundles!
                   </Text>
-                  <Button variant='solid' w='150px' h='42px'>
-                    <Text color='#4F61FF' fontSize='sm'>
-                      Explore all
-                    </Text>
-                  </Button>
+                  <NavLink to='/bundles'>
+                    <Button variant='solid' w='150px' h='42px' bg='white'>
+                      <Text color='#4F61FF' fontSize='sm'>
+                        Explore all
+                      </Text>
+                    </Button>
+                  </NavLink>
                 </Flex>
               </Flex>
             </Collapse>
