@@ -1,7 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
-import { CardComponent } from "./additions/card/Card";
-import { CardBodyComponent } from "./additions/card/CardBody";
-import { CardHeaderComponent } from "./additions/card/CardHeader";
+import { CardComponent } from "./additions/card/card";
+import { CardBodyComponent } from "./additions/card/cardBody";
+import { CardHeaderComponent } from "./additions/card/cardHeader";
 import { buttonStyles } from "./components/button";
 import { inputStyles } from "./components/input";
 import { linkStyles } from "./components/link";
