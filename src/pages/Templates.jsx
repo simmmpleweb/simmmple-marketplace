@@ -4,6 +4,7 @@ import {
   Icon,
   Input,
   Select,
+  Button,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -12,125 +13,125 @@ import "assets/css/Templates.css";
 import templatesBg from "assets/img/templates/templates-background.png";
 import Layout from "components/layout/Layout";
 import ProductList from "components/products/ProductList";
-import React, { useState, useEffect  } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BsSearch } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { templatesProducts } from "variables/templates";
 
 const Templates = (props) => {
   const [activeTab, setActiveTab] = useState({});
   const [activeSort, setActiveSort] = useState("Most Recent");
   const [activeTitle, setActiveTitle] = useState(() => {
-    if (window.location.href.includes('/all-templates')) {
-      return "All Templates & Themes"
-    } else if (window.location.href.includes('/admin-dashboards')) {
-      return "Admin & Dashboards"
-    } else if (window.location.href.includes('/ui-kits')) {
-      return "UI Kits"
-    } else if (window.location.href.includes('/free-templates')) {
-      return "Free Templates"
-    } else if (window.location.href.includes('/premium-templates')) {
-      return "Premium Templates"
-    } else if (window.location.href.includes('/figma')) {
-      return "Figma Products"
-    } else if (window.location.href.includes('/react')) {
-      return "React Products"
-    } else if (window.location.href.includes('/bootstrap')) {
-      return "Bootstrap Products"
+    if (window.location.href.includes("/all-templates")) {
+      return "All Templates & Themes";
+    } else if (window.location.href.includes("/admin-dashboards")) {
+      return "Admin & Dashboards";
+    } else if (window.location.href.includes("/ui-kits")) {
+      return "UI Kits";
+    } else if (window.location.href.includes("/free-templates")) {
+      return "Free Templates";
+    } else if (window.location.href.includes("/premium-templates")) {
+      return "Premium Templates";
+    } else if (window.location.href.includes("/figma")) {
+      return "Figma Products";
+    } else if (window.location.href.includes("/react")) {
+      return "React Products";
+    } else if (window.location.href.includes("/bootstrap")) {
+      return "Bootstrap Products";
     }
   });
 
   useEffect(() => {
-      if (window.location.href.includes('/all-templates')) {
-        setActiveTab({
-          all: true,
-          admin: false,
-          ui: false,
-          free: false,
-          premium: false,
-          figma: false,
-          react: false,
-          bootstrap: false,
-        })
-      } else if (window.location.href.includes('/admin-dashboards')) {
-        setActiveTab({
-          all: false,
-          admin: true,
-          ui: false,
-          free: false,
-          premium: false,
-          figma: false,
-          react: false,
-          bootstrap: false,
-        })
-      } else if (window.location.href.includes('/ui-kits')) {
-        setActiveTab({
-          all: false,
-          admin: false,
-          ui: true,
-          free: false,
-          premium: false,
-          figma: false,
-          react: false,
-          bootstrap: false,
-        })
-      } else if (window.location.href.includes('/free-templates')) {
-        setActiveTab({
-          all: false,
-          admin: false,
-          ui: false,
-          free: true,
-          premium: false,
-          figma: false,
-          react: false,
-          bootstrap: false,
-        })
-      } else if (window.location.href.includes('/premium-templates')) {
-        setActiveTab({
-          all: false,
-          admin: false,
-          ui: false,
-          free: false,
-          premium: true,
-          figma: false,
-          react: false,
-          bootstrap: false,
-        })
-      } else if (window.location.href.includes('/figma')) {
-        setActiveTab({
-          all: false,
-          admin: false,
-          ui: false,
-          free: false,
-          premium: false,
-          figma: true,
-          react: false,
-          bootstrap: false,
-        })
-      } else if (window.location.href.includes('/react')) {
-        setActiveTab({
-          all: false,
-          admin: false,
-          ui: false,
-          free: false,
-          premium: false,
-          figma: false,
-          react: true,
-          bootstrap: false,
-        })
-      } else if (window.location.href.includes('/bootstrap')) {
-        setActiveTab({
-          all: false,
-          admin: false,
-          ui: false,
-          free: false,
-          premium: false,
-          figma: false,
-          react: false,
-          bootstrap: true,
-        })
-      } 
-  }, [window.location.href])
+    if (window.location.href.includes("/all-templates")) {
+      setActiveTab({
+        all: true,
+        admin: false,
+        ui: false,
+        free: false,
+        premium: false,
+        figma: false,
+        react: false,
+        bootstrap: false,
+      });
+    } else if (window.location.href.includes("/admin-dashboards")) {
+      setActiveTab({
+        all: false,
+        admin: true,
+        ui: false,
+        free: false,
+        premium: false,
+        figma: false,
+        react: false,
+        bootstrap: false,
+      });
+    } else if (window.location.href.includes("/ui-kits")) {
+      setActiveTab({
+        all: false,
+        admin: false,
+        ui: true,
+        free: false,
+        premium: false,
+        figma: false,
+        react: false,
+        bootstrap: false,
+      });
+    } else if (window.location.href.includes("/free-templates")) {
+      setActiveTab({
+        all: false,
+        admin: false,
+        ui: false,
+        free: true,
+        premium: false,
+        figma: false,
+        react: false,
+        bootstrap: false,
+      });
+    } else if (window.location.href.includes("/premium-templates")) {
+      setActiveTab({
+        all: false,
+        admin: false,
+        ui: false,
+        free: false,
+        premium: true,
+        figma: false,
+        react: false,
+        bootstrap: false,
+      });
+    } else if (window.location.href.includes("/figma")) {
+      setActiveTab({
+        all: false,
+        admin: false,
+        ui: false,
+        free: false,
+        premium: false,
+        figma: true,
+        react: false,
+        bootstrap: false,
+      });
+    } else if (window.location.href.includes("/react")) {
+      setActiveTab({
+        all: false,
+        admin: false,
+        ui: false,
+        free: false,
+        premium: false,
+        figma: false,
+        react: true,
+        bootstrap: false,
+      });
+    } else if (window.location.href.includes("/bootstrap")) {
+      setActiveTab({
+        all: false,
+        admin: false,
+        ui: false,
+        free: false,
+        premium: false,
+        figma: false,
+        react: false,
+        bootstrap: true,
+      });
+    }
+  }, [window.location.href]);
 
   const sort = (type) => {
     const templateName = props.match.params.templateName;
@@ -162,15 +163,31 @@ const Templates = (props) => {
     return sortedProducts;
   };
 
+  const history = useHistory();
+  const inputValue = useRef('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if (inputValue.current.value === '') {
+      history.push('/search/ ');
+    } else {
+
+      const urlParameter = inputValue.current.value.split(' ').join('-');
+      history.push(`/search/${urlParameter}`)
+    }
+  }
+
   return (
     <Layout>
-      <Flex direction='column' bg='#fff'>
+      <Flex direction="column" bg="#fff">
         <Flex
           bgImage={templatesBg}
-          bgSize='cover'
+          bgSize="cover"
           minH={{ sm: "660px", lg: "760px" }}
-          align='center'
-          justify='center'>
+          align="center"
+          justify="center"
+        >
           <Flex
             direction='column'
             w='1170px'
@@ -182,9 +199,10 @@ const Templates = (props) => {
             </Text>
             <Text
               fontSize={{ sm: "34px", lg: "44px" }}
-              color='#fff'
-              fontWeight='bold'
-              mb='20px'>
+              color="#fff"
+              fontWeight="bold"
+              mb="20px"
+            >
               UI Tools & Templates
             </Text>
             <Text
@@ -227,39 +245,42 @@ const Templates = (props) => {
           </Flex>
         </Flex>
         <Flex
-          direction='column'
+          direction="column"
           w={{ sm: "100%", lg: "980px", xl: "1170px" }}
-          mx='auto'
-          pb='200px'>
+          mx="auto"
+          pb="200px"
+        >
           <Flex
-            align='center'
-            bg='#fff'
-            justify='center'
-            w='100%'
-            boxShadow='0px 18px 40px rgba(112, 144, 176, 0.12)'
-            letterSpacing='-.5px'
+            align="center"
+            bg="#fff"
+            justify="center"
+            w="100%"
+            boxShadow="0px 18px 40px rgba(112, 144, 176, 0.12)"
+            letterSpacing="-.5px"
             borderRadius={{ sm: "70px", lg: "30px" }}
             maxH={{ xl: "130px" }}
             maxW={{ sm: "350px", md: "97%", lg: "70%", xl: "100%" }}
-            mx='auto'
+            mx="auto"
             p={{ sm: "16px", xl: "36px" }}
-            transform='translateY(-50%)'>
+            transform="translateY(-50%)"
+          >
             <Stack
-              direction='row'
-              justify='center'
-              align='center'
-              spacing='10px'
+              direction="row"
+              justify="center"
+              align="center"
+              spacing="10px"
               overflowX={{ sm: "scroll", lg: "hidden" }}
-              mx='auto'
-              flexWrap={{ lg: "wrap" }}>
-              <NavLink to='/templates/all-templates'>
+              mx="auto"
+              flexWrap={{ lg: "wrap" }}
+            >
+              <NavLink to="/templates/all-templates">
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
-                  align='center'
+                  align="center"
                   mb={{ lg: "10px", xl: "0px" }}
-                  justify='center'
-                  borderRadius='30px'
-                  transition='all .25s ease'
+                  justify="center"
+                  borderRadius="30px"
+                  transition="all .25s ease"
                   bg={activeTab.all ? "#02044A" : "#fff"}
                   color={activeTab.all ? "#fff" : "#8F9BBA"}
                   border={activeTab.all ? "none" : "1px solid #E0E5F2"}
@@ -282,14 +303,14 @@ const Templates = (props) => {
                   </Text>
                 </Flex>
               </NavLink>
-              <NavLink to='/templates/admin-dashboards'>
+              <NavLink to="/templates/admin-dashboards">
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
                   mb={{ lg: "10px", xl: "0px" }}
-                  align='center'
-                  justify='center'
-                  borderRadius='30px'
-                  transition='all .25s ease'
+                  align="center"
+                  justify="center"
+                  borderRadius="30px"
+                  transition="all .25s ease"
                   bg={activeTab.admin ? "#02044A" : "#fff"}
                   color={activeTab.admin ? "#fff" : "#8F9BBA"}
                   border={activeTab.admin ? "none" : "1px solid #E0E5F2"}
@@ -312,14 +333,14 @@ const Templates = (props) => {
                   </Text>
                 </Flex>
               </NavLink>
-              <NavLink to='/templates/ui-kits'>
+              <NavLink to="/templates/ui-kits">
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
                   mb={{ lg: "10px", xl: "0px" }}
-                  align='center'
-                  justify='center'
-                  borderRadius='30px'
-                  transition='all .25s ease'
+                  align="center"
+                  justify="center"
+                  borderRadius="30px"
+                  transition="all .25s ease"
                   bg={activeTab.ui ? "#02044A" : "#fff"}
                   color={activeTab.ui ? "#fff" : "#8F9BBA"}
                   border={activeTab.ui ? "none" : "1px solid #E0E5F2"}
@@ -342,14 +363,14 @@ const Templates = (props) => {
                   </Text>
                 </Flex>
               </NavLink>
-              <NavLink to='/templates/free-templates'>
+              <NavLink to="/templates/free-templates">
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
                   mb={{ lg: "10px", xl: "0px" }}
-                  align='center'
-                  justify='center'
-                  borderRadius='30px'
-                  transition='all .25s ease'
+                  align="center"
+                  justify="center"
+                  borderRadius="30px"
+                  transition="all .25s ease"
                   bg={activeTab.free ? "#02044A" : "#fff"}
                   color={activeTab.free ? "#fff" : "#8F9BBA"}
                   border={activeTab.free ? "none" : "1px solid #E0E5F2"}
@@ -372,13 +393,13 @@ const Templates = (props) => {
                   </Text>
                 </Flex>
               </NavLink>
-              <NavLink to='/templates/premium-templates'>
+              <NavLink to="/templates/premium-templates">
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
-                  align='center'
-                  justify='center'
-                  borderRadius='30px'
-                  transition='all .25s ease'
+                  align="center"
+                  justify="center"
+                  borderRadius="30px"
+                  transition="all .25s ease"
                   bg={activeTab.premium ? "#02044A" : "#fff"}
                   color={activeTab.premium ? "#fff" : "#8F9BBA"}
                   border={activeTab.premium ? "none" : "1px solid #E0E5F2"}
@@ -401,13 +422,13 @@ const Templates = (props) => {
                   </Text>
                 </Flex>
               </NavLink>
-              <NavLink to='/templates/figma'>
+              <NavLink to="/templates/figma">
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
-                  align='center'
-                  justify='center'
-                  borderRadius='30px'
-                  transition='all .25s ease'
+                  align="center"
+                  justify="center"
+                  borderRadius="30px"
+                  transition="all .25s ease"
                   bg={activeTab.figma ? "#02044A" : "#fff"}
                   color={activeTab.figma ? "#fff" : "#8F9BBA"}
                   border={activeTab.figma ? "none" : "1px solid #E0E5F2"}
@@ -430,13 +451,13 @@ const Templates = (props) => {
                   </Text>
                 </Flex>
               </NavLink>
-              <NavLink to='/templates/react'>
+              <NavLink to="/templates/react">
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
-                  align='center'
-                  justify='center'
-                  borderRadius='30px'
-                  transition='all .25s ease'
+                  align="center"
+                  justify="center"
+                  borderRadius="30px"
+                  transition="all .25s ease"
                   bg={activeTab.react ? "#02044A" : "#fff"}
                   color={activeTab.react ? "#fff" : "#8F9BBA"}
                   border={activeTab.react ? "none" : "1px solid #E0E5F2"}
@@ -459,13 +480,13 @@ const Templates = (props) => {
                   </Text>
                 </Flex>
               </NavLink>
-              <NavLink to='/templates/bootstrap'>
+              <NavLink to="/templates/bootstrap">
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
-                  align='center'
-                  justify='center'
-                  borderRadius='30px'
-                  transition='all .25s ease'
+                  align="center"
+                  justify="center"
+                  borderRadius="30px"
+                  transition="all .25s ease"
                   bg={activeTab.bootstrap ? "#02044A" : "#fff"}
                   color={activeTab.bootstrap ? "#fff" : "#8F9BBA"}
                   border={activeTab.bootstrap ? "none" : "1px solid #E0E5F2"}
@@ -491,7 +512,7 @@ const Templates = (props) => {
             </Stack>
           </Flex>
           <Flex
-            justify='space-between'
+            justify="space-between"
             direction={{ sm: "column", md: "row", lg: "row" }}
             mb={{ sm: "36px", md: "56px", lg: "88px" }}
             px={{ md: "18px" }}>
@@ -501,8 +522,9 @@ const Templates = (props) => {
               </Text>
               <Text
                 fontSize={{ sm: "24px", md: "34px" }}
-                color='brand.700'
-                fontWeight='500'>
+                color="brand.700"
+                fontWeight="500"
+              >
                 {activeTitle}
               </Text>
             </Flex>
@@ -511,8 +533,8 @@ const Templates = (props) => {
               h='54px'
               alignSelf={{ sm: "center", lg: "flex-end" }}
               mt={{ sm: "32px", lg: "0px" }}
-              color='brand.300'
-              border='1px solid #E0E5F2'
+              color="brand.300"
+              border="1px solid #E0E5F2"
               _focus={{ boxShadow: "none" }}
               iconColor='gray.700'
               borderRadius='30px'
