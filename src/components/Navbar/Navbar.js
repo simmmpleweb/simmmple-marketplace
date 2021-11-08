@@ -213,7 +213,7 @@ function Navbar() {
                             <Text
                               fontSize='md'
                               color='brand.700'
-                              fontWeight='bold'
+                              fontWeight='500'
                               mb='2px'>
                               Figma Products
                             </Text>
@@ -240,7 +240,7 @@ function Navbar() {
                             <Text
                               fontSize='md'
                               color='brand.700'
-                              fontWeight='bold'
+                              fontWeight='500'
                               mb='2px'>
                               Coded Products
                             </Text>
@@ -267,7 +267,7 @@ function Navbar() {
                             <Text
                               fontSize='md'
                               color='brand.700'
-                              fontWeight='bold'
+                              fontWeight='500'
                               mb='2px'>
                               Apps & Plugins
                             </Text>
@@ -375,7 +375,7 @@ function Navbar() {
                           <Text
                             fontSize='md'
                             color='brand.700'
-                            fontWeight='bold'
+                            fontWeight='500'
                             mb='2px'>
                             Figma
                           </Text>
@@ -402,7 +402,7 @@ function Navbar() {
                           <Text
                             fontSize='md'
                             color='brand.700'
-                            fontWeight='bold'
+                            fontWeight='500'
                             mb='2px'>
                             React JS
                           </Text>
@@ -429,7 +429,7 @@ function Navbar() {
                           <Text
                             fontSize='md'
                             color='brand.700'
-                            fontWeight='bold'
+                            fontWeight='500'
                             mb='2px'>
                             Bootstrap
                           </Text>
@@ -456,7 +456,7 @@ function Navbar() {
                           <Text
                             fontSize='md'
                             color='brand.700'
-                            fontWeight='bold'
+                            fontWeight='500'
                             mb='2px'>
                             Chakra UI
                           </Text>
@@ -522,7 +522,7 @@ function Navbar() {
                             <Text
                               fontSize='md'
                               color='brand.700'
-                              fontWeight='bold'
+                              fontWeight='500'
                               mb='2px'>
                               Dashboard Builder
                             </Text>
@@ -549,7 +549,7 @@ function Navbar() {
                             <Text
                               fontSize='md'
                               color='brand.700'
-                              fontWeight='bold'
+                              fontWeight='500'
                               mb='2px'>
                               Blogs
                             </Text>
@@ -576,7 +576,7 @@ function Navbar() {
                             <Text
                               fontSize='md'
                               color='brand.700'
-                              fontWeight='bold'
+                              fontWeight='500'
                               mb='2px'>
                               Support
                             </Text>
@@ -703,7 +703,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Figma Products
@@ -728,7 +728,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Coded Products
@@ -753,7 +753,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Apps & Plugins
@@ -813,7 +813,7 @@ function Navbar() {
                     <AccordionPanel pb={4} px='10px'>
                       <Grid
                         templateColumns='repeat(2, 1fr)'
-                        columnGap='35px'
+                        columnGap='30px'
                         rowGap='20px'>
                         <NavLink to='/templates/figma'>
                           <Flex align='center' w='100%'>
@@ -822,7 +822,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Figma
@@ -836,7 +836,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               React JS
@@ -850,7 +850,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Bootstrap
@@ -864,7 +864,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Chakra UI
@@ -900,7 +900,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Dashboard Builder
@@ -925,7 +925,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Blogs
@@ -950,7 +950,7 @@ function Navbar() {
                             </IconBox>
                             <Text
                               fontSize='sm'
-                              fontWeight='normal'
+                              fontWeight='500'
                               color='brand.700'
                               me='auto'>
                               Support
