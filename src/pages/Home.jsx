@@ -572,7 +572,7 @@ const Home = () => {
               justify='center'
               textAlign='center'
               mb='72px'>
-              <Text fontSize='xs' color='brand.300' fontWeight='bold' mb='16px'>
+              <Text fontSize='xs' color='brand.300' fontWeight='bold' mb='16px' letterSpacing='2px'>
                 TUTORIALS, ARTICLES & RESOURCES
               </Text>
               <Text
