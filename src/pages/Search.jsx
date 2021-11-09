@@ -1,20 +1,12 @@
-import React, { useEffect, useState, useRef } from "react";
-import {
-  Flex,
-  Text,
-  FormControl,
-  Input,
-  Icon,
-  Box,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, Input, Text } from "@chakra-ui/react";
 import templatesBg from "assets/img/templates/templates-background.png";
-import Layout from "components/layout/Layout";
 import { SearchIcon } from "components/icons/Icons";
+import Layout from "components/layout/Layout";
 import ProductList from "components/products/ProductList";
-import { templatesProducts } from "variables/templates";
+import React, { useEffect, useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { featuredProducts } from "variables/products";
+import { templatesProducts } from "variables/templates";
 
 const Search = ({ match }) => {
   const [products, setProducts] = useState([]);
@@ -38,12 +30,13 @@ const Search = ({ match }) => {
     );
 
     if (filteredProducts.length === 0) {
-      const filteredFeaturedProducts = featuredProducts.filter((product, index) => index < 3);
+      const filteredFeaturedProducts = featuredProducts.filter(
+        (product, index) => index < 3
+      );
       setAlternativeProducts(filteredFeaturedProducts);
       setProducts([]);
       setIsAlternative(true);
     } else {
-
       setProducts(filteredProducts);
       setAlternativeProducts([]);
       setIsAlternative(false);
@@ -124,17 +117,34 @@ const Search = ({ match }) => {
             </FormControl>
           </form>
         </Flex>
-        <Box w={{sm: "325px", md: "725px", lg: "975px", xl: '1170px'}} mx='auto' pt='60px' pb='200px'>
-          {
-            products.length === 0
-              ? <Flex direction="column" w="100%" pt="40px">
-                  <Text color="#878CBD" fontSize="26px" fontWeight="400" textAlign="center" mb="50px">Your search didn't return any results!</Text>
-                  <Text fontSize="34px" color="brand.700" fontWeight="500" textAlign="start" mb="72px">Latest Products</Text>
-                  <ProductList products={alternativeProducts} />
-                </Flex>
-              :  <ProductList products={products} />
-          }
-          
+        <Box
+          w={{ sm: "325px", md: "725px", lg: "975px", xl: "1170px" }}
+          mx='auto'
+          pt='60px'
+          pb='200px'>
+          {products.length === 0 ? (
+            <Flex direction='column' w='100%' pt='40px'>
+              <Text
+                color='#878CBD'
+                fontSize='26px'
+                fontWeight='400'
+                textAlign='center'
+                mb='50px'>
+                Your search didn't return any results!
+              </Text>
+              <Text
+                fontSize='34px'
+                color='brand.700'
+                fontWeight='500'
+                textAlign='start'
+                mb='72px'>
+                Latest Products
+              </Text>
+              <ProductList products={alternativeProducts} />
+            </Flex>
+          ) : (
+            <ProductList products={products} />
+          )}
         </Box>
       </Flex>
     </Layout>

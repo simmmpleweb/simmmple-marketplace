@@ -1,4 +1,4 @@
-import { Button, Flex, Link, Text } from "@chakra-ui/react";
+import { Button, Flex, Text } from "@chakra-ui/react";
 import Layout from "components/layout/Layout";
 // Custom Components
 import { HSeparator } from "components/separator/Separator";

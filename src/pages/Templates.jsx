@@ -1,20 +1,19 @@
 import {
+  Button,
   Flex,
   FormControl,
-  Icon,
   Input,
   Select,
-  Button,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import "assets/css/App.css";
 import "assets/css/Templates.css";
 import templatesBg from "assets/img/templates/templates-background.png";
+import { SearchIcon } from "components/icons/Icons";
 import Layout from "components/layout/Layout";
 import ProductList from "components/products/ProductList";
-import React, { useState, useEffect, useRef } from "react";
-import { SearchIcon } from "components/icons/Icons";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { templatesProducts } from "variables/templates";
 

@@ -1,21 +1,11 @@
-import {
-  Button,
-  Divider,
-  Flex,
-  FormControl,
-  Grid,
-  Icon,
-  Input,
-  Link,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Divider, Flex, Grid, Icon, Link, Stack, Text } from "@chakra-ui/react";
 // Images
 import footerBg from "assets/img/footer/footer-background.png";
 // Custom Components
 import IconBox from "components/icons/IconBox";
 // Icons
 import { SimmmpleLogoColored } from "components/icons/Icons";
+import MailchimpNewsletter from "components/mailchimp/MCForm";
 import React from "react";
 import {
   AiFillGithub,
@@ -26,7 +16,6 @@ import {
 import { BsPinterest } from "react-icons/bs";
 import { FaFacebook, FaTiktok } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import MailchimpNewsletter from "components/mailchimp/MCForm";
 
 const Footer = () => {
   return (

@@ -70,7 +70,7 @@ const Bundles = () => {
               w={{ xl: "1069px" }}
               maxW='100%'
               letterSpacing='0px'
-              lineHeight={{ base: "38px", md: "44px", md: "64px" }}>
+              lineHeight={{ base: "38px", md: "64px" }}>
               Our mission is to empower
               <Text color='brand.300' as='span' mx='10px'>
                 all developers <br /> & designers
@@ -212,7 +212,6 @@ const Bundles = () => {
               fontSize={{ base: "30px", md: "42px" }}
               lineHeight='44px'
               color='brand.700'
-              fontWeight='500'
               mb='20px'
               mx='auto'
               textAlign='center'
@@ -245,7 +244,7 @@ const Bundles = () => {
                     borderRadius='20px'
                   />
                   <Text mx='12px' fontWeight='700' fontSize='lg'>
-                  Andrei-Fredy Craciun
+                    Andrei-Fredy Craciun
                   </Text>
                   <Text
                     mx='12px'
@@ -274,7 +273,7 @@ const Bundles = () => {
                     borderRadius='20px'
                   />
                   <Text mx='12px' fontWeight='700' fontSize='lg'>
-                  Vlad Mihalache
+                    Vlad Mihalache
                   </Text>
                   <Text
                     mx='12px'
@@ -368,7 +367,6 @@ const Bundles = () => {
               fontSize={{ base: "30px", md: "42px" }}
               lineHeight='44px'
               color='brand.700'
-              fontWeight='500'
               mb='20px'
               mx='auto'
               textAlign='center'
@@ -378,7 +376,6 @@ const Bundles = () => {
           </Flex>
           <Flex
             flexWrap='wrap'
-            mb='150px'
             justify='space-between'
             maxW='100%'
             mb={{ base: "200px", md: "150px" }}>

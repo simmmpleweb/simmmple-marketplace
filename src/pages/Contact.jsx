@@ -17,18 +17,18 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import emailjs from "emailjs-com";
 import "assets/css/Contact.css";
 import simmmple3D from "assets/img/contact/simmmple-3d.png";
 import Card from "components/card/Card";
 import IconBox from "components/icons/IconBox";
-import {
-  contactGeneral,
-  contactOthers,
-  contactPartnerships,
-  contactSupport,
-} from "components/icons/Icons";
+// import {
+//   contactGeneral,
+//   contactOthers,
+//   contactPartnerships,
+//   contactSupport,
+// } from "components/icons/Icons";
 import Layout from "components/layout/Layout";
+import emailjs from "emailjs-com";
 import React, { useRef, useState } from "react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
@@ -172,12 +172,21 @@ const Contact = () => {
         e.target.children[0].children[3].lastChild.style.display = "none";
       }, 3000);
     } else {
-      emailjs.sendForm('service_fgtpoes', 'template_zd2vm7y', e.target, 'user_k7KuO8YRz6mDjeGJgmZOP')
-        .then((result) => {
+      emailjs
+        .sendForm(
+          "service_fgtpoes",
+          "template_zd2vm7y",
+          e.target,
+          "user_k7KuO8YRz6mDjeGJgmZOP"
+        )
+        .then(
+          (result) => {
             console.log(result.text);
-        }, (error) => {
+          },
+          (error) => {
             console.log(error.text);
-        });
+          }
+        );
       e.target[0].value = "";
       e.target[1].value = "";
       e.target[2].value = "";
@@ -191,7 +200,6 @@ const Contact = () => {
         submission: true,
       });
     }
-
   };
 
   const sendEmailSupport = (e) => {
@@ -238,12 +246,21 @@ const Contact = () => {
         e.target.children[0].children[4].lastChild.style.display = "none";
       }, 3000);
     } else {
-      emailjs.sendForm('service_fgtpoes', 'template_5apgvsk', e.target, 'user_k7KuO8YRz6mDjeGJgmZOP')
-        .then((result) => {
+      emailjs
+        .sendForm(
+          "service_fgtpoes",
+          "template_5apgvsk",
+          e.target,
+          "user_k7KuO8YRz6mDjeGJgmZOP"
+        )
+        .then(
+          (result) => {
             console.log(result.text);
-        }, (error) => {
+          },
+          (error) => {
             console.log(error.text);
-        });
+          }
+        );
       e.target[0].value = "";
       e.target[1].value = "";
       e.target[2].value = "";
@@ -260,7 +277,7 @@ const Contact = () => {
         info: false,
       });
     }
-  }
+  };
 
   const sendEmailPartnerships = (e) => {
     e.preventDefault();
@@ -295,12 +312,21 @@ const Contact = () => {
         e.target.children[0].children[4].lastChild.style.display = "none";
       }, 3000);
     } else {
-      emailjs.sendForm('service_fgtpoes', 'template_zd2vm7y', e.target, 'user_k7KuO8YRz6mDjeGJgmZOP')
-        .then((result) => {
+      emailjs
+        .sendForm(
+          "service_fgtpoes",
+          "template_zd2vm7y",
+          e.target,
+          "user_k7KuO8YRz6mDjeGJgmZOP"
+        )
+        .then(
+          (result) => {
             console.log(result.text);
-        }, (error) => {
+          },
+          (error) => {
             console.log(error.text);
-        });
+          }
+        );
       e.target[0].value = "";
       e.target[1].value = "";
       e.target[2].value = "";
@@ -316,7 +342,7 @@ const Contact = () => {
         submission: true,
       });
     }
-  }
+  };
 
   const sendEmailOthers = (e) => {
     e.preventDefault();
@@ -350,12 +376,21 @@ const Contact = () => {
         e.target.children[0].children[3].lastChild.style.display = "none";
       }, 3000);
     } else {
-      emailjs.sendForm('service_fgtpoes', 'template_zd2vm7y', e.target, 'user_k7KuO8YRz6mDjeGJgmZOP')
-        .then((result) => {
+      emailjs
+        .sendForm(
+          "service_fgtpoes",
+          "template_zd2vm7y",
+          e.target,
+          "user_k7KuO8YRz6mDjeGJgmZOP"
+        )
+        .then(
+          (result) => {
             console.log(result.text);
-        }, (error) => {
+          },
+          (error) => {
             console.log(error.text);
-        });
+          }
+        );
       e.target[0].value = "";
       e.target[1].value = "";
       e.target[2].value = "";
@@ -369,7 +404,7 @@ const Contact = () => {
         submission: true,
       });
     }
-  }
+  };
 
   return (
     <Layout>
@@ -575,7 +610,7 @@ const Contact = () => {
                       bg='#F6F8FD'
                       borderRadius='50%'
                       mb='20px'>
-                      <Icon as={contactGeneral} w='35px' h='35px' />
+                      {/* <Icon as={contactGeneral} w='35px' h='35px' /> */}
                     </IconBox>
                     <Text
                       color='brand.700'
@@ -630,7 +665,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
-                            name="name"
+                            name='name'
                             onChange={(e) =>
                               setGeneral({ ...general, name: e.target.value })
                             }
@@ -661,7 +696,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
-                            name="email"
+                            name='email'
                             onChange={(e) =>
                               setGeneral({ ...general, email: e.target.value })
                             }
@@ -693,7 +728,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             minH='210px'
-                            name="message"
+                            name='message'
                             onChange={(e) =>
                               setGeneral({
                                 ...general,
@@ -750,7 +785,7 @@ const Contact = () => {
                       bg='#FFF6E5'
                       borderRadius='50%'
                       mb='20px'>
-                      <Icon as={contactSupport} w='35px' h='35px' />
+                      {/* <Icon as={contactSupport} w='35px' h='35px' /> */}
                     </IconBox>
                     <Text
                       color='brand.700'
@@ -813,7 +848,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
-                            name="name"
+                            name='name'
                             onChange={(e) =>
                               setSupport({ ...support, name: e.target.value })
                             }
@@ -845,7 +880,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
-                            name="email"
+                            name='email'
                             onChange={(e) =>
                               setSupport({ ...support, email: e.target.value })
                             }
@@ -885,7 +920,7 @@ const Contact = () => {
                               color='#878CBD'
                               _placeholder={{ color: "#878CBD" }}
                               size='lg'
-                              name="product"
+                              name='product'
                               onChange={(e) =>
                                 setSupport({
                                   ...support,
@@ -954,7 +989,7 @@ const Contact = () => {
                             p='26px 32px'
                             minH='210px'
                             mb='12px'
-                            name="message"
+                            name='message'
                             onChange={(e) =>
                               setSupport({
                                 ...support,
@@ -1063,7 +1098,7 @@ const Contact = () => {
                       bg='#FFEFEF'
                       borderRadius='50%'
                       mb='20px'>
-                      <Icon as={contactPartnerships} w='35px' h='35px' />
+                      {/* <Icon as={contactPartnerships} w='35px' h='35px' /> */}
                     </IconBox>
                     <Text
                       color='brand.700'
@@ -1120,7 +1155,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='18px'
-                            name="name"
+                            name='name'
                             onChange={(e) =>
                               setPartnerships({
                                 ...partnerships,
@@ -1155,7 +1190,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='18px'
-                            name="email"
+                            name='email'
                             onChange={(e) =>
                               setPartnerships({
                                 ...partnerships,
@@ -1211,7 +1246,7 @@ const Contact = () => {
                             placeholder='Your message'
                             mb='50px'
                             borderRadius='30px'
-                            name="message"
+                            name='message'
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             minH='210px'
@@ -1271,7 +1306,7 @@ const Contact = () => {
                       bg='#F6F8FD'
                       borderRadius='50%'
                       mb='20px'>
-                      <Icon as={contactOthers} w='35px' h='35px' />
+                      {/* <Icon as={contactOthers} w='35px' h='35px' /> */}
                     </IconBox>
                     <Text
                       color='brand.700'
@@ -1329,7 +1364,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
-                            name="name"
+                            name='name'
                             onChange={(e) =>
                               setOthers({ ...others, name: e.target.value })
                             }
@@ -1360,7 +1395,7 @@ const Contact = () => {
                             borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
-                            name="email"
+                            name='email'
                             mb='12px'
                             onChange={(e) =>
                               setOthers({ ...others, email: e.target.value })
@@ -1390,7 +1425,7 @@ const Contact = () => {
                             placeholder='Your message'
                             mb='18px'
                             borderRadius='30px'
-                            name="message"
+                            name='message'
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             minH='210px'
