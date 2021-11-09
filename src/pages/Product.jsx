@@ -666,19 +666,23 @@ const Product = (props) => {
                     </Text>
                   </Button>
                 </Link>
-                <NavLink to={buttonLinks.upgrade} textDecoration='none'>
-                  <Button
-                    borderRadius='70px'
-                    bg='linear-gradient(114.41deg, #29E9F5 10.84%, #7A64FF 36.58%, #FF508B 66.69%, #FD6D53 94.62%, #FD6D53 94.62%)'
-                    w='100%'
-                    h='60px'
-                    _hover='none'
-                    _active='none'>
-                    <Text color='#fff' fontSize='sm'>
-                      Upgrade to PRO
-                    </Text>
-                  </Button>
-                </NavLink>
+                {
+                  title === "Glassy - Glassmorphism Cards" || title === "Task List UI - React" || title === "Saturn - Headers UI Kit"
+                    ? null
+                    : <NavLink to={buttonLinks.upgrade} textDecoration='none'>
+                    <Button
+                      borderRadius='70px'
+                      bg='linear-gradient(114.41deg, #29E9F5 10.84%, #7A64FF 36.58%, #FF508B 66.69%, #FD6D53 94.62%, #FD6D53 94.62%)'
+                      w='100%'
+                      h='60px'
+                      _hover='none'
+                      _active='none'>
+                      <Text color='#fff' fontSize='sm'>
+                        Upgrade to PRO
+                      </Text>
+                    </Button>
+                  </NavLink>
+                }
               </>
             ) : (
               <>
@@ -706,7 +710,6 @@ const Product = (props) => {
                   }
                   textDecoration='none'>
                   <Button
-                  
                     borderRadius="70px"
                     bg="brand.300"
                     w="100%"

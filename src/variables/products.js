@@ -20,7 +20,7 @@ export const featuredProducts = [
     price: 59,
     title: "Venus DB PRO",
     category: "Figma Products",
-    path: "/venus-db-pro",
+    path: "/product/venus-db-pro",
   },
   {
     image: uranusWireframe,
@@ -28,7 +28,7 @@ export const featuredProducts = [
     price: 69,
     title: "Uranus Wireframe Kit PRO",
     category: "UI Kits, Figma Products",
-    path: "/uranus-wireframe-pro",
+    path: "/product/uranus-wireframe-pro",
   },
   {
     image: purityDashboard,
@@ -36,7 +36,7 @@ export const featuredProducts = [
     price: 69,
     title: "Purity UI Dashboard PRO",
     category: "Coded, Figma, Dashboards",
-    path: "/purity-dashboard-pro",
+    path: "/product/purity-dashboard-pro",
   },
   {
     image: venusFree,
@@ -44,7 +44,7 @@ export const featuredProducts = [
     price: 0,
     title: "Venus DB Free",
     category: "Freebies, Figma Products",
-    path: "/venus-db-free",
+    path: "/product/venus-db-free",
   },
   {
     image: purityDashboard,
@@ -52,6 +52,6 @@ export const featuredProducts = [
     price: 0,
     title: "Purity UI Dashboard Free",
     category: "UI Kits, Figma Products",
-    path: "/purity-dashboard-free",
+    path: "/product/purity-dashboard-free",
   },
 ];
