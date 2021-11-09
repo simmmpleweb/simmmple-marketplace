@@ -24,8 +24,15 @@ const CustomForm = ({ status, message, onValidated }) => {
   };
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
-      <Flex align='center'>
+      <Flex align='center' justify='space-between' position='relative'>
         <Input
+          borderRadius='70px'
+          bg='#fff'
+          minW={{ sm: "100%", md: "400px" }}
+          h='70px'
+          py='8px'
+          ps='32px'
+          pe='180px'
           onChange={(e) => setEmail(e.target.value)}
           value={email}
           type='email'
@@ -37,25 +44,20 @@ const CustomForm = ({ status, message, onValidated }) => {
           isRequired
         />
         <Button
+          position='absolute'
+          right='8px'
+          fontSize='sm'
           bg='brand.300'
-          minW='150px'
+          minW={{ base: "120px", md: "150px" }}
           h='56px'
           px='0'
           _hover={{ bg: "#1A05B7" }}
-          _active={{ bg: "#1A05B7" }}>
-          <Input
-            fontWeight='normal'
-            fontSize='sm'
-            color='white'
-            borderRadius='30px'
-            border='none'
-            label='subscribe'
-            type='submit'
-            width='100%'
-            height='100%'
-            bg='transparent'
-            formValues={[email]}
-          />
+          _active={{ bg: "#1A05B7" }}
+          fontWeight='500'
+          formValues={[email]}
+          type='submit'
+          color='white'>
+          Submit
         </Button>
       </Flex>
       <Text color='white' textAlign='center' fontSize='sm' mt='10px'>

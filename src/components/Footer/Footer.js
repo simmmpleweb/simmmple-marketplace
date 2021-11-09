@@ -27,18 +27,17 @@ const Footer = () => {
         <Flex
           direction={{ sm: "column", lg: "row" }}
           w='100%'
-          h={{ base: "250px", lg: "200px" }}
+          h={{ md: "250px", lg: "200px" }}
           borderRadius='30px'
           bgImage={footerBg}
           bgPosition='center center'
           px={{ sm: "20px", lg: "58px" }}
-          py={{ sm: "20px", lg: "0px" }}
+          py={{ sm: "10px", lg: "0px" }}
           align='center'
-          overflowX='hidden'
-          transform='translateY(-50%)'>
+          transform={{ base: "translateY(-52%)", md: "translateY(-50%)" }}>
           <Flex
             direction='column'
-            me={{ xl: "100px" }}
+            me={{ xl: "60px" }}
             textAlign={{ sm: "center", lg: "start" }}
             w='100%'
             mb={{ sm: "26px", lg: "0px" }}>
@@ -55,37 +54,7 @@ const Footer = () => {
               No Spam. Only sweet content and updates of our products.
             </Text>
           </Flex>
-          <Flex
-            borderRadius='70px'
-            bg='#fff'
-            minW={{ sm: "100%", md: "380px" }}
-            h='70px'
-            p='8px'>
-            {/* <FormControl>
-              <Flex align='center'>
-                <Input
-                  type='email'
-                  placeholder='Enter your email address'
-                  boxShadow='none'
-                  border='none'
-                  _focus={{ border: "none" }}
-                  _placeholder={{ color: "#878CBD" }}
-                />
-                <Button
-                  bg='brand.300'
-                  minW='150px'
-                  h='56px'
-                  _hover={{ bg: "#1A05B7" }}>
-                  <Text fontSize='sm' color='#fff' fontWeight='normal'>
-                    Submit
-                  </Text>
-                </Button>
-              </Flex>
-            </FormControl>
-           */}
-
-            <MailchimpNewsletter />
-          </Flex>
+          <MailchimpNewsletter />
         </Flex>
         <Flex align='center' direction={{ sm: "column", lg: "row" }}>
           <SimmmpleLogoColored w='170px' h='40px' me={{ lg: "40px" }} />
