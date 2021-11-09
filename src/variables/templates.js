@@ -27,10 +27,10 @@ export const templatesProducts = {
         "dark mode",
         "premium",
       ],
-      title: "Venus Design System",
+      title: "Venus Design System PRO",
       downloads: 12,
       category: "Figma Products",
-      path: "/",
+      path: "/product/venus-design-system-pro",
     },
     {
       image: venusPro,
@@ -52,7 +52,7 @@ export const templatesProducts = {
       title: "Venus DB PRO",
       downloads: 27,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-pro",
     },
     {
       image: uranusWireframe,
@@ -73,10 +73,10 @@ export const templatesProducts = {
         "dark mode",
         "premium",
       ],
-      title: "Uranus Wireframe Kit",
+      title: "Uranus Wireframe Kit PRO",
       downloads: 0,
       category: "UI Kits, Figma Products",
-      path: "/",
+      path: "/product/uranus-wireframe-pro",
     },
     {
       image: purityDashboard,
@@ -98,7 +98,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard PRO",
       downloads: 3,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/product/purity-dashboard-pro",
     },
     {
       image: purityDashboard,
@@ -119,7 +119,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard Free",
       downloads: 1723,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/product/purity-dashboard-free",
     },
     {
       image: venusFree,
@@ -141,7 +141,7 @@ export const templatesProducts = {
       title: "Venus DB Free",
       downloads: 172,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-free",
     },
     {
       image: venusSystemFree,
@@ -162,7 +162,7 @@ export const templatesProducts = {
         "free",
       ],
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-design-system-free",
     },
     {
       image: uranusWireframeFree,
@@ -172,7 +172,6 @@ export const templatesProducts = {
       tag: "Design Tool",
       price: 0,
       keywords: [
-        "uranus",
         "web",
         "frontend",
         "tool",
@@ -186,7 +185,7 @@ export const templatesProducts = {
         "free",
       ],
       category: "UI Kits, Freebies, Figma Products",
-      path: "/",
+      path: "/product/uranus-wireframe-free",
     },
     {
       image: glassy,
@@ -206,7 +205,7 @@ export const templatesProducts = {
         "kit",
         "free",
       ],
-      path: "/",
+      path: "/product/glassy-cards",
     },
     {
       image: taskUI,
@@ -227,7 +226,7 @@ export const templatesProducts = {
         "freebies",
         "free",
       ],
-      path: "/",
+      path: "/product/task-list-ui",
     },
     {
       image: saturnUI,
@@ -249,7 +248,7 @@ export const templatesProducts = {
         "freebies",
         "free",
       ],
-      path: "/",
+      path: "/product/saturn-ui-kit",
     },
   ],
   admindashboards: [
@@ -261,17 +260,17 @@ export const templatesProducts = {
       title: "Venus DB Free",
       downloads: 172,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-free",
     },
     {
       image: uranusWireframe,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 48,
-      title: "Uranus Wireframe Kit",
+      title: "Uranus Wireframe Kit PRO",
       downloads: 0,
       category: "UI Kits, Figma Products",
-      path: "/",
+      path: "/product/uranus-wireframe-pro",
     },
     {
       image: purityDashboard,
@@ -281,7 +280,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard PRO",
       downloads: 3,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/product/purity-dashboard-pro",
     },
     {
       image: venusFree,
@@ -291,7 +290,7 @@ export const templatesProducts = {
       title: "Venus DB Free",
       downloads: 172,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-free",
     },
     {
       image: purityDashboard,
@@ -301,7 +300,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard Free",
       downloads: 1723,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/purity-dashboard-free",
     },
   ],
   uikits: [
@@ -310,10 +309,10 @@ export const templatesProducts = {
       date: "Mar 12 2017 10:00:00 AM",
       tag: "Design Tool",
       price: 99,
-      title: "Venus Design System",
+      title: "Venus Design System PRO",
       downloads: 12,
       category: "Figma Products",
-      path: "/",
+      path: "/product/venus-design-system-pro",
     },
     {
       image: venusFree,
@@ -323,17 +322,17 @@ export const templatesProducts = {
       title: "Venus DB Free",
       downloads: 172,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-free",
     },
     {
       image: uranusWireframe,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 48,
-      title: "Uranus Wireframe Kit",
+      title: "Uranus Wireframe Kit PRO",
       downloads: 0,
       category: "UI Kits, Figma Products",
-      path: "/",
+      path: "/product/uranus-wireframe-pro",
     },
     {
       image: venusFree,
@@ -343,7 +342,7 @@ export const templatesProducts = {
       title: "Venus DB Free",
       downloads: 172,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-free",
     },
     {
       image: venusSystemFree,
@@ -353,7 +352,7 @@ export const templatesProducts = {
       tag: "Design Tool",
       price: 0,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-design-system-free",
     },
     {
       image: uranusWireframeFree,
@@ -363,7 +362,7 @@ export const templatesProducts = {
       tag: "Design Tool",
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
-      path: "/",
+      path: "/uranus-wireframe-free",
     },
     {
       image: glassy,
@@ -373,7 +372,7 @@ export const templatesProducts = {
       downloads: 181,
       category: "UI Kits, Freebies, Figma Products",
       price: 0,
-      path: "/",
+      path: "/product/glassy-cards",
     },
     {
       image: taskUI,
@@ -383,7 +382,7 @@ export const templatesProducts = {
       downloads: 88,
       category: "Category: Freebies, Coded, Adobe XD",
       price: 0,
-      path: "/",
+      path: "/product/task-list-ui",
     },
     {
       image: saturnUI,
@@ -393,7 +392,7 @@ export const templatesProducts = {
       tag: "UI Kit",
       category: "Category: Freebies, Figma Products",
       price: 0,
-      path: "/",
+      path: "/product/saturn-ui-kit",
     },
   ],
   freetemplates: [
@@ -405,7 +404,7 @@ export const templatesProducts = {
       title: "Venus DB Free",
       downloads: 172,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-free",
     },
     {
       image: venusSystemFree,
@@ -415,7 +414,7 @@ export const templatesProducts = {
       tag: "Design Tool",
       price: 0,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-design-system-free",
     },
     {
       image: uranusWireframeFree,
@@ -425,7 +424,7 @@ export const templatesProducts = {
       tag: "Design Tool",
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
-      path: "/",
+      path: "/uranus-wireframe-free",
     },
     {
       image: glassy,
@@ -435,7 +434,7 @@ export const templatesProducts = {
       downloads: 181,
       category: "UI Kits, Freebies, Figma Products",
       price: 0,
-      path: "/",
+      path: "/product/glassy-cards",
     },
     {
       image: taskUI,
@@ -445,7 +444,7 @@ export const templatesProducts = {
       downloads: 88,
       category: "Category: Freebies, Coded, Adobe XD",
       price: 0,
-      path: "/",
+      path: "/product/task-list-ui",
     },
     {
       image: saturnUI,
@@ -455,7 +454,7 @@ export const templatesProducts = {
       tag: "UI Kit",
       category: "Category: Freebies, Figma Products",
       price: 0,
-      path: "/",
+      path: "/product/saturn-ui-kit",
     },
     {
       image: purityDashboard,
@@ -465,7 +464,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard Free",
       downloads: 1723,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/purity-dashboard-free",
     },
   ],
   premiumtemplates: [
@@ -474,20 +473,20 @@ export const templatesProducts = {
       date: "Mar 12 2017 10:00:00 AM",
       tag: "Design Tool",
       price: 99,
-      title: "Venus Design System",
+      title: "Venus Design System PRO",
       downloads: 12,
       category: "Figma Products",
-      path: "/",
+      path: "/product/venus-design-system-pro",
     },
     {
       image: uranusWireframe,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 48,
-      title: "Uranus Wireframe Kit",
+      title: "Uranus Wireframe Kit PRO",
       downloads: 0,
       category: "UI Kits, Figma Products",
-      path: "/",
+      path: "/product/uranus-wireframe-pro",
     },
     {
       image: purityDashboard,
@@ -497,7 +496,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard PRO",
       downloads: 3,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/product/purity-dashboard-pro",
     },
     {
       image: venusPro,
@@ -507,7 +506,7 @@ export const templatesProducts = {
       title: "Venus DB PRO",
       downloads: 27,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/venus-db-pro",
     },
   ],
   figma: [
@@ -516,10 +515,10 @@ export const templatesProducts = {
       date: "Mar 12 2017 10:00:00 AM",
       tag: "Design Tool",
       price: 99,
-      title: "Venus Design System",
+      title: "Venus Design System PRO",
       downloads: 12,
       category: "Figma Products",
-      path: "/",
+      path: "/product/venus-design-system-pro",
     },
     {
       image: venusFree,
@@ -529,17 +528,17 @@ export const templatesProducts = {
       title: "Venus DB Free",
       downloads: 172,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-free",
     },
     {
       image: uranusWireframe,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 48,
-      title: "Uranus Wireframe Kit",
+      title: "Uranus Wireframe Kit PRO",
       downloads: 0,
       category: "UI Kits, Figma Products",
-      path: "/",
+      path: "/product/uranus-wireframe-pro",
     },
     {
       image: purityDashboard,
@@ -549,7 +548,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard PRO",
       downloads: 3,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/product/purity-dashboard-pro",
     },
     {
       image: venusFree,
@@ -559,7 +558,7 @@ export const templatesProducts = {
       title: "Venus DB Free",
       downloads: 172,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-db-free",
     },
     {
       image: venusSystemFree,
@@ -569,7 +568,7 @@ export const templatesProducts = {
       tag: "Design Tool",
       price: 0,
       category: "Freebies, Figma Products",
-      path: "/",
+      path: "/product/venus-design-system-free",
     },
     {
       image: uranusWireframeFree,
@@ -579,7 +578,7 @@ export const templatesProducts = {
       tag: "Design Tool",
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
-      path: "/",
+      path: "/uranus-wireframe-free",
     },
     {
       image: glassy,
@@ -589,7 +588,7 @@ export const templatesProducts = {
       downloads: 181,
       category: "UI Kits, Freebies, Figma Products",
       price: 0,
-      path: "/",
+      path: "/product/glassy-cards",
     },
     {
       image: purityDashboard,
@@ -599,7 +598,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard Free",
       downloads: 1723,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/purity-dashboard-free",
     },
   ],
   react: [
@@ -611,7 +610,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard PRO",
       downloads: 3,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/product/purity-dashboard-pro",
     },
     {
       image: taskUI,
@@ -621,7 +620,7 @@ export const templatesProducts = {
       downloads: 88,
       category: "Category: Freebies, Coded, Adobe XD",
       price: 0,
-      path: "/",
+      path: "/product/task-list-ui",
     },
     {
       image: purityDashboard,
@@ -631,7 +630,7 @@ export const templatesProducts = {
       title: "Purity UI Dashboard Free",
       downloads: 1723,
       category: "Coded, Figma, Dashboards",
-      path: "/",
+      path: "/purity-dashboard-free",
     },
   ],
   bootstrap: [
@@ -641,10 +640,10 @@ export const templatesProducts = {
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 48,
-      title: "Uranus Wireframe Kit",
+      title: "Uranus Wireframe Kit PRO",
       downloads: 0,
       category: "UI Kits, Figma Products",
-      path: "/",
+      path: "/product/uranus-wireframe-pro",
     },
     {
       image: uranusWireframeFree,
@@ -654,7 +653,7 @@ export const templatesProducts = {
       tag: "Design Tool",
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
-      path: "/",
+      path: "/uranus-wireframe-free",
     },
   ],
 };
