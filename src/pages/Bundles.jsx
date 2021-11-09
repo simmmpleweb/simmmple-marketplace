@@ -980,7 +980,7 @@ const Bundles = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Flex mb={{ base: "380px", lg: "460px", xl: "100px" }}>
+          <Flex>
             <Flex
               w={{ base: "90%", "2sm": "92%", md: "730px", xl: "100%" }}
               mx={{ base: "auto", xl: "0px" }}
@@ -1171,7 +1171,7 @@ const Bundles = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Flex>
+          {/* <Flex>
             <Flex
               w={{ base: "90%", "2sm": "92%", md: "730px", xl: "100%" }}
               mx={{ base: "auto", xl: "0px" }}
@@ -1370,7 +1370,7 @@ const Bundles = () => {
                 </Flex>
               </Flex>
             </Flex>
-          </Flex>
+          </Flex> */}
         </Flex>
         <HSeparator
           id='pricing'

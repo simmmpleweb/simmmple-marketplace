@@ -191,7 +191,7 @@ function Navbar() {
                 color={secondary || scrolled ? "#878CBD" : "#fff"}
                 mt='4px'
               />
-              <Menu isOpen={isOpenExplore}>
+              <Menu zIndex='2' isOpen={isOpenExplore}>
                 <MenuList
                   p='0px'
                   minW='500px'
@@ -354,7 +354,7 @@ function Navbar() {
                 color={secondary || scrolled ? "#878CBD" : "#fff"}
                 mt='4px'
               />
-              <Menu isOpen={isOpenTech}>
+              <Menu zIndex='2' isOpen={isOpenTech}>
                 <MenuList
                   p='0px'
                   minW='500px'
@@ -500,7 +500,7 @@ function Navbar() {
                 color={secondary || scrolled ? "#878CBD" : "#fff"}
                 mt='4px'
               />
-              <Menu isOpen={isOpenResources}>
+              <Menu zIndex='2' isOpen={isOpenResources}>
                 <MenuList
                   p='0px'
                   minW='500px'
@@ -635,7 +635,6 @@ function Navbar() {
                 w={{ sm: "114px", lg: "160px" }}
                 h={{ sm: "48px", lg: "56px" }}
                 bg={secondary || scrolled ? "#ECE9FF" : "transparent"}
-                zIndex='1'
                 border={secondary || scrolled ? "none" : "1px solid #fff"}
                 _hover={{
                   bg: secondary || scrolled ? null : "#4B63CD",
@@ -699,7 +698,7 @@ function Navbar() {
                     </h2>
                     <AccordionPanel pb={4}>
                       <Stack direction='column' spacing='16px' w='100%'>
-                        <NavLink to='/templates/figma'>
+                        <Link href='https://simmmple.com/templates/404'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
                               <Image src={figmaLogo} w='18px' h='26px' />
@@ -723,8 +722,8 @@ function Navbar() {
                               />
                             </Flex>
                           </Flex>
-                        </NavLink>
-                        <NavLink to='/templates/all-templates'>
+                        </Link>
+                        <Link href='https://simmmple.com/templates/all-templates'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
                               <Image src={vscodeLogo} w='26px' h='26px' />
@@ -748,8 +747,8 @@ function Navbar() {
                               />
                             </Flex>
                           </Flex>
-                        </NavLink>
-                        <NavLink to='/apps'>
+                        </Link>
+                        <Link href='https://simmmple.com/apps'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
                               <Image src={bulb} w='28px' h='30px' />
@@ -773,13 +772,13 @@ function Navbar() {
                               />
                             </Flex>
                           </Flex>
-                        </NavLink>
+                        </Link>
                       </Stack>
                     </AccordionPanel>
                   </AccordionItem>
                   <AccordionItem border='none'>
                     <h2>
-                      <NavLink to='/templates/all-templates'>
+                      <Link href='https://simmmple.com/templates/all-templates'>
                         <AccordionButton
                           borderRadius='20px'
                           boxShadow='none'
@@ -793,7 +792,7 @@ function Navbar() {
                             Products
                           </Box>
                         </AccordionButton>
-                      </NavLink>
+                      </Link>
                     </h2>
                   </AccordionItem>
                   <AccordionItem border='none'>
@@ -818,7 +817,7 @@ function Navbar() {
                         templateColumns='repeat(2, 1fr)'
                         columnGap='30px'
                         rowGap='20px'>
-                        <NavLink to='/templates/figma'>
+                        <Link href='https://simmmple.com/templates/figma'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
                               <Image src={figmaLogo} w='18px' h='26px' />
@@ -831,8 +830,8 @@ function Navbar() {
                               Figma
                             </Text>
                           </Flex>
-                        </NavLink>
-                        <NavLink to='/templates/react'>
+                        </Link>
+                        <Link href='https://simmmple.com/templates/react'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
                               <Image src={reactLogo} w='24px' h='22px' />
@@ -845,8 +844,8 @@ function Navbar() {
                               React JS
                             </Text>
                           </Flex>
-                        </NavLink>
-                        <NavLink to='/templates/bootstrap'>
+                        </Link>
+                        <Link href='https://simmmple.com/templates/bootstrap'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
                               <Image src={bootstrapLogo} w='24px' h='22px' />
@@ -859,8 +858,8 @@ function Navbar() {
                               Bootstrap
                             </Text>
                           </Flex>
-                        </NavLink>
-                        <NavLink to='/templates/react'>
+                        </Link>
+                        <Link href='https://simmmple.com/templates/react'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
                               <Image src={chakraLogo} w='24px' h='24px' />
@@ -873,7 +872,7 @@ function Navbar() {
                               Chakra UI
                             </Text>
                           </Flex>
-                        </NavLink>
+                        </Link>
                       </Grid>
                     </AccordionPanel>
                   </AccordionItem>
@@ -946,7 +945,7 @@ function Navbar() {
                             </Flex>
                           </Flex>
                         </Link>
-                        <NavLink to='/contact'>
+                        <Link href='https://simmmple.com/contact'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#fff6e5' me='16px'>
                               <Icon as={contactSupport} w='22px' h='22px' />
@@ -970,7 +969,7 @@ function Navbar() {
                               />
                             </Flex>
                           </Flex>
-                        </NavLink>
+                        </Link>
                       </Stack>
                     </AccordionPanel>
                   </AccordionItem>
@@ -998,13 +997,13 @@ function Navbar() {
                     Save money to all products with our digital categories
                     bundles!
                   </Text>
-                  <NavLink to='/bundles'>
+                  <Link href='https://simmmple.com/bundles'>
                     <Button variant='solid' w='150px' h='42px' bg='white'>
                       <Text color='#4F61FF' fontSize='sm'>
                         Explore all
                       </Text>
                     </Button>
-                  </NavLink>
+                  </Link>
                 </Flex>
               </Flex>
             </Collapse>
