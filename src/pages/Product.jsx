@@ -455,8 +455,7 @@ const Product = (props) => {
             </Text>
             {free ? (
               <Flex
-                direction='column'
-                transition='.25s all ease'
+                direction="column"
                 boxShadow={"0px 43px 113px -9px rgba(112, 144, 176, 0.12)"}
                 p='24px'
                 mb='32px'
@@ -465,17 +464,16 @@ const Product = (props) => {
                 borderRadius='30px'
                 cursor='pointer'>
                 <Tag
-                  color='#fff'
-                  bg='brand.300'
-                  _hover={{ bg: "#1A05B7" }}
-                  _active={{ bg: "#1A05B7" }}
-                  w='76px'
-                  h='34px'
-                  fontSize='md'
-                  borderRadius='46px'
-                  textAlign='center'
-                  p='6px 18px'
-                  mb='14px'>
+                  color="#fff"
+                  bg="brand.300"
+                  w="72px"
+                  h="34px"
+                  fontSize="sm"
+                  borderRadius="46px"
+                  textAlign="center"
+                  p="6px 18px"
+                  mb="14px"
+                >
                   FREE
                 </Tag>
                 <Text color='brand.300' fontSize='lg' fontWeight='500' mb='8px'>
@@ -492,8 +490,8 @@ const Product = (props) => {
                 lineHeight='28px'
                 mb='32px'>
                 <Flex
-                  direction='column'
-                  transition='.25s all ease'
+                  direction="column"
+                  transition=".10s all ease"
                   boxShadow={
                     activeLicense.freelancer
                       ? "0px 43px 113px -9px rgba(112, 144, 176, 0.12)"
@@ -542,9 +540,9 @@ const Product = (props) => {
                   </Text>
                 </Flex>
                 <Flex
-                  direction='column'
-                  transition='.25s all ease'
-                  p='24px'
+                  direction="column"
+                  transition=".10s all ease"
+                  p="24px"
                   boxShadow={
                     activeLicense.team
                       ? "0px 43px 113px -9px rgba(112, 144, 176, 0.12)"
@@ -589,9 +587,9 @@ const Product = (props) => {
                   </Text>
                 </Flex>
                 <Flex
-                  direction='column'
-                  transition='.25s all ease'
-                  p='24px'
+                  direction="column"
+                  transition=".10s all ease"
+                  p="24px"
                   boxShadow={
                     activeLicense.enterprise
                       ? "0px 43px 113px -9px rgba(112, 144, 176, 0.12)"
@@ -639,7 +637,7 @@ const Product = (props) => {
             )}
             {free ? (
               <>
-                <Link href='#' textDecoration='none'>
+                <Link href={buttonLinks.live} textDecoration="none">
                   <Button
                     borderRadius='70px'
                     bg='#ECE9FF'
@@ -653,7 +651,7 @@ const Product = (props) => {
                     </Text>
                   </Button>
                 </Link>
-                <Link href='#' textDecoration='none'>
+                <Link href={buttonLinks.free} textDecoration="none">
                   <Button
                     borderRadius='70px'
                     bg='brand.300'
@@ -684,7 +682,7 @@ const Product = (props) => {
               </>
             ) : (
               <>
-                <Link href='#' textDecoration='none'>
+                <Link href={buttonLinks.live} textDecoration="none">
                   <Button
                     borderRadius='70px'
                     bg='#ECE9FF'
@@ -708,8 +706,11 @@ const Product = (props) => {
                   }
                   textDecoration='none'>
                   <Button
-                    borderRadius='70px'
-                    bg='brand.300'
+                  
+                    borderRadius="70px"
+                    bg="brand.300"
+                    w="100%"
+                    h="60px"
                     _hover={{ bg: "#1A05B7" }}
                     _active={{ bg: "#1A05B7" }}
                     w='100%'
