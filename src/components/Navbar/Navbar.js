@@ -105,7 +105,6 @@ function Navbar() {
       setScrolled(false);
     }
   };
-  console.log(scrolled);
   return (
     <Flex>
       <Flex mb={secondary ? "100px" : "0px"} />

@@ -14,9 +14,12 @@ import { SearchIcon } from "components/icons/Icons";
 import ProductList from "components/products/ProductList";
 import { templatesProducts } from "variables/templates";
 import { useHistory } from "react-router-dom";
+import { featuredProducts } from "variables/products";
 
 const Search = ({ match }) => {
   const [products, setProducts] = useState([]);
+  const [alternativeProducts, setAlternativeProducts] = useState([]);
+  const [isAlternative, setIsAlternative] = useState(false);
 
   useEffect(() => {
     const keywords = match.params.userInput.split("-");
@@ -33,8 +36,19 @@ const Search = ({ match }) => {
         }
       }
     );
-    setProducts(filteredProducts);
-  }, [window.location.href]);
+
+    if (filteredProducts.length === 0) {
+      const filteredFeaturedProducts = featuredProducts.filter((product, index) => index < 3);
+      setAlternativeProducts(filteredFeaturedProducts);
+      setProducts([]);
+      setIsAlternative(true);
+    } else {
+
+      setProducts(filteredProducts);
+      setAlternativeProducts([]);
+      setIsAlternative(false);
+    }
+  }, [window.location.href, match]);
 
   const history = useHistory();
   const inputValue = useRef("");
@@ -73,7 +87,7 @@ const Search = ({ match }) => {
             BUILD BETTER, BUILD FASTER
           </Text>
           <Text fontSize='30px' color='#fff' mb='64px' textAlign='center'>
-            {products.length} products found for: "
+            {isAlternative ? 0 : products.length} products found for: "
             {match.params.userInput.split("-").join(" ")}"
           </Text>
           <form onSubmit={handleSubmit}>
@@ -110,8 +124,17 @@ const Search = ({ match }) => {
             </FormControl>
           </form>
         </Flex>
-        <Box maxW='1170px' mx='auto' pt='60px' pb='200px'>
-          <ProductList products={products} />
+        <Box w={{sm: "325px", md: "725px", lg: "975px", xl: '1170px'}} mx='auto' pt='60px' pb='200px'>
+          {
+            products.length === 0
+              ? <Flex direction="column" w="100%" pt="40px">
+                  <Text color="#878CBD" fontSize="26px" fontWeight="400" textAlign="center" mb="50px">Your search didn't return any results!</Text>
+                  <Text fontSize="34px" color="brand.700" fontWeight="500" textAlign="start" mb="72px">Latest Products</Text>
+                  <ProductList products={alternativeProducts} />
+                </Flex>
+              :  <ProductList products={products} />
+          }
+          
         </Box>
       </Flex>
     </Layout>

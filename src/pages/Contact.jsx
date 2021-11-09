@@ -162,7 +162,6 @@ const Contact = () => {
       }, 3000);
     }
     if (support.product === "") {
-      console.log(e.target[2].parentNode.parentNode);
       e.target[2].parentNode.parentNode.style.border = "1px solid red";
       errorSupport.current.style.display = "flex";
       e.target.children[0].children[3].lastChild.style.display = "block";
