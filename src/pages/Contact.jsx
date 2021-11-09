@@ -17,6 +17,7 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
+import emailjs from "emailjs-com";
 import "assets/css/Contact.css";
 import simmmple3D from "assets/img/contact/simmmple-3d.png";
 import Card from "components/card/Card";
@@ -138,7 +139,62 @@ const Contact = () => {
     }
   };
 
-  const handleSupport = (e) => {
+  const sendEmailGeneral = (e) => {
+    e.preventDefault();
+
+    if (general.name === "") {
+      e.target[0].style.border = "1px solid red";
+      errorGeneral.current.style.display = "flex";
+      e.target.children[0].children[1].lastChild.style.display = "block";
+      setTimeout(() => {
+        e.target[0].style.border = "1px solid rgb(226, 232, 240)";
+        errorGeneral.current.style.display = "none";
+        e.target.children[0].children[1].lastChild.style.display = "none";
+      }, 3000);
+    }
+    if (general.email === "") {
+      e.target[1].style.border = "1px solid red";
+      errorGeneral.current.style.display = "flex";
+      e.target.children[0].children[2].lastChild.style.display = "block";
+      setTimeout(() => {
+        e.target[1].style.border = "1px solid rgb(226, 232, 240)";
+        errorGeneral.current.style.display = "none";
+        e.target.children[0].children[2].lastChild.style.display = "none";
+      }, 3000);
+    }
+    if (general.message === "") {
+      e.target[2].style.border = "1px solid red";
+      errorGeneral.current.style.display = "flex";
+      e.target.children[0].children[3].lastChild.style.display = "block";
+      setTimeout(() => {
+        e.target[2].style.border = "1px solid rgb(226, 232, 240)";
+        errorGeneral.current.style.display = "none";
+        e.target.children[0].children[3].lastChild.style.display = "none";
+      }, 3000);
+    } else {
+      emailjs.sendForm('service_fgtpoes', 'template_zd2vm7y', e.target, 'user_k7KuO8YRz6mDjeGJgmZOP')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+      e.target[0].value = "";
+      e.target[1].value = "";
+      e.target[2].value = "";
+      setGeneral({
+        name: "",
+        email: "",
+        message: "",
+      });
+      setGeneralSubmission({
+        form: false,
+        submission: true,
+      });
+    }
+
+  };
+
+  const sendEmailSupport = (e) => {
     e.preventDefault();
 
     if (support.name === "") {
@@ -182,6 +238,12 @@ const Contact = () => {
         e.target.children[0].children[4].lastChild.style.display = "none";
       }, 3000);
     } else {
+      emailjs.sendForm('service_fgtpoes', 'template_5apgvsk', e.target, 'user_k7KuO8YRz6mDjeGJgmZOP')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
       e.target[0].value = "";
       e.target[1].value = "";
       e.target[2].value = "";
@@ -198,9 +260,9 @@ const Contact = () => {
         info: false,
       });
     }
-  };
+  }
 
-  const handlePartnerships = (e) => {
+  const sendEmailPartnerships = (e) => {
     e.preventDefault();
 
     if (partnerships.name === "") {
@@ -233,6 +295,12 @@ const Contact = () => {
         e.target.children[0].children[4].lastChild.style.display = "none";
       }, 3000);
     } else {
+      emailjs.sendForm('service_fgtpoes', 'template_zd2vm7y', e.target, 'user_k7KuO8YRz6mDjeGJgmZOP')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
       e.target[0].value = "";
       e.target[1].value = "";
       e.target[2].value = "";
@@ -248,8 +316,9 @@ const Contact = () => {
         submission: true,
       });
     }
-  };
-  const handleOthers = (e) => {
+  }
+
+  const sendEmailOthers = (e) => {
     e.preventDefault();
     if (others.name === "") {
       e.target[0].style.border = "1px solid red";
@@ -281,6 +350,12 @@ const Contact = () => {
         e.target.children[0].children[3].lastChild.style.display = "none";
       }, 3000);
     } else {
+      emailjs.sendForm('service_fgtpoes', 'template_zd2vm7y', e.target, 'user_k7KuO8YRz6mDjeGJgmZOP')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
       e.target[0].value = "";
       e.target[1].value = "";
       e.target[2].value = "";
@@ -294,7 +369,7 @@ const Contact = () => {
         submission: true,
       });
     }
-  };
+  }
 
   return (
     <Layout>
@@ -495,7 +570,7 @@ const Contact = () => {
                       Have some feedback or a general question? Get in touch
                       with us below 👋!
                     </Text>
-                    <form onSubmit={handleGeneral}>
+                    <form onSubmit={sendEmailGeneral}>
                       <Flex
                         direction='column'
                         display={generalSubmission.form ? "block" : "none"}>
@@ -531,6 +606,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
+                            name="name"
                             onChange={(e) =>
                               setGeneral({ ...general, name: e.target.value })
                             }
@@ -561,6 +637,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
+                            name="email"
                             onChange={(e) =>
                               setGeneral({ ...general, email: e.target.value })
                             }
@@ -592,6 +669,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             minH='210px'
+                            name="message"
                             onChange={(e) =>
                               setGeneral({
                                 ...general,
@@ -673,7 +751,7 @@ const Contact = () => {
                       </Text>{" "}
                       Please let us know below!
                     </Text>
-                    <form onSubmit={handleSupport}>
+                    <form onSubmit={sendEmailSupport}>
                       <Flex
                         direction='column'
                         w='100%'
@@ -710,6 +788,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
+                            name="name"
                             onChange={(e) =>
                               setSupport({ ...support, name: e.target.value })
                             }
@@ -741,6 +820,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
+                            name="email"
                             onChange={(e) =>
                               setSupport({ ...support, email: e.target.value })
                             }
@@ -780,6 +860,7 @@ const Contact = () => {
                               color='#878CBD'
                               _placeholder={{ color: "#878CBD" }}
                               size='lg'
+                              name="product"
                               onChange={(e) =>
                                 setSupport({
                                   ...support,
@@ -848,6 +929,7 @@ const Contact = () => {
                             p='26px 32px'
                             minH='210px'
                             mb='12px'
+                            name="message"
                             onChange={(e) =>
                               setSupport({
                                 ...support,
@@ -974,7 +1056,7 @@ const Contact = () => {
                       Have something interesting we should know about? Get in
                       touch with us below! 👋
                     </Text>
-                    <form onSubmit={handlePartnerships}>
+                    <form onSubmit={sendEmailPartnerships}>
                       <Flex
                         direction='column'
                         w='100%'
@@ -1012,6 +1094,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='18px'
+                            name="name"
                             onChange={(e) =>
                               setPartnerships({
                                 ...partnerships,
@@ -1046,6 +1129,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='18px'
+                            name="email"
                             onChange={(e) =>
                               setPartnerships({
                                 ...partnerships,
@@ -1101,6 +1185,7 @@ const Contact = () => {
                             placeholder='Your message'
                             mb='50px'
                             borderRadius='30px'
+                            name="message"
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             minH='210px'
@@ -1178,7 +1263,7 @@ const Contact = () => {
                       Have some other things to say to us? Get in touch with us
                       below 👋!
                     </Text>
-                    <form onSubmit={handleOthers}>
+                    <form onSubmit={sendEmailOthers}>
                       <Flex
                         direction='column'
                         display={othersSubmission.form ? "block" : "none"}
@@ -1217,6 +1302,7 @@ const Contact = () => {
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             mb='12px'
+                            name="name"
                             onChange={(e) =>
                               setOthers({ ...others, name: e.target.value })
                             }
@@ -1247,6 +1333,7 @@ const Contact = () => {
                             borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
+                            name="email"
                             mb='12px'
                             onChange={(e) =>
                               setOthers({ ...others, email: e.target.value })
@@ -1276,6 +1363,7 @@ const Contact = () => {
                             placeholder='Your message'
                             mb='18px'
                             borderRadius='30px'
+                            name="message"
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
                             minH='210px'
