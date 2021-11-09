@@ -1,9 +1,8 @@
-import { Box, Flex, Icon, Image, Tag, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Tag, Text } from "@chakra-ui/react";
 // Custom Components
 import Card from "components/card/Card";
 import CardBody from "components/card/CardBody";
 import React, { useRef } from "react";
-import { FiDownload } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
 const ProductItem = ({

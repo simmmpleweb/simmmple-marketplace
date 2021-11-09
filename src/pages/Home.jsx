@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import {
   Flex,
@@ -67,6 +67,10 @@ const Home = () => {
       history.push(`/search/${urlParameter}`);
     }
   };
+
+  useEffect(() => {
+    document.title = 'Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple';
+  }, []);
 
   return (
     <Layout>
@@ -236,7 +240,7 @@ const Home = () => {
                       mb='12px'>
                       Figma Products
                     </Text>
-                    <NavLink to='/'>
+                    <NavLink to='/templates/figma'>
                       <Flex align='center' color='brand.300'>
                         <Text
                           fontSize='16px'
@@ -274,7 +278,7 @@ const Home = () => {
                       mb='12px'>
                       Coded Products
                     </Text>
-                    <NavLink to='/'>
+                    <NavLink to='/templates/all-templates'>
                       <Flex align='center' color='brand.300'>
                         <Text
                           fontSize='16px'
@@ -312,7 +316,7 @@ const Home = () => {
                       mb='12px'>
                       Articles & Guides
                     </Text>
-                    <NavLink to='/'>
+                    <Link href='https://blog.simmmple.com'>
                       <Flex align='center' color='brand.300'>
                         <Text
                           fontSize='16px'
@@ -328,7 +332,7 @@ const Home = () => {
                           mt='4px'
                         />
                       </Flex>
-                    </NavLink>
+                    </Link>
                   </Flex>
                 </CardBody>
               </Card>
@@ -350,7 +354,7 @@ const Home = () => {
                       mb='12px'>
                       Apps & Plugins
                     </Text>
-                    <NavLink to='/'>
+                    <NavLink to='/apps'>
                       <Flex align='center' color='brand.300'>
                         <Text
                           fontSize='16px'
@@ -483,6 +487,8 @@ const Home = () => {
                 h='115px'
                 transition='all .5s ease'
               />
+              <NavLink to="/bundles">
+
               <Button
                 bg='white'
                 variant='solid'
@@ -500,6 +506,7 @@ const Home = () => {
                   Save up to 80% now
                 </Text>
               </Button>
+              </NavLink>
               <RightButtonEffect
                 ref={rightEffect}
                 color='#fff'
@@ -611,7 +618,7 @@ const Home = () => {
             <Grid
               templateColumns={{ md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
               gap='22px'>
-              <NavLink to='/'>
+              <Link href='https://blog.simmmple.com'>
                 <Card
                   boxShadow='45px 76px 113px 7px rgba(112, 144, 176, 0.08)'
                   pb='35px'>
@@ -651,8 +658,8 @@ const Home = () => {
                     </Flex>
                   </CardBody>
                 </Card>
-              </NavLink>
-              <NavLink to='/'>
+              </Link>
+              <Link href='https://blog.simmmple.com'>
                 <Card
                   boxShadow='45px 76px 113px 7px rgba(112, 144, 176, 0.08)'
                   pb='35px'>
@@ -701,8 +708,8 @@ const Home = () => {
                     </Flex>
                   </CardBody>
                 </Card>
-              </NavLink>
-              <NavLink to='/'>
+              </Link>
+              <Link href='https://blog.simmmple.com'>
                 <Card
                   display={{ base: "none", lg: "flex" }}
                   boxShadow='45px 76px 113px 7px rgba(112, 144, 176, 0.08)'
@@ -743,7 +750,7 @@ const Home = () => {
                     </Flex>
                   </CardBody>
                 </Card>
-              </NavLink>
+              </Link>
             </Grid>
             <Link href='https://blog.simmmple.com' mx='auto'>
               <Button

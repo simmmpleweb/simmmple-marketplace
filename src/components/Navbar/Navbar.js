@@ -132,7 +132,7 @@ function Navbar() {
             align='center'
             h='100%'
             me={{ sm: "auto", md: "auto", lg: "0px" }}>
-            <NavLink to='/homepage'>
+            <NavLink to='/'>
               {window.innerWidth < 768 ? (
                 secondary || scrolled ? (
                   <SimmmpleLogoColoredMobile
@@ -635,7 +635,7 @@ function Navbar() {
                 w={{ sm: "114px", lg: "160px" }}
                 h={{ sm: "48px", lg: "56px" }}
                 bg={secondary || scrolled ? "#ECE9FF" : "transparent"}
-                zIndex='1'
+                zIndex='0'
                 border={secondary || scrolled ? "none" : "1px solid #fff"}
                 _hover={{
                   bg: secondary || scrolled ? null : "#4B63CD",
@@ -894,8 +894,8 @@ function Navbar() {
                         <AccordionIcon />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
-                      <Stack direction='column' spacing='16px' w='100%'>
+                    <AccordionPanel pb={4} >
+                      <Stack direction='column' spacing='16px' w='100%' zIndex="1000">
                         <Link href='https://venusdesignsystem.com/dashboard-builder?ref=simmmple'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
