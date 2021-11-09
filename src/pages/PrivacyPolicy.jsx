@@ -50,7 +50,13 @@ const PrivacyPolicy = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   License
                 </Text>
@@ -63,7 +69,13 @@ const PrivacyPolicy = () => {
                 align='center'
                 w='138px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Terms of Usage
                 </Text>
@@ -76,7 +88,13 @@ const PrivacyPolicy = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='white'>
+                bg='white'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Privacy Policy
                 </Text>
@@ -89,7 +107,13 @@ const PrivacyPolicy = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Affiliates
                 </Text>
@@ -157,15 +181,16 @@ const PrivacyPolicy = () => {
               your right to privacy. If you have any questions or concerns about
               this privacy notice, or our practices with regards to your
               personal information, please contact us at our{" "}
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>contact page.</Text>
-                  </NavLink>
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  contact page.
+                </Text>
+              </NavLink>
             </Text>
             <Text
               color='#878CBD'
@@ -174,15 +199,17 @@ const PrivacyPolicy = () => {
               fontWeight='400'
               mb='45px'>
               When you visit our website
-              <NavLink
-                    to='/'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>https://simmmple.com</Text>
-                  </NavLink>{""}
+              <NavLink to='/'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  https://simmmple.com
+                </Text>
+              </NavLink>
+              {""}
               (the "
               <Text fontWeight='500' mx='1px' as='span'>
                 Website
@@ -560,15 +587,17 @@ const PrivacyPolicy = () => {
                   obtain your consent to use your name and the content of the
                   testimonial. If you wish to update, or delete your
                   testimonial, please contact us at{" "}
-                  <NavLink
-                    to='/contact'>
+                  <NavLink to='/contact'>
                     <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>https://simmmple.com/contact</Text>
-                  </NavLink>{""}
+                      textDecoration='underline'
+                      color='brand.300'
+                      fontWeight='500'
+                      as='span'
+                      mx='3px'>
+                      https://simmmple.com/contact
+                    </Text>
+                  </NavLink>
+                  {""}
                   and be sure to include your name, testimonial location, and
                   contact information.
                 </Text>
@@ -992,15 +1021,17 @@ const PrivacyPolicy = () => {
               (iv) if applicable, to data portability. In certain circumstances,
               you may also have the right to object to the processing of your
               personal information. To make such a request, please use the
-              <NavLink
-                    to='/'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>contact details</Text>
-                  </NavLink>{""}
+              <NavLink to='/'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  contact details
+                </Text>
+              </NavLink>
+              {""}
               provided below. We will consider and act upon any request in
               accordance with applicable data protection laws.
             </Text>
@@ -1061,15 +1092,17 @@ const PrivacyPolicy = () => {
               mb='45px'>
               If you have questions or comments about your privacy rights, you
               may
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>contact us here.</Text>
-                  </NavLink>{""}
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  contact us here.
+                </Text>
+              </NavLink>
+              {""}
             </Text>
             <Text
               fontSize='lg'
@@ -1765,15 +1798,16 @@ const PrivacyPolicy = () => {
               fontWeight='400'
               mb='45px'>
               You may contact us by visiting{" "}
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>https://simmmple.com/contact</Text>
-                  </NavLink>
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  https://simmmple.com/contact
+                </Text>
+              </NavLink>
               , or by referring to the contact details at the bottom of this
               document.
             </Text>
@@ -2050,15 +2084,16 @@ const PrivacyPolicy = () => {
               fontWeight='400'
               mb='45px'>
               To exercise these rights, you can contact us by visiting
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>https://simmmple.com/contact</Text>
-                  </NavLink>
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  https://simmmple.com/contact
+                </Text>
+              </NavLink>
               , or by referring to the contact details at the bottom of this
               document. If you have a complaint about how we handle your data,
               we would like to hear from you.
@@ -2114,15 +2149,16 @@ const PrivacyPolicy = () => {
             </Text>
             <Text color='#878CBD' fontSize='lg' lineHeight='34px' mb='45px'>
               If you have questions or comments about this notice, you may{" "}
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>contact us here</Text>
-                  </NavLink>
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  contact us here
+                </Text>
+              </NavLink>
               and this is our mailing address:
             </Text>
             <Text
@@ -2152,15 +2188,16 @@ const PrivacyPolicy = () => {
               from you, change that information, or delete it in some
               circumstances. To request to review, update, or delete your
               personal information, please visit:
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>https://simmmple.com/contact</Text>
-                  </NavLink>
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  https://simmmple.com/contact
+                </Text>
+              </NavLink>
               . We will respond to your request within 30 days.
             </Text>
             <HSeparator w='100%' mb='40px' mx='auto' />
@@ -2171,15 +2208,17 @@ const PrivacyPolicy = () => {
               textAlign='center'
               mx='auto'>
               Got a question?{" "}
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>Contact us</Text>
-                  </NavLink>{""}
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  Contact us
+                </Text>
+              </NavLink>
+              {""}
             </Text>
           </Flex>
         </Flex>

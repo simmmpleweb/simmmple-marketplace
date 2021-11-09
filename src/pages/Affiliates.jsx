@@ -42,7 +42,13 @@ const Affiliates = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   License
                 </Text>
@@ -55,7 +61,13 @@ const Affiliates = () => {
                 align='center'
                 w='138px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Terms of Usage
                 </Text>
@@ -68,7 +80,13 @@ const Affiliates = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Privacy Policy
                 </Text>
@@ -81,7 +99,13 @@ const Affiliates = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='white'>
+                bg='white'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Affiliates
                 </Text>
@@ -175,15 +199,17 @@ const Affiliates = () => {
               textAlign='center'
               mx='auto'>
               Got a question?{" "}
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>Contact us</Text>
-                  </NavLink>{""}
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  Contact us
+                </Text>
+              </NavLink>
+              {""}
             </Text>
           </Flex>
         </Flex>

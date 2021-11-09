@@ -596,7 +596,8 @@ const Product = (props) => {
                 bg='brand.300'
                 w='100%'
                 h='60px'
-                _hover={{ bg: "#1A05B7" }}>
+                _hover={{ bg: "#1A05B7" }}
+                _active={{ bg: "#1A05B7" }}>
                 <Text color='#fff' fontSize='sm'>
                   Buy it Now!
                 </Text>

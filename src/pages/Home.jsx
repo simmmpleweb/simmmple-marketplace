@@ -401,7 +401,13 @@ const Home = () => {
                   bg='#fff'
                   w='190px'
                   h='56px'
-                  display={{ base: "none", md: "flex" }}>
+                  display={{ base: "none", md: "flex" }}
+                  _hover={{
+                    bg: "#ECE9FF",
+                  }}
+                  _active={{
+                    bg: "#ECE9FF",
+                  }}>
                   <Text color='brand.300' fontWeight='500' fontSize='sm'>
                     Explore all Products
                   </Text>
@@ -533,6 +539,12 @@ const Home = () => {
                   bg='#fff'
                   w='190px'
                   h='56px'
+                  _hover={{
+                    bg: "#ECE9FF",
+                  }}
+                  _active={{
+                    bg: "#ECE9FF",
+                  }}
                   display={{ base: "none", md: "flex" }}>
                   <Text color='brand.300' fontWeight='500' fontSize='sm'>
                     Explore all Products
@@ -572,7 +584,12 @@ const Home = () => {
               justify='center'
               textAlign='center'
               mb='72px'>
-              <Text fontSize='xs' color='brand.300' fontWeight='bold' mb='16px' letterSpacing='2px'>
+              <Text
+                fontSize='xs'
+                color='brand.300'
+                fontWeight='bold'
+                mb='16px'
+                letterSpacing='2px'>
                 TUTORIALS, ARTICLES & RESOURCES
               </Text>
               <Text
@@ -735,7 +752,13 @@ const Home = () => {
                 w='152px'
                 h='56px'
                 alignSelf='center'
-                mt='52px'>
+                mt='52px'
+                _hover={{
+                  bg: "#ECE9FF",
+                }}
+                _active={{
+                  bg: "#ECE9FF",
+                }}>
                 <Text color='brand.300' fontSize='sm'>
                   Learn more
                 </Text>

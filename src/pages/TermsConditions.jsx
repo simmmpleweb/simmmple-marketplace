@@ -48,7 +48,13 @@ const TermsConditions = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   License
                 </Text>
@@ -61,7 +67,13 @@ const TermsConditions = () => {
                 align='center'
                 w='138px'
                 borderRadius='30px'
-                bg='white'>
+                bg='white'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Terms of Usage
                 </Text>
@@ -74,7 +86,13 @@ const TermsConditions = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Privacy Policy
                 </Text>
@@ -87,7 +105,13 @@ const TermsConditions = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Affiliates
                 </Text>
@@ -137,15 +161,17 @@ const TermsConditions = () => {
               between you, whether personally or on behalf of an entity (“you”)
               and Simmmple Web LLC ("Company", “we”, “us”, or “our”), concerning
               your access to and use of the
-              <NavLink
-                    to='/'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>https://simmmple.com</Text>
-                  </NavLink>{""}
+              <NavLink to='/'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  https://simmmple.com
+                </Text>
+              </NavLink>
+              {""}
               website as well as any other media form, media channel, mobile
               website or mobile application related, linked, or otherwise
               connected thereto (collectively, the “Site”). The Site provides an
@@ -1083,15 +1109,16 @@ const TermsConditions = () => {
               In order to resolve a complaint regarding the Site or the
               Marketplace Offerings or to receive further information regarding
               use of the Site or the Marketplace Offerings, please contact us at{" "}
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>https://simmmple.com/contact</Text>
-                  </NavLink>
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  https://simmmple.com/contact
+                </Text>
+              </NavLink>
               .
             </Text>
             <HSeparator w='100%' mb='40px' mx='auto' />
@@ -1102,15 +1129,17 @@ const TermsConditions = () => {
               textAlign='center'
               mx='auto'>
               Got a question?{" "}
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>Contact us</Text>
-                  </NavLink>{""}
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  Contact us
+                </Text>
+              </NavLink>
+              {""}
             </Text>
           </Flex>
         </Flex>
