@@ -474,7 +474,6 @@ const Product = (props) => {
             {free ? (
               <Flex
                 direction="column"
-                transition=".25s all ease"
                 boxShadow={"0px 43px 113px -9px rgba(112, 144, 176, 0.12)"}
                 p="24px"
                 mb="32px"
@@ -486,9 +485,9 @@ const Product = (props) => {
                 <Tag
                   color="#fff"
                   bg="brand.300"
-                  w="76px"
+                  w="72px"
                   h="34px"
-                  fontSize="md"
+                  fontSize="sm"
                   borderRadius="46px"
                   textAlign="center"
                   p="6px 18px"
@@ -512,7 +511,7 @@ const Product = (props) => {
               >
                 <Flex
                   direction="column"
-                  transition=".25s all ease"
+                  transition=".10s all ease"
                   boxShadow={
                     activeLicense.freelancer
                       ? "0px 43px 113px -9px rgba(112, 144, 176, 0.12)"
@@ -565,7 +564,7 @@ const Product = (props) => {
                 </Flex>
                 <Flex
                   direction="column"
-                  transition=".25s all ease"
+                  transition=".10s all ease"
                   p="24px"
                   boxShadow={
                     activeLicense.team
@@ -615,7 +614,7 @@ const Product = (props) => {
                 </Flex>
                 <Flex
                   direction="column"
-                  transition=".25s all ease"
+                  transition=".10s all ease"
                   p="24px"
                   boxShadow={
                     activeLicense.enterprise
@@ -667,7 +666,7 @@ const Product = (props) => {
             )}
             {free ? (
               <>
-                <Link href="#" textDecoration="none">
+                <Link href={buttonLinks.live} textDecoration="none">
                   <Button
                     borderRadius="70px"
                     bg="#ECE9FF"
@@ -682,7 +681,7 @@ const Product = (props) => {
                     </Text>
                   </Button>
                 </Link>
-                <Link href="#" textDecoration="none">
+                <Link href={buttonLinks.free} textDecoration="none">
                   <Button
                     borderRadius="70px"
                     bg="brand.300"
@@ -713,7 +712,7 @@ const Product = (props) => {
               </>
             ) : (
               <>
-                <Link href="#" textDecoration="none">
+                <Link href={buttonLinks.live} textDecoration="none">
                   <Button
                     borderRadius="70px"
                     bg="#ECE9FF"
@@ -730,6 +729,7 @@ const Product = (props) => {
                 </Link>
                 <Link href={activeLicense.freelancer ? buttonLinks.buy.freelancer : (activeLicense.team ? buttonLinks.buy.team : buttonLinks.buy.enterprise)} textDecoration="none">
                   <Button
+                  
                     borderRadius="70px"
                     bg="brand.300"
                     w="100%"
