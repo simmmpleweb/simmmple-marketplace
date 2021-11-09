@@ -2,10 +2,15 @@ import { Button, Flex, Text } from "@chakra-ui/react";
 import Layout from "components/layout/Layout";
 // Custom Components
 import { HSeparator } from "components/separator/Separator";
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Affiliates = () => {
+
+  useEffect(() => {
+    document.title = 'Affiliates - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
+  }, [])
+
   return (
     <Layout>
       <Flex

@@ -9,7 +9,7 @@ import {
 import simmmple3D from "assets/img/apps/simmmple-3d.png";
 import AppList from "components/apps/AppList";
 import Layout from "components/layout/Layout";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { apps } from "variables/apps";
 
 const Apps = () => {
@@ -19,6 +19,10 @@ const Apps = () => {
     memberships: false,
     extensions: false,
   });
+
+  useEffect(() => {
+    document.title = 'Apps - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
+  }, [])
 
   return (
     <Layout>

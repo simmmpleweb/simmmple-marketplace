@@ -41,6 +41,10 @@ const Templates = (props) => {
   });
 
   useEffect(() => {
+    document.title = 'Templates - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
+  }, [])
+
+  useEffect(() => {
     if (window.location.href.includes("/all-templates")) {
       setActiveTab({
         all: true,

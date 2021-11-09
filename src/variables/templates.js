@@ -1,3 +1,4 @@
+import purityDashboardPRO from "assets/img/homepage/purity-dashboard-pro.png";
 import purityDashboard from "assets/img/homepage/purity-dashboard.png";
 import uranusWireframe from "assets/img/homepage/uranus-wireframe-kit.png";
 import uranusWireframePRO from "assets/img/homepage/uranus-wireframe-pro.png";
@@ -7,9 +8,7 @@ import venusSystem from "assets/img/homepage/venus-design-system.png";
 import glassy from "assets/img/templates/glassy.png";
 import saturnUI from "assets/img/templates/saturn-ui.png";
 import taskUI from "assets/img/templates/task-ui.png";
-import uranusWireframeFree from "assets/img/templates/uranus-free.png";
 import venusSystemFree from "assets/img/templates/venus-system-free.png";
-import purityDashboardPRO from "assets/img/homepage/purity-dashboard-pro.png";
 
 export const templatesProducts = {
   alltemplates: [

@@ -29,10 +29,15 @@ import {
 } from "components/icons/Icons";
 import Layout from "components/layout/Layout";
 import emailjs from "emailjs-com";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const Contact = () => {
+
+  useEffect(() => {
+    document.title = 'Contact - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
+  }, [])
+
   const [tab, setTab] = useState({
     general: false,
     support: true,

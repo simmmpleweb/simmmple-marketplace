@@ -90,12 +90,17 @@ const Product = (props) => {
   });
 
   useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
+  useEffect(() => {
     const productName = props.match.params.productName.split("-").join("");
     const foundProduct = productData.find((product) => product[productName]);
     setProduct(foundProduct[productName]);
   }, [window.location.href]);
 
   useEffect(() => {
+    
     const productName = props.match.params.productName.split("-").join("");
     let count = 0;
     const filteredProducts = featuredProducts.filter((product, index) => {
@@ -109,10 +114,6 @@ const Product = (props) => {
     });
     setFilteredProducts(filteredProducts);
   }, [window.location.href]);
-
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
 
   const {
     tag,
@@ -129,6 +130,8 @@ const Product = (props) => {
     free,
     buttonLinks,
   } = product;
+
+  document.title = `${title} - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple`;
 
   return (
     <Layout>
