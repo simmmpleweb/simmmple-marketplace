@@ -1,5 +1,6 @@
 import purityDashboard from "assets/img/homepage/purity-dashboard.png";
 import uranusWireframe from "assets/img/homepage/uranus-wireframe-kit.png";
+import uranusWireframePRO from "assets/img/homepage/uranus-wireframe-pro.png";
 import venusFree from "assets/img/homepage/venus-db-free.png";
 import venusPro from "assets/img/homepage/venus-db-pro.png";
 import venusSystem from "assets/img/homepage/venus-design-system.png";
@@ -8,12 +9,13 @@ import saturnUI from "assets/img/templates/saturn-ui.png";
 import taskUI from "assets/img/templates/task-ui.png";
 import uranusWireframeFree from "assets/img/templates/uranus-free.png";
 import venusSystemFree from "assets/img/templates/venus-system-free.png";
+import purityDashboardPRO from "assets/img/homepage/purity-dashboard-pro.png";
 
 export const templatesProducts = {
   alltemplates: [
     {
       image: venusSystem,
-      date: "Mar 12 2017 10:00:00 AM",
+      date: "Jun 01 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 99,
       keywords: [
@@ -34,7 +36,7 @@ export const templatesProducts = {
     },
     {
       image: venusPro,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Aug 30 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 59,
       keywords: [
@@ -55,7 +57,7 @@ export const templatesProducts = {
       path: "/product/venus-db-pro",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -79,8 +81,8 @@ export const templatesProducts = {
       path: "/product/uranus-wireframe-pro",
     },
     {
-      image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      image: purityDashboardPRO,
+      date: "Oct 30 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 69,
       keywords: [
@@ -102,7 +104,7 @@ export const templatesProducts = {
     },
     {
       image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -123,7 +125,7 @@ export const templatesProducts = {
     },
     {
       image: venusFree,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Aug 12 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 0,
       keywords: [
@@ -165,7 +167,7 @@ export const templatesProducts = {
       path: "/product/venus-design-system-free",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
@@ -254,7 +256,7 @@ export const templatesProducts = {
   admindashboards: [
     {
       image: venusFree,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Sep 12 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 0,
       title: "Venus DB Free",
@@ -263,7 +265,7 @@ export const templatesProducts = {
       path: "/product/venus-db-free",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -273,8 +275,8 @@ export const templatesProducts = {
       path: "/product/uranus-wireframe-pro",
     },
     {
-      image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      image: purityDashboardPRO,
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 69,
       title: "Purity UI Dashboard PRO",
@@ -284,7 +286,7 @@ export const templatesProducts = {
     },
     {
       image: venusFree,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Sep 12 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 0,
       title: "Venus DB Free",
@@ -294,19 +296,19 @@ export const templatesProducts = {
     },
     {
       image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 0,
       title: "Purity UI Dashboard Free",
       downloads: 1723,
       category: "Coded, Figma, Dashboards",
-      path: "/purity-dashboard-free",
+      path: "/product/purity-dashboard-free",
     },
   ],
   uikits: [
     {
       image: venusSystem,
-      date: "Mar 12 2017 10:00:00 AM",
+      date: "Jun 01 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 99,
       title: "Venus Design System PRO",
@@ -316,7 +318,7 @@ export const templatesProducts = {
     },
     {
       image: venusFree,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Sep 12 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 0,
       title: "Venus DB Free",
@@ -325,7 +327,7 @@ export const templatesProducts = {
       path: "/product/venus-db-free",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -336,7 +338,7 @@ export const templatesProducts = {
     },
     {
       image: venusFree,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Sep 12 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 0,
       title: "Venus DB Free",
@@ -355,14 +357,14 @@ export const templatesProducts = {
       path: "/product/venus-design-system-free",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
       tag: "Design Tool",
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
-      path: "/uranus-wireframe-free",
+      path: "/product/uranus-wireframe-free",
     },
     {
       image: glassy,
@@ -398,7 +400,7 @@ export const templatesProducts = {
   freetemplates: [
     {
       image: venusFree,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Sep 12 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 0,
       title: "Venus DB Free",
@@ -417,14 +419,14 @@ export const templatesProducts = {
       path: "/product/venus-design-system-free",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
       tag: "Design Tool",
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
-      path: "/uranus-wireframe-free",
+      path: "/product/uranus-wireframe-free",
     },
     {
       image: glassy,
@@ -458,7 +460,7 @@ export const templatesProducts = {
     },
     {
       image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 0,
       title: "Purity UI Dashboard Free",
@@ -470,7 +472,7 @@ export const templatesProducts = {
   premiumtemplates: [
     {
       image: venusSystem,
-      date: "Mar 12 2017 10:00:00 AM",
+      date: "Jun 01 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 99,
       title: "Venus Design System PRO",
@@ -479,7 +481,7 @@ export const templatesProducts = {
       path: "/product/venus-design-system-pro",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -489,8 +491,8 @@ export const templatesProducts = {
       path: "/product/uranus-wireframe-pro",
     },
     {
-      image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      image: purityDashboardPRO,
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 69,
       title: "Purity UI Dashboard PRO",
@@ -506,13 +508,13 @@ export const templatesProducts = {
       title: "Venus DB PRO",
       downloads: 27,
       category: "Freebies, Figma Products",
-      path: "/venus-db-pro",
+      path: "/product/venus-db-pro",
     },
   ],
   figma: [
     {
       image: venusSystem,
-      date: "Mar 12 2017 10:00:00 AM",
+      date: "Jun 01 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 99,
       title: "Venus Design System PRO",
@@ -522,7 +524,7 @@ export const templatesProducts = {
     },
     {
       image: venusFree,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Sep 12 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 0,
       title: "Venus DB Free",
@@ -531,7 +533,7 @@ export const templatesProducts = {
       path: "/product/venus-db-free",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -541,8 +543,8 @@ export const templatesProducts = {
       path: "/product/uranus-wireframe-pro",
     },
     {
-      image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      image: purityDashboardPRO,
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 69,
       title: "Purity UI Dashboard PRO",
@@ -552,7 +554,7 @@ export const templatesProducts = {
     },
     {
       image: venusFree,
-      date: "Mar 12 2019 10:00:00 AM",
+      date: "Sep 12 2021 10:00:00 AM",
       tag: "Design Tool",
       price: 0,
       title: "Venus DB Free",
@@ -571,14 +573,14 @@ export const templatesProducts = {
       path: "/product/venus-design-system-free",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
       tag: "Design Tool",
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
-      path: "/uranus-wireframe-free",
+      path: "/product/uranus-wireframe-free",
     },
     {
       image: glassy,
@@ -592,19 +594,19 @@ export const templatesProducts = {
     },
     {
       image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 0,
       title: "Purity UI Dashboard Free",
       downloads: 1723,
       category: "Coded, Figma, Dashboards",
-      path: "/purity-dashboard-free",
+      path: "/product/purity-dashboard-free",
     },
   ],
   react: [
     {
-      image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      image: purityDashboardPRO,
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 69,
       title: "Purity UI Dashboard PRO",
@@ -624,7 +626,7 @@ export const templatesProducts = {
     },
     {
       image: purityDashboard,
-      date: "Mar 12 2018 10:00:00 AM",
+      date: "Oct 12 2021 10:00:00 AM",
       tag: "Dashboard",
       price: 0,
       title: "Purity UI Dashboard Free",
@@ -635,7 +637,7 @@ export const templatesProducts = {
   ],
   bootstrap: [
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       description: [""],
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
@@ -646,14 +648,14 @@ export const templatesProducts = {
       path: "/product/uranus-wireframe-pro",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
       tag: "Design Tool",
       price: 0,
       category: "UI Kits, Freebies, Figma Products",
-      path: "/uranus-wireframe-free",
+      path: "/product/uranus-wireframe-free",
     },
   ],
 };
