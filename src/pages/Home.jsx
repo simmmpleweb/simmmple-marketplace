@@ -19,6 +19,7 @@ import CardBody from "components/card/CardBody";
 import ProductList from "components/products/ProductList";
 import Countdown from "components/countdown/Countdown";
 import { featuredProducts } from "variables/products";
+import { latestProducts } from "variables/products";
 
 // Icons
 import {
@@ -537,7 +538,7 @@ const Home = () => {
                 </Button>
               </NavLink>
             </Flex>
-            <ProductList products={featuredProducts} />
+            <ProductList products={latestProducts} />
 
             <Button
               bg='#fff'
@@ -732,7 +733,7 @@ const Home = () => {
               h='56px'
               alignSelf='center'
               mt='52px'>
-              <Text color='brand.300' fontSize='sm'>
+              <Text color='brand.300' fontSize='sm' fontWeight='500'>
                 Learn more
               </Text>
             </Button>
