@@ -26,6 +26,7 @@ import {
 import { BsPinterest } from "react-icons/bs";
 import { FaFacebook, FaTiktok } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import MailchimpNewsletter from "components/mailchimp/MCForm";
 
 const Footer = () => {
   return (
@@ -37,7 +38,7 @@ const Footer = () => {
         <Flex
           direction={{ sm: "column", lg: "row" }}
           w='100%'
-          h={{ sm: "auto", lg: "200px" }}
+          h={{ base: "250px", lg: "200px" }}
           borderRadius='30px'
           bgImage={footerBg}
           bgPosition='center center'
@@ -71,7 +72,7 @@ const Footer = () => {
             minW={{ sm: "100%", md: "380px" }}
             h='70px'
             p='8px'>
-            <FormControl>
+            {/* <FormControl>
               <Flex align='center'>
                 <Input
                   type='email'
@@ -92,6 +93,9 @@ const Footer = () => {
                 </Button>
               </Flex>
             </FormControl>
+           */}
+
+            <MailchimpNewsletter />
           </Flex>
         </Flex>
         <Flex align='center' direction={{ sm: "column", lg: "row" }}>
@@ -165,10 +169,10 @@ const Footer = () => {
             </Text>
             <Stack direction='column' spacing='22px'>
               <NavLink to='/templates/premium-templates'>
-                  <Text color='#878CBD' fontSize='md'>
-                    Premium Products
-                  </Text>
-                </NavLink>
+                <Text color='#878CBD' fontSize='md'>
+                  Premium Products
+                </Text>
+              </NavLink>
               <NavLink to='/templates/free-templates'>
                 <Text color='#878CBD' fontSize='md'>
                   Free Products

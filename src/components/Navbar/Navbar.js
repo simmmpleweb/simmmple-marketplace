@@ -641,6 +641,10 @@ function Navbar() {
                   bg: secondary || scrolled ? null : "#4B63CD",
                   color: "#fff",
                 }}
+                _active={{
+                  bg: secondary || scrolled ? null : "#4B63CD",
+                  color: "#fff",
+                }}
                 me={{ sm: "14px", lg: "0px" }}>
                 <Text
                   transition='color 0.3s linear'

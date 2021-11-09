@@ -587,6 +587,10 @@ const Bundles = () => {
                         bg: "none",
                         opacity: "0.8",
                       }}
+                      _active={{
+                        bg: "none",
+                        opacity: "0.8",
+                      }}
                       fontWeight='500'
                       fontSize='sm'
                       lineHeight='14px'
@@ -769,6 +773,10 @@ const Bundles = () => {
                       bg='none'
                       border='1px solid white'
                       _hover={{
+                        bg: "none",
+                        opacity: "0.8",
+                      }}
+                      _active={{
                         bg: "none",
                         opacity: "0.8",
                       }}
@@ -956,6 +964,10 @@ const Bundles = () => {
                         bg: "none",
                         opacity: "0.8",
                       }}
+                      _active={{
+                        bg: "none",
+                        opacity: "0.8",
+                      }}
                       fontWeight='500'
                       fontSize='sm'
                       lineHeight='14px'
@@ -1140,6 +1152,10 @@ const Bundles = () => {
                       bg='none'
                       border='1px solid white'
                       _hover={{
+                        bg: "none",
+                        opacity: "0.8",
+                      }}
+                      _active={{
                         bg: "none",
                         opacity: "0.8",
                       }}
@@ -1336,6 +1352,10 @@ const Bundles = () => {
                       bg='none'
                       border='1px solid white'
                       _hover={{
+                        bg: "none",
+                        opacity: "0.8",
+                      }}
+                      _active={{
                         bg: "none",
                         opacity: "0.8",
                       }}
@@ -1543,8 +1563,8 @@ const Bundles = () => {
                     fontWeight='500'
                     color='white'
                     fontSize='sm'
-                    _hover={{ background: "brand.300", opacity: "0.9" }}
-                    _active={{ background: "brand.300", opacity: "0.7" }}>
+                    _hover={{ bg: "#1A05B7" }}
+                    _active={{ bg: "#1A05B7" }}>
                     Buy it now
                   </Button>
                 </Flex>
@@ -1689,8 +1709,8 @@ const Bundles = () => {
                     fontWeight='500'
                     color='white'
                     fontSize='sm'
-                    _hover={{ background: "brand.300", opacity: "0.9" }}
-                    _active={{ background: "brand.300", opacity: "0.7" }}>
+                    _hover={{ bg: "#1A05B7" }}
+                    _active={{ bg: "#1A05B7" }}>
                     Buy it now
                   </Button>
                 </Flex>
@@ -1832,8 +1852,8 @@ const Bundles = () => {
                     fontWeight='500'
                     color='white'
                     fontSize='sm'
-                    _hover={{ background: "brand.300", opacity: "0.9" }}
-                    _active={{ background: "brand.300", opacity: "0.7" }}>
+                    _hover={{ bg: "#1A05B7" }}
+                    _active={{ bg: "#1A05B7" }}>
                     Buy it now
                   </Button>
                 </Flex>

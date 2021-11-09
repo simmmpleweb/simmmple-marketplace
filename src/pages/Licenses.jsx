@@ -43,7 +43,13 @@ const Licenses = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='white'>
+                bg='white'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   License
                 </Text>
@@ -56,7 +62,13 @@ const Licenses = () => {
                 align='center'
                 w='138px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Terms of Usage
                 </Text>
@@ -69,7 +81,13 @@ const Licenses = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Privacy Policy
                 </Text>
@@ -82,7 +100,13 @@ const Licenses = () => {
                 align='center'
                 w='130px'
                 borderRadius='30px'
-                bg='transparent'>
+                bg='transparent'
+                _hover={{
+                  bg: "white",
+                }}
+                _active={{
+                  bg: "white",
+                }}>
                 <Text fontWeight='500' color='brand.300'>
                   Affiliates
                 </Text>
@@ -602,18 +626,19 @@ const Licenses = () => {
                   fontWeight='400'
                   mb='25px'>
                   This license applies in conjunction with the
-                  <NavLink
-                    to='/terms-of-service'>
+                  <NavLink to='/terms-of-service'>
                     <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>Simmmple Terms and Conditions</Text>
-                  </NavLink>{""}
-                  . If there is an inconsistency between this license and the
-                  Terms and Conditions, this license will apply to the extent
-                  necessary to resolve the inconsistency.
+                      textDecoration='underline'
+                      color='brand.300'
+                      fontWeight='500'
+                      as='span'
+                      mx='3px'>
+                      Simmmple Terms and Conditions
+                    </Text>
+                  </NavLink>
+                  {""}. If there is an inconsistency between this license and
+                  the Terms and Conditions, this license will apply to the
+                  extent necessary to resolve the inconsistency.
                 </Text>
               </ListItem>
               <ListItem color='#878CBD'>
@@ -868,14 +893,15 @@ const Licenses = () => {
                   fontWeight='400'
                   mb='25px'>
                   This license applies in conjunction with the
-                  <NavLink
-                    to='/terms-of-service'>
+                  <NavLink to='/terms-of-service'>
                     <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>Simmmple Terms and Conditions</Text>
+                      textDecoration='underline'
+                      color='brand.300'
+                      fontWeight='500'
+                      as='span'
+                      mx='3px'>
+                      Simmmple Terms and Conditions
+                    </Text>
                   </NavLink>
                   . If there is an inconsistency between this license and the
                   Terms and Conditions, this license will apply to the extent
@@ -1154,14 +1180,15 @@ const Licenses = () => {
                   fontWeight='400'
                   mb='25px'>
                   This license applies in conjunction with the{" "}
-                  <NavLink
-                    to='/terms-of-service'>
+                  <NavLink to='/terms-of-service'>
                     <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>Simmmple Terms and Conditions</Text>
+                      textDecoration='underline'
+                      color='brand.300'
+                      fontWeight='500'
+                      as='span'
+                      mx='3px'>
+                      Simmmple Terms and Conditions
+                    </Text>
                   </NavLink>
                   . If there is an inconsistency between this license and the
                   Terms and Conditions, this license will apply to the extent
@@ -1220,15 +1247,17 @@ const Licenses = () => {
               textAlign='center'
               mx='auto'>
               Got a question?{" "}
-              <NavLink
-                    to='/contact'>
-                    <Text
-                    textDecoration='underline'
-                    color='brand.300'
-                    fontWeight="500"
-                    as="span"
-                    mx='3px'>Contact us</Text>
-                  </NavLink>{""}
+              <NavLink to='/contact'>
+                <Text
+                  textDecoration='underline'
+                  color='brand.300'
+                  fontWeight='500'
+                  as='span'
+                  mx='3px'>
+                  Contact us
+                </Text>
+              </NavLink>
+              {""}
             </Text>
           </Flex>
         </Flex>

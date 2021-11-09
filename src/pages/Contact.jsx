@@ -449,6 +449,12 @@ const Contact = () => {
                           ? "0px 43px 113px -9px rgba(112, 144, 176, 0.52)"
                           : null
                       }
+                      _hover={{
+                        bg: "white",
+                      }}
+                      _active={{
+                        bg: "white",
+                      }}
                       borderRadius='30px'
                       transition='all .3s ease'
                       p='24px'>
@@ -477,6 +483,12 @@ const Contact = () => {
                           ? "0px 43px 113px -9px rgba(112, 144, 176, 0.52)"
                           : null
                       }
+                      _hover={{
+                        bg: "white",
+                      }}
+                      _active={{
+                        bg: "white",
+                      }}
                       borderRadius='30px'
                       transition='all .3s ease'
                       p='24px'>
@@ -505,6 +517,12 @@ const Contact = () => {
                           ? "0px 43px 113px -9px rgba(112, 144, 176, 0.52)"
                           : null
                       }
+                      _hover={{
+                        bg: "white",
+                      }}
+                      _active={{
+                        bg: "white",
+                      }}
                       borderRadius='30px'
                       p='24px 32px'>
                       <Text color='brand.300' fontSize='sm' fontWeight='500'>
@@ -532,6 +550,12 @@ const Contact = () => {
                           ? "0px 43px 113px -9px rgba(112, 144, 176, 0.52)"
                           : null
                       }
+                      _hover={{
+                        bg: "white",
+                      }}
+                      _active={{
+                        bg: "white",
+                      }}
                       borderRadius='30px'
                       p='24px 32px'>
                       <Text color='brand.300' fontSize='sm' fontWeight='500'>
@@ -692,6 +716,7 @@ const Contact = () => {
                           type='submit'
                           w='100%'
                           _hover={{ bg: "#1A05B7" }}
+                          _active={{ bg: "#1A05B7" }}
                           minH='56px'
                           mt='50px'>
                           <Text color='#fff' fontSize='sm' fontWeight='500'>
@@ -950,6 +975,7 @@ const Contact = () => {
                           bg='brand.300'
                           w='100%'
                           _hover={{ bg: "#1A05B7" }}
+                          _active={{ bg: "#1A05B7" }}
                           minH='56px'
                           mt='50px'
                           type='submit'>
@@ -1211,6 +1237,7 @@ const Contact = () => {
                           w='100%'
                           type='submit'
                           _hover={{ bg: "#1A05B7" }}
+                          _active={{ bg: "#1A05B7" }}
                           minH='56px'>
                           <Text color='#fff' fontSize='sm' fontWeight='500'>
                             Send Message
@@ -1389,6 +1416,7 @@ const Contact = () => {
                           type='submit'
                           w='100%'
                           _hover={{ bg: "#1A05B7" }}
+                          _active={{ bg: "#1A05B7" }}
                           minH='56px'
                           mt='50px'>
                           <Text color='#fff' fontSize='sm' fontWeight='500'>
