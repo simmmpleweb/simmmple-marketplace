@@ -2,7 +2,6 @@ import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { Box, useColorMode, Button } from "@chakra-ui/react";
 import routes from "routes";
-import ScrollToTop from "components/scroll/ScrollToTop";
 export default function MainLayout() {
   const { toggleColorMode } = useColorMode();
   const getRoutes = (routes) => {
@@ -11,7 +10,7 @@ export default function MainLayout() {
     });
   };
   return (
-    <ScrollToTop>
+    <>
       {/* <Button size="sm" onClick={toggleColorMode}>
       Toggle Mode
     </Button> */}
@@ -20,6 +19,6 @@ export default function MainLayout() {
         <Redirect from='/' exact to='/homepage' />
         <Redirect from='*' to='/404' />
       </Switch>
-    </ScrollToTop>
+    </>
   );
 }

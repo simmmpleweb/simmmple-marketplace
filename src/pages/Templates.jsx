@@ -53,6 +53,7 @@ const Templates = (props) => {
         react: false,
         bootstrap: false,
       });
+      setActiveTitle("All Templates & Themes");
     } else if (window.location.href.includes("/admin-dashboards")) {
       setActiveTab({
         all: false,
@@ -64,6 +65,7 @@ const Templates = (props) => {
         react: false,
         bootstrap: false,
       });
+      setActiveTitle("Admin & Dashboards");
     } else if (window.location.href.includes("/ui-kits")) {
       setActiveTab({
         all: false,
@@ -75,6 +77,7 @@ const Templates = (props) => {
         react: false,
         bootstrap: false,
       });
+      setActiveTitle("UI Kits");
     } else if (window.location.href.includes("/free-templates")) {
       setActiveTab({
         all: false,
@@ -86,6 +89,7 @@ const Templates = (props) => {
         react: false,
         bootstrap: false,
       });
+      setActiveTitle("Free Templates");
     } else if (window.location.href.includes("/premium-templates")) {
       setActiveTab({
         all: false,
@@ -97,6 +101,7 @@ const Templates = (props) => {
         react: false,
         bootstrap: false,
       });
+      setActiveTitle("Premium Templates");
     } else if (window.location.href.includes("/figma")) {
       setActiveTab({
         all: false,
@@ -108,6 +113,7 @@ const Templates = (props) => {
         react: false,
         bootstrap: false,
       });
+      setActiveTitle("Figma Products");
     } else if (window.location.href.includes("/react")) {
       setActiveTab({
         all: false,
@@ -119,6 +125,7 @@ const Templates = (props) => {
         react: true,
         bootstrap: false,
       });
+      setActiveTitle("React Products");
     } else if (window.location.href.includes("/bootstrap")) {
       setActiveTab({
         all: false,
@@ -130,6 +137,7 @@ const Templates = (props) => {
         react: false,
         bootstrap: true,
       });
+      setActiveTitle("Bootstrap Products");
     }
   }, [window.location.href]);
 

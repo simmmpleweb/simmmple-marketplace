@@ -110,6 +110,11 @@ const Product = (props) => {
     setFilteredProducts(filteredProducts);
   }, [window.location.href]);
 
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+  
+
   const {
     tag,
     title,
