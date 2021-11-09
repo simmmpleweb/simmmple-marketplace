@@ -6,7 +6,7 @@ import ScrollToTop from "components/scroll/ScrollToTop";
 
 function App() {
   return (
-    <Box overflowX="hidden" maxW="100%">
+    <Box overflowX='hidden' maxW='100%'>
       <ScrollToTop>
         <MainLayout />
       </ScrollToTop>
