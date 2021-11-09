@@ -641,6 +641,12 @@ const Product = (props) => {
                   <Button
                     borderRadius='70px'
                     bg='#ECE9FF'
+                    _hover={{
+                      bg: "#ECE9FF",
+                    }}
+                    _active={{
+                      bg: "#ECE9FF",
+                    }}
                     w='100%'
                     border='1px solid'
                     borderColor='brand.300'
@@ -686,6 +692,12 @@ const Product = (props) => {
                   <Button
                     borderRadius='70px'
                     bg='#ECE9FF'
+                    _hover={{
+                      bg: "#ECE9FF",
+                    }}
+                    _active={{
+                      bg: "#ECE9FF",
+                    }}
                     w='100%'
                     border='1px solid'
                     borderColor='brand.300'
