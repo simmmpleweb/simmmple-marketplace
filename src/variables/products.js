@@ -1,6 +1,7 @@
 import venusPro from "assets/img/homepage/venus-db-pro.png";
 import venusSystem from "assets/img/homepage/venus-design-system.png";
 import uranusWireframe from "assets/img/homepage/uranus-wireframe-kit.png";
+import uranusWireframePRO from "assets/img/homepage/uranus-wireframe-pro.png";
 import purityDashboard from "assets/img/homepage/purity-dashboard.png";
 import purityDashboardPRO from "assets/img/homepage/purity-dashboard-pro.png";
 import venusFree from "assets/img/homepage/venus-db-free.png";
@@ -32,7 +33,7 @@ export const featuredProducts = [
     path: "/product/purity-dashboard-pro",
   },
   {
-    image: uranusWireframe,
+    image: uranusWireframePRO,
     tag: "Web Tool",
     price: 69,
     title: "Uranus Wireframe Kit PRO",
@@ -99,7 +100,7 @@ export const latestProducts = [
     path: "/product/venus-design-system-pro",
   },
   {
-    image: uranusWireframe,
+    image: uranusWireframePRO,
     tag: "Web Tool",
     price: 69,
     title: "Uranus Wireframe Kit PRO",

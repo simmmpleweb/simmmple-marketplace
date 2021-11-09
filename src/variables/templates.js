@@ -1,5 +1,6 @@
 import purityDashboard from "assets/img/homepage/purity-dashboard.png";
 import uranusWireframe from "assets/img/homepage/uranus-wireframe-kit.png";
+import uranusWireframePRO from "assets/img/homepage/uranus-wireframe-pro.png";
 import venusFree from "assets/img/homepage/venus-db-free.png";
 import venusPro from "assets/img/homepage/venus-db-pro.png";
 import venusSystem from "assets/img/homepage/venus-design-system.png";
@@ -56,7 +57,7 @@ export const templatesProducts = {
       path: "/product/venus-db-pro",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -166,7 +167,7 @@ export const templatesProducts = {
       path: "/product/venus-design-system-free",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
@@ -264,7 +265,7 @@ export const templatesProducts = {
       path: "/product/venus-db-free",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -326,7 +327,7 @@ export const templatesProducts = {
       path: "/product/venus-db-free",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -356,7 +357,7 @@ export const templatesProducts = {
       path: "/product/venus-design-system-free",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
@@ -418,7 +419,7 @@ export const templatesProducts = {
       path: "/product/venus-design-system-free",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
@@ -480,7 +481,7 @@ export const templatesProducts = {
       path: "/product/venus-design-system-pro",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -532,7 +533,7 @@ export const templatesProducts = {
       path: "/product/venus-db-free",
     },
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
       price: 69,
@@ -572,7 +573,7 @@ export const templatesProducts = {
       path: "/product/venus-design-system-free",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
@@ -636,7 +637,7 @@ export const templatesProducts = {
   ],
   bootstrap: [
     {
-      image: uranusWireframe,
+      image: uranusWireframePRO,
       description: [""],
       date: "Mar 12 2018 10:00:00 AM",
       tag: "Web Tool",
@@ -647,7 +648,7 @@ export const templatesProducts = {
       path: "/product/uranus-wireframe-pro",
     },
     {
-      image: uranusWireframeFree,
+      image: uranusWireframe,
       date: "Mar 12 2013 10:00:00 AM",
       title: "Uranus Wireframe Kit Free",
       downloads: 640,
