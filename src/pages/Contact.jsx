@@ -20,7 +20,7 @@ import {
 import "assets/css/Contact.css";
 import simmmple3D from "assets/img/contact/simmmple-3d.png";
 import Card from "components/card/Card";
-import IconBox from "components/icons/IconBox";
+import IconBox from "components/icons/IconBox.js";
 // import {
 //   contactGeneral,
 //   contactOthers,
