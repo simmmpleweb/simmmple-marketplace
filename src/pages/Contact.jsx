@@ -20,13 +20,13 @@ import {
 import "assets/css/Contact.css";
 import simmmple3D from "assets/img/contact/simmmple-3d.png";
 import Card from "components/card/Card";
-import IconBox from "components/icons/IconBox.js";
-// import {
-//   contactGeneral,
-//   contactOthers,
-//   contactPartnerships,
-//   contactSupport,
-// } from "components/icons/Icons";
+import IconBox from "components/icons/IconBox";
+import {
+  contactGeneral,
+  contactOthers,
+  contactPartnerships,
+  contactSupport,
+} from "components/icons/Icons";
 import Layout from "components/layout/Layout";
 import emailjs from "emailjs-com";
 import React, { useRef, useState } from "react";
@@ -610,7 +610,7 @@ const Contact = () => {
                       bg='#F6F8FD'
                       borderRadius='50%'
                       mb='20px'>
-                      {/* <Icon as={contactGeneral} w='35px' h='35px' /> */}
+                      <Icon as={contactGeneral} w='35px' h='35px' />
                     </IconBox>
                     <Text
                       color='brand.700'
@@ -785,7 +785,7 @@ const Contact = () => {
                       bg='#FFF6E5'
                       borderRadius='50%'
                       mb='20px'>
-                      {/* <Icon as={contactSupport} w='35px' h='35px' /> */}
+                      <Icon as={contactSupport} w='35px' h='35px' />
                     </IconBox>
                     <Text
                       color='brand.700'
@@ -1098,7 +1098,7 @@ const Contact = () => {
                       bg='#FFEFEF'
                       borderRadius='50%'
                       mb='20px'>
-                      {/* <Icon as={contactPartnerships} w='35px' h='35px' /> */}
+                      <Icon as={contactPartnerships} w='35px' h='35px' />
                     </IconBox>
                     <Text
                       color='brand.700'
@@ -1306,7 +1306,7 @@ const Contact = () => {
                       bg='#F6F8FD'
                       borderRadius='50%'
                       mb='20px'>
-                      {/* <Icon as={contactOthers} w='35px' h='35px' /> */}
+                      <Icon as={contactOthers} w='35px' h='35px' />
                     </IconBox>
                     <Text
                       color='brand.700'
