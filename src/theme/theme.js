@@ -18,7 +18,7 @@ export default extendTheme(
   CardBodyComponent, // Card Body component
   CardHeaderComponent, // Card Header component
   {
-    useSystemColorMode: "false",
+    useSystemColorMode: false,
     initialColorMode: "light",
   }
 );

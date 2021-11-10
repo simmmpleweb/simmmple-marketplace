@@ -33,10 +33,10 @@ import React, { useRef, useState, useEffect } from "react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const Contact = () => {
-
   useEffect(() => {
-    document.title = 'Contact - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
-  }, [])
+    document.title =
+      "Contact - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
+  }, []);
 
   const [tab, setTab] = useState({
     general: false,
@@ -663,6 +663,8 @@ const Contact = () => {
                             Name*
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='name'
                             placeholder='Enter your name'
@@ -693,6 +695,8 @@ const Contact = () => {
                             Email*
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='email'
                             type='email'
@@ -846,6 +850,8 @@ const Contact = () => {
                             Name*
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='name-support'
                             placeholder='Enter your name'
@@ -877,6 +883,8 @@ const Contact = () => {
                             Email*
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='email-support'
                             type='email'
@@ -1153,6 +1161,8 @@ const Contact = () => {
                             Name*
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='name-partnerships'
                             placeholder='Enter your name'
@@ -1187,6 +1197,8 @@ const Contact = () => {
                             Email*
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='email-partnerships'
                             type='email'
@@ -1222,6 +1234,8 @@ const Contact = () => {
                             Company / Website
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='company-partnerships'
                             placeholder='Enter your email address'
@@ -1362,6 +1376,8 @@ const Contact = () => {
                             Name*
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='name'
                             placeholder='Enter your name'
@@ -1393,6 +1409,8 @@ const Contact = () => {
                             Email*
                           </FormLabel>
                           <Input
+                            border='1px solid #E0E5F2'
+                            borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='email'
                             type='email'

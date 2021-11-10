@@ -6,10 +6,10 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const TermsConditions = () => {
-
   useEffect(() => {
-    document.title = 'Terms & Conditions - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
-  }, [])
+    document.title =
+      "Terms & Conditions - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
+  }, []);
 
   return (
     <Layout>
@@ -135,7 +135,8 @@ const TermsConditions = () => {
               fontWeight='700'
               textAlign='center'
               mx='auto'
-              mb='50px'>
+              mb='50px'
+              color='brand.700'>
               Terms and Conditions
             </Text>
             <HSeparator w='100%' mb='40px' mx='auto' />

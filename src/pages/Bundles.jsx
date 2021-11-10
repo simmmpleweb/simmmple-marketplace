@@ -280,7 +280,8 @@ const Bundles = () => {
                     textAlign='center'
                     fontWeight='700'
                     mb='10px'
-                    fontSize='38px'>
+                    fontSize='38px'
+                    color='brand.700'>
                     4,000+
                   </Text>
                   <Text
@@ -316,7 +317,8 @@ const Bundles = () => {
                     textAlign='center'
                     fontWeight='700'
                     mb='10px'
-                    fontSize='38px'>
+                    fontSize='38px'
+                    color='brand.700'>
                     4.9/5
                   </Text>
                   <Text
@@ -342,7 +344,8 @@ const Bundles = () => {
                     textAlign='center'
                     fontWeight='700'
                     mb='10px'
-                    fontSize='38px'>
+                    fontSize='38px'
+                    color='brand.700'>
                     10,000+
                   </Text>
                   <Text
@@ -369,7 +372,8 @@ const Bundles = () => {
                     textAlign='center'
                     fontWeight='700'
                     mb='10px'
-                    fontSize='38px'>
+                    fontSize='38px'
+                    color='brand.700'>
                     Lifetime
                   </Text>
                   <Text
@@ -1610,7 +1614,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Projects:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           {" "}
@@ -1625,7 +1630,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Team size:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           1 Developer
@@ -1640,7 +1646,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Premium support:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           8 Months
@@ -1654,7 +1661,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Free updates:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           8 Months
@@ -1798,7 +1806,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Projects:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           {" "}
@@ -1813,7 +1822,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Team size:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           1-15 Developers
@@ -1828,7 +1838,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Premium support:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           12 Months
@@ -1842,7 +1853,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Free updates:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           12 Months
@@ -1982,7 +1994,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Projects:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           {" "}
@@ -1997,7 +2010,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Team size:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           Unlimited
@@ -2026,7 +2040,8 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.5px'>
+                        letterSpacing='-0.5px'
+                        color='#02044A'>
                         Free updates:
                         <Text fontWeight='500' ms='5px' color='#02044A'>
                           24 Months

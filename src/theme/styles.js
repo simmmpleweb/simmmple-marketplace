@@ -11,6 +11,9 @@ export const globalStyles = {
         bg: "white",
         fontFamily: "Plus Jakarta Display",
       },
+      input: {
+        color: "gray.700",
+      },
       html: {},
     }),
   },

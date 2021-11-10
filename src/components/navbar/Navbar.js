@@ -982,8 +982,8 @@ function Navbar() {
                   direction='column'
                   textAlign='center'
                   bgImage={exploreBackground}
-                  bgSize='cover'
-                  bgPosition='1px'
+                  bgSize='275px 275px'
+                  bgPosition='0px'
                   w='275px'
                   h='275px'
                   borderRadius='16px'

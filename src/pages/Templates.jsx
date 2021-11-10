@@ -41,8 +41,9 @@ const Templates = (props) => {
   });
 
   useEffect(() => {
-    document.title = 'Templates - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
-  }, [])
+    document.title =
+      "Templates - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
+  }, []);
 
   useEffect(() => {
     if (window.location.href.includes("/all-templates")) {
@@ -300,6 +301,7 @@ const Templates = (props) => {
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
                   align='center'
                   mb={{ lg: "10px", xl: "0px" }}
+                  ms={{ base: "550px", md: "560px", lg: "0px" }}
                   justify='center'
                   borderRadius='30px'
                   transition='all .25s ease'

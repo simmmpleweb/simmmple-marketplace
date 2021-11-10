@@ -4,7 +4,8 @@ import {
   Link,
   ListItem,
   OrderedList,
-  Text, UnorderedList
+  Text,
+  UnorderedList,
 } from "@chakra-ui/react";
 import Layout from "components/layout/Layout";
 // Custom Components
@@ -13,10 +14,10 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const PrivacyPolicy = () => {
-
   useEffect(() => {
-    document.title = 'Privacy - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
-  }, [])
+    document.title =
+      "Privacy - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
+  }, []);
 
   return (
     <Layout>
@@ -142,7 +143,8 @@ const PrivacyPolicy = () => {
               fontWeight='700'
               textAlign='center'
               mx='auto'
-              mb='15px'>
+              mb='15px'
+              color='brand.700'>
               Privacy Policy
             </Text>
             <Text

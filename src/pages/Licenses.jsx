@@ -1,9 +1,4 @@
-import {
-  Button,
-  Flex, ListItem,
-  OrderedList,
-  Text
-} from "@chakra-ui/react";
+import { Button, Flex, ListItem, OrderedList, Text } from "@chakra-ui/react";
 import Layout from "components/layout/Layout";
 // Custom Components
 import { HSeparator } from "components/separator/Separator";
@@ -11,10 +6,10 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Licenses = () => {
-
   useEffect(() => {
-    document.title = 'Licenses - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
-  }, [])
+    document.title =
+      "Licenses - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
+  }, []);
 
   return (
     <Layout>
@@ -134,7 +129,8 @@ const Licenses = () => {
               fontWeight='700'
               textAlign='center'
               mx='auto'
-              mb='50px'>
+              mb='50px'
+              color='brand.700'>
               End User License Agreement
             </Text>
             <HSeparator w='100%' mb='40px' mx='auto' />

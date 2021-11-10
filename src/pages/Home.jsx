@@ -69,7 +69,8 @@ const Home = () => {
   };
 
   useEffect(() => {
-    document.title = 'Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple';
+    document.title =
+      "Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
   }, []);
 
   return (
@@ -487,25 +488,24 @@ const Home = () => {
                 h='115px'
                 transition='all .5s ease'
               />
-              <NavLink to="/bundles">
-
-              <Button
-                bg='white'
-                variant='solid'
-                w='190px'
-                h='56px'
-                onMouseEnter={() => {
-                  leftEffect.current.style.transform = "translateX(-5px)";
-                  rightEffect.current.style.transform = "translateX(5px)";
-                }}
-                onMouseLeave={() => {
-                  leftEffect.current.style.transform = "translateX(5px)";
-                  rightEffect.current.style.transform = "translateX(-5px)";
-                }}>
-                <Text color='brand.700' fontSize='sm'>
-                  Save up to 80% now
-                </Text>
-              </Button>
+              <NavLink to='/bundles'>
+                <Button
+                  bg='white'
+                  variant='solid'
+                  w='190px'
+                  h='56px'
+                  onMouseEnter={() => {
+                    leftEffect.current.style.transform = "translateX(-5px)";
+                    rightEffect.current.style.transform = "translateX(5px)";
+                  }}
+                  onMouseLeave={() => {
+                    leftEffect.current.style.transform = "translateX(5px)";
+                    rightEffect.current.style.transform = "translateX(-5px)";
+                  }}>
+                  <Text color='brand.700' fontSize='sm'>
+                    Save up to 80% now
+                  </Text>
+                </Button>
               </NavLink>
               <RightButtonEffect
                 ref={rightEffect}
