@@ -563,6 +563,7 @@ const Templates = (props) => {
               mt={{ sm: "32px", lg: "0px" }}
               color='brand.300'
               border='1px solid #E0E5F2'
+              borderColor='#E0E5F2'
               _focus={{ boxShadow: "none" }}
               iconColor='gray.700'
               borderRadius='30px'
