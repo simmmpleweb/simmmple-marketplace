@@ -1,4 +1,14 @@
-import { Divider, Flex, Grid, Icon, Link, Stack, Text } from "@chakra-ui/react";
+import {
+  Divider,
+  Flex,
+  Grid,
+  Icon,
+  Link,
+  Stack,
+  Text,
+  Button,
+  useColorMode,
+} from "@chakra-ui/react";
 // Images
 import footerBg from "assets/img/footer/footer-background.png";
 // Custom Components
@@ -16,8 +26,8 @@ import {
 import { BsPinterest } from "react-icons/bs";
 import { FaFacebook, FaTiktok } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-
 const Footer = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Flex w='100%' bg='#F4F7FE' pb='125px'>
       <Flex
@@ -68,6 +78,9 @@ const Footer = () => {
           columnGap={{ sm: "0px", lg: "72px" }}
           rowGap='50px'>
           <Flex direction='column' justifySelf='center'>
+            <Button onClick={toggleColorMode}>
+              Toggle {colorMode === "light" ? "Dark" : "Light"}
+            </Button>
             <Text fontSize='lg' color='brand.700' fontWeight='500' mb='26px'>
               Explore
             </Text>

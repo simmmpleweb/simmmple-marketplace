@@ -9,10 +9,6 @@ import { breakpoints } from "./foundations/breakpoints";
 import { globalStyles } from "./styles";
 // import { mode } from "@chakra-ui/theme-tools";
 export default extendTheme(
-  {
-    initialColorMode: "light",
-    useSystemColorMode: false,
-  },
   { breakpoints }, // Breakpoints
   globalStyles,
   buttonStyles, // Button styles
@@ -20,5 +16,9 @@ export default extendTheme(
   inputStyles, // Input styles
   CardComponent, // Card component
   CardBodyComponent, // Card Body component
-  CardHeaderComponent // Card Header component
+  CardHeaderComponent, // Card Header component
+  {
+    useSystemColorMode: "false",
+    initialColorMode: "light",
+  }
 );
