@@ -128,8 +128,9 @@ function Navbar() {
           position='relative'>
           <Flex
             alignSelf='flex-start'
-            justify='center'
-            align='center'
+            justify='flex-start'
+            align='s'
+            maxW={{ base: "42px", md: "unset" }}
             h='100%'
             me={{ sm: "auto", md: "auto", lg: "0px" }}>
             <NavLink to='/'>

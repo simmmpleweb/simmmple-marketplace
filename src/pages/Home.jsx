@@ -107,7 +107,7 @@ const Home = () => {
                 BUILD BETTER, BUILD FASTER
               </Text>
               <Text
-                fontSize={{ base: "28px", "2sm": "30px", md: "44px" }}
+                fontSize={{ base: "27px", "2sm": "30px", md: "44px" }}
                 color='#fff'
                 fontWeight='500'
                 letterSpacing='-1px'

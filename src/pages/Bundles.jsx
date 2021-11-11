@@ -127,7 +127,7 @@ const Bundles = () => {
               display={{ base: "none", xl: "flex" }}
             />
             <Text
-              fontSize={{ base: "44px", md: "64px" }}
+              fontSize={{ base: "41px", md: "64px" }}
               px={{ base: "10px", "2sm": "30px", md: "0px" }}
               color='#fff'
               fontWeight='bold'
@@ -1647,9 +1647,12 @@ const Bundles = () => {
                         fontSize='18px'
                         display='flex'
                         letterSpacing='-0.5px'
-                        color='#02044A'>
+                        color='brand.700 !important'>
                         Premium support:
-                        <Text fontWeight='500' ms='5px' color='#02044A'>
+                        <Text
+                          fontWeight='500'
+                          ms='5px'
+                          color='brand.700 !important'>
                           8 Months
                         </Text>
                       </Text>
@@ -2026,9 +2029,13 @@ const Bundles = () => {
                       <Text
                         fontSize='18px'
                         display='flex'
-                        letterSpacing='-0.8px'>
+                        letterSpacing='-0.8px'
+                        color='#02044A !important'>
                         Premium support:
-                        <Text fontWeight='bold' ms='3px'>
+                        <Text
+                          fontWeight='500'
+                          ms='3px'
+                          color='#02044A !important'>
                           24 Months
                         </Text>
                       </Text>
