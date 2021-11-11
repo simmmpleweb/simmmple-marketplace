@@ -15,6 +15,8 @@ import googleLogo from "assets/img/homepage/google.png";
 import microsoftLogo from "assets/img/homepage/microsoft.png";
 import msnLogo from "assets/img/homepage/msn.png";
 import zohoLogo from "assets/img/homepage/zoho.png";
+import dumi from "assets/img/about/dumi-simmmple.png"
+import fredy from "assets/img/about/fredy-simmmple.png"
 // Custom Components
 import Card from "components/card/Card";
 import CardBody from "components/card/CardBody";
@@ -242,7 +244,8 @@ const Bundles = () => {
               <CardBody h='100%' p='12px' justify='space-between' pb='28px'>
                 <Flex flexDirection='column'>
                   <Image
-                    src={about1}
+                    src={fredy}
+                    objectFit="cover"
                     w='254px'
                     h='222px'
                     mb='22px'
@@ -309,9 +312,10 @@ const Bundles = () => {
               <CardBody h='100%' p='12px' justify='space-between' pb='28px'>
                 <Flex flexDirection='column'>
                   <Image
-                    src={about1}
+                    src={dumi}
                     w='254px'
                     h='222px'
+                    objectFit="cover"
                     mb='22px'
                     borderRadius='20px'
                   />
