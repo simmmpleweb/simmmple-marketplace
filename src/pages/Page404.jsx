@@ -17,8 +17,8 @@ const Page404 = () => {
   }, []);
 
   useEffect(() => {
-    document.title = '404'
-  }, [])
+    document.title = "404";
+  }, []);
 
   return (
     <Layout>
@@ -52,7 +52,11 @@ const Page404 = () => {
         </Text>
         <HSeparator mt={{ sm: "100px", lg: "195px" }} mb='75px' />
         <Flex maxW='1170px' mx='auto' direction='column' textAlign='center'>
-          <Text color='brand.300' fontSize='xs' fontWeight='500'>
+          <Text
+            color='brand.300'
+            fontSize='xs'
+            fontWeight='500'
+            letterSpacing='2px'>
             RELATED PRODUCTS
           </Text>
           <Text
