@@ -22,10 +22,10 @@ import React, { useEffect } from "react";
 import Layout from "components/layout/Layout";
 
 const Bundles = () => {
-
   useEffect(() => {
-    document.title = 'About - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple'
-  }, [])
+    document.title =
+      "About - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
+  }, []);
 
   return (
     <Layout>
@@ -248,7 +248,11 @@ const Bundles = () => {
                     mb='22px'
                     borderRadius='20px'
                   />
-                  <Text mx='12px' fontWeight='700' fontSize='lg'>
+                  <Text
+                    mx='12px'
+                    fontWeight='500'
+                    color='brand.700'
+                    fontSize='lg'>
                     Andrei-Fredy Craciun
                   </Text>
                   <Text
@@ -277,7 +281,11 @@ const Bundles = () => {
                     mb='22px'
                     borderRadius='20px'
                   />
-                  <Text mx='12px' fontWeight='700' fontSize='lg'>
+                  <Text
+                    mx='12px'
+                    fontWeight='500'
+                    color='brand.700'
+                    fontSize='lg'>
                     Vlad Mihalache
                   </Text>
                   <Text
@@ -307,7 +315,11 @@ const Bundles = () => {
                     mb='22px'
                     borderRadius='20px'
                   />
-                  <Text mx='12px' fontWeight='700' fontSize='lg'>
+                  <Text
+                    mx='12px'
+                    fontWeight='500'
+                    color='brand.700'
+                    fontSize='lg'>
                     Theodor Dumitrache
                   </Text>
                   <Text
@@ -336,7 +348,11 @@ const Bundles = () => {
                     mb='22px'
                     borderRadius='20px'
                   />
-                  <Text mx='12px' fontWeight='700' fontSize='lg'>
+                  <Text
+                    mx='12px'
+                    fontWeight='500'
+                    color='brand.700'
+                    fontSize='lg'>
                     Martin Stoleru
                   </Text>
                   <Text

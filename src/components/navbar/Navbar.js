@@ -128,8 +128,9 @@ function Navbar() {
           position='relative'>
           <Flex
             alignSelf='flex-start'
-            justify='center'
-            align='center'
+            justify='flex-start'
+            align='s'
+            maxW={{ base: "42px", md: "unset" }}
             h='100%'
             me={{ sm: "auto", md: "auto", lg: "0px" }}>
             <NavLink to='/'>
@@ -698,7 +699,7 @@ function Navbar() {
                     </h2>
                     <AccordionPanel pb={4}>
                       <Stack direction='column' spacing='16px' w='100%'>
-                        <Link href='https://simmmple.com/templates/404'>
+                        <Link href='https://simmmple.com/templates/figma'>
                           <Flex align='center' w='100%'>
                             <IconBox w='48px' h='48px' bg='#F4F7FE' me='16px'>
                               <Image src={figmaLogo} w='18px' h='26px' />
