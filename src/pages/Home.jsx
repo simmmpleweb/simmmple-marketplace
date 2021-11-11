@@ -111,17 +111,10 @@ const Home = () => {
                 BUILD BETTER, BUILD FASTER
               </Text>
               <Text
-<<<<<<< HEAD
-                fontSize={{ base: "28px", "2sm": "30px", md: "44px" }}
-                color="#fff"
-                fontWeight="500"
-                letterSpacing="-1px"
-=======
                 fontSize={{ base: "27px", "2sm": "29px", md: "44px" }}
                 color='#fff'
                 fontWeight='500'
                 letterSpacing='-1px'
->>>>>>> 79d4ff12ca1ab98f5e0936f6a1019e734da832c6
                 lineHeight={{ base: "40px", md: "56px" }}
                 mb={{ base: "26px", md: "36px" }}
               >
