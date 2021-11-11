@@ -19,6 +19,8 @@ export const apps = [
         Bootstrap Dashboard easily using drag and drop.
       </Text>
     ),
+    link: "https://www.loopple.com/?ref=simmmple",
+    
   },
   {
     image: vdb,
@@ -33,6 +35,7 @@ export const apps = [
         dashboards designs. VDB is a Simmmple product.
       </Text>
     ),
+    link: "https://www.figma.com/file/lFbkFkxt7CWerPOoGr1JlG/(Preview)-PRO-Version---Venus-Dashboard-Builder?node-id=102%3A1556?ref=simmmple",
   },
   {
     image: chakra,
@@ -48,5 +51,6 @@ export const apps = [
         Creative Tim.
       </Text>
     ),
+    link: "https://chakra-ui.com/?ref=simmmple",
   },
 ];

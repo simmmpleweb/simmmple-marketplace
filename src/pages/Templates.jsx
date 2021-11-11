@@ -294,14 +294,14 @@ const Templates = (props) => {
               align='center'
               spacing='10px'
               overflowX={{ sm: "scroll", lg: "hidden" }}
-              mx='auto'
+              mx="auto"
               flexWrap={{ lg: "wrap" }}>
               <NavLink to='/templates/all-templates'>
                 <Flex
                   minW={{ sm: "135px", md: "150px", lg: "auto" }}
                   align='center'
                   mb={{ lg: "10px", xl: "0px" }}
-                  ms={{ base: "550px", md: "560px", lg: "0px" }}
+                  ms={{ base: "835px", md: "560px", lg: "0px" }}
                   justify='center'
                   borderRadius='30px'
                   transition='all .25s ease'

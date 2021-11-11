@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "components/card/Card";
-import { Flex, Text, Image, Button } from "@chakra-ui/react";
+import { Flex, Text, Image, Button, Link } from "@chakra-ui/react";
 import { HSeparator } from "components/separator/Separator";
 
-const AppItem = ({ image, name, category, description }) => {
+const AppItem = ({ image, name, category, description, link }) => {
   return (
     <Card>
       <Flex direction='column' h='100%'>
@@ -27,11 +27,13 @@ const AppItem = ({ image, name, category, description }) => {
         </Flex>
         <HSeparator my='28px' />
         {description}
-        <Button bg='#F6F8FD' h='56px' border='1px solid #E9EDF7' mt='auto'>
-          <Text fontSize='sm' color='#68769F'>
-            Learn More
-          </Text>
-        </Button>
+        <Link href={link} target="_blank">
+          <Button bg='#F6F8FD' h='56px' border='1px solid #E9EDF7' mt='auto' w="100%">
+            <Text fontSize='sm' color='#68769F'>
+              Learn More
+            </Text>
+          </Button>
+        </Link>
       </Flex>
     </Card>
   );
