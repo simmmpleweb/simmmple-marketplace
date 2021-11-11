@@ -100,7 +100,6 @@ const Product = (props) => {
   }, [window.location.href]);
 
   useEffect(() => {
-    
     const productName = props.match.params.productName.split("-").join("");
     let count = 0;
     const filteredProducts = featuredProducts.filter((product, index) => {
@@ -155,12 +154,13 @@ const Product = (props) => {
               fontSize='xs'
               borderRadius='25px'
               p='7px 12px'
+              mt={{ base: "40px", lg: "0px" }}
               mb='25px'>
               {tag}
             </Tag>
             <Text
               color='brand.700'
-              fontSize={{ sm: "44px", lg: "56px" }}
+              fontSize={{ sm: "36px", lg: "56px" }}
               fontWeight='bold'
               mb='40px'
               letterSpacing='-1px'
@@ -171,17 +171,23 @@ const Product = (props) => {
               spacing='8px'
               separator={<ChevronRight color='#878CBD' />}
               mb='56px'>
-              <BreadcrumbItem color='#878CBD'>
+              <BreadcrumbItem
+                fontSize={{ base: "14px", md: "16px" }}
+                color='#878CBD'>
                 <BreadcrumbLink href='/'>Home</BreadcrumbLink>
               </BreadcrumbItem>
 
-              <BreadcrumbItem color='#878CBD'>
+              <BreadcrumbItem
+                fontSize={{ base: "14px", md: "16px" }}
+                color='#878CBD'>
                 <BreadcrumbLink href='/templates/all-templates'>
                   Products
                 </BreadcrumbLink>
               </BreadcrumbItem>
 
-              <BreadcrumbItem isCurrentPage>
+              <BreadcrumbItem
+                fontSize={{ base: "14px", md: "16px" }}
+                isCurrentPage>
                 <BreadcrumbLink href='' color='brand.300'>
                   {title}
                 </BreadcrumbLink>
@@ -847,7 +853,12 @@ const Product = (props) => {
         </Grid>
         <Divider h='1px' bg='rgba(135, 140, 189, 0.2)' my='80px' />
         <Flex direction='column' maxW='1170px' mx='auto' textAlign='center'>
-          <Text color='brand.300' fontSize='xs' fontWeight='bold' mb='16px'>
+          <Text
+            color='brand.300'
+            fontSize='xs'
+            fontWeight='bold'
+            mb='16px'
+            letterSpacing='2px'>
             RELATED PRODUCTS
           </Text>
           <Text

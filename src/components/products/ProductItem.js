@@ -69,7 +69,12 @@ const ProductItem = ({
               direction='column'
               p='0px 12px 0px 12px'
               alignSelf='flex-start'>
-              <Text color='brand.700' fontSize='22px' fontWeight='500' mb='5px'>
+              <Text
+                color='brand.700'
+                fontSize='22px'
+                fontWeight='500'
+                textAlign='start'
+                mb='5px'>
                 {title}
               </Text>
               <Text
