@@ -730,6 +730,7 @@ const Contact = () => {
                           </FormLabel>
                           <Textarea
                             border='1px solid #E0E5F2'
+                            color='gray.700'
                             borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='textarea'
@@ -997,6 +998,7 @@ const Contact = () => {
                           </FormLabel>
                           <Textarea
                             border='1px solid #E0E5F2'
+                            color='gray.700'
                             borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='textarea-support'
@@ -1265,6 +1267,7 @@ const Contact = () => {
                           </FormLabel>
                           <Textarea
                             border='1px solid #E0E5F2'
+                            color='gray.700'
                             borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='textarea-partnerships'
@@ -1450,6 +1453,7 @@ const Contact = () => {
                           </FormLabel>
                           <Textarea
                             border='1px solid #E0E5F2'
+                            color='gray.700'
                             borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='textarea'
