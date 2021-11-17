@@ -132,7 +132,7 @@ const Bundles = () => {
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              Exclusive Digital Bundle
+              2 Years Anniversary Bundle
             </Text>
             <Text
               color='#fff'

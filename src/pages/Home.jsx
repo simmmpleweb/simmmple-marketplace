@@ -496,7 +496,7 @@ const Home = () => {
               fontWeight="bold"
               mb="25px"
             >
-              Exclusive Digital Bundle
+              2 Years Anniversary Bundle
             </Text>
             <Text
               color="#fff"
