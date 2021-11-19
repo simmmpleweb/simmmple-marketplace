@@ -132,7 +132,7 @@ const Bundles = () => {
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              Exclusive Digital Bundle
+              2 Years Anniversary Bundle
             </Text>
             <Text
               color='#fff'
@@ -148,7 +148,7 @@ const Bundles = () => {
               </Text>
             </Text>
             <Box>
-              <Countdown date='17 December 2021' />
+              <Countdown date='21 November 2021' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
