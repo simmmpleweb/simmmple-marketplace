@@ -148,7 +148,7 @@ const Bundles = () => {
               </Text>
             </Text>
             <Box>
-              <Countdown date='21 November 2021' />
+              <Countdown date='24 November 2021' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
