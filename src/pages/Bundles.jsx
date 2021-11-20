@@ -1647,12 +1647,9 @@ const Bundles = () => {
                         fontSize='18px'
                         display='flex'
                         letterSpacing='-0.5px'
-                        color='brand.700 !important'>
+                        color='#02044A'>
                         Premium support:
-                        <Text
-                          fontWeight='500'
-                          ms='5px'
-                          color='brand.700 !important'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           8 Months
                         </Text>
                       </Text>
