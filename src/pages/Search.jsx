@@ -7,6 +7,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { featuredProducts } from "variables/products";
 import { templatesProducts } from "variables/templates";
+import { Helmet } from "react-helmet";
 
 const Search = ({ match }) => {
   const [products, setProducts] = useState([]);
@@ -61,6 +62,9 @@ const Search = ({ match }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title itemprop="name">Search - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+      </Helmet>
       <Flex direction='column'>
         <Flex
           direction='column'

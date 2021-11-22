@@ -31,6 +31,7 @@ import Layout from "components/layout/Layout";
 import emailjs from "emailjs-com";
 import React, { useRef, useState, useEffect } from "react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
 
@@ -410,6 +411,9 @@ const Contact = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title itemprop="name">Contact - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+      </Helmet>
       <Flex minH='1500px' pt='100px' pb='200px' w='100%' bg='#FAFCFE'>
         <Box
           position='absolute'

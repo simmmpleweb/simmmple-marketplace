@@ -56,6 +56,7 @@ import Layout from "components/layout/Layout";
 import { HSeparator } from "components/separator/Separator";
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Bundles = () => {
   const leftEffect = useRef();
@@ -100,6 +101,9 @@ const Bundles = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title itemprop="name">Bundles - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+      </Helmet>
       <Flex direction='column' bg='#fff' overflowX='hidden'>
         <Flex
           px={{ base: "20px", xl: "0px" }}

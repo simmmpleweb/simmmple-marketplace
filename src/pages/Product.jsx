@@ -34,6 +34,7 @@ import React, { useEffect, useState } from "react";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { productData } from "variables/productData";
 import { featuredProducts } from "variables/products";
+import { Helmet } from "react-helmet";
 
 const Product = (props) => {
   const {
@@ -133,6 +134,9 @@ const Product = (props) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title itemprop="name">{title} - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+      </Helmet>
       <Flex
         bg='#fff'
         pb='225px'

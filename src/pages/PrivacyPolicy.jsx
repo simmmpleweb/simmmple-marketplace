@@ -12,12 +12,16 @@ import Layout from "components/layout/Layout";
 import { HSeparator } from "components/separator/Separator";
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const PrivacyPolicy = () => {
 
 
   return (
     <Layout>
+      <Helmet>
+        <title itemprop="name">Privacy Policy - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+      </Helmet>
       <Flex
         direction='column'
         bg='white'

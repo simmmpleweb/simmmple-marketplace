@@ -22,12 +22,16 @@ import Card from "components/card/Card";
 import CardBody from "components/card/CardBody";
 import React, { useEffect } from "react";
 import Layout from "components/layout/Layout";
+import { Helmet } from "react-helmet";
 
 const Bundles = () => {
 
 
   return (
     <Layout>
+      <Helmet>
+        <title itemprop="name">About Us - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+      </Helmet>
       <Flex
         direction='column'
         bg='#fff'
