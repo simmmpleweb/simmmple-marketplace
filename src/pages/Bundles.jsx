@@ -127,7 +127,7 @@ const Bundles = () => {
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              Exclusive Digital Bundle
+              2 Years Anniversary Bundle
             </Text>
             <Text
               color='#fff'
@@ -143,7 +143,7 @@ const Bundles = () => {
               </Text>
             </Text>
             <Box>
-              <Countdown date='17 December 2021' />
+              <Countdown date='24 November 2021' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
@@ -1642,12 +1642,9 @@ const Bundles = () => {
                         fontSize='18px'
                         display='flex'
                         letterSpacing='-0.5px'
-                        color='brand.700 !important'>
+                        color='#02044A'>
                         Premium support:
-                        <Text
-                          fontWeight='500'
-                          ms='5px'
-                          color='brand.700 !important'>
+                        <Text fontWeight='500' ms='5px' color='#02044A'>
                           8 Months
                         </Text>
                       </Text>

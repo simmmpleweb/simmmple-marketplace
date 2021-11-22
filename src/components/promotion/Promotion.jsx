@@ -19,7 +19,7 @@ const Promotion = () => {
             fontSize='sm'
             color='white'
             me={{ base: "0px", md: "20px" }}>
-            Exclusive Digital Bundle is here 🔥
+            2 Years Anniversary Bundle 🔥
             <Text fontWeight='700' as='span' ms='0.5px'>
               Save up to 80% OFF to all Premium Coded & Design Products
             </Text>
