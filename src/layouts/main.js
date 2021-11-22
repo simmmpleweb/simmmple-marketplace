@@ -1,4 +1,4 @@
-// import ScrollToTop from "components/scroll/ScrollToTop";
+import ScrollToTop from "components/scroll/ScrollToTop";
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import routes from "routes";
