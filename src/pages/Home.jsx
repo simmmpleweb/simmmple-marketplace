@@ -74,7 +74,9 @@ const Home = () => {
 
   return (
     <Layout>
-      
+      <Helmet>
+        <title itemprop="name">Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+      </Helmet>
       <Flex direction="column" bg="#fff" maxW="100%" overflowX="hidden">
         {/* Hero */}
         <Flex
