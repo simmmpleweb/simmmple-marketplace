@@ -130,7 +130,6 @@ const Product = (props) => {
     buttonLinks,
   } = product;
 
-  document.title = `${title} - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple`;
 
   return (
     <Layout>

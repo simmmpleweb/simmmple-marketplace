@@ -24,10 +24,7 @@ import React, { useEffect } from "react";
 import Layout from "components/layout/Layout";
 
 const Bundles = () => {
-  useEffect(() => {
-    document.title =
-      "About - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
-  }, []);
+
 
   return (
     <Layout>

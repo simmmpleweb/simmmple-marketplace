@@ -16,10 +16,6 @@ const Page404 = () => {
     setProducts(filteredProducts);
   }, []);
 
-  useEffect(() => {
-    document.title = "404";
-  }, []);
-
   return (
     <Layout>
       <Flex

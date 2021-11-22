@@ -6,10 +6,7 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Affiliates = () => {
-  useEffect(() => {
-    document.title =
-      "Affiliates - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
-  }, []);
+
 
   return (
     <Layout>

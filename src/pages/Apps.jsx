@@ -25,10 +25,6 @@ const Apps = () => {
     extensions: false,
   });
 
-  useEffect(() => {
-    document.title =
-      "Apps - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
-  }, []);
 
   return (
     <Layout>

@@ -16,6 +16,7 @@ import ProductList from "components/products/ProductList";
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { templatesProducts } from "variables/templates";
+import { Helmet } from "react-helmet";
 
 const Templates = (props) => {
   const [activeTab, setActiveTab] = useState({});
@@ -39,11 +40,6 @@ const Templates = (props) => {
       return "Bootstrap Products";
     }
   });
-
-  useEffect(() => {
-    document.title =
-      "Templates - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
-  }, []);
 
   useEffect(() => {
     if (window.location.href.includes("/all-templates")) {
@@ -192,6 +188,9 @@ const Templates = (props) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>All Templates</title>
+      </Helmet>
       <Flex direction='column' bg='#fff'>
         <Flex
           bgImage={templatesBg}

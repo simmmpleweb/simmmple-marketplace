@@ -14,10 +14,7 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const PrivacyPolicy = () => {
-  useEffect(() => {
-    document.title =
-      "Privacy - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
-  }, []);
+
 
   return (
     <Layout>

@@ -6,10 +6,6 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Licenses = () => {
-  useEffect(() => {
-    document.title =
-      "Licenses - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
-  }, []);
 
   return (
     <Layout>

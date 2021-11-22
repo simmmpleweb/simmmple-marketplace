@@ -80,11 +80,6 @@ const Bundles = () => {
     image: width < 450,
   };
 
-  useEffect(() => {
-    document.title =
-      "Bundles - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
-  }, []);
-
   const {
     isOpen: isOpenFreelancer,
     onOpen: onOpenFreelancer,

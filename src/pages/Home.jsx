@@ -50,6 +50,7 @@ import mailLogo from "assets/img/homepage/mail2.png";
 import simmmpleButtonLogo from "assets/img/homepage/simmmple-button.png";
 
 import Layout from "components/layout/Layout";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const leftEffect = useRef();
@@ -68,13 +69,9 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
-    document.title =
-      "Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups @ Simmmple";
-  }, []);
-
   return (
     <Layout>
+      
       <Flex direction="column" bg="#fff" maxW="100%" overflowX="hidden">
         {/* Hero */}
         <Flex
