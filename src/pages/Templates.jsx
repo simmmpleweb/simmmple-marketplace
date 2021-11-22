@@ -189,7 +189,7 @@ const Templates = (props) => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">All Templates - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+        <title itemprop="name">{activeTitle} - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
       </Helmet>
       <Flex direction='column' bg='#fff'>
         <Flex
