@@ -49,6 +49,8 @@ import vscodeLogo from "assets/img/homepage/vscode2.png";
 import mailLogo from "assets/img/homepage/mail2.png";
 import simmmpleButtonLogo from "assets/img/homepage/simmmple-button.png";
 import articleImage1 from "assets/img/homepage/Article-1.png";
+import articleImage2 from "assets/img/homepage/Article-2.png";
+import articleImage3 from "assets/img/homepage/Article-3.png";
 
 import Layout from "components/layout/Layout";
 
@@ -622,7 +624,7 @@ const Home = () => {
             <Grid
               templateColumns={{ md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
               gap='22px'>
-              <Link href='https://blog.simmmple.com'>
+              <Link href='https://blog.simmmple.com/how-to-create-modern-dashboards-in-a-few-minutes-directly-in-figma/?ref=simmmple'>
                 <Card
                   boxShadow='45px 76px 113px 7px rgba(112, 144, 176, 0.08)'
                   pb='35px'>
@@ -652,18 +654,17 @@ const Home = () => {
                         fontSize='lg'
                         fontWeight='500'
                         mb='14px'>
-                        How to build a design system if you're the only designer
-                        in a startup
+                        How to create Modern Dashboards in a few minutes directly in Figma
                       </Text>
                       <Text fontSize='sm' color='#878CBD' fontWeight='normal'>
-                        It's always hard to be the only person in a company who
-                        is responsible for product design. Your day...
+                        The anatomy of a great dashboard is based both on a
+                        great User Interface & User Experience. We want..
                       </Text>
                     </Flex>
                   </CardBody>
                 </Card>
               </Link>
-              <Link href='https://blog.simmmple.com'>
+              <Link href='https://uxdesign.cc/how-to-build-a-design-system-if-youre-the-only-designer-in-a-startup-f4695d2f4b7f?ref=simmmple'>
                 <Card
                   boxShadow='45px 76px 113px 7px rgba(112, 144, 176, 0.08)'
                   pb='35px'>
@@ -676,7 +677,7 @@ const Home = () => {
                         w='100%'
                         h='230px'
                         borderRadius='24px'
-                        bgImage={articleImage1}
+                        bgImage={articleImage2}
                         bgSize='cover'
                         bgPosition='center'></Flex>
                       <Tag
@@ -718,7 +719,7 @@ const Home = () => {
                         w='100%'
                         h='230px'
                         borderRadius='24px'
-                        bgImage={articleImage1}
+                        bgImage={articleImage3}
                         bgSize='cover'
                         bgPosition='center'></Flex>
                       <Tag
