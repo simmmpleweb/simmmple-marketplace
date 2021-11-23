@@ -482,8 +482,8 @@ const Home = () => {
               <Text as='span' fontWeight='bold'>
                 Save 80% OFF now{" "}
               </Text>
-              to all Premium Coded & Design Products & Tools with our Exclusive
-              Digital Bundle!
+              to all Premium Coded & Design Products & Tools with
+              the Exclusive Black Friday Digital Bundle!
             </Text>
             <Box>
               <Countdown date='28 November 2021' />
