@@ -10,7 +10,7 @@ const Promotion = () => {
         px={{ base: "20px", md: "20px", lg: "0px" }}
         justify='center'
         align='center'
-        bg='linear-gradient(177.68deg, #242A4A 1.95%, #0E101E 118.65%)'>
+        bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'>
         <Flex h={{ base: "100px", md: "80px" }} justify='center' align='center'>
           <Text
             textAlign='center'
