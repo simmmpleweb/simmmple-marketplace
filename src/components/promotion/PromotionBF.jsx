@@ -20,7 +20,7 @@ const Promotion = () => {
             me={{ base: "0px", md: "20px" }}>
             BLACK FRIDAY SALE 🔥
             <Text fontWeight='700' as='span' ms='0.5px'>
-              Save up to 80% OFF to all Premium Coded & Design Products
+              Save 80% OFF discount to all Premium Coded & Design Products
             </Text>
           </Text>
           <Button

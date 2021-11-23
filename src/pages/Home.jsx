@@ -471,7 +471,7 @@ const Home = () => {
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              2 Years Anniversary Bundle
+              Black Friday 80%
             </Text>
             <Text
               color='#fff'
@@ -480,13 +480,13 @@ const Home = () => {
               maxW={{ md: "70%" }}
               mb='50px'>
               <Text as='span' fontWeight='bold'>
-                Save up to 80% OFF{" "}
+                Save 80% OFF now{" "}
               </Text>
               to all Premium Coded & Design Products & Tools with our Exclusive
               Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='24 November 2021' />
+              <Countdown date='28 November 2021' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect
@@ -512,7 +512,7 @@ const Home = () => {
                     rightEffect.current.style.transform = "translateX(-5px)";
                   }}>
                   <Text color='brand.700' fontSize='sm'>
-                    Save up to 80% now
+                    Save 80% now!
                   </Text>
                 </Button>
               </NavLink>

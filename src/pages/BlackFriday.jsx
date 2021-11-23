@@ -147,13 +147,13 @@ const Bundles = () => {
               mb='50px'>
               The most special and exclusive digital bundle which contains all
               of our premium products & tools that will help you design faster &
-              easier. Save now up to 80%!{" "}
+              easier.
               <Text as='span' fontWeight='bold'>
-                Save up to 80%!
+                Save 80% now!
               </Text>
             </Text>
             <Box>
-              <Countdown date='24 November 2021' />
+              <Countdown date='28 November 2021' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
@@ -178,7 +178,7 @@ const Bundles = () => {
                     rightEffect.current.style.transform = "translateX(-5px)";
                   }}>
                   <Text color='brand.700' fontSize='sm'>
-                    Save up to 80% now
+                    Save 80% now!
                   </Text>
                 </Button>
               </Link>
@@ -1619,10 +1619,10 @@ const Bundles = () => {
                       </Text>
                       <Text
                         fontWeight='500'
-                        color='#009B73'
+                        color='#FF0734'
                         fontSize='16px'
                         lineHeight='20px'>
-                        Save up to 80%
+                        80% discount!
                       </Text>
                     </Flex>
                   </Flex>
@@ -1714,7 +1714,7 @@ const Bundles = () => {
                   </Flex>
                   <Link
                     min='100%'
-                    href='https://simmmple.gumroad.com/l/simmmple-bundle?variant=Freelancer'>
+                    href='https://simmmple.gumroad.com/l/simmmple-bf?variant=Freelancer'>
                     <Button
                       minH='56px'
                       boxShadow='unset'
@@ -1805,7 +1805,7 @@ const Bundles = () => {
                       lineHeight='67px'
                       fontWeight='700'
                       me='15px'>
-                      $409
+                      $217
                     </Text>
                     <Flex flexDirection='column'>
                       <Text
@@ -1817,10 +1817,10 @@ const Bundles = () => {
                       </Text>
                       <Text
                         fontWeight='500'
-                        color='#009B73'
+                        color='#FF0734'
                         fontSize='16px'
                         lineHeight='20px'>
-                        Save up to 63%
+                        80% discount!
                       </Text>
                     </Flex>
                   </Flex>
@@ -1912,7 +1912,7 @@ const Bundles = () => {
                   </Flex>
                   <Link
                     w='100%'
-                    href='https://simmmple.gumroad.com/l/simmmple-bundle?variant=Team+License'>
+                    href='https://simmmple.gumroad.com/l/simmmple-bf?variant=Team+License'>
                     <Button
                       minH='56px'
                       boxShadow='unset'
@@ -1994,7 +1994,7 @@ const Bundles = () => {
                       lineHeight='67px'
                       fontWeight='700'
                       me='15px'>
-                      $879
+                      $389
                     </Text>
                     <Flex flexDirection='column'>
                       <Text
@@ -2006,10 +2006,10 @@ const Bundles = () => {
                       </Text>
                       <Text
                         fontWeight='500'
-                        color='#009B73'
+                        color='#FF0734'
                         fontSize='16px'
                         lineHeight='20px'>
-                        Save up to 55%
+                        80% discount!
                       </Text>
                     </Flex>
                   </Flex>
@@ -2105,7 +2105,7 @@ const Bundles = () => {
                   </Flex>
                   <Link
                     w='100%'
-                    href='https://simmmple.gumroad.com/l/simmmple-bundle?variant=Enterprise'>
+                    href='https://simmmple.gumroad.com/l/simmmple-bf?variant=Enterprise'>
                     <Button
                       minH='56px'
                       boxShadow='unset'
