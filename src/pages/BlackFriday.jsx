@@ -132,7 +132,7 @@ const Bundles = () => {
               display={{ base: "none", xl: "flex" }}
             />
             <Text
-              fontSize={{ base: "41px", md: "64px" }}
+              fontSize={{ base: "38px", md: "64px" }}
               px={{ base: "10px", "2sm": "30px", md: "0px" }}
               color='#fff'
               fontWeight='bold'
