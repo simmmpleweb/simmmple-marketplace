@@ -466,7 +466,7 @@ const Home = () => {
               mb='48px'
             />
             <Text
-              fontSize={{ base: "38px", md: "64px" }}
+              fontSize={{ base: "34px", md: "64px" }}
               lineHeight={{ base: "58px", md: "72px" }}
               color='#fff'
               fontWeight='bold'
