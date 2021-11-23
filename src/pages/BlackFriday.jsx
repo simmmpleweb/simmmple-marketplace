@@ -104,7 +104,7 @@ const Bundles = () => {
     <>
       <Helmet>
         <title itemprop='name'>
-          Bundles - Premium and Stunning UI Kits, Templates and Themes for
+          Black Friday 2021 - Premium and Stunning UI Kits, Templates and Themes for
           developers, designers & startups
         </title>
       </Helmet>
