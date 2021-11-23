@@ -1619,7 +1619,7 @@ const Bundles = () => {
                       </Text>
                       <Text
                         fontWeight='500'
-                        color='#FF0734'
+                        color='#F6AB3E'
                         fontSize='16px'
                         lineHeight='20px'>
                         80% discount!
@@ -1753,7 +1753,7 @@ const Bundles = () => {
                   <Flex align='center' mb='5px'>
                     <Text
                       me='5px'
-                      color='#F6AB3E'
+                      color='#FF1D50'
                       fontSize='22px'
                       lineHeight='28px'
                       fontWeight='500'
@@ -1763,7 +1763,7 @@ const Bundles = () => {
                     <NavLink to='/licenses'>
                       <HelpOutline
                         w='18px'
-                        color='#F6AB3E'
+                        color='#FF1D50'
                         mt='5px'
                         onMouseEnter={onOpenCompany}
                         onMouseLeave={onCloseCompany}
@@ -1800,7 +1800,7 @@ const Bundles = () => {
                   </Flex>
                   <Flex align='center' mb='22px'>
                     <Text
-                      color='#F6AB3E'
+                      color='white'
                       fontSize='52px'
                       lineHeight='67px'
                       fontWeight='700'
@@ -1817,7 +1817,7 @@ const Bundles = () => {
                       </Text>
                       <Text
                         fontWeight='500'
-                        color='#FF0734'
+                        color='#F6AB3E'
                         fontSize='16px'
                         lineHeight='20px'>
                         80% discount!
@@ -1836,7 +1836,7 @@ const Bundles = () => {
                   </Text>
                   <Flex flexDirection='column'>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF1D50' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1848,7 +1848,7 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF1D50' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1864,7 +1864,7 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF1D50' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1880,7 +1880,7 @@ const Bundles = () => {
                       <Text fontSize='18px'> </Text>
                     </Flex>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF1D50' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1895,7 +1895,7 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF1D50' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -2006,7 +2006,7 @@ const Bundles = () => {
                       </Text>
                       <Text
                         fontWeight='500'
-                        color='#FF0734'
+                        color='#F6AB3E'
                         fontSize='16px'
                         lineHeight='20px'>
                         80% discount!
