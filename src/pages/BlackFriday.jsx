@@ -1742,7 +1742,7 @@ const Bundles = () => {
               mb={{ base: "20px", xl: "0px" }}
               me={{ base: "0px", xl: "20px" }}
               border='4px solid'
-              borderColor='#F6AB3E'
+              borderColor='#FF1D50'
               boxShadow='unset'>
               <CardBody
                 h='100%'
