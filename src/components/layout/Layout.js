@@ -1,13 +1,13 @@
-import { Box, LightMode } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Footer from "components/footer/Footer";
 import Navbar from "components/navbar/Navbar";
-import Promotion from "components/promotion/Promotion";
+import PromotionBF from "components/promotion/PromotionBF";
 import React from "react";
 
 const Layout = (props) => {
   return (
     <Box overflowX='hidden' maxW='100%'>
-      <Promotion />
+      <PromotionBF />
       <Navbar />
       {props.children}
       <Footer />

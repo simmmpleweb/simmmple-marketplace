@@ -37,7 +37,8 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 // Images
 import homeBg from "assets/img/homepage/home-background.png";
 import onHomeBg from "assets/img/homepage/on-home-background.png";
-import bundleBg from "assets/img/homepage/bundle-background.png";
+// import bundleBg from "assets/img/homepage/bundle-background.png";
+import bundleBg from "assets/img/bundles/bf-background.png";
 import googleLogo from "assets/img/homepage/google.png";
 import msnLogo from "assets/img/homepage/msn.png";
 import microsoftLogo from "assets/img/homepage/microsoft.png";
@@ -75,9 +76,12 @@ const Home = () => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+        <title itemprop='name'>
+          Premium and Stunning UI Kits, Templates and Themes for developers,
+          designers & startups
+        </title>
       </Helmet>
-      <Flex direction="column" bg="#fff" maxW="100%" overflowX="hidden">
+      <Flex direction='column' bg='#fff' maxW='100%' overflowX='hidden'>
         {/* Hero */}
         <Flex
           minH={{ base: "800px", md: "870px" }}
@@ -492,7 +496,8 @@ const Home = () => {
                 h='115px'
                 transition='all .5s ease'
               />
-              <NavLink to='/bundles'>
+              {/* <NavLink to='/bundles'> */}
+              <NavLink to='/black-friday'>
                 <Button
                   bg='white'
                   variant='solid'
@@ -653,7 +658,8 @@ const Home = () => {
                         fontSize='lg'
                         fontWeight='500'
                         mb='14px'>
-                        How to create Modern Dashboards in a few minutes directly in Figma
+                        How to create Modern Dashboards in a few minutes
+                        directly in Figma
                       </Text>
                       <Text fontSize='sm' color='#878CBD' fontWeight='normal'>
                         The anatomy of a great dashboard is based both on a

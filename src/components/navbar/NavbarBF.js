@@ -107,18 +107,18 @@ function Navbar() {
   };
   return (
     <Flex>
-      <Flex mb={secondary ? "100px" : "0px"} />
       <Flex
+        mb='100px'
         w='100%'
         position={scrolled ? "fixed" : "absolute"}
         top={scrolled ? "0px" : { base: "100px", md: "80px" }}
         zIndex='100'
-        bg={secondary || scrolled ? "#fff" : "transparent"}
-        boxShadow={
+        bg={
           secondary || scrolled
-            ? "0px 43px 113px -9px rgba(112, 144, 176, 0.12)"
-            : null
+            ? "linear-gradient(177.68deg, #242A4A 1.95%, #0E101E 118.65%)"
+            : "transparent"
         }
+        boxShadow={"null"}
         transition='background-color 0.3s linear'>
         <Flex
           w={{ sm: "100%", lg: "970px", xl: "1170px" }}
@@ -127,25 +127,22 @@ function Navbar() {
           py='40px'
           position='relative'>
           <Flex
+            mt={{ md: "0px" }}
             alignSelf='flex-start'
             justify='flex-start'
-            align='s'
+            align='start'
             maxW={{ base: "42px", md: "unset" }}
             h='100%'
             me={{ sm: "auto", md: "auto", lg: "0px" }}>
             <NavLink to='/'>
               {window.innerWidth < 768 ? (
                 secondary || scrolled ? (
-                  <SimmmpleLogoColoredMobile
-                    w='100%'
-                    h='48px'
-                    cursor='pointer'
-                  />
+                  <SimmmpleLogoWhiteMobile w='100%' h='48px' cursor='pointer' />
                 ) : (
                   <SimmmpleLogoWhiteMobile w='100%' h='48px' cursor='pointer' />
                 )
               ) : secondary || scrolled ? (
-                <SimmmpleLogoColored
+                <SimmmpleLogoWhite
                   w='100%'
                   h='42px'
                   cursor='pointer'
@@ -178,7 +175,7 @@ function Navbar() {
               h='100%'>
               <Text
                 transition='color 0.3s linear'
-                color={secondary || scrolled ? "#878CBD" : "#fff"}
+                color='#fff'
                 fontWeight='normal'
                 fontSize='sm'
                 me='4px'>
@@ -189,7 +186,7 @@ function Navbar() {
                 as={GoChevronDown}
                 w='12px'
                 h='12px'
-                color={secondary || scrolled ? "#878CBD" : "#fff"}
+                color='#fff'
                 mt='4px'
               />
               <Menu zIndex='2' isOpen={isOpenExplore}>
@@ -325,7 +322,7 @@ function Navbar() {
               <Flex align='center' cursor='pointer'>
                 <Text
                   transition='color 0.3s linear'
-                  color={secondary || scrolled ? "#878CBD" : "#fff"}
+                  color='#fff'
                   fontWeight='normal'
                   fontSize='sm'
                   me='4px'>
@@ -342,7 +339,7 @@ function Navbar() {
               position='relative'>
               <Text
                 transition='color 0.3s linear'
-                color={secondary || scrolled ? "#878CBD" : "#fff"}
+                color='#fff'
                 fontWeight='normal'
                 fontSize='sm'
                 me='4px'>
@@ -353,7 +350,7 @@ function Navbar() {
                 as={GoChevronDown}
                 w='12px'
                 h='12px'
-                color={secondary || scrolled ? "#878CBD" : "#fff"}
+                color='#fff'
                 mt='4px'
               />
               <Menu zIndex='2' isOpen={isOpenTech}>
@@ -488,7 +485,7 @@ function Navbar() {
               onMouseLeave={onCloseResources}>
               <Text
                 transition='color 0.3s linear'
-                color={secondary || scrolled ? "#878CBD" : "#fff"}
+                color='#fff'
                 fontWeight='normal'
                 fontSize='sm'
                 me='4px'>
@@ -499,7 +496,7 @@ function Navbar() {
                 as={GoChevronDown}
                 w='12px'
                 h='12px'
-                color={secondary || scrolled ? "#878CBD" : "#fff"}
+                color='#fff'
                 mt='4px'
               />
               <Menu zIndex='2' isOpen={isOpenResources}>

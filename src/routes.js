@@ -1,6 +1,7 @@
 import Apps from "pages/Apps.jsx";
 import Bundles from "pages/Bundles";
 import Home from "pages/Home.jsx";
+import BlackFriday from "pages/BlackFriday.jsx";
 import PrivacyPolicy from "pages/PrivacyPolicy";
 import Licenses from "pages/Licenses";
 import TermsConditions from "pages/TermsConditions";
@@ -19,6 +20,13 @@ const routes = [
     exact: true,
     secondary: false,
     component: Home,
+  },
+  {
+    name: "Black Friday Promotion",
+    path: "/black-friday",
+    exact: true,
+    secondary: false,
+    component: BlackFriday,
   },
   {
     name: "Product Page",
@@ -41,13 +49,13 @@ const routes = [
     secondary: true,
     component: Apps,
   },
-  {
-    name: "Bundles Page",
-    path: "/bundles",
-    exact: false,
-    secondary: false,
-    component: Bundles,
-  },
+  // {
+  //   name: "Bundles Page",
+  //   path: "/bundles",
+  //   exact: false,
+  //   secondary: false,
+  //   component: Bundles,
+  // },
   {
     name: "Contact & Support - General Contact",
     path: "/contact",

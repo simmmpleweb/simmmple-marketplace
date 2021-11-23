@@ -5,7 +5,14 @@ import routes from "routes";
 export default function MainLayout() {
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      return <Route path={prop.path} exact={prop.exact} component={prop.component} key={key} />;
+      return (
+        <Route
+          path={prop.path}
+          exact={prop.exact}
+          component={prop.component}
+          key={key}
+        />
+      );
     });
   };
   return (
@@ -14,6 +21,6 @@ export default function MainLayout() {
         {getRoutes(routes)}
         <Redirect from='*' to='/404' />
       </Switch>
-     </ScrollToTop>
+    </ScrollToTop>
   );
 }
