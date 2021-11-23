@@ -499,7 +499,7 @@ const Home = () => {
               {/* <NavLink to='/bundles'> */}
               <NavLink to='/black-friday'>
                 <Button
-                  bg='white'
+                  bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'
                   variant='solid'
                   w='190px'
                   h='56px'
@@ -511,7 +511,7 @@ const Home = () => {
                     leftEffect.current.style.transform = "translateX(5px)";
                     rightEffect.current.style.transform = "translateX(-5px)";
                   }}>
-                  <Text color='brand.700' fontSize='sm'>
+                  <Text color='white' fontSize='sm'>
                     Save 80% now!
                   </Text>
                 </Button>

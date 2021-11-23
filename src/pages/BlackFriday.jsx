@@ -165,7 +165,7 @@ const Bundles = () => {
               />
               <Link href='#pricing'>
                 <Button
-                  bg='white'
+                  bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'
                   variant='solid'
                   w='190px'
                   h='56px'
@@ -177,7 +177,7 @@ const Bundles = () => {
                     leftEffect.current.style.transform = "translateX(5px)";
                     rightEffect.current.style.transform = "translateX(-5px)";
                   }}>
-                  <Text color='brand.700' fontSize='sm'>
+                  <Text color='white' fontSize='sm'>
                     Save 80% now!
                   </Text>
                 </Button>
@@ -1836,7 +1836,7 @@ const Bundles = () => {
                   </Text>
                   <Flex flexDirection='column'>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#F6AB3E' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1848,7 +1848,7 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#F6AB3E' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1864,7 +1864,7 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#F6AB3E' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1880,7 +1880,7 @@ const Bundles = () => {
                       <Text fontSize='18px'> </Text>
                     </Flex>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#F6AB3E' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1895,7 +1895,7 @@ const Bundles = () => {
                       </Text>
                     </Flex>
                     <Flex align='center' mb='40px'>
-                      <IconBox w='28px' h='28px' bg='#F6AB3E' me='18px'>
+                      <IconBox w='28px' h='28px' bg='#FF416C' me='18px'>
                         <Done color='white' w='21px' />
                       </IconBox>
                       <Text
@@ -1916,13 +1916,13 @@ const Bundles = () => {
                     <Button
                       minH='56px'
                       boxShadow='unset'
-                      bg='#F6AB3E'
+                      bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'
                       fontWeight='500'
                       w='100%'
                       color='white'
                       fontSize='sm'
-                      _hover={{ bg: "#F6AB3E" }}
-                      _active={{ bg: "#F6AB3E" }}>
+                      _hover={{ bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)" }}
+                      _active={{ bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)" }}>
                       Buy it now
                     </Button>
                   </Link>
