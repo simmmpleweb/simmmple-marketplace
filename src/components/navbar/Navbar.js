@@ -22,7 +22,6 @@ import chakraLogo from "assets/img/apps/chakra.png";
 import bootstrapLogo from "assets/img/navbar/BootstrapLogo.png";
 // Images
 import exploreBackground from "assets/img/navbar/explore-background.png";
-import bfBackground from "assets/img/navbar/explore-background-bf.png";
 import figmaLogo from "assets/img/navbar/figma.png";
 import mailLogo from "assets/img/navbar/mail.png";
 import reactLogo from "assets/img/navbar/ReactLogo.png";
@@ -290,8 +289,7 @@ function Navbar() {
                     <Flex
                       direction='column'
                       textAlign='center'
-                      // bgImage={exploreBackground}
-                      bgImage={bfBackground}
+                      bgImage={exploreBackground}
                       bgSize='cover'
                       bgPosition='1px'
                       w='100%'
@@ -301,7 +299,7 @@ function Navbar() {
                       justify='center'
                       px='22px'>
                       <SimmmpleLogoBundle w='100%' h='31px' />
-                      {/* <Text
+                      <Text
                         transition='color 0.3s linear'
                         color='#fff'
                         fontSize='sm'
@@ -309,31 +307,15 @@ function Navbar() {
                         mb='26px'>
                         Save money to all products with our digital categories
                         bundles!
-                      </Text> */}
-                      <Text
-                        transition='color 0.3s linear'
-                        color='#fff'
-                        fontSize='22px'
-                        mt='20px'
-                        mb='26px'>
-                        Black Friday 80% Sale!
                       </Text>
-                      {/* <NavLink to='/bundles'>
+                      {/* <NavLink to='/bundles'> */}
+                      <NavLink to='/black-friday'>
                         <Button variant='solid' w='150px' h='42px' bg='white'>
                           <Text color='#4F61FF' fontSize='sm'>
                             Explore all
                           </Text>
                         </Button>
-                      </NavLink> */}
-
-                      <NavLink to='/black-friday'>
-                        <Button variant='solid' w='150px' h='42px' bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'>
-                          <Text color='white' fontSize='sm'>
-                            Save 80% now!
-                          </Text>
-                        </Button>
                       </NavLink>
-
                     </Flex>
                   </Grid>
                 </MenuList>
@@ -617,8 +599,7 @@ function Navbar() {
                     <Flex
                       direction='column'
                       textAlign='center'
-                      // bgImage={exploreBackground}
-                      bgImage={bfBackground}
+                      bgImage={exploreBackground}
                       bgSize='cover'
                       bgPosition='1px'
                       w='100%'
@@ -628,7 +609,7 @@ function Navbar() {
                       justify='center'
                       px='22px'>
                       <SimmmpleLogoBundle w='100%' h='31px' />
-                      {/* <Text
+                      <Text
                         transition='color 0.3s linear'
                         color='#fff'
                         fontSize='sm'
@@ -636,28 +617,12 @@ function Navbar() {
                         mb='26px'>
                         Save money to all products with our digital categories
                         bundles!
-                      </Text> */}
-                      <Text
-                        transition='color 0.3s linear'
-                        color='#fff'
-                        fontSize='22px'
-                        mt='20px'
-                        mb='26px'>
-                        Black Friday 80% Sale!
                       </Text>
-                      
-                      {/* <NavLink to='/bundles'>
+                      {/* <NavLink to='/bundles'> */}
+                      <NavLink to='/black-friday'>
                         <Button variant='solid' w='150px' h='42px' bg='white'>
                           <Text color='#4F61FF' fontSize='sm'>
                             Explore all
-                          </Text>
-                        </Button>
-                      </NavLink> */}
-                      
-                      <NavLink to='/black-friday'>
-                        <Button variant='solid' w='150px' h='42px' bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'>
-                          <Text color='white' fontSize='sm'>
-                            Save 80 now!
                           </Text>
                         </Button>
                       </NavLink>
