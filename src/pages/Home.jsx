@@ -486,7 +486,7 @@ const Home = () => {
               the Exclusive Black Friday Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='28 November 2021' />
+              <Countdown date='29 November 2021' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect
