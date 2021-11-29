@@ -4,7 +4,7 @@ import React from "react";
 
 const Promotion = () => {
   return (
-    <NavLink to='/black-friday'>
+    <NavLink to='/cyber-monday'>
       <Flex
         w='100%'
         px={{ base: "20px", md: "20px", lg: "0px" }}
@@ -18,7 +18,7 @@ const Promotion = () => {
             fontSize='sm'
             color='white'
             me={{ base: "0px", md: "20px" }}>
-            BLACK FRIDAY SALE 🔥
+            CYBER MONDAY SALE 🔥
             <Text fontWeight='700' as='span' ms='0.5px'>
               Save 80% OFF discount to all Premium Coded & Design Products
             </Text>

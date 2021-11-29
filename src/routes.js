@@ -1,7 +1,7 @@
 import Apps from "pages/Apps.jsx";
 import Bundles from "pages/Bundles";
 import Home from "pages/Home.jsx";
-import BlackFriday from "pages/BlackFriday.jsx";
+import CyberMonday from "pages/CyberMonday.jsx";
 import PrivacyPolicy from "pages/PrivacyPolicy";
 import Licenses from "pages/Licenses";
 import TermsConditions from "pages/TermsConditions";
@@ -22,11 +22,11 @@ const routes = [
     component: Home,
   },
   {
-    name: "Black Friday Promotion",
-    path: "/black-friday",
+    name: "Cyber Monday Promotion",
+    path: "/cyber-monday",
     exact: true,
     secondary: false,
-    component: BlackFriday,
+    component: CyberMonday,
   },
   {
     name: "Product Page",

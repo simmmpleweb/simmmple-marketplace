@@ -471,7 +471,7 @@ const Home = () => {
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              Black Friday 80%
+              Cyber Monday 80%
             </Text>
             <Text
               color='#fff'
@@ -483,10 +483,10 @@ const Home = () => {
                 Save 80% OFF now{" "}
               </Text>
               to all Premium Coded & Design Products & Tools with
-              the Exclusive Black Friday Digital Bundle!
+              the Exclusive Cyber Monday Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='30 November 2021' />
+              <Countdown date='01 December 2021' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect
@@ -497,7 +497,7 @@ const Home = () => {
                 transition='all .5s ease'
               />
               {/* <NavLink to='/bundles'> */}
-              <NavLink to='/black-friday'>
+              <NavLink to='/cyber-monday'>
                 <Button
                   bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'
                   variant='solid'

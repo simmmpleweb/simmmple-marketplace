@@ -309,7 +309,7 @@ function Navbar() {
                         bundles!
                       </Text>
                       {/* <NavLink to='/bundles'> */}
-                      <NavLink to='/black-friday'>
+                      <NavLink to='/cyber-monday'>
                         <Button variant='solid' w='150px' h='42px' bg='white'>
                           <Text color='#4F61FF' fontSize='sm'>
                             Explore all
@@ -619,7 +619,7 @@ function Navbar() {
                         bundles!
                       </Text>
                       {/* <NavLink to='/bundles'> */}
-                      <NavLink to='/black-friday'>
+                      <NavLink to='/cyber-monday'>
                         <Button variant='solid' w='150px' h='42px' bg='white'>
                           <Text color='#4F61FF' fontSize='sm'>
                             Explore all
