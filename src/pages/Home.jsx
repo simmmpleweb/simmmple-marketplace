@@ -486,7 +486,7 @@ const Home = () => {
               the Exclusive Cyber Monday Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='04 December 2021' />
+              <Countdown date='05 December 2021' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect
