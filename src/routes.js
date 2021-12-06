@@ -22,11 +22,11 @@ const routes = [
     component: Home,
   },
   {
-    name: "Winter Promotion",
+    name: "Bundle",
     path: "/bundle",
     exact: true,
     secondary: false,
-    component: WinterPromotion,
+    component: Bundle,
   },
   {
     name: "Product Page",
