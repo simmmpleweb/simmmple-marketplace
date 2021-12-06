@@ -104,7 +104,7 @@ const Bundles = () => {
     <>
       <Helmet>
         <title itemprop='name'>
-          Cyber Monday 2021 - Premium and Stunning UI Kits, Templates and Themes for
+          Winter Promotion 2021 - Premium and Stunning UI Kits, Templates and Themes for
           developers, designers & startups
         </title>
       </Helmet>
@@ -137,7 +137,7 @@ const Bundles = () => {
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              Cyber Monday 80%
+              Winter Promotion 80%
             </Text>
             <Text
               color='#fff'
@@ -153,7 +153,7 @@ const Bundles = () => {
               </Text>
             </Text>
             <Box>
-              <Countdown date='07 December 2021' />
+              <Countdown date='25 December 2021' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
@@ -241,7 +241,7 @@ const Bundles = () => {
               mb='16px'
               letterSpacing='2px'
               textAlign='center'>
-              CYBER MONDAY BUNDLE BENEFITS
+              WINTER PROMOTION BUNDLE BENEFITS
             </Text>
             <Text
               fontSize='34px'
@@ -426,7 +426,7 @@ const Bundles = () => {
               mb='16px'
               letterSpacing='2px'
               textAlign='center'>
-              CYBER MONDAY BUNDLE BENEFITS
+              WINTER PROMOTION BUNDLE BENEFITS
             </Text>
             <Text
               fontSize='34px'
@@ -437,7 +437,7 @@ const Bundles = () => {
               mb='20px'
               mx='auto'
               textAlign='center'>
-              What Cyber Monday Bundle contains?
+              What Winter Promotion Bundle contains?
             </Text>
             <Text
               fontSize='md'
@@ -2209,7 +2209,7 @@ const Bundles = () => {
               mb='16px'
               letterSpacing='2px'
               textAlign='center'>
-              CYBER MONDAY BUNDLE FAQS
+              Winter Promotion BUNDLE FAQS
             </Text>
             <Text
               fontSize='34px'
