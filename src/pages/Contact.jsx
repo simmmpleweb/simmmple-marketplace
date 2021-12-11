@@ -412,7 +412,7 @@ const Contact = () => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">Contact - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+        <title itemprop="name">Contact - Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple/title>
       </Helmet>
       <Flex minH='1500px' pt='100px' pb='200px' w='100%' bg='#FAFCFE'>
         <Box

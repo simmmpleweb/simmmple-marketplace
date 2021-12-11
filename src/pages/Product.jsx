@@ -135,7 +135,7 @@ const Product = (props) => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">{title} - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+        <title itemprop="name">{title} - by Simmmple</title>
       </Helmet>
       <Flex
         bg='#fff'

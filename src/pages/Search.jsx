@@ -63,7 +63,7 @@ const Search = ({ match }) => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">Search - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+        <title itemprop="name">Search - Simmmple</title>
       </Helmet>
       <Flex direction='column'>
         <Flex

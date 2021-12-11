@@ -30,7 +30,7 @@ const Bundles = () => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">About Us - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+        <title itemprop="name">About Us - Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple</title>
       </Helmet>
       <Flex
         direction='column'

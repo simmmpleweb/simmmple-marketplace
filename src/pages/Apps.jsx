@@ -30,7 +30,7 @@ const Apps = () => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">Apps - Premium and Stunning UI Kits, Templates and Themes for developers, designers & startups</title>
+        <title itemprop="name">Apps - Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple</title>
       </Helmet>
       <Flex
         w={{ sm: "320px", md: "95%", xl: "1170px" }}
