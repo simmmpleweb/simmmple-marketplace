@@ -853,7 +853,6 @@ This complex, modern, clean design tool will help you reduce hours of time waste
                         <br />
                         <br />
                         We created many examples for pages like Sign In, Profile and so on. Just choose between a Basic Design, an illustration or a cover and you are good to go!
-                        Fully Coded Elements
                         <br />
                         <br />
                         <Text fontSize="24px" color="brand.700" fontWeight="500">Fully Coded Elements</Text>
@@ -919,7 +918,6 @@ This complex, modern, clean design tool will help you reduce hours of time waste
                     <br />
                     <br />
                     We created many examples for pages like Sign In, Profile and so on. Just choose between a Basic Design, an illustration or a cover and you are good to go!
-                    Fully Coded Elements
                     <br />
                     <br />
                     <Text fontSize="24px" color="brand.700" fontWeight="500">Fully Coded Elements</Text>
