@@ -4,10 +4,12 @@ import uranusWireframePRO from "assets/img/homepage/uranus-wireframe-pro.png";
 import venusFree from "assets/img/homepage/venus-db-free.png";
 import venusPro from "assets/img/homepage/venus-db-pro.png";
 import venusSystem from "assets/img/homepage/venus-design-system.png";
+import visionReactPRO from "assets/img/homepage/vision-react-pro.png";
+import visionReactFree from "assets/img/homepage/vision-react-free.png";
 
 export const featuredProducts = [
   {
-    image: visionReactPROMain,
+    image: visionReactPRO,
     tag: "Dashboard",
     price: 69,
     title: "Vision UI Dashboard PRO React",
@@ -15,7 +17,7 @@ export const featuredProducts = [
     path: "/product/vision-ui-dashboard-pro-react",
   },
   {
-    image: visionReactFreeMain,
+    image: visionReactFree,
     tag: "Dashboard",
     price: 0,
     title: "Vision UI Dashboard React",
@@ -58,7 +60,7 @@ export const featuredProducts = [
 
 export const latestProducts = [
   {
-    image: visionReactPROMain,
+    image: visionReactPRO,
     tag: "Dashboard",
     price: 69,
     title: "Vision UI Dashboard PRO React",
@@ -66,7 +68,7 @@ export const latestProducts = [
     path: "/product/vision-ui-dashboard-pro-react",
   },
   {
-    image: visionReactFreeMain,
+    image: visionReactFree,
     tag: "Dashboard",
     price: 0,
     title: "Vision UI Dashboard React",

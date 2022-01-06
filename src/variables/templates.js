@@ -9,11 +9,13 @@ import glassy from "assets/img/templates/glassy.png";
 import saturnUI from "assets/img/templates/saturn-ui.png";
 import taskUI from "assets/img/templates/task-ui.png";
 import venusSystemFree from "assets/img/templates/venus-system-free.png";
+import visionReactPRO from "assets/img/homepage/vision-react-pro.png";
+import visionReactFree from "assets/img/homepage/vision-react-free.png";
 
 export const templatesProducts = {
   alltemplates: [
     {
-      image: visionReactPROMain,
+      image: visionReactPRO,
       date: "Jan 04 2021 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -34,7 +36,7 @@ export const templatesProducts = {
       path: "/product/vision-ui-dashboard-pro-react",
     },
     {
-      image: visionReactFreeMain,
+      image: visionReactFree,
       date: "Jan 04 2021 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -296,7 +298,7 @@ export const templatesProducts = {
   ],
   admindashboards: [
     {
-      image: visionReactPROMain,
+      image: visionReactPRO,
       date: "Jan 04 2021 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -317,7 +319,7 @@ export const templatesProducts = {
       path: "/product/vision-ui-dashboard-pro-react",
     },
     {
-      image: visionReactFreeMain,
+      image: visionReactFree,
       date: "Jan 04 2021 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -472,7 +474,7 @@ export const templatesProducts = {
   ],
   freetemplates: [
     {
-      image: visionReactFreeMain,
+      image: visionReactFree,
       date: "Jan 04 2021 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -565,7 +567,7 @@ export const templatesProducts = {
   ],
   premiumtemplates: [
     {
-      image: visionReactPROMain,
+      image: visionReactPRO,
       date: "Jan 04 2021 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -628,7 +630,7 @@ export const templatesProducts = {
   ],
   figma: [
     {
-      image: visionReactPROMain,
+      image: visionReactPRO,
       date: "Jan 04 2021 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -649,7 +651,7 @@ export const templatesProducts = {
       path: "/product/vision-ui-dashboard-pro-react",
     },
     {
-      image: visionReactFreeMain,
+      image: visionReactFree,
       date: "Jan 04 2021 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -762,7 +764,7 @@ export const templatesProducts = {
   ],
   react: [
     {
-      image: visionReactPROMain,
+      image: visionReactPRO,
       date: "Jan 04 2021 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
@@ -783,7 +785,7 @@ export const templatesProducts = {
       path: "/product/vision-ui-dashboard-pro-react",
     },
     {
-      image: visionReactFreeMain,
+      image: visionReactFree,
       date: "Jan 04 2021 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
