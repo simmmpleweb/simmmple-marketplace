@@ -18,7 +18,7 @@ export const templatesProducts = {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
-      price: 0,
+      price: 69,
       keywords: [
         "vision",
         "frontend",
@@ -301,7 +301,7 @@ export const templatesProducts = {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
-      price: 0,
+      price: 69,
       keywords: [
         "vision",
         "frontend",
@@ -570,7 +570,7 @@ export const templatesProducts = {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
-      price: 0,
+      price: 69,
       keywords: [
         "vision",
         "frontend",
@@ -633,7 +633,7 @@ export const templatesProducts = {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
-      price: 0,
+      price: 69,
       keywords: [
         "vision",
         "frontend",
@@ -767,7 +767,7 @@ export const templatesProducts = {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
-      price: 0,
+      price: 69,
       keywords: [
         "vision",
         "frontend",
