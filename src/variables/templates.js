@@ -16,7 +16,7 @@ export const templatesProducts = {
   alltemplates: [
     {
       image: visionReactPRO,
-      date: "Jan 04 2021 12:00:00 AM",
+      date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -37,7 +37,7 @@ export const templatesProducts = {
     },
     {
       image: visionReactFree,
-      date: "Jan 04 2021 11:00:00 AM",
+      date: "Jan 04 2022 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -299,7 +299,7 @@ export const templatesProducts = {
   admindashboards: [
     {
       image: visionReactPRO,
-      date: "Jan 04 2021 12:00:00 AM",
+      date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -320,7 +320,7 @@ export const templatesProducts = {
     },
     {
       image: visionReactFree,
-      date: "Jan 04 2021 11:00:00 AM",
+      date: "Jan 04 2022 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -475,7 +475,7 @@ export const templatesProducts = {
   freetemplates: [
     {
       image: visionReactFree,
-      date: "Jan 04 2021 11:00:00 AM",
+      date: "Jan 04 2022 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -568,7 +568,7 @@ export const templatesProducts = {
   premiumtemplates: [
     {
       image: visionReactPRO,
-      date: "Jan 04 2021 12:00:00 AM",
+      date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -631,7 +631,7 @@ export const templatesProducts = {
   figma: [
     {
       image: visionReactPRO,
-      date: "Jan 04 2021 12:00:00 AM",
+      date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -652,7 +652,7 @@ export const templatesProducts = {
     },
     {
       image: visionReactFree,
-      date: "Jan 04 2021 11:00:00 AM",
+      date: "Jan 04 2022 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -765,7 +765,7 @@ export const templatesProducts = {
   react: [
     {
       image: visionReactPRO,
-      date: "Jan 04 2021 12:00:00 AM",
+      date: "Jan 04 2022 12:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
@@ -786,7 +786,7 @@ export const templatesProducts = {
     },
     {
       image: visionReactFree,
-      date: "Jan 04 2021 11:00:00 AM",
+      date: "Jan 04 2022 11:00:00 AM",
       tag: "Dashboard",
       price: 0,
       keywords: [
