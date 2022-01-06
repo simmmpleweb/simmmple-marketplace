@@ -882,9 +882,9 @@ This complex, modern, clean design tool will help you reduce hours of time waste
                         <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
                             <Icon as={figmaIcon} w="15px" h="22px" />
                         </IconBox>,
-                        <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
-                            <Icon as={chakraIcon} w="22px" h="22px" />
-                        </IconBox>,
+                        // <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
+                        //     <Icon as={chakraIcon} w="22px" h="22px" />
+                        // </IconBox>,
                         <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
                             <Icon as={reactIcon} w="22px" h="22px" />
                         </IconBox>
@@ -953,9 +953,9 @@ This complex, modern, clean design tool will help you reduce hours of time waste
                     <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
                         <Icon as={figmaIcon} w="15px" h="22px" />
                     </IconBox>,
-                    <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
-                        <Icon as={chakraIcon} w="22px" h="22px" />
-                    </IconBox>,
+                    // <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
+                    //     <Icon as={chakraIcon} w="22px" h="22px" />
+                    // </IconBox>,
                     <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
                         <Icon as={reactIcon} w="22px" h="22px" />
                     </IconBox>
