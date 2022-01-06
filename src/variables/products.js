@@ -7,6 +7,22 @@ import venusSystem from "assets/img/homepage/venus-design-system.png";
 
 export const featuredProducts = [
   {
+    image: visionReactPROMain,
+    tag: "Dashboard",
+    price: 69,
+    title: "Vision UI Dashboard PRO React",
+    category: "React Products",
+    path: "/product/vision-ui-dashboard-pro-react",
+  },
+  {
+    image: visionReactFreeMain,
+    tag: "Dashboard",
+    price: 0,
+    title: "Vision UI Dashboard React",
+    category: "React Products",
+    path: "/product/vision-ui-dashboard-react",
+  },
+  {
     image: venusSystem,
     tag: "Design Tool",
     price: 99,
@@ -37,27 +53,27 @@ export const featuredProducts = [
     title: "Uranus Wireframe Kit PRO",
     category: "UI Kits, Figma Products",
     path: "/product/uranus-wireframe-pro",
-  },
-  {
-    image: venusFree,
-    tag: "Design Tool",
-    price: 0,
-    title: "Venus DB Free",
-    category: "Freebies, Figma Products",
-    path: "/product/venus-db-free",
-  },
-  {
-    image: purityDashboard,
-    tag: "Design Tool",
-    price: 0,
-    title: "Purity UI Dashboard Free",
-    category: "UI Kits, Figma Products",
-    path: "/product/purity-dashboard-free",
   },
 ] 
 
 export const latestProducts = [
   {
+    image: visionReactPROMain,
+    tag: "Dashboard",
+    price: 69,
+    title: "Vision UI Dashboard PRO React",
+    category: "React Products",
+    path: "/product/vision-ui-dashboard-pro-react",
+  },
+  {
+    image: visionReactFreeMain,
+    tag: "Dashboard",
+    price: 0,
+    title: "Vision UI Dashboard React",
+    category: "React Products",
+    path: "/product/vision-ui-dashboard-react",
+  },
+  {
     image: purityDashboardPRO,
     tag: "Dashboard",
     price: 69,
@@ -82,27 +98,11 @@ export const latestProducts = [
     path: "/product/venus-db-pro",
   },
   {
-    image: venusFree,
-    tag: "Design Tool",
-    price: 0,
-    title: "Venus DB Free",
-    category: "Freebies, Figma Products",
-    path: "/product/venus-db-free",
-  },
-  {
     image: venusSystem,
     tag: "Design Tool",
     price: 99,
     title: "Venus Design System PRO",
     category: "Figma Products",
     path: "/product/venus-design-system-pro",
-  },
-  {
-    image: uranusWireframePRO,
-    tag: "Web Tool",
-    price: 69,
-    title: "Uranus Wireframe Kit PRO",
-    category: "UI Kits, Figma Products",
-    path: "/product/uranus-wireframe-pro",
   },
 ];
