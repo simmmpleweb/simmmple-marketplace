@@ -83,7 +83,6 @@ import productTaskListMain from "assets/img/product/tasklist/product-tasklist-ma
 import visionReactFree1 from "assets/img/product/vision-react-free/visionReactFree1.png";
 import visionReactFree2 from "assets/img/product/vision-react-free/visionReactFree2.png";
 import visionReactFree3 from "assets/img/product/vision-react-free/visionReactFree3.png";
-import visionReactFree4 from "assets/img/product/vision-react-free/visionReactFree4.png";
 import visionReactFree5 from "assets/img/product/vision-react-free/visionReactFree5.png";
 import visionReactFreeMain from "assets/img/product/vision-react-free/visionReactFreeMain.png";
 
@@ -840,7 +839,6 @@ This complex, modern, clean design tool will help you reduce hours of time waste
                         visionReactFree1,
                         visionReactFree2,
                         visionReactFree3,
-                        visionReactFree4,
                         visionReactFree5
                     ],
                     firstParagraph: {
