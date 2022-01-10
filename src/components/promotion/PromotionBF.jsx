@@ -4,7 +4,7 @@ import React from "react";
 
 const Promotion = () => {
   return (
-    <NavLink to='/bundle'>
+    <NavLink href="https://discord.gg/5hGCbqaN">
       <Flex
         w='100%'
         px={{ base: "20px", md: "20px", lg: "0px" }}
@@ -18,9 +18,9 @@ const Promotion = () => {
             fontSize='sm'
             color='white'
             me={{ base: "0px", md: "20px" }}>
-            WINTER SALE 🔥
+            We launched the official community server!
             <Text fontWeight='700' as='span' ms='0.5px'>
-              Save 80% OFF discount to all Premium Coded & Design Products
+            Join Simmmple’s Discord Community now!
             </Text>
           </Text>
           <Button
