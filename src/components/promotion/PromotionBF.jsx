@@ -1,5 +1,5 @@
-import { Button, Flex, Text } from "@chakra-ui/react";
-import { NavLink, Link } from "react-router-dom";
+import { Button, Flex, Text, Link } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 import React from "react";
 
 const Promotion = () => {
@@ -18,7 +18,7 @@ const Promotion = () => {
             fontSize='sm'
             color='white'
             me={{ base: "0px", md: "20px" }}>
-            We launched the official community server!
+            We launched the official community server!&nbsp
             <Text fontWeight='700' as='span' ms='0.5px'>
             Join Simmmple’s Discord Community now!
             </Text>
