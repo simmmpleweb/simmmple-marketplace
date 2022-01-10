@@ -944,6 +944,18 @@ const Contact = () => {
                                   product: e.target.value,
                                 })
                               }>
+                               <option value='Vision UI Dashboard PRO Chakra'>
+                                Vision UI Dashboard PRO Chakra
+                              </option>
+                              <option value='Vision UI Dashboard Free Chakra'>
+                                Vision UI Dashboard Free Chakra
+                              </option>
+                              <option value='Vision UI Dashboard PRO React'>
+                                Vision UI Dashboard PRO React
+                              </option>
+                              <option value='Vision UI Dashboard Free React'>
+                                Vision UI Dashboard Free React
+                              </option>
                               <option value='Purity UI Dashboard PRO'>
                                 Purity UI Dashboard PRO
                               </option>
