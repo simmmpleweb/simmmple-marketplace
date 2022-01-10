@@ -1257,7 +1257,7 @@ const Contact = () => {
                             borderColor='#E0E5F2 !important'
                             fontSize={{ sm: "sm", md: "md" }}
                             id='company-partnerships'
-                            placeholder='Enter your email address'
+                            placeholder='Enter your company / website'
                             borderRadius='30px'
                             _placeholder={{ color: "#878CBD" }}
                             p='26px 32px'
