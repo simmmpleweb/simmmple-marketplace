@@ -19,7 +19,7 @@ const Promotion = () => {
             color='white'
             me={{ base: "0px", md: "20px" }}>
             We launched the official community server! 
-            <Text fontWeight='700' as='span' ms='0.5px'>
+            <Text fontWeight='700' as='span' ms='4px'>
             Join Simmmple’s Discord Community now!
             </Text>
           </Text>
