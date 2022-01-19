@@ -4,7 +4,7 @@ import React from "react";
 
 const Promotion = () => {
   return (
-    <Link href="https://discord.gg/5hGCbqaN">
+    <Link href="https://discord.gg/f6tEKFBd4m">
       <Flex
         w='100%'
         px={{ base: "20px", md: "20px", lg: "0px" }}
