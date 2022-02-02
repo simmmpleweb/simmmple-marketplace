@@ -6,8 +6,18 @@ import venusPro from "assets/img/homepage/venus-db-pro.png";
 import venusSystem from "assets/img/homepage/venus-design-system.png";
 import visionReactPRO from "assets/img/homepage/vision-react-pro.png";
 import visionReactFree from "assets/img/homepage/vision-react-free.png";
+import visionChakraPRO from "assets/img/homepage/vision-chakra-pro.png";
+import visionChakraFree from "assets/img/homepage/vision-chakra-free.png";
 
 export const featuredProducts = [
+  {
+    image: visionChakraPRO,
+    tag: "Dashboard",
+    price: 69,
+    title: "Vision UI PRO Chakra",
+    category: "React Products",
+    path: "/product/vision-ui-dashboard-pro-chakra",
+  },
   {
     image: visionReactPRO,
     tag: "Dashboard",
@@ -15,14 +25,6 @@ export const featuredProducts = [
     title: "Vision UI PRO React",
     category: "React Products",
     path: "/product/vision-ui-dashboard-pro-react",
-  },
-  {
-    image: visionReactFree,
-    tag: "Dashboard",
-    price: 0,
-    title: "Vision UI Dashboard React",
-    category: "React Products",
-    path: "/product/vision-ui-dashboard-react",
   },
   {
     image: venusSystem,
@@ -60,6 +62,22 @@ export const featuredProducts = [
 
 export const latestProducts = [
   {
+    image: visionChakraPRO,
+    tag: "Dashboard",
+    price: 69,
+    title: "Vision UI PRO Chakra",
+    category: "React Products",
+    path: "/product/vision-ui-dashboard-pro-chakra",
+  },
+  {
+    image: visionChakraFree,
+    tag: "Dashboard",
+    price: 0,
+    title: "Vision UI Dashboard Chakra",
+    category: "React Products",
+    path: "/product/vision-ui-dashboard-chakra",
+  },
+  {
     image: visionReactPRO,
     tag: "Dashboard",
     price: 69,
@@ -90,21 +108,5 @@ export const latestProducts = [
     title: "Purity UI Dashboard Free",
     category: "UI Kits, Figma Products",
     path: "/product/purity-dashboard-free",
-  },
-  {
-    image: venusPro,
-    tag: "Design Tool",
-    price: 59,
-    title: "Venus DB PRO",
-    category: "Figma Products",
-    path: "/product/venus-db-pro",
-  },
-  {
-    image: venusSystem,
-    tag: "Design Tool",
-    price: 99,
-    title: "Venus Design System PRO",
-    category: "Figma Products",
-    path: "/product/venus-design-system-pro",
   },
 ];

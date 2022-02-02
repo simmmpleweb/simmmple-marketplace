@@ -11,9 +11,55 @@ import taskUI from "assets/img/templates/task-ui.png";
 import venusSystemFree from "assets/img/templates/venus-system-free.png";
 import visionReactPRO from "assets/img/homepage/vision-react-pro.png";
 import visionReactFree from "assets/img/homepage/vision-react-free.png";
+import visionChakraPRO from "assets/img/homepage/vision-chakra-pro.png";
+import visionChakraFree from "assets/img/homepage/vision-chakra-free.png";
 
 export const templatesProducts = {
   alltemplates: [
+    {
+      image: visionChakraPRO,
+      date: "Feb 04 2022 12:00:00 AM",
+      tag: "Dashboard",
+      price: 69,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "chakra",
+        "premium",
+      ],
+      title: "Vision UI PRO Chakra",
+      downloads: 14,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-pro-chakra",
+    },
+    {
+      image: visionChakraFree,
+      date: "Feb 04 2022 11:00:00 AM",
+      tag: "Dashboard",
+      price: 0,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "chakra",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "free",
+      ],
+      title: "Vision UI Dashboard Chakra",
+      downloads: 10,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-chakra",
+    },
     {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
@@ -296,7 +342,55 @@ export const templatesProducts = {
       path: "/product/saturn-ui-kit",
     },
   ],
+
+
+
+
   admindashboards: [
+    {
+      image: visionChakraPRO,
+      date: "Feb 04 2022 12:00:00 AM",
+      tag: "Dashboard",
+      price: 69,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "chakra",
+        "premium",
+      ],
+      title: "Vision UI PRO Chakra",
+      downloads: 14,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-pro-chakra",
+    },
+    {
+      image: visionChakraFree,
+      date: "Feb 04 2022 11:00:00 AM",
+      tag: "Dashboard",
+      price: 0,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "chakra",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "free",
+      ],
+      title: "Vision UI Dashboard Chakra",
+      downloads: 10,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-chakra",
+    },
     {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
@@ -472,7 +566,33 @@ export const templatesProducts = {
       path: "/product/saturn-ui-kit",
     },
   ],
+
+
+
+
   freetemplates: [
+    {
+      image: visionChakraFree,
+      date: "Feb 04 2022 11:00:00 AM",
+      tag: "Dashboard",
+      price: 0,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "chakra",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "free",
+      ],
+      title: "Vision UI Dashboard Chakra",
+      downloads: 10,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-chakra",
+    },
     {
       image: visionReactFree,
       date: "Jan 04 2022 11:00:00 AM",
@@ -565,7 +685,33 @@ export const templatesProducts = {
       path: "/purity-dashboard-free",
     },
   ],
+
+
+
+
   premiumtemplates: [
+    {
+      image: visionChakraPRO,
+      date: "Feb 04 2022 12:00:00 AM",
+      tag: "Dashboard",
+      price: 69,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "chakra",
+        "premium",
+      ],
+      title: "Vision UI PRO Chakra",
+      downloads: 14,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-pro-chakra",
+    },
     {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
@@ -628,7 +774,55 @@ export const templatesProducts = {
       path: "/product/venus-db-pro",
     },
   ],
+
+
+
+
   figma: [
+    {
+      image: visionChakraPRO,
+      date: "Feb 04 2022 12:00:00 AM",
+      tag: "Dashboard",
+      price: 69,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "chakra",
+        "premium",
+      ],
+      title: "Vision UI PRO Chakra",
+      downloads: 14,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-pro-chakra",
+    },
+    {
+      image: visionChakraFree,
+      date: "Feb 04 2022 11:00:00 AM",
+      tag: "Dashboard",
+      price: 0,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "chakra",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "free",
+      ],
+      title: "Vision UI Dashboard Chakra",
+      downloads: 10,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-chakra",
+    },
     {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",
@@ -762,7 +956,55 @@ export const templatesProducts = {
       path: "/product/purity-dashboard-free",
     },
   ],
+
+
+
+
   react: [
+    {
+      image: visionChakraPRO,
+      date: "Feb 04 2022 12:00:00 AM",
+      tag: "Dashboard",
+      price: 69,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "chakra",
+        "premium",
+      ],
+      title: "Vision UI PRO Chakra",
+      downloads: 14,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-pro-chakra",
+    },
+    {
+      image: visionChakraFree,
+      date: "Feb 04 2022 11:00:00 AM",
+      tag: "Dashboard",
+      price: 0,
+      keywords: [
+        "vision",
+        "frontend",
+        "design",
+        "react",
+        "figma",
+        "chakra",
+        "tool",
+        "dashboard",
+        "dark mode",
+        "free",
+      ],
+      title: "Vision UI Dashboard Chakra",
+      downloads: 10,
+      category: "React Products",
+      path: "/product/vision-ui-dashboard-chakra",
+    },
     {
       image: visionReactPRO,
       date: "Jan 04 2022 12:00:00 AM",

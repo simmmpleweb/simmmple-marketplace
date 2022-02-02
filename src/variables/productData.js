@@ -93,6 +93,20 @@ import visionReactPRO3 from "assets/img/product/vision-react-pro/visionReactPRO3
 import visionReactPRO4 from "assets/img/product/vision-react-pro/visionReactPRO4.png";
 import visionReactPROMain from "assets/img/product/vision-react-pro/visionReactPROMain.png";
 
+//Vision UI Dashboard Chakra Free
+import visionChakraFree1 from "assets/img/product/vision-chakra-free/visionChakraFree1.png";
+import visionChakraFree2 from "assets/img/product/vision-chakra-free/visionChakraFree2.png";
+import visionChakraFree3 from "assets/img/product/vision-chakra-free/visionChakraFree3.png";
+import visionChakraFree4 from "assets/img/product/vision-chakra-free/visionChakraFree4.png";
+import visionChakraFreeMain from "assets/img/product/vision-chakra-free/visionChakraFreeMain.png";
+
+//Vision UI Dashboard Chakra Pro
+import visionChakraPRO1 from "assets/img/product/vision-chakra-pro/visionChakraPRO1.png";
+import visionChakraPRO2 from "assets/img/product/vision-chakra-pro/visionChakraPRO2.png";
+import visionChakraPRO3 from "assets/img/product/vision-chakra-pro/visionChakraPRO3.png";
+import visionChakraPRO4 from "assets/img/product/vision-chakra-pro/visionChakraPRO4.png";
+import visionChakraPROMain from "assets/img/product/vision-chakra-pro/visionChakraPROMain.png";
+
 
 import IconBox from "components/icons/IconBox";
 import { figmaIcon, reactIcon, chakraIcon, bootstrapIcon, adobeXDIcon } from "components/icons/Icons";
@@ -962,6 +976,144 @@ This complex, modern, clean design tool will help you reduce hours of time waste
                         freelancer: 'https://www.creative-tim.com/product/vision-ui-dashboard-pro-react?ref=simmmple',
                         team: 'https://www.creative-tim.com/product/vision-ui-dashboard-pro-react?ref=simmmple',
                         enterprise: 'https://www.creative-tim.com/product/vision-ui-dashboard-pro-react?ref=simmmple'
+                    }
+                }
+            }
+    },
+
+    // Vision UI Dashboard React Free
+    {
+        visionuidashboardchakra: {
+                    tag: "Dashboard",
+                    title: "Vision UI Dashboard Chakra",
+                    images: [
+                        visionChakraFreeMain,
+                        visionChakraFree1,
+                        visionChakraFree2,
+                        visionChakraFree3,
+                        visionChakraFree4
+                    ],
+                    firstParagraph: {
+                        title: "Free ReactJS Dashboard based on Chakra UI",
+                        description: <Text fontSize="lg" color="#878CBD" fontWeight="normal" mb="50px">
+                        Most trendiest, complex and innovative Free Chakra Dashboard made by Simmmple & Creative Tim. Check our latest Free ReactJS Dashboard based on Chakra UI.
+                        <br />
+                        <br />
+                        Designed for those who like modern UI elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Vision UI Dashboard Chakra is ready to help you create stunning websites and webapps.
+                        <br />
+                        <br />
+                        We created many examples for pages like Sign In, Profile and so on. Just choose between a Basic Design, an illustration or a cover and you are good to go!
+                        <br />
+                        <br />
+                        <Text fontSize="24px" color="brand.700" fontWeight="500">Fully Coded Elements</Text>
+                        <br />
+                        Vision UI Dashboard Chakra is built with over 70 frontend individual elements, like buttons, inputs, navbars, navtabs, cards or alerts, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using Chakra's style props.
+                      </Text>
+                    },
+                    summary: [
+                        "70+ Handcrafted Elements",
+                        "6 Example Pages",
+                        "1 Customized Plugins",
+                        "Documentation",
+                        "Fully Responsive",
+                    ],
+                    mainImage: visionChakraFreeMain,
+                    thirdParagraph: {
+                        title: " ",
+                        description: [ ]
+                    },
+                    fourthParagraph: {
+                        title: "100% Customisable",
+                        description: <Text color="#878CBD" fontSize="lg" fontWeight="normal">Our products are 100% customisable <Text as="span" fontStyle="italic" fontWeight="bold">- we just give you the ultimate headstart.</Text> Change the colours, container sizes, spacing or anything you like to suit your project and to own the design in every way.</Text>
+                    },
+                    free: true,
+                    compatibility: [
+                        <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
+                            <Icon as={figmaIcon} w="15px" h="22px" />
+                        </IconBox>,
+                        <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
+                            <Icon as={chakraIcon} w="22px" h="22px" />
+                        </IconBox>,
+                        <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
+                            <Icon as={reactIcon} w="22px" h="22px" />
+                        </IconBox>
+                    ],
+                    buttonLinks: {
+                        live: 'https://demos.creative-tim.com/vision-ui-dashboard-chakra/?ref=simmmple',
+                        upgrade: '/product/vision-ui-dashboard-pro-chakra',
+                        free: 'https://www.creative-tim.com/product/vision-ui-dashboard-chakra?ref=simmmple',
+                    }
+                }
+    },
+
+    // Vision UI Dashboard React PRO
+    {
+        visionuidashboardprochakra: {
+                tag: "Dashboard",
+                title: "Vision UI Dashboard PRO Chakra",
+                images: [
+                    visionChakraPROMain,
+                    visionChakraPRO1,
+                    visionChakraPRO2,
+                    visionChakraPRO3,
+                    visionChakraPRO4   
+                ],
+                firstParagraph: {
+                    title: "Premium ReactJS Dashboard based on Chakra UI",
+                    description: <Text fontSize="lg" color="#878CBD" fontWeight="normal" mb="50px">
+                    Most trendiest, complex and innovative Premium Dashboard made by Simmmple & Creative Tim. Check our latest Premium ReactJS Dashboard based on Chakra UI.
+                    <br />
+                    <br />
+                    Designed for those who like modern UI elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Vision UI Dashboard PRO Chakra is ready to help you create stunning websites and webapps.
+                    <br />
+                    <br />
+                    We created many examples for pages like Sign In, Profile and so on. Just choose between a Basic Design, an illustration or a cover and you are good to go!
+                    <br />
+                    <br />
+                    <Text fontSize="24px" color="brand.700" fontWeight="500">Fully Coded Elements</Text>
+                    <br />
+                    Vision UI Dashboard PRO Chakra is built with over 300 frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining. All components can take variations in color, which you can easily modify using JSS files and classes. You will save a lot of time going from prototyping to full-functional code because all elements are implemented. This Premium Chakra UI Dashboard is coming with prebuilt design blocks, so the development process is seamless, switching from our pages to the real website is easy to be done.
+                  </Text>
+                },
+                summary: [
+                    "300+ Handcrafted Elements",
+                    "32 Example Pages",
+                    "6+ Customized Plugins",
+                    "Premium Support",
+                    "Documentation",
+                    "Fully Responsive",
+                ],
+                mainImage: visionChakraPRO1,
+                thirdParagraph: {
+                    title: " ",
+                    description: [ ]
+                },
+                fourthParagraph: {
+                    title: "100% Customisable",
+                    description: <Text color="#878CBD" fontSize="lg" fontWeight="normal">Our products are 100% customisable <Text as="span" fontStyle="italic" fontWeight="bold">- we just give you the ultimate headstart.</Text> Change the colours, container sizes, spacing or anything you like to suit your project and to own the design in every way.</Text>
+                },
+                price: {
+                    freelancer: 69,
+                    team: 149,
+                    enterprise: 599
+                },
+                compatibility: [
+                    <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
+                        <Icon as={figmaIcon} w="15px" h="22px" />
+                    </IconBox>,
+                    <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
+                        <Icon as={chakraIcon} w="22px" h="22px" />
+                    </IconBox>,
+                    <IconBox w="48px" h="48px" borderRadius="48px" bg="#fff" boxShadow="0px 16px 18px rgba(0, 0, 0, 0.04)">
+                        <Icon as={reactIcon} w="22px" h="22px" />
+                    </IconBox>
+                ],
+                buttonLinks: {
+                    live: 'https://demos.creative-tim.com/vision-ui-dashboard-pro-chakra/?ref=simmmple',
+                    buy: {
+                        freelancer: 'https://www.creative-tim.com/product/vision-ui-dashboard-pro-chakra?ref=simmmple',
+                        team: 'https://www.creative-tim.com/product/vision-ui-dashboard-pro-chakra?ref=simmmple',
+                        enterprise: 'https://www.creative-tim.com/product/vision-ui-dashboard-pro-chakra?ref=simmmple'
                     }
                 }
             }
