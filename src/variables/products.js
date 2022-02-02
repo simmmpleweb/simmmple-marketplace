@@ -9,6 +9,7 @@ import visionReactFree from "assets/img/homepage/vision-react-free.png";
 import visionChakraPRO from "assets/img/homepage/vision-chakra-pro.png";
 import visionChakraFree from "assets/img/homepage/vision-chakra-free.png";
 
+
 export const featuredProducts = [
   {
     image: visionChakraPRO,
