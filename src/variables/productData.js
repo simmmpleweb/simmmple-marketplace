@@ -104,7 +104,7 @@ import visionChakraFreeMain from "assets/img/product/vision-chakra-free/visionCh
 import visionChakraPRO1 from "assets/img/product/vision-chakra-pro/visionChakraPRO1.png";
 import visionChakraPRO2 from "assets/img/product/vision-chakra-pro/visionChakraPRO2.png";
 import visionChakraPRO3 from "assets/img/product/vision-chakra-pro/visionChakraPRO3.png";
-import visionChakraPRO4 from "assets/img/product/vision-chakra-pro/visionChakraPRO4.png";
+import visionChakraPRO4 from "assets/img/product/vision-react-pro/visionReactPRO4.png";
 import visionChakraPROMain from "assets/img/product/vision-chakra-pro/visionChakraPROMain.png";
 
 
