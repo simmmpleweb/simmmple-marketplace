@@ -944,51 +944,74 @@ const Contact = () => {
                                   product: e.target.value,
                                 })
                               }>
-                               <option value='Vision UI Dashboard PRO Chakra'>
+                              <option value='Argon Dashboard PRO Chakra'>
+                                Argon Dashboard PRO Chakra
+                              </option>
+
+                              <option value='Argon Dashboard Free Chakra'>
+                                Argon Dashboard Free Chakra
+                              </option>
+
+                              <option value='Vision UI Dashboard PRO Chakra'>
                                 Vision UI Dashboard PRO Chakra
                               </option>
+
                               <option value='Vision UI Dashboard Free Chakra'>
                                 Vision UI Dashboard Free Chakra
                               </option>
+
                               <option value='Vision UI Dashboard PRO React'>
                                 Vision UI Dashboard PRO React
                               </option>
+
                               <option value='Vision UI Dashboard Free React'>
                                 Vision UI Dashboard Free React
                               </option>
+
                               <option value='Purity UI Dashboard PRO'>
                                 Purity UI Dashboard PRO
                               </option>
+
                               <option value='Purity UI Dashboard Free'>
                                 Purity UI Dashboard Free
                               </option>
+
                               <option value='Venus Design System PRO'>
                                 Venus Design System PRO
                               </option>
+
                               <option value='Venus Design System Free'>
                                 Venus Design System Free
                               </option>
+
                               <option value='Venus Dashboard Builder PRO'>
                                 Venus Dashboard Builder PRO
                               </option>
+
                               <option value='Venus Dashboard Builder Free'>
                                 Venus Dashboard Builder Free
                               </option>
+
                               <option value='Uranus Wireframe Kit PRO'>
                                 Uranus Wireframe Kit PRO
                               </option>
+
                               <option value='Uranus Wireframe Kit Demo'>
                                 Uranus Wireframe Kit Demo
                               </option>
+
                               <option value='Glassy - Trendy Glassmorphism Cards'>
                                 Glassy - Trendy Glassmorphism Cards
                               </option>
+
                               <option value='Task List UI - React App'>
                                 Task List UI - React App
                               </option>
+
                               <option value='Saturn - UI Kit Headers'>
                                 Saturn - UI Kit Headers
                               </option>
+
                             </Select>
                           </Flex>
                           <Text
