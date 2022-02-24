@@ -116,7 +116,7 @@ const Home = () => {
                 letterSpacing='-1px'
                 lineHeight={{ base: "40px", md: "56px" }}
                 mb={{ base: "26px", md: "36px" }}>
-                Premium Digital Solutions for developers, designers, agencies &
+                Premium UI Templates for developers, designers, agencies &
                 startups
               </Text>
               <Text
@@ -129,7 +129,7 @@ const Home = () => {
                 <Text as='span' fontWeight='bold'>
                   10,000+ developers, designers & startups
                 </Text>{" "}
-                that use our digital solutions to quickly design and build
+                that use our UI Templates to quickly design and build
                 responsive mobile-first websites and apps.
               </Text>
             </Flex>
@@ -483,7 +483,7 @@ const Home = () => {
               the Exclusive Winter Promotion Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='25 February 2022' />
+              <Countdown date='27 February 2022' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect

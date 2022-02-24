@@ -6772,7 +6772,7 @@ const Home = () => {
             letterSpacing: "-1px",
             lineHeight: "56px",
             mb: "36px",
-            children: "Premium Digital Solutions for developers, designers, agencies & startups"
+            children: "Premium UI Templates for developers, designers, agencies & startups"
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 75,
@@ -6791,7 +6791,7 @@ const Home = () => {
               fileName: _jsxFileName,
               lineNumber: 92,
               columnNumber: 15
-            }, undefined), " ", "that use our digital solutions to quickly design and build responsive mobile-first websites and apps."]
+            }, undefined), " ", "that use our UI Templates to quickly design and build responsive mobile-first websites and apps."]
           }, void 0, true, {
             fileName: _jsxFileName,
             lineNumber: 85,

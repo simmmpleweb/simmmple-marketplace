@@ -12,7 +12,7 @@ const Affiliates = () => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">Affiliates - Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple</title>
+        <title itemprop="name">Affiliates</title>
       </Helmet>
       <Flex
         direction='column'

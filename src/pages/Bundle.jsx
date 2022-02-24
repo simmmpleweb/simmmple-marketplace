@@ -104,7 +104,7 @@ const Bundles = () => {
     <>
       <Helmet>
         <title itemprop='name'>
-          Winter Promotion 2021 - Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple</title>
+          Winter Promotion 2021</title>
       </Helmet>
       <PromotionBF />
       <NavbarBF />
@@ -151,7 +151,7 @@ const Bundles = () => {
               </Text>
             </Text>
             <Box>
-              <Countdown date='25 February 2022' />
+              <Countdown date='27 February 2022' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect

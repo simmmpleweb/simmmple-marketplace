@@ -103,7 +103,7 @@ const Bundles = () => {
     <Layout>
       <Helmet>
         <title itemprop='name'>
-          Bundles - Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple</title>
+          Bundles</title>
       </Helmet>
       <Flex direction='column' bg='#fff' overflowX='hidden'>
         <Flex

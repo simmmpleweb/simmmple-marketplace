@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">Privacy Policy - Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple</title>
+        <title itemprop="name">Privacy Policy</title>
       </Helmet>
       <Flex
         direction='column'

@@ -189,7 +189,7 @@ const Templates = (props) => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop="name">{activeTitle} - Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple</title>
+        <title itemprop="name">{activeTitle}</title>
       </Helmet>
       <Flex direction='column' bg='#fff'>
         <Flex
@@ -231,7 +231,7 @@ const Templates = (props) => {
               <Text as='span' fontWeight='bold'>
                 10,000+ developers, designers & startups
               </Text>{" "}
-              that use our digital solutions to quickly design and build
+              that use our UI Templates to quickly design and build
               responsive mobile-first websites and apps.
             </Text>
             <form onSubmit={handleSubmit}>
