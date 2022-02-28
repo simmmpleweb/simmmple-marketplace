@@ -483,7 +483,7 @@ const Home = () => {
               the Exclusive Winter Promotion Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='27 February 2022' />
+              <Countdown date='02 March 2022' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect
