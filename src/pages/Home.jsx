@@ -468,7 +468,7 @@ const Home = () => {
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              Winter Promotion 80%
+              Spring Promotion 80%
             </Text>
             <Text
               color='#fff'
@@ -480,10 +480,10 @@ const Home = () => {
                 Save 80% OFF now{" "}
               </Text>
               to all Premium Coded & Design Products & Tools with
-              the Exclusive Winter Promotion Digital Bundle!
+              the Exclusive Spring Promotion Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='02 March 2022' />
+              <Countdown date='10 March 2022' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect

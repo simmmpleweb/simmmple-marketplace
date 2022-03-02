@@ -104,7 +104,7 @@ const Bundles = () => {
     <>
       <Helmet>
         <title itemprop='name'>
-          Winter Promotion 2021</title>
+          Spring Promotion 2022</title>
       </Helmet>
       <PromotionBF />
       <NavbarBF />
@@ -135,7 +135,7 @@ const Bundles = () => {
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              Winter Promotion 80%
+              Spring Promotion 80%
             </Text>
             <Text
               color='#fff'
@@ -151,7 +151,7 @@ const Bundles = () => {
               </Text>
             </Text>
             <Box>
-              <Countdown date='02 March 2022' />
+              <Countdown date='10 March 2022' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
@@ -239,7 +239,7 @@ const Bundles = () => {
               mb='16px'
               letterSpacing='2px'
               textAlign='center'>
-              WINTER PROMOTION BUNDLE BENEFITS
+              Spring PROMOTION BUNDLE BENEFITS
             </Text>
             <Text
               fontSize='34px'
@@ -424,7 +424,7 @@ const Bundles = () => {
               mb='16px'
               letterSpacing='2px'
               textAlign='center'>
-              WINTER PROMOTION BUNDLE BENEFITS
+              SPRING PROMOTION BUNDLE BENEFITS
             </Text>
             <Text
               fontSize='34px'
@@ -435,7 +435,7 @@ const Bundles = () => {
               mb='20px'
               mx='auto'
               textAlign='center'>
-              What Winter Promotion Bundle contains?
+              What Spring Promotion Bundle contains?
             </Text>
             <Text
               fontSize='md'
@@ -2207,7 +2207,7 @@ const Bundles = () => {
               mb='16px'
               letterSpacing='2px'
               textAlign='center'>
-              Winter Promotion BUNDLE FAQS
+              Spring Promotion BUNDLE FAQS
             </Text>
             <Text
               fontSize='34px'
