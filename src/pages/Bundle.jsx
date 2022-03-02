@@ -239,7 +239,7 @@ const Bundles = () => {
               mb='16px'
               letterSpacing='2px'
               textAlign='center'>
-              Spring PROMOTION BUNDLE BENEFITS
+              SPRING PROMOTION BUNDLE BENEFITS
             </Text>
             <Text
               fontSize='34px'
