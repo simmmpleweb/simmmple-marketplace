@@ -167,6 +167,9 @@ const Bundles = () => {
                   variant='solid'
                   w='190px'
                   h='56px'
+                  _hover={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
+                  _focus={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
+                  _active={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
                   onMouseEnter={() => {
                     leftEffect.current.style.transform = "translateX(-5px)";
                     rightEffect.current.style.transform = "translateX(5px)";

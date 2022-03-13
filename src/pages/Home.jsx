@@ -498,6 +498,9 @@ const Home = () => {
                 <Button
                   bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'
                   variant='solid'
+                  _hover={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
+                  _focus={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
+                  _active={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
                   w='190px'
                   h='56px'
                   onMouseEnter={() => {
