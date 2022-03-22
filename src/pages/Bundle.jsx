@@ -151,7 +151,7 @@ const Bundles = () => {
               </Text>
             </Text>
             <Box>
-              <Countdown date='24 March 2022' />
+              <Countdown date='27 March 2022' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
@@ -1634,8 +1634,9 @@ const Bundles = () => {
                     fontSize='md'
                     lineHeight='28px'
                     letterSpacing='-0.5px'>
-                    Relevant for large-scale uses and extended redistribution
-                    rights. A license for large companies working on projects.
+                    Perfect for personal use and for your side projects. A
+                    single license for solo designers, developers and
+                    freelancers.
                   </Text>
                   <Flex flexDirection='column'>
                     <Flex align='center' mb='40px'>
@@ -2017,13 +2018,12 @@ const Bundles = () => {
 
                   <Text
                     mb='46px'
-                    color='#878CBD'
+                    color='#C5C9EB'
                     fontSize='md'
                     lineHeight='28px'
                     letterSpacing='-0.5px'>
-                    Perfect for personal use and for your side projects. A
-                    single license for solo designers, developers and
-                    freelancers.
+                    Relevant for large-scale uses and extended redistribution
+                    rights. A license for large companies working on projects.
                   </Text>
                   <Flex flexDirection='column'>
                     <Flex align='center' mb='40px'>
