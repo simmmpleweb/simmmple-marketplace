@@ -741,10 +741,10 @@ const Home = () => {
                         fontSize='lg'
                         fontWeight='500'
                         mb='14px'>
-                        Creative Tim invests in Simmmple - Exciting new top industry products by the end of 2022
+                        Creative Tim invests in Simmmple - Exciting new top industry products...
                       </Text>
                       <Text fontSize='sm' color='#878CBD' fontWeight='normal'>
-                      This year we are planning to expand our projects and partnerships in order to keep bringing new solutions...
+                      This year we are planning to expand our projects and partnerships in order to keep bringing new...
                       </Text>
                     </Flex>
                   </CardBody>
