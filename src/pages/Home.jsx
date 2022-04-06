@@ -483,7 +483,7 @@ const Home = () => {
               the Exclusive Spring Promotion Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='05 April 2022' />
+              <Countdown date='10 April 2022' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect
@@ -710,7 +710,7 @@ const Home = () => {
                   </CardBody>
                 </Card>
               </Link>
-              <Link href='https://blog.simmmple.com'>
+              <Link href='https://www.creative-tim.com/blog/creative-tim/creative-tim-invests-in-simmmple/'>
                 <Card
                   display={{ base: "none", lg: "flex" }}
                   boxShadow='45px 76px 113px 7px rgba(112, 144, 176, 0.08)'
@@ -741,12 +741,10 @@ const Home = () => {
                         fontSize='lg'
                         fontWeight='500'
                         mb='14px'>
-                        How to build a design system if you're the only designer
-                        in a startup
+                        Creative Tim invests in Simmmple - Exciting new top industry products by the end of 2022
                       </Text>
                       <Text fontSize='sm' color='#878CBD' fontWeight='normal'>
-                        It's always hard to be the only person in a company who
-                        is responsible for product design. Your day...
+                      This year we are planning to expand our projects and partnerships in order to keep bringing new solutions...
                       </Text>
                     </Flex>
                   </CardBody>
