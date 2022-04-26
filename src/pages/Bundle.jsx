@@ -103,8 +103,7 @@ const Bundles = () => {
   return (
     <>
       <Helmet>
-        <title itemprop='name'>
-          Spring Promotion 2022</title>
+        <title itemprop='name'>Spring Promotion 2022</title>
       </Helmet>
       <PromotionBF />
       <NavbarBF />
@@ -151,7 +150,7 @@ const Bundles = () => {
               </Text>
             </Text>
             <Box>
-              <Countdown date='16 April 2022' />
+              <Countdown date='03 May 2022' />
             </Box>
             <Flex align='center' mt={{ base: "34px", md: "54px" }}>
               <LeftButtonEffect
@@ -167,9 +166,15 @@ const Bundles = () => {
                   variant='solid'
                   w='190px'
                   h='56px'
-                  _hover={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
-                  _focus={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
-                  _active={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
+                  _hover={{
+                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                  }}
+                  _focus={{
+                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                  }}
+                  _active={{
+                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                  }}
                   onMouseEnter={() => {
                     leftEffect.current.style.transform = "translateX(-5px)";
                     rightEffect.current.style.transform = "translateX(5px)";
@@ -1923,8 +1928,12 @@ const Bundles = () => {
                       w='100%'
                       color='white'
                       fontSize='sm'
-                      _hover={{ bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)" }}
-                      _active={{ bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)" }}>
+                      _hover={{
+                        bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                      }}
+                      _active={{
+                        bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                      }}>
                       Buy it now
                     </Button>
                   </Link>

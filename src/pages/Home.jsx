@@ -76,7 +76,11 @@ const Home = () => {
   return (
     <Layout>
       <Helmet>
-        <title itemprop='name'>Free and Premium Stunning UI Kits, Templates, Design Tools and Themes ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma & Sketch @ Simmmple</title>
+        <title itemprop='name'>
+          Free and Premium Stunning UI Kits, Templates, Design Tools and Themes
+          ready-to-use in HTML, CSS, JS, React, Bootstrap, NextJS, Figma &
+          Sketch @ Simmmple
+        </title>
       </Helmet>
       <Flex direction='column' bg='#fff' maxW='100%' overflowX='hidden'>
         {/* Hero */}
@@ -129,8 +133,8 @@ const Home = () => {
                 <Text as='span' fontWeight='bold'>
                   10,000+ developers, designers & startups
                 </Text>{" "}
-                that use our UI Templates to quickly design and build
-                responsive mobile-first websites and apps.
+                that use our UI Templates to quickly design and build responsive
+                mobile-first websites and apps.
               </Text>
             </Flex>
             <form onSubmit={handleSubmit}>
@@ -479,11 +483,11 @@ const Home = () => {
               <Text as='span' fontWeight='bold'>
                 Save 80% OFF now{" "}
               </Text>
-              to all Premium Coded & Design Products & Tools with
-              the Exclusive Spring Promotion Digital Bundle!
+              to all Premium Coded & Design Products & Tools with the Exclusive
+              Spring Promotion Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='16 April 2022' />
+              <Countdown date='03 May 2022' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect
@@ -498,9 +502,15 @@ const Home = () => {
                 <Button
                   bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'
                   variant='solid'
-                  _hover={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
-                  _focus={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
-                  _active={{bg:"linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)"}}
+                  _hover={{
+                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                  }}
+                  _focus={{
+                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                  }}
+                  _active={{
+                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                  }}
                   w='190px'
                   h='56px'
                   onMouseEnter={() => {
@@ -741,10 +751,12 @@ const Home = () => {
                         fontSize='lg'
                         fontWeight='500'
                         mb='14px'>
-                        Creative Tim invests in Simmmple - Exciting new top industry products...
+                        Creative Tim invests in Simmmple - Exciting new top
+                        industry products...
                       </Text>
                       <Text fontSize='sm' color='#878CBD' fontWeight='normal'>
-                      This year we are planning to expand our projects and partnerships in order to keep bringing new...
+                        This year we are planning to expand our projects and
+                        partnerships in order to keep bringing new...
                       </Text>
                     </Flex>
                   </CardBody>
