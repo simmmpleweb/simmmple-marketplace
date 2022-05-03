@@ -487,7 +487,7 @@ const Home = () => {
               Spring Promotion Digital Bundle!
             </Text>
             <Box>
-              <Countdown date='03 May 2022' />
+              <Countdown date='08 May 2022' />
             </Box>
             <Flex align='center' mt='54px'>
               <LeftButtonEffect
