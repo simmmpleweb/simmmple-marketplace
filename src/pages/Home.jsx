@@ -27,9 +27,7 @@ import {
   LeftButtonEffect,
   RightButtonEffect,
   SimmmpleLogoBundle,
-  ArticleIcon1,
-  ArticleIcon2,
-  ArticleIcon3,
+  HorizonLogo,
   SearchIcon,
 } from "components/icons/Icons";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -461,35 +459,27 @@ const Home = () => {
             align='center'
             textAlign='center'
             maxW='100%'>
-            <SimmmpleLogoBundle
+            <HorizonLogo
               w={{ base: "162px", md: "182px" }}
-              h='50px'
+              h='24px'
               mb='48px'
             />
             <Text
-              fontSize={{ base: "34px", md: "64px" }}
+              fontSize={{ base: "40px", md: "64px" }}
               lineHeight={{ base: "58px", md: "72px" }}
               color='#fff'
               fontWeight='bold'
               mb='25px'>
-              Spring Promotion 80%
+              Introducing Horizon UI
             </Text>
             <Text
               color='#fff'
               fontSize={{ base: "16px", md: "20px" }}
               lineHeight={{ base: "30px", md: "40px" }}
-              maxW={{ md: "70%" }}
-              mb='50px'>
-              <Text as='span' fontWeight='bold'>
-                Save 80% OFF now{" "}
-              </Text>
-              to all Premium Coded & Design Products & Tools with the Exclusive
-              Spring Promotion Digital Bundle!
+              maxW={{ md: "60%" }}>
+              Build your dream web app with Horizon UI PRO, the most trendiest and innovative admin dashboard for React & Chakra UI!
             </Text>
-            <Box>
-              <Countdown date='08 May 2022' />
-            </Box>
-            <Flex align='center' mt='54px'>
+            <Flex align='center' mt='20px'>
               <LeftButtonEffect
                 ref={leftEffect}
                 color='#fff'
@@ -498,18 +488,18 @@ const Home = () => {
                 transition='all .5s ease'
               />
               {/* <NavLink to='/bundles'> */}
-              <NavLink to='/bundle'>
+              <Link href='https://horizon-ui.com/pro/?ref=simmmple-cta'>
                 <Button
-                  bg='linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)'
+                  bg='white'
                   variant='solid'
                   _hover={{
-                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                    bg: "white",
                   }}
                   _focus={{
-                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                    bg: "white",
                   }}
                   _active={{
-                    bg: "linear-gradient(108.54deg, #FF416C 6.56%, #FF4B2B 95.2%)",
+                    bg: "white",
                   }}
                   w='190px'
                   h='56px'
@@ -521,11 +511,11 @@ const Home = () => {
                     leftEffect.current.style.transform = "translateX(5px)";
                     rightEffect.current.style.transform = "translateX(-5px)";
                   }}>
-                  <Text color='white' fontSize='sm'>
-                    Save 80% now!
+                  <Text color='brand.500' fontSize='sm'>
+                    Get started now
                   </Text>
                 </Button>
-              </NavLink>
+              </Link>
               <RightButtonEffect
                 ref={rightEffect}
                 color='#fff'
