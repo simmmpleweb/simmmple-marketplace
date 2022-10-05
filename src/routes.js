@@ -3,11 +3,11 @@
 // import Home from 'pages/Home.jsx';
 import Maintenance from 'pages/Maintenance.jsx';
 // import Bundle from "pages/Bundle.jsx";
-// import PrivacyPolicy from "pages/PrivacyPolicy";
-// import Licenses from "pages/Licenses";
-// import TermsConditions from "pages/TermsConditions";
+import PrivacyPolicy from 'pages/PrivacyPolicy';
+import Licenses from 'pages/Licenses';
+import TermsConditions from 'pages/TermsConditions';
 // import Product from "pages/Product";
-// import Affiliates from "pages/Affiliates";
+import Affiliates from 'pages/Affiliates';
 // import Contact from "pages/Contact.jsx";
 // import Templates from "pages/Templates";
 // import AboutUs from "pages/AboutUs";
@@ -28,7 +28,7 @@ const routes = [
 		exact: true,
 		secondary: false,
 		component: Maintenance
-	}
+	},
 	// {
 	//   name: "Bundle",
 	//   path: "/bundle",
@@ -71,34 +71,34 @@ const routes = [
 	//   secondary: true,
 	//   component: Contact,
 	// },
-	// {
-	//   name: "Licenses",
-	//   path: "/licenses",
-	//   exact: false,
-	//   secondary: true,
-	//   component: Licenses,
-	// },
-	// {
-	//   name: "Terms & Conditions",
-	//   path: "/terms-of-service",
-	//   exact: false,
-	//   secondary: true,
-	//   component: TermsConditions,
-	// },
-	// {
-	//   name: "Privacy Policy",
-	//   path: "/privacy-policy",
-	//   exact: false,
-	//   secondary: true,
-	//   component: PrivacyPolicy,
-	// },
-	// {
-	//   name: "Affiliates",
-	//   path: "/affiliates",
-	//   exact: false,
-	//   secondary: true,
-	//   component: Affiliates,
-	// },
+	{
+		name: 'Licenses',
+		path: '/licenses',
+		exact: false,
+		secondary: true,
+		component: Licenses
+	},
+	{
+		name: 'Terms & Conditions',
+		path: '/terms-of-service',
+		exact: false,
+		secondary: true,
+		component: TermsConditions
+	},
+	{
+		name: 'Privacy Policy',
+		path: '/privacy-policy',
+		exact: false,
+		secondary: true,
+		component: PrivacyPolicy
+	},
+	{
+		name: 'Affiliates',
+		path: '/affiliates',
+		exact: false,
+		secondary: true,
+		component: Affiliates
+	}
 	// {
 	//   name: "AboutUs",
 	//   path: "/about",
